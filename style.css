@@ -6442,7 +6442,8 @@ body.payment-confirmation-page .narrow {
   background-color: transparent;
 }
 
-.application-form .form-status {
+.application-form .form-status,
+.payment-upload-form .form-status {
   min-height: 24px;
   margin: -4px 0 0;
   color: rgba(247, 240, 230, 0.78);
@@ -6451,19 +6452,77 @@ body.payment-confirmation-page .narrow {
   text-align: center;
 }
 
-.application-form .form-status.is-success {
+.application-form .form-status.is-success,
+.payment-upload-form .form-status.is-success {
   color: var(--green);
 }
 
-.application-form .form-status.is-error {
+.application-form .form-status.is-error,
+.payment-upload-form .form-status.is-error {
   color: #f0a7a7;
 }
 
 .application-form .submit-button:disabled,
-.application-form .submit-button[aria-busy="true"] {
+.application-form .submit-button[aria-busy="true"],
+.payment-upload-form .submit-button:disabled,
+.payment-upload-form .submit-button[aria-busy="true"] {
   cursor: wait;
   opacity: 0.86;
   filter: none;
+}
+
+[dir="rtl"] .application-form,
+[dir="rtl"] .application-form fieldset,
+[dir="rtl"] .payment-upload-form,
+[dir="rtl"] .applicant-details,
+[dir="rtl"] .confirmation-card,
+[dir="rtl"] .payment-info-card,
+[dir="rtl"] .success-message {
+  text-align: right;
+}
+
+[dir="rtl"] .application-form legend {
+  float: right;
+}
+
+[dir="rtl"] .application-form .check-row {
+  grid-template-columns: minmax(0, 1fr) 24px;
+}
+
+[dir="rtl"] .application-form .check-row input {
+  grid-column: 2;
+}
+
+[dir="rtl"] .application-form .check-row label {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+[dir="rtl"] .premium-field label {
+  left: auto;
+  right: 18px;
+}
+
+[dir="rtl"] .premium-field input {
+  text-align: right;
+}
+
+[dir="rtl"] .payment-row {
+  text-align: right;
+}
+
+[dir="rtl"] .file-item,
+[dir="rtl"] .email-card,
+[dir="rtl"] .status-box,
+[dir="rtl"] .ehc-card,
+[dir="rtl"] .zillow-badge {
+  direction: rtl;
+}
+
+[dir="rtl"] .contact-email-ltr,
+[dir="rtl"] .contact-phone-ltr {
+  direction: ltr;
+  unicode-bidi: embed;
 }
 
 .simple-flow-page .site-header .header-inner,

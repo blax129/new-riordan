@@ -16,10 +16,14 @@
   const translations = {
     es: {
       "Private Property Manager": "Administradora Privada de Propiedades",
+      "Katherine Riordan home": "Inicio de Katherine Riordan",
       "Open navigation": "Abrir navegación",
       "Main navigation": "Navegación principal",
       "Language": "Idioma",
+      "Language selector": "Selector de idioma",
+      "Select language": "Seleccionar idioma",
       "Navigation": "Navegación",
+      "Page navigation": "Navegación de página",
       "Home": "Inicio",
       "About": "Acerca de",
       "Services": "Servicios",
@@ -30,6 +34,7 @@
       "Request Consultation": "Solicitar consulta",
       "Apply Now": "Aplicar Ahora",
       "Back": "Volver",
+      "Back to Application": "Volver a la solicitud",
       "Private property management": "Administración privada de propiedades",
       "Professional and transparent rental coordination for applicants": "Coordinación de alquiler profesional y transparente para solicitantes",
       "Professional Photo Coming Soon": "Foto profesional próximamente",
@@ -93,8 +98,10 @@
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria. No participan agentes externos.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria.",
       "Equal Housing Opportunity": "Igualdad de oportunidad de vivienda",
+      "Equal Housing Opportunity Logo": "Logo de Igualdad de Oportunidad de Vivienda",
       "Secure SSL Encrypted Application": "Solicitud segura con cifrado SSL",
       "Application Process Supported Through Zillow Rental Manager": "Proceso de solicitud respaldado mediante Zillow Rental Manager",
+      "Zillow Rental Manager application support indicator": "Indicador de respaldo de solicitudes con Zillow Rental Manager",
       "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.": "Las solicitudes se envían de forma segura mediante Zillow Rental Manager en colaboración con la propietaria. No participan agentes de arrendamiento externos.",
       "Property Information": "Información de la propiedad",
       "Property applying for": "Propiedad para la que aplica",
@@ -158,6 +165,8 @@
       "Application Received Successfully": "Solicitud recibida correctamente",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "Gracias por completar su solicitud de alquiler. Su información se recibió correctamente y está pendiente de revisión.",
       "Application ID:": "ID de solicitud:",
+      "Pending": "Pendiente",
+      "Application status": "Estado de la solicitud",
       "Email Confirmation": "Confirmación por correo electrónico",
       "A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received.": "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud. Ese correo confirmará que su solicitud fue recibida.",
       "Secure & Verified Process": "Proceso seguro y verificado",
@@ -335,10 +344,14 @@
     },
     fr: {
       "Private Property Manager": "Gestionnaire privée de propriétés",
+      "Katherine Riordan home": "Accueil Katherine Riordan",
       "Open navigation": "Ouvrir la navigation",
       "Main navigation": "Navigation principale",
       "Language": "Langue",
+      "Language selector": "Sélecteur de langue",
+      "Select language": "Sélectionner la langue",
       "Navigation": "Navigation",
+      "Page navigation": "Navigation de page",
       "Home": "Accueil",
       "About": "À propos",
       "Services": "Services",
@@ -349,6 +362,7 @@
       "Request Consultation": "Demander une consultation",
       "Apply Now": "Postuler Maintenant",
       "Back": "Retour",
+      "Back to Application": "Retour à la demande",
       "Private property management": "Gestion privée de propriétés",
       "Professional and transparent rental coordination for applicants": "Coordination locative professionnelle et transparente pour les candidats",
       "Professional Photo Coming Soon": "Photo professionnelle à venir",
@@ -412,8 +426,10 @@
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Il s’agit d’une location gérée en privé. Toutes les demandes sont examinées directement par la propriétaire. Aucun agent tiers n’intervient.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Il s’agit d’une location gérée en privé. Toutes les demandes sont examinées directement par la propriétaire.",
       "Equal Housing Opportunity": "Égalité d’accès au logement",
+      "Equal Housing Opportunity Logo": "Logo égalité d’accès au logement",
       "Secure SSL Encrypted Application": "Demande sécurisée chiffrée SSL",
       "Application Process Supported Through Zillow Rental Manager": "Processus de candidature pris en charge via Zillow Rental Manager",
+      "Zillow Rental Manager application support indicator": "Indicateur de prise en charge par Zillow Rental Manager",
       "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.": "Les demandes sont envoyées en toute sécurité via Zillow Rental Manager en partenariat avec la propriétaire. Aucun agent de location externe n’intervient.",
       "Property Information": "Informations sur le bien",
       "Property applying for": "Bien demandé",
@@ -615,10 +631,14 @@
     },
     ar: {
       "Private Property Manager": "مديرة عقارات خاصة",
+      "Katherine Riordan home": "الصفحة الرئيسية لـ Katherine Riordan",
       "Open navigation": "فتح التنقل",
       "Main navigation": "التنقل الرئيسي",
       "Language": "اللغة",
+      "Language selector": "محدد اللغة",
+      "Select language": "اختيار اللغة",
       "Navigation": "التنقل",
+      "Page navigation": "تنقل الصفحة",
       "Home": "الرئيسية",
       "About": "نبذة",
       "Services": "الخدمات",
@@ -629,6 +649,7 @@
       "Request Consultation": "طلب استشارة",
       "Apply Now": "قدم الآن",
       "Back": "رجوع",
+      "Back to Application": "العودة إلى الطلب",
       "Private property management": "إدارة عقارات خاصة",
       "Professional and transparent rental coordination for applicants": "تنسيق إيجار مهني وشفاف للمتقدمين",
       "Professional Photo Coming Soon": "الصورة المهنية قريباً",
@@ -692,8 +713,10 @@
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "هذا إيجار بإدارة خاصة. تتم مراجعة جميع الطلبات مباشرة من مالكة العقار. لا يشارك أي وكلاء من طرف ثالث.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "هذا إيجار بإدارة خاصة. تتم مراجعة جميع الطلبات مباشرة من مالكة العقار.",
       "Equal Housing Opportunity": "فرص إسكان متكافئة",
+      "Equal Housing Opportunity Logo": "شعار فرص الإسكان المتكافئة",
       "Secure SSL Encrypted Application": "طلب آمن ومشفّر عبر SSL",
       "Application Process Supported Through Zillow Rental Manager": "عملية الطلب مدعومة عبر Zillow Rental Manager",
+      "Zillow Rental Manager application support indicator": "مؤشر دعم الطلب عبر Zillow Rental Manager",
       "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.": "يتم إرسال الطلبات بأمان عبر Zillow Rental Manager بالشراكة مع مالكة العقار. لا يشارك أي وكلاء تأجير خارجيين.",
       "Property Information": "معلومات العقار",
       "Property applying for": "العقار المتقدم له",
@@ -759,8 +782,12 @@
     "Administradora Privada de Propiedades": "Private Property Manager",
     "Abrir navegación": "Open navigation",
     "Navegación principal": "Main navigation",
+    "Inicio de Katherine Riordan": "Katherine Riordan home",
     "Idioma": "Language",
+    "Selector de idioma": "Language selector",
+    "Seleccionar idioma": "Select language",
     "Navegación": "Navigation",
+    "Navegación de página": "Page navigation",
     "Inicio": "Home",
     "Acerca de": "About",
     "Servicios": "Services",
@@ -771,6 +798,7 @@
     "Solicitar consulta": "Request Consultation",
     "Aplicar Ahora": "Apply Now",
     "Volver": "Back",
+    "Volver a la solicitud": "Back to Application",
     "Administración privada de propiedades": "Private property management",
     "Coordinación de alquiler profesional y transparente para solicitantes": "Professional and transparent rental coordination for applicants",
     "Foto profesional próximamente": "Professional Photo Coming Soon",
@@ -834,8 +862,10 @@
     "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria. No participan agentes externos.": "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.",
     "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria.": "This is a privately managed rental. All applications are reviewed directly by the property owner.",
     "Igualdad de oportunidad de vivienda": "Equal Housing Opportunity",
+    "Logo de Igualdad de Oportunidad de Vivienda": "Equal Housing Opportunity Logo",
     "Solicitud segura con cifrado SSL": "Secure SSL Encrypted Application",
     "Proceso de solicitud respaldado mediante Zillow Rental Manager": "Application Process Supported Through Zillow Rental Manager",
+    "Indicador de respaldo de solicitudes con Zillow Rental Manager": "Zillow Rental Manager application support indicator",
     "Las solicitudes se envían de forma segura mediante Zillow Rental Manager en colaboración con la propietaria. No participan agentes de arrendamiento externos.": "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.",
     "Información de la propiedad": "Property Information",
     "Propiedad para la que aplica": "Property applying for",
@@ -879,6 +909,7 @@
     "Gracias. Su solicitud ha sido enviada.": "Thank you. Your application has been submitted.",
     "Su solicitud aparece como recibida. Revise su correo electrónico o teléfono para actualizaciones de Katherine sobre el estado de revisión, programación de visita o instrucciones de siguientes pasos.": "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.",
     "Estado: Recibida": "Status: Received",
+    "Estado de la solicitud": "Application status",
     "Las solicitudes son revisadas directamente por la propietaria. Se le contactará si se necesita más información.": "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.",
     "Nota de procesamiento seguro": "Secure processing note",
     "Los detalles de la solicitud pueden procesarse mediante Zillow Rental Manager en colaboración con la propietaria.": "Application details may be processed through Zillow Rental Manager in partnership with the property owner.",
@@ -912,12 +943,11 @@
   });
 
   const optionLabels = {
-    en: ["English", "Español", "中文", "Français", "Português", "العربية"],
-    es: ["English", "Español", "中文", "Français", "Português", "العربية"],
-    zh: ["English", "Español", "中文", "Français", "Português", "العربية"],
-    fr: ["English", "Español", "中文", "Français", "Português", "العربية"],
-    pt: ["English", "Español", "中文", "Français", "Português", "العربية"],
-    ar: ["English", "Español", "中文", "Français", "Português", "العربية"]
+    en: ["English", "Español", "中文", "Français", "العربية"],
+    es: ["English", "Español", "中文", "Français", "العربية"],
+    zh: ["English", "Español", "中文", "Français", "العربية"],
+    fr: ["English", "Español", "中文", "Français", "العربية"],
+    ar: ["English", "Español", "中文", "Français", "العربية"]
   };
 
   const premiumTranslations = {
@@ -1124,6 +1154,8 @@
       "Application Received Successfully": "Demande reçue avec succès",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "Merci d’avoir rempli votre demande de location. Vos informations ont bien été reçues et sont actuellement en cours d’examen.",
       "Application ID:": "ID de demande :",
+      "Pending": "En attente",
+      "Application status": "Statut de la demande",
       "Email Confirmation": "Confirmation par e-mail",
       "A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received.": "Un e-mail de confirmation sera envoyé prochainement à l’adresse indiquée dans votre demande. Il confirmera la bonne réception de votre dossier.",
       "Secure & Verified Process": "Processus sécurisé et vérifié",
@@ -1301,6 +1333,8 @@
       "Application Received Successfully": "تم استلام طلبك بنجاح",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "شكرًا لك على إكمال طلب الإيجار. تم استلام معلوماتك بنجاح وهي الآن قيد المراجعة.",
       "Application ID:": "رقم الطلب:",
+      "Pending": "قيد الانتظار",
+      "Application status": "حالة الطلب",
       "Email Confirmation": "تأكيد عبر البريد الإلكتروني",
       "A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received.": "سيتم إرسال رسالة تأكيد قريبًا إلى عنوان البريد الإلكتروني المذكور في طلبك، لتأكيد استلام الطلب.",
       "Secure & Verified Process": "عملية آمنة وموثقة",
@@ -1361,12 +1395,38 @@
     Object.assign(translations[language], postFlowTranslations[language]);
   });
 
+  const paymentUploadTranslations = {
+    es: {
+      "Application ID": "ID de solicitud",
+      "Uploading...": "Subiendo...",
+      "We could not upload your payment screenshot. Please try again.": "No pudimos subir la captura de pantalla del pago. Inténtelo de nuevo."
+    },
+    zh: {
+      "Application ID": "申请编号",
+      "Uploading...": "正在上传...",
+      "We could not upload your payment screenshot. Please try again.": "无法上传您的付款截图。请重试。"
+    },
+    fr: {
+      "Application ID": "ID de demande",
+      "Uploading...": "Téléversement...",
+      "We could not upload your payment screenshot. Please try again.": "Nous n’avons pas pu téléverser votre capture d’écran du paiement. Veuillez réessayer."
+    },
+    ar: {
+      "Application ID": "رقم الطلب",
+      "Uploading...": "جارٍ الرفع...",
+      "We could not upload your payment screenshot. Please try again.": "تعذر رفع لقطة شاشة الدفع. يرجى المحاولة مرة أخرى."
+    }
+  };
+
+  Object.keys(paymentUploadTranslations).forEach((language) => {
+    Object.assign(translations[language], paymentUploadTranslations[language]);
+  });
+
   const languageOptions = [
     { value: "en", label: "English", shortLabel: "EN", flag: "🇺🇸" },
     { value: "es", label: "Español", shortLabel: "ES", flag: "🇪🇸" },
     { value: "zh", label: "中文", shortLabel: "中文", flag: "🇨🇳" },
     { value: "fr", label: "Français", shortLabel: "FR", flag: "🇫🇷" },
-    { value: "pt", label: "Português", shortLabel: "PT", flag: "🇵🇹" },
     { value: "ar", label: "العربية", shortLabel: "AR", flag: "🇸🇦" }
   ];
 
@@ -1375,7 +1435,6 @@
     es: "es.html",
     zh: "index.html?lang=zh",
     fr: "index.html?lang=fr",
-    pt: "index.html?lang=pt",
     ar: "index.html?lang=ar"
   };
 
@@ -1400,11 +1459,22 @@
     return languageHomeFallbacks[storedLanguage()] || languageHomeFallbacks.en;
   }
 
+  function syncBackFallbacks(language) {
+    const supportedLanguage = normalizeLanguage(language);
+    backButtons.forEach((button) => {
+      if (button.id === "applicationBackButton" || document.body.classList.contains("payment-confirmation-page")) {
+        return;
+      }
+
+      if (applicationForm) {
+        button.dataset.fallbackHome = languageHomeFallbacks[supportedLanguage] || languageHomeFallbacks.en;
+      }
+    });
+  }
+
   function resolveBackFallback(button) {
     const explicitFallback = button.dataset.fallbackHome;
-    const languageHomePages = Object.values(languageHomeFallbacks);
-
-    if (explicitFallback && !languageHomePages.includes(explicitFallback)) {
+    if (explicitFallback) {
       return explicitFallback;
     }
 
@@ -1591,6 +1661,7 @@
     translateAttributes(supportedLanguage);
     syncLanguageSelects(supportedLanguage);
     syncLanguageMenus(supportedLanguage);
+    syncBackFallbacks(supportedLanguage);
     document.querySelectorAll("input, select, textarea").forEach((field) => field.setCustomValidity(""));
     window.localStorage.setItem("site-language", supportedLanguage);
   }
@@ -1818,7 +1889,10 @@
     button.addEventListener("click", function (event) {
       event.preventDefault();
 
-      if (window.history.length > 1) {
+      const referrer = document.referrer ? new URL(document.referrer, window.location.href) : null;
+      const canUseHistory = window.history.length > 1 && referrer && referrer.origin === window.location.origin;
+
+      if (canUseHistory) {
         window.history.back();
         return;
       }
@@ -1855,7 +1929,7 @@
 
   enhanceLanguageSwitchers();
   setupLocalizedValidation();
-  applyLanguage(defaultLanguage);
+  applyLanguage(normalizeLanguage(defaultLanguage));
 
   document.querySelectorAll(".accordion-item").forEach((item) => {
     item.addEventListener("toggle", function () {
@@ -1962,50 +2036,57 @@
       throw new Error("Application services are not available.");
     }
 
-    if (!window.emailjs) {
-      await loadEmailJsSdk();
-    }
-
-    window.emailjs.init({ publicKey });
-
     const applicationId = generateApplicationId();
     const selectedLanguage = currentLanguage();
+    console.log("Generated application ID:", applicationId);
+
     window.sessionStorage.setItem("latestApplicationId", applicationId);
     window.localStorage.setItem("latestApplicationId", applicationId);
     window.sessionStorage.setItem("latestApplicationLanguage", selectedLanguage);
     window.localStorage.setItem("latestApplicationLanguage", selectedLanguage);
 
     const { formData, emailParams } = buildApplicationPayload(form, applicationId);
-    const formspreeRequest = fetch(endpoint, {
-      method: "POST",
-      headers: {
-        Accept: "application/json"
-      },
-      body: formData
-    }).then((response) => {
-      if (!response.ok) {
-        throw new Error("Formspree submission failed.");
-      }
-      return response;
-    });
 
-    const emailRequest = window.emailjs.send(serviceId, templateId, emailParams);
+    const formspreeRequest = withServiceTimeout(
+      submitApplicationToFormspree(endpoint, formData),
+      15000,
+      "Formspree submission timed out."
+    );
+    const emailRequest = withServiceTimeout(
+      sendApplicationEmailNotification(serviceId, templateId, publicKey, emailParams),
+      12000,
+      "EmailJS notification timed out."
+    );
 
     if (statusMessage) {
       statusMessage.textContent = translateText("Submitting securely...", currentLanguage());
       statusMessage.classList.remove("is-error", "is-success");
     }
 
-    const results = await Promise.allSettled([formspreeRequest, emailRequest]);
-    const successfulDeliveries = results.filter((result) => result.status === "fulfilled");
+    const [formspreeResult, emailResult] = await Promise.allSettled([formspreeRequest, emailRequest]);
+    const formspreeSucceeded = formspreeResult.status === "fulfilled";
+    const emailSucceeded = emailResult.status === "fulfilled";
 
-    if (successfulDeliveries.length === 0) {
+    if (formspreeSucceeded) {
+      console.log("Formspree submission succeeded:", formspreeResult.value);
+    } else {
+      console.error("Formspree submission failed:", formspreeResult.reason);
+    }
+
+    if (emailSucceeded) {
+      console.log("EmailJS notification succeeded:", emailResult.value);
+    } else {
+      console.error("EmailJS notification failed:", emailResult.reason);
+    }
+
+    if (!formspreeSucceeded && !emailSucceeded) {
       throw new Error("Application submission failed.");
     }
 
     if (statusMessage) {
       statusMessage.textContent = translateText("Application submitted. Redirecting...", currentLanguage());
       statusMessage.classList.add("is-success");
+      statusMessage.classList.remove("is-error");
     }
 
     if (submitButton) {
@@ -2014,8 +2095,48 @@
 
     window.setTimeout(() => {
       const confirmationPage = form.dataset.confirmation || "application-received.html";
-      window.location.href = `${confirmationPage}?applicationId=${encodeURIComponent(applicationId)}&lang=${encodeURIComponent(selectedLanguage)}`;
+      const redirectUrl = `${confirmationPage}?applicationId=${encodeURIComponent(applicationId)}&lang=${encodeURIComponent(selectedLanguage)}`;
+      console.log("Application redirect triggered:", redirectUrl);
+      window.location.href = redirectUrl;
     }, 900);
+  }
+
+  async function submitApplicationToFormspree(endpoint, formData) {
+    const response = await fetch(endpoint, {
+      method: "POST",
+      headers: {
+        Accept: "application/json"
+      },
+      body: formData
+    });
+
+    if (!response.ok) {
+      throw new Error(`Formspree submission failed with status ${response.status}.`);
+    }
+
+    return {
+      ok: response.ok,
+      status: response.status,
+      statusText: response.statusText
+    };
+  }
+
+  async function sendApplicationEmailNotification(serviceId, templateId, publicKey, emailParams) {
+    if (!window.emailjs) {
+      await loadEmailJsSdk();
+    }
+
+    window.emailjs.init({ publicKey });
+    return window.emailjs.send(serviceId, templateId, emailParams);
+  }
+
+  function withServiceTimeout(promise, timeoutMs, message) {
+    return Promise.race([
+      promise,
+      new Promise((_, reject) => {
+        window.setTimeout(() => reject(new Error(message)), timeoutMs);
+      })
+    ]);
   }
 
   function loadEmailJsSdk() {
@@ -2078,6 +2199,8 @@
       try {
         await submitMainApplication(applicationForm, submitButton, statusMessage);
       } catch (error) {
+        console.error("Application submission failed; showing user-facing error:", error);
+
         if (submitButton) {
           submitButton.disabled = false;
           submitButton.removeAttribute("aria-busy");

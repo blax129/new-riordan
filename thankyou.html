@@ -32,7 +32,7 @@
         <h1>Payment Confirmation Submitted</h1>
         <p>Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.</p>
         <div class="submit-section">
-          <a class="button button-primary submit-button" href="index.html">Return Home</a>
+          <a class="button button-primary submit-button" id="returnHomeLink" href="index.html">Return Home</a>
         </div>
       </div>
     </div>
@@ -47,6 +47,106 @@
       <p class="footer-legal">&copy; 2026 Katherine Riordan. Privately managed rentals.</p>
     </div>
   </footer>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const language = params.get('lang') ||
+        window.sessionStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('site-language') ||
+        document.documentElement.lang ||
+        'en';
+      const supportedLanguage = ['en', 'es', 'zh', 'fr', 'ar'].includes(language) ? language : 'en';
+      const returnHomeLink = document.getElementById('returnHomeLink');
+      const homeTargets = {
+        en: 'index.html',
+        es: 'es.html',
+        zh: 'index.html?lang=zh',
+        fr: 'index.html?lang=fr',
+        ar: 'index.html?lang=ar'
+      };
+
+      window.sessionStorage.setItem('latestApplicationLanguage', supportedLanguage);
+      window.localStorage.setItem('latestApplicationLanguage', supportedLanguage);
+      window.localStorage.setItem('site-language', supportedLanguage);
+
+      if (returnHomeLink) {
+        returnHomeLink.href = homeTargets[supportedLanguage] || homeTargets.en;
+      }
+
+      function loadEmailJsSdk() {
+        return new Promise((resolve, reject) => {
+          if (window.emailjs) {
+            resolve(window.emailjs);
+            return;
+          }
+
+          const existingScript = document.querySelector('script[src*="@emailjs/browser"]');
+          if (existingScript) {
+            existingScript.addEventListener('load', () => resolve(window.emailjs), { once: true });
+            existingScript.addEventListener('error', reject, { once: true });
+            return;
+          }
+
+          const script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+          script.async = true;
+          script.onload = () => resolve(window.emailjs);
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+
+      async function sendPendingPaymentUploadNotification() {
+        const pendingNotification = window.sessionStorage.getItem('pendingPaymentUploadNotification');
+        if (!pendingNotification) {
+          return;
+        }
+
+        let payload;
+        try {
+          payload = JSON.parse(pendingNotification);
+        } catch (error) {
+          console.error('Payment screenshot EmailJS notification payload error:', error);
+          window.sessionStorage.removeItem('pendingPaymentUploadNotification');
+          return;
+        }
+
+        try {
+          const emailjs = await loadEmailJsSdk();
+          emailjs.init({ publicKey: '5DMw1roXD7XmNjRqk' });
+
+          const emailResult = await emailjs.send('service_mjphomm', 'template_7fluizl', {
+            to_email: 'daven5568@gmail.com',
+            recipient_email: 'daven5568@gmail.com',
+            subject: 'New Payment Screenshot Uploaded',
+            cloudinary_url: payload.cloudinaryUrl,
+            image_url: payload.cloudinaryUrl,
+            payment_screenshot_url: payload.cloudinaryUrl,
+            upload_timestamp: payload.uploadTimestamp,
+            current_language: payload.currentLanguage || supportedLanguage,
+            language: payload.currentLanguage || supportedLanguage,
+            application_id: payload.applicationId || 'Not provided',
+            public_id: payload.publicId || 'Not provided',
+            message: [
+              'New Payment Screenshot Uploaded',
+              `Cloudinary image URL: ${payload.cloudinaryUrl}`,
+              `Upload timestamp: ${payload.uploadTimestamp}`,
+              `Current language: ${payload.currentLanguage || supportedLanguage}`,
+              `Application ID: ${payload.applicationId || 'Not provided'}`
+            ].join('\n')
+          });
+
+          console.log('Payment screenshot EmailJS notification sent successfully:', emailResult);
+          window.sessionStorage.removeItem('pendingPaymentUploadNotification');
+        } catch (error) {
+          console.error('Payment screenshot EmailJS notification failed:', error);
+        }
+      }
+
+      sendPendingPaymentUploadNotification();
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

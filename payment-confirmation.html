@@ -40,28 +40,21 @@
         class="payment-upload-form"
         name="payment-confirmation"
         method="POST"
-        action="/thankyou.html"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        action="https://api.cloudinary.com/v1_1/dibwotfd5/image/upload"
         enctype="multipart/form-data"
       >
-        <input type="hidden" name="form-name" value="payment-confirmation">
-        <p class="hidden-field">
-          <label>Do not fill this out if you are human: <input name="bot-field"></label>
-        </p>
-
         <div class="applicant-details" aria-label="Applicant details">
           <div class="premium-field">
-            <input type="text" id="fullName" name="full-name" autocomplete="name" placeholder=" " required>
+            <input type="text" id="fullName" name="applicant_name" autocomplete="name" placeholder=" " required>
             <label for="fullName">Full Name</label>
           </div>
           <div class="premium-field">
-            <input type="email" id="emailAddress" name="email" autocomplete="email" placeholder=" " required>
+            <input type="email" id="emailAddress" name="applicant_email" autocomplete="email" placeholder=" " required>
             <label for="emailAddress">Email Address</label>
           </div>
           <div class="premium-field">
-            <input type="text" id="applicationId" name="application-id" autocomplete="off" placeholder=" ">
-            <label for="applicationId">Application ID (optional)</label>
+            <input type="text" id="applicationId" name="application_id" autocomplete="off" placeholder=" " required>
+            <label for="applicationId">Application ID</label>
           </div>
         </div>
 
@@ -82,8 +75,8 @@
             <input
               type="file"
               id="fileInput"
-              name="payment-screenshot"
-              accept="image/png, image/jpeg, image/jpg"
+              name="payment_screenshot"
+              accept=".jpg,.jpeg,.png"
               required
             >
           </label>
@@ -96,6 +89,7 @@
 
         <!-- Submit Button -->
         <div class="submit-section">
+          <p class="form-status" id="payment-form-status" role="status" aria-live="polite" hidden></p>
           <button class="button button-primary button-full submit-button" id="submitButton" type="submit">
             Submit Payment Confirmation
           </button>
@@ -133,60 +127,70 @@
 
   <script>
     const paymentForm = document.querySelector('.payment-upload-form');
+    const backButton = document.querySelector('.back-button');
     const uploadArea = document.getElementById('uploadArea');
     const fileInput = document.getElementById('fileInput');
     const submitButton = document.getElementById('submitButton');
     const uploadedFiles = document.getElementById('uploadedFiles');
     const fileList = document.getElementById('fileList');
+    const statusMessage = document.getElementById('payment-form-status');
+    const cloudinaryUploadUrl = 'https://api.cloudinary.com/v1_1/dibwotfd5/image/upload';
+    const cloudinaryUploadPreset = 'Katherine';
     let previewUrl = null;
+
     const paymentMessages = {
       en: {
         selectFile: 'Please select a payment screenshot before submitting.',
         invalidType: 'Please upload a JPG, JPEG, or PNG file.',
         fileTooLarge: 'File size must be less than 10MB.',
+        uploadError: 'We could not upload your payment screenshot. Please try again.',
         remove: 'Remove',
-        submitting: 'Submitting...'
+        uploading: 'Uploading...'
       },
       es: {
         selectFile: 'Seleccione una captura de pantalla del pago antes de enviar.',
         invalidType: 'Suba un archivo JPG, JPEG o PNG.',
         fileTooLarge: 'El archivo debe pesar menos de 10 MB.',
+        uploadError: 'No pudimos subir la captura de pantalla del pago. Inténtelo de nuevo.',
         remove: 'Quitar',
-        submitting: 'Enviando...'
+        uploading: 'Subiendo...'
       },
       fr: {
         selectFile: 'Veuillez sélectionner une capture d’écran du paiement avant d’envoyer.',
         invalidType: 'Veuillez téléverser un fichier JPG, JPEG ou PNG.',
         fileTooLarge: 'Le fichier doit faire moins de 10 Mo.',
+        uploadError: 'Nous n’avons pas pu téléverser votre capture d’écran du paiement. Veuillez réessayer.',
         remove: 'Retirer',
-        submitting: 'Envoi en cours...'
-      },
-      pt: {
-        selectFile: 'Selecione uma captura de tela do pagamento antes de enviar.',
-        invalidType: 'Envie um arquivo JPG, JPEG ou PNG.',
-        fileTooLarge: 'O arquivo deve ter menos de 10 MB.',
-        remove: 'Remover',
-        submitting: 'Enviando...'
+        uploading: 'Téléversement...'
       },
       zh: {
         selectFile: '提交前请选择付款截图。',
         invalidType: '请上传 JPG、JPEG 或 PNG 文件。',
         fileTooLarge: '文件大小必须小于 10 MB。',
+        uploadError: '无法上传您的付款截图。请重试。',
         remove: '移除',
-        submitting: '正在提交...'
+        uploading: '正在上传...'
       },
       ar: {
         selectFile: 'يرجى اختيار لقطة شاشة للدفع قبل الإرسال.',
         invalidType: 'يرجى رفع ملف بصيغة JPG أو JPEG أو PNG.',
         fileTooLarge: 'يجب أن يكون حجم الملف أقل من 10 ميغابايت.',
+        uploadError: 'تعذر رفع لقطة شاشة الدفع. يرجى المحاولة مرة أخرى.',
         remove: 'إزالة',
-        submitting: 'جارٍ الإرسال...'
+        uploading: 'جارٍ الرفع...'
       }
     };
 
     function currentPaymentLanguage() {
       const params = new URLSearchParams(window.location.search);
-      return params.get('lang') || window.localStorage.getItem('site-language') || document.documentElement.lang || 'en';
+      const language = params.get('lang') ||
+        window.sessionStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('site-language') ||
+        document.documentElement.lang ||
+        'en';
+
+      return ['en', 'es', 'zh', 'fr', 'ar'].includes(language) ? language : 'en';
     }
 
     function paymentMessage(key) {
@@ -194,10 +198,44 @@
       return (paymentMessages[language] && paymentMessages[language][key]) || paymentMessages.en[key];
     }
 
+    function redirectToThankYou() {
+      const language = currentPaymentLanguage();
+      window.location.href = `thankyou.html?lang=${encodeURIComponent(language)}`;
+    }
+
+    function queuePaymentUploadNotification(uploadResult) {
+      const uploadTimestamp = new Date().toISOString();
+      const payload = {
+        cloudinaryUrl: uploadResult.secure_url,
+        publicId: uploadResult.public_id || '',
+        uploadTimestamp,
+        currentLanguage: currentPaymentLanguage(),
+        applicationId: document.getElementById('applicationId').value || ''
+      };
+
+      window.sessionStorage.setItem('pendingPaymentUploadNotification', JSON.stringify(payload));
+      console.log('Payment screenshot EmailJS notification queued:', payload);
+    }
+
     const latestApplicationId = window.sessionStorage.getItem('latestApplicationId') || window.localStorage.getItem('latestApplicationId');
+    const applicationIdFromUrl = new URLSearchParams(window.location.search).get('applicationId');
     const applicationIdInput = document.getElementById('applicationId');
-    if (latestApplicationId && applicationIdInput && !applicationIdInput.value) {
-      applicationIdInput.value = latestApplicationId;
+    if ((applicationIdFromUrl || latestApplicationId) && applicationIdInput && !applicationIdInput.value) {
+      applicationIdInput.value = applicationIdFromUrl || latestApplicationId;
+    }
+
+    if (applicationIdFromUrl) {
+      window.sessionStorage.setItem('latestApplicationId', applicationIdFromUrl);
+      window.localStorage.setItem('latestApplicationId', applicationIdFromUrl);
+    }
+
+    if (backButton) {
+      const language = currentPaymentLanguage();
+      const backTarget = applicationIdInput && applicationIdInput.value
+        ? `application-received.html?applicationId=${encodeURIComponent(applicationIdInput.value)}${language === 'en' ? '' : `&lang=${encodeURIComponent(language)}`}`
+        : language === 'en' ? 'application-received.html' : `application-received.html?lang=${encodeURIComponent(language)}`;
+      backButton.href = backTarget;
+      backButton.dataset.fallbackHome = backTarget;
     }
 
     uploadArea.addEventListener('dragover', (e) => {
@@ -213,7 +251,7 @@
     uploadArea.addEventListener('drop', (e) => {
       e.preventDefault();
       uploadArea.classList.remove('drag-over');
-      
+
       const files = e.dataTransfer.files;
       if (files.length > 0) {
         fileInput.files = files;
@@ -229,9 +267,16 @@
       }
     });
 
+    function isAllowedScreenshot(file) {
+      const allowedTypes = ['image/jpeg', 'image/png'];
+      const allowedExtensions = ['jpg', 'jpeg', 'png'];
+      const extension = file.name.split('.').pop().toLowerCase();
+
+      return allowedExtensions.includes(extension) && (!file.type || allowedTypes.includes(file.type));
+    }
+
     function handleFile(file) {
-      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png'];
-      if (!allowedTypes.includes(file.type)) {
+      if (!isAllowedScreenshot(file)) {
         alert(paymentMessage('invalidType'));
         removeFile();
         return;
@@ -278,30 +323,66 @@
       fileInput.value = '';
     }
 
-    paymentForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+    paymentForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      if (!paymentForm.checkValidity()) {
+        paymentForm.reportValidity();
+        return;
+      }
 
       const file = fileInput.files[0];
-
       if (!file) {
         alert(paymentMessage('selectFile'));
         return;
       }
 
-      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png'];
-      if (!allowedTypes.includes(file.type) || file.size > 10 * 1024 * 1024) {
+      if (!isAllowedScreenshot(file) || file.size > 10 * 1024 * 1024) {
         handleFile(file);
         return;
       }
 
+      const originalButtonText = submitButton.textContent;
       submitButton.disabled = true;
       submitButton.setAttribute('aria-busy', 'true');
-      const language = window.localStorage.getItem('site-language') || document.documentElement.lang || 'en';
-      submitButton.textContent = paymentMessage('submitting');
+      submitButton.textContent = paymentMessage('uploading');
+      statusMessage.hidden = true;
+      statusMessage.textContent = '';
+      statusMessage.className = 'form-status';
 
-      window.setTimeout(() => {
-        window.location.href = `thankyou.html?lang=${encodeURIComponent(language)}`;
-      }, 700);
+      const uploadData = new FormData();
+      uploadData.append('file', file);
+      uploadData.append('upload_preset', cloudinaryUploadPreset);
+
+      try {
+        const response = await fetch(cloudinaryUploadUrl, {
+          method: 'POST',
+          body: uploadData
+        });
+
+        const result = await response.json().catch(() => ({}));
+
+        if (!response.ok || !result.secure_url) {
+          throw new Error(result.error && result.error.message ? result.error.message : 'Cloudinary upload failed');
+        }
+
+        console.log('Payment screenshot uploaded successfully:', {
+          publicId: result.public_id,
+          secureUrl: result.secure_url,
+          applicationId: document.getElementById('applicationId').value
+        });
+
+        queuePaymentUploadNotification(result);
+        redirectToThankYou();
+      } catch (error) {
+        console.error('Payment screenshot upload error:', error);
+        submitButton.disabled = false;
+        submitButton.removeAttribute('aria-busy');
+        submitButton.textContent = originalButtonText;
+        statusMessage.textContent = paymentMessage('uploadError');
+        statusMessage.className = 'form-status is-error';
+        statusMessage.hidden = false;
+      }
     });
 
     function escapeHtml(value) {

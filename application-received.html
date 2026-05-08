@@ -22,7 +22,7 @@
 
   <div class="back-nav" aria-label="Page navigation">
     <div class="container narrow">
-      <a href="apply.html" class="back-button" aria-label="Back to Application">
+      <a href="apply.html" class="back-button" id="applicationBackButton" aria-label="Back to Application">
         <span class="back-button-icon" aria-hidden="true">←</span>
         <span>Back</span>
       </a>
@@ -112,7 +112,7 @@
 
         <!-- Continue Button -->
         <div class="continue-button-wrapper">
-          <button class="button button-primary button-full continue-button" onclick="window.location.href='payment-confirmation.html'" disabled>
+          <button class="button button-primary button-full continue-button" id="continueToPaymentButton" type="button" disabled>
             Continue To Payment Confirmation
           </button>
         </div>
@@ -223,8 +223,19 @@
       const params = new URLSearchParams(window.location.search);
       const idFromUrl = params.get('applicationId');
       const languageFromUrl = params.get('lang');
+      const supportedLanguages = ['en', 'es', 'zh', 'fr', 'ar'];
+      const normalizeLanguage = (language) => {
+        const value = String(language || '').toLowerCase().split('-')[0];
+        return supportedLanguages.includes(value) ? value : 'en';
+      };
       const storedId = window.sessionStorage.getItem('latestApplicationId') || window.localStorage.getItem('latestApplicationId');
       const applicationId = idFromUrl || storedId || 'APP-PENDING-REVIEW';
+      const selectedLanguage = normalizeLanguage(languageFromUrl ||
+        window.sessionStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('site-language') ||
+        document.documentElement.lang ||
+        'en');
 
       idTarget.textContent = applicationId;
 
@@ -234,9 +245,28 @@
       }
 
       if (languageFromUrl) {
-        window.sessionStorage.setItem('latestApplicationLanguage', languageFromUrl);
-        window.localStorage.setItem('latestApplicationLanguage', languageFromUrl);
-        window.localStorage.setItem('site-language', languageFromUrl);
+        window.sessionStorage.setItem('latestApplicationLanguage', selectedLanguage);
+        window.localStorage.setItem('latestApplicationLanguage', selectedLanguage);
+        window.localStorage.setItem('site-language', selectedLanguage);
+      }
+
+      if (!languageFromUrl && selectedLanguage) {
+        window.sessionStorage.setItem('latestApplicationLanguage', selectedLanguage);
+        window.localStorage.setItem('latestApplicationLanguage', selectedLanguage);
+        window.localStorage.setItem('site-language', selectedLanguage);
+      }
+
+      const backButton = document.getElementById('applicationBackButton');
+      if (backButton) {
+        backButton.href = selectedLanguage === 'en' ? 'apply.html' : `apply.html?lang=${encodeURIComponent(selectedLanguage)}`;
+        backButton.dataset.fallbackHome = backButton.href;
+      }
+
+      const continueButton = document.getElementById('continueToPaymentButton');
+      if (continueButton) {
+        continueButton.addEventListener('click', function () {
+          window.location.href = `payment-confirmation.html?applicationId=${encodeURIComponent(applicationId)}&lang=${encodeURIComponent(selectedLanguage)}`;
+        });
       }
     })();
 
