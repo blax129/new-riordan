@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Confirmation - Katherine Riordan Property Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='50%' font-size='50' text-anchor='middle' fill='%23e2c91'>🏠</text></svg>">
+</head>
+<body class="payment-confirmation-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Katherine Riordan home">
+        <img class="brand-mark" src="image/logo.png" alt="" aria-hidden="true">
+        <span class="brand-copy">
+          <strong>Katherine Riordan</strong>
+          <span>Private Property Manager</span>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="back-nav" aria-label="Page navigation">
+    <div class="container narrow">
+      <a href="apply.html" class="back-button" aria-label="Back to Application">
+        <span class="back-button-icon" aria-hidden="true">←</span>
+        <span>Back</span>
+      </a>
+    </div>
+  </div>
+
+  <main class="payment-confirmation-section">
+    <div class="container narrow">
+      <div class="page-header">
+        <h1>Upload Payment Confirmation</h1>
+        <p class="page-subtitle">Please upload your payment screenshot to complete your secure application verification.</p>
+      </div>
+
+      <form
+        class="payment-upload-form"
+        name="payment-confirmation"
+        method="POST"
+        action="/thankyou.html"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        enctype="multipart/form-data"
+      >
+        <input type="hidden" name="form-name" value="payment-confirmation">
+        <p class="hidden-field">
+          <label>Do not fill this out if you are human: <input name="bot-field"></label>
+        </p>
+
+        <div class="applicant-details" aria-label="Applicant details">
+          <div class="premium-field">
+            <input type="text" id="fullName" name="full-name" autocomplete="name" placeholder=" " required>
+            <label for="fullName">Full Name</label>
+          </div>
+          <div class="premium-field">
+            <input type="email" id="emailAddress" name="email" autocomplete="email" placeholder=" " required>
+            <label for="emailAddress">Email Address</label>
+          </div>
+          <div class="premium-field">
+            <input type="text" id="applicationId" name="application-id" autocomplete="off" placeholder=" ">
+            <label for="applicationId">Application ID (optional)</label>
+          </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+          <label class="upload-area" id="uploadArea" for="fileInput">
+            <span class="upload-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none">
+                <path d="M12 16V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 9l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 16.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span class="upload-text">
+              <span><strong>Tap to upload</strong> or drag and drop your payment screenshot here.</span>
+              <span>JPG, JPEG or PNG only</span>
+            </span>
+            <input
+              type="file"
+              id="fileInput"
+              name="payment-screenshot"
+              accept="image/png, image/jpeg, image/jpg"
+              required
+            >
+          </label>
+
+          <div class="uploaded-files" id="uploadedFiles" hidden>
+            <h3>Selected File</h3>
+            <div class="file-list" id="fileList" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="submit-section">
+          <button class="button button-primary button-full submit-button" id="submitButton" type="submit">
+            Submit Payment Confirmation
+          </button>
+        </div>
+      </form>
+
+      <!-- Email Option -->
+      <div class="email-option">
+        <div class="email-card">
+          <div class="email-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6h16v12H4V6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2>Prefer Email Confirmation?</h2>
+          <p>If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.</p>
+          <a href="mailto:riordankatherine0@gmail.com?subject=Payment%20Confirmation%20Upload" class="email-link">
+            <span>Send Email Confirmation</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-identity">
+        <strong>Katherine Riordan</strong>
+        <span class="footer-role">Property Manager</span>
+      </div>
+      <p class="footer-legal">&copy; 2026 Katherine Riordan. Privately managed rentals.</p>
+    </div>
+  </footer>
+
+  <script>
+    const paymentForm = document.querySelector('.payment-upload-form');
+    const uploadArea = document.getElementById('uploadArea');
+    const fileInput = document.getElementById('fileInput');
+    const submitButton = document.getElementById('submitButton');
+    const uploadedFiles = document.getElementById('uploadedFiles');
+    const fileList = document.getElementById('fileList');
+    let previewUrl = null;
+    const paymentMessages = {
+      en: {
+        selectFile: 'Please select a payment screenshot before submitting.',
+        invalidType: 'Please upload a JPG, JPEG, or PNG file.',
+        fileTooLarge: 'File size must be less than 10MB.',
+        remove: 'Remove',
+        submitting: 'Submitting...'
+      },
+      es: {
+        selectFile: 'Seleccione una captura de pantalla del pago antes de enviar.',
+        invalidType: 'Suba un archivo JPG, JPEG o PNG.',
+        fileTooLarge: 'El archivo debe pesar menos de 10 MB.',
+        remove: 'Quitar',
+        submitting: 'Enviando...'
+      },
+      fr: {
+        selectFile: 'Veuillez sélectionner une capture d’écran du paiement avant d’envoyer.',
+        invalidType: 'Veuillez téléverser un fichier JPG, JPEG ou PNG.',
+        fileTooLarge: 'Le fichier doit faire moins de 10 Mo.',
+        remove: 'Retirer',
+        submitting: 'Envoi en cours...'
+      },
+      pt: {
+        selectFile: 'Selecione uma captura de tela do pagamento antes de enviar.',
+        invalidType: 'Envie um arquivo JPG, JPEG ou PNG.',
+        fileTooLarge: 'O arquivo deve ter menos de 10 MB.',
+        remove: 'Remover',
+        submitting: 'Enviando...'
+      },
+      zh: {
+        selectFile: '提交前请选择付款截图。',
+        invalidType: '请上传 JPG、JPEG 或 PNG 文件。',
+        fileTooLarge: '文件大小必须小于 10 MB。',
+        remove: '移除',
+        submitting: '正在提交...'
+      },
+      ar: {
+        selectFile: 'يرجى اختيار لقطة شاشة للدفع قبل الإرسال.',
+        invalidType: 'يرجى رفع ملف بصيغة JPG أو JPEG أو PNG.',
+        fileTooLarge: 'يجب أن يكون حجم الملف أقل من 10 ميغابايت.',
+        remove: 'إزالة',
+        submitting: 'جارٍ الإرسال...'
+      }
+    };
+
+    function currentPaymentLanguage() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('lang') || window.localStorage.getItem('site-language') || document.documentElement.lang || 'en';
+    }
+
+    function paymentMessage(key) {
+      const language = currentPaymentLanguage();
+      return (paymentMessages[language] && paymentMessages[language][key]) || paymentMessages.en[key];
+    }
+
+    const latestApplicationId = window.sessionStorage.getItem('latestApplicationId') || window.localStorage.getItem('latestApplicationId');
+    const applicationIdInput = document.getElementById('applicationId');
+    if (latestApplicationId && applicationIdInput && !applicationIdInput.value) {
+      applicationIdInput.value = latestApplicationId;
+    }
+
+    uploadArea.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      uploadArea.classList.add('drag-over');
+    });
+
+    uploadArea.addEventListener('dragleave', (e) => {
+      e.preventDefault();
+      uploadArea.classList.remove('drag-over');
+    });
+
+    uploadArea.addEventListener('drop', (e) => {
+      e.preventDefault();
+      uploadArea.classList.remove('drag-over');
+      
+      const files = e.dataTransfer.files;
+      if (files.length > 0) {
+        fileInput.files = files;
+        handleFile(files[0]);
+      }
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files.length > 0) {
+        handleFile(e.target.files[0]);
+      } else {
+        removeFile();
+      }
+    });
+
+    function handleFile(file) {
+      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png'];
+      if (!allowedTypes.includes(file.type)) {
+        alert(paymentMessage('invalidType'));
+        removeFile();
+        return;
+      }
+
+      if (file.size > 10 * 1024 * 1024) {
+        alert(paymentMessage('fileTooLarge'));
+        removeFile();
+        return;
+      }
+
+      displayUploadedFile(file);
+    }
+
+    function displayUploadedFile(file) {
+      if (previewUrl) {
+        URL.revokeObjectURL(previewUrl);
+      }
+
+      previewUrl = URL.createObjectURL(file);
+      uploadedFiles.hidden = false;
+      fileList.innerHTML = `
+        <div class="file-item">
+          <div class="file-preview">
+            <img src="${previewUrl}" alt="Selected payment confirmation screenshot">
+          </div>
+          <div class="file-info">
+            <div class="file-name">${escapeHtml(file.name)}</div>
+            <div class="file-size">${(file.size / 1024 / 1024).toFixed(1)} MB</div>
+          </div>
+          <button class="remove-file" type="button" onclick="removeFile()">${paymentMessage('remove')}</button>
+        </div>
+      `;
+    }
+
+    function removeFile() {
+      if (previewUrl) {
+        URL.revokeObjectURL(previewUrl);
+        previewUrl = null;
+      }
+
+      uploadedFiles.hidden = true;
+      fileList.innerHTML = '';
+      fileInput.value = '';
+    }
+
+    paymentForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const file = fileInput.files[0];
+
+      if (!file) {
+        alert(paymentMessage('selectFile'));
+        return;
+      }
+
+      const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png'];
+      if (!allowedTypes.includes(file.type) || file.size > 10 * 1024 * 1024) {
+        handleFile(file);
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.setAttribute('aria-busy', 'true');
+      const language = window.localStorage.getItem('site-language') || document.documentElement.lang || 'en';
+      submitButton.textContent = paymentMessage('submitting');
+
+      window.setTimeout(() => {
+        window.location.href = `thankyou.html?lang=${encodeURIComponent(language)}`;
+      }, 700);
+    });
+
+    function escapeHtml(value) {
+      return value.replace(/[&<>"']/g, (character) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+      }[character]));
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
