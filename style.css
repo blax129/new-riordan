@@ -818,7 +818,8 @@ p {
     inset 0 0 0 1px rgba(217, 180, 108, 0.1);
   backdrop-filter: blur(20px) saturate(1.1);
   padding: 20px;
-  width: fit-content;
+  width: 100%;
+  margin-bottom: 18px;
   position: relative;
 }
 
@@ -889,6 +890,34 @@ p {
   font-weight: 600;
 }
 
+.review-status-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.review-status-heading h2 {
+  margin: 0;
+}
+
+.review-status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 7px 12px;
+  border: 1px solid rgba(226, 195, 145, 0.28);
+  border-radius: 999px;
+  background: rgba(226, 195, 145, 0.1);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
 .payment-info-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -950,6 +979,144 @@ p {
   line-height: 1.5;
   color: var(--muted);
   margin: 0;
+}
+
+.supported-payments-card {
+  position: relative;
+  overflow: hidden;
+  padding: 26px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(226, 195, 145, 0.2);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(226, 195, 145, 0.14), transparent 16rem),
+    radial-gradient(circle at 90% 12%, rgba(152, 180, 174, 0.1), transparent 14rem),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.026)),
+    rgba(12, 17, 19, 0.68);
+  box-shadow:
+    0 24px 58px rgba(0, 0, 0, 0.32),
+    0 10px 28px rgba(185, 140, 87, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+
+.supported-payments-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), transparent 34%, rgba(226, 195, 145, 0.045));
+  pointer-events: none;
+}
+
+.supported-payments-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.supported-payments-heading {
+  max-width: 620px;
+  margin: 0 auto 18px;
+}
+
+.supported-payments-kicker {
+  margin: 0 0 8px;
+  color: rgba(226, 195, 145, 0.82);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.supported-payments-card h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(19px, 4.2vw, 24px);
+  line-height: 1.18;
+}
+
+.payment-method-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.payment-method-tile {
+  display: grid;
+  min-width: 0;
+  min-height: 108px;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  padding: 14px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025)),
+    rgba(255, 255, 255, 0.035);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.payment-method-tile span:last-child {
+  color: rgba(247, 240, 230, 0.88);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.payment-method-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0;
+  box-shadow:
+    0 12px 26px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.payment-method-chime {
+  background: linear-gradient(145deg, #00a86b, #0f7f58);
+}
+
+.payment-method-zelle {
+  background: linear-gradient(145deg, #6d1ed4, #4f0da9);
+}
+
+.payment-method-apple {
+  background: linear-gradient(145deg, #1f2328, #050607);
+  font-size: 14px;
+}
+
+.payment-method-venmo {
+  background: linear-gradient(145deg, #2d9cff, #0074de);
+}
+
+.payment-method-paypal {
+  background: linear-gradient(145deg, #123f88, #0070ba);
+}
+
+.supported-payments-card p:not(.supported-payments-kicker) {
+  max-width: 690px;
+  margin: 0 auto;
+  color: rgba(247, 240, 230, 0.74);
+  font-size: 14.5px;
+  line-height: 1.65;
+}
+
+.supported-payments-note {
+  margin-top: 8px !important;
+}
+
+.payment-workflow-methods {
+  margin-bottom: 26px;
 }
 
 .payment-confirmation {
@@ -1361,7 +1528,8 @@ p {
   }
   
   .confirmation-card,
-  .payment-info-card {
+  .payment-info-card,
+  .supported-payments-card {
     padding: 20px;
   }
   
@@ -1382,6 +1550,24 @@ p {
   .payment-row span {
     max-width: 100%;
     text-align: left;
+  }
+
+  .review-status-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .payment-method-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .payment-method-tile {
+    min-height: 98px;
+  }
+
+  .payment-method-tile:last-child {
+    grid-column: 1 / -1;
   }
   
   .upload-area {
@@ -6477,6 +6663,7 @@ body.payment-confirmation-page .narrow {
 [dir="rtl"] .applicant-details,
 [dir="rtl"] .confirmation-card,
 [dir="rtl"] .payment-info-card,
+[dir="rtl"] .supported-payments-card,
 [dir="rtl"] .success-message {
   text-align: right;
 }

@@ -29,8 +29,8 @@
             <path d="M22 4 12 14.01 7 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
-        <h1>Payment Confirmation Submitted</h1>
-        <p>Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.</p>
+        <h1>Payment Verification Submitted</h1>
+        <p>Your payment confirmation screenshot has been received for private verification. Katherine will review it with your Application ID and assigned payment processing instructions.</p>
         <div class="submit-section">
           <a class="button button-primary submit-button" id="returnHomeLink" href="index.html">Return Home</a>
         </div>
@@ -50,12 +50,12 @@
   <script>
     (function () {
       const params = new URLSearchParams(window.location.search);
-      const language = params.get('lang') ||
+      const language = (params.get('lang') ||
         window.sessionStorage.getItem('latestApplicationLanguage') ||
         window.localStorage.getItem('latestApplicationLanguage') ||
         window.localStorage.getItem('site-language') ||
         document.documentElement.lang ||
-        'en';
+        'en').toLowerCase().split('-')[0];
       const supportedLanguage = ['en', 'es', 'zh', 'fr', 'ar'].includes(language) ? language : 'en';
       const returnHomeLink = document.getElementById('returnHomeLink');
       const homeTargets = {

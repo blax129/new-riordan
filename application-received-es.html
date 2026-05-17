@@ -7,7 +7,7 @@
   <title>Solicitud Recibida | Katherine Riordan</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="simple-flow-page">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="es.html" aria-label="Inicio de Katherine Riordan">
@@ -73,27 +73,113 @@
   <main>
     <section class="section received-section">
       <div class="container narrow">
-        <div class="confirmation-panel">
-          <p class="eyebrow">Solicitud recibida</p>
-          <h1>Gracias. Su solicitud ha sido enviada.</h1>
-          <p class="hero-copy">Su solicitud aparece como recibida. Revise su correo electrónico o teléfono para actualizaciones de Katherine sobre el estado de revisión, programación de visita o instrucciones de siguientes pasos.</p>
+        <div class="status-badge">
+          <span>Solicitud recibida</span>
+        </div>
 
-          <div class="status-box" aria-label="Estado de la solicitud">
-            <span class="status-dot" aria-hidden="true"></span>
-            <div>
-              <strong>Estado: Recibida</strong>
-              <p>Las solicitudes son revisadas directamente por la propietaria. Se le contactará si se necesita más información.</p>
+        <div class="confirmation-card">
+          <h1>Solicitud recibida correctamente</h1>
+          <p>Gracias por enviar su solicitud de alquiler.</p>
+          <p>Su solicitud está actualmente pendiente de revisión por parte del equipo de administración de la propiedad.</p>
+          <p>Por motivos de seguridad y verificación, las instrucciones de pago se asignan individualmente después de la revisión y se proporcionarán cuando su solicitud esté lista para procesamiento.</p>
+
+          <div class="application-id">
+            <strong>ID de solicitud:</strong>
+            <span id="application-id-value">Pendiente</span>
+          </div>
+        </div>
+
+        <div class="confirmation-card">
+          <div class="review-status-heading">
+            <h2>Solicitud en revisión</h2>
+            <span class="review-status-badge">Revisión pendiente</span>
+          </div>
+          <p>Nuestro equipo está revisando su envío. Una vez que su solicitud esté lista para procesamiento, se le proporcionarán directamente las instrucciones de pago asignadas y los siguientes pasos.</p>
+        </div>
+
+        <div class="confirmation-card supported-payments-card" aria-labelledby="supported-payments-title">
+          <div class="supported-payments-heading">
+            <p class="supported-payments-kicker">Asignación privada de pago</p>
+            <h2 id="supported-payments-title">Métodos de pago compatibles</h2>
+          </div>
+          <div class="payment-method-grid" aria-label="Métodos de pago compatibles">
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-chime" aria-hidden="true">Ch</span>
+              <span>Chime</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-zelle" aria-hidden="true">Z</span>
+              <span>Zelle</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-apple" aria-hidden="true">Pay</span>
+              <span>Apple Pay</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-venmo" aria-hidden="true">V</span>
+              <span>Venmo</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-paypal" aria-hidden="true">P</span>
+              <span>PayPal</span>
             </div>
           </div>
+          <p>Por motivos de seguridad y verificación, las instrucciones de pago se asignan individualmente después de revisar la solicitud.</p>
+          <p class="supported-payments-note">Las opciones de pago disponibles pueden variar según las instrucciones de procesamiento asignadas.</p>
+        </div>
 
-          <section class="next-step-box" aria-labelledby="next-step-title">
-            <h2 id="next-step-title">Nota de procesamiento seguro</h2>
-            <p>Los detalles de la solicitud pueden procesarse mediante Zillow Rental Manager en colaboración con la propietaria.</p>
-          </section>
+        <div class="confirmation-card">
+          <h2>Tiempo estimado de revisión</h2>
+          <p>La mayoría de las revisiones de solicitud se completan dentro de 24 a 48 horas. Si se necesita verificación adicional, el equipo de administración de la propiedad se comunicará con usted usando el correo electrónico o número de teléfono proporcionado en su solicitud.</p>
+        </div>
+
+        <div class="confirmation-card">
+          <h2>Confirmación por correo electrónico</h2>
+          <p>Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud. Ese correo confirmará que su solicitud fue recibida y está pendiente de revisión.</p>
+        </div>
+
+        <div class="confirmation-card">
+          <h2>Proceso seguro y verificado</h2>
+          <p>Este proceso de solicitud es gestionado directamente por el equipo de administración de la propiedad. Todas las solicitudes enviadas se revisan cuidadosamente, y los detalles de pago específicos de cada solicitud se asignan de forma privada como parte del proceso de verificación.</p>
+        </div>
+
+        <div class="confirmation-card">
+          <h2>Transparencia de tarifas</h2>
+          <p>La tarifa de solicitud es reembolsable si su solicitud no es aprobada o si decide no continuar después de la visita. Si se aprueba y decide seguir adelante, la tarifa se aplica al primer mes de renta.</p>
+        </div>
+
+        <div class="confirmation-card">
+          <h2>¿Necesita ayuda o desea verificar?</h2>
+          <p>Para preguntas, aclaraciones o verificación sobre el proceso de solicitud, puede contactar directamente a Katherine usando la información siguiente.</p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <strong>Correo electrónico:</strong>
+              <a href="mailto:riordankatherine0@gmail.com">riordankatherine0@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <strong>Teléfono:</strong>
+              <a href="tel:+15136286294">+1 (513) 628-6294</a>
+            </div>
+          </div>
 
           <div class="received-actions">
             <a class="button button-primary" href="es.html">Volver al inicio</a>
             <a class="button button-secondary" href="mailto:riordankatherine0@gmail.com">Contactar a Katherine</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ehc-section">
+      <div class="container narrow">
+        <div class="ehc-card">
+          <div class="ehc-logo-placeholder">
+            <img src="image/logo2.jpeg" alt="Logo de Igualdad de Oportunidad de Vivienda">
+          </div>
+          <div class="ehc-content">
+            <h3>Igualdad de oportunidad de vivienda</h3>
+            <p>Apoyamos prácticas de vivienda justas e igualitarias para todos los solicitantes, de acuerdo con las pautas de vivienda aplicables y las normas contra la discriminación.</p>
           </div>
         </div>
       </div>
@@ -110,6 +196,42 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      const idTarget = document.getElementById('application-id-value');
+      if (!idTarget) {
+        return;
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      const idFromUrl = params.get('applicationId');
+      const languageFromUrl = params.get('lang');
+      const supportedLanguages = ['en', 'es', 'zh', 'fr', 'ar'];
+      const normalizeLanguage = (language) => {
+        const value = String(language || '').toLowerCase().split('-')[0];
+        return supportedLanguages.includes(value) ? value : 'es';
+      };
+      const storedId = window.sessionStorage.getItem('latestApplicationId') || window.localStorage.getItem('latestApplicationId');
+      const applicationId = idFromUrl || storedId || 'APP-PENDING-REVIEW';
+      const selectedLanguage = normalizeLanguage(languageFromUrl ||
+        window.sessionStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('latestApplicationLanguage') ||
+        window.localStorage.getItem('site-language') ||
+        document.documentElement.lang ||
+        'es');
+
+      idTarget.textContent = applicationId;
+
+      if (idFromUrl) {
+        window.sessionStorage.setItem('latestApplicationId', idFromUrl);
+        window.localStorage.setItem('latestApplicationId', idFromUrl);
+      }
+
+      window.sessionStorage.setItem('latestApplicationLanguage', selectedLanguage);
+      window.localStorage.setItem('latestApplicationLanguage', selectedLanguage);
+      window.localStorage.setItem('site-language', selectedLanguage);
+    })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

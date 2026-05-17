@@ -32,9 +32,40 @@
   <main class="payment-confirmation-section">
     <div class="container narrow">
       <div class="page-header">
-        <h1>Upload Payment Confirmation</h1>
-        <p class="page-subtitle">Please upload your payment screenshot to complete your secure application verification.</p>
+        <h1>Payment Verification Upload</h1>
+        <p class="page-subtitle">This page is used for applicants who have already received assigned payment instructions. Upload your payment confirmation only after your application-specific payment details have been provided directly.</p>
       </div>
+
+      <section class="supported-payments-card payment-workflow-methods" aria-labelledby="payment-workflow-methods-title">
+        <div class="supported-payments-heading">
+          <p class="supported-payments-kicker">Private payment assignment</p>
+          <h2 id="payment-workflow-methods-title">Supported Payment Methods</h2>
+        </div>
+        <div class="payment-method-grid" aria-label="Supported payment methods">
+          <div class="payment-method-tile">
+            <span class="payment-method-icon payment-method-chime" aria-hidden="true">Ch</span>
+            <span>Chime</span>
+          </div>
+          <div class="payment-method-tile">
+            <span class="payment-method-icon payment-method-zelle" aria-hidden="true">Z</span>
+            <span>Zelle</span>
+          </div>
+          <div class="payment-method-tile">
+            <span class="payment-method-icon payment-method-apple" aria-hidden="true">Pay</span>
+            <span>Apple Pay</span>
+          </div>
+          <div class="payment-method-tile">
+            <span class="payment-method-icon payment-method-venmo" aria-hidden="true">V</span>
+            <span>Venmo</span>
+          </div>
+          <div class="payment-method-tile">
+            <span class="payment-method-icon payment-method-paypal" aria-hidden="true">P</span>
+            <span>PayPal</span>
+          </div>
+        </div>
+        <p>For security and verification purposes, payment instructions are assigned individually after application review.</p>
+        <p class="supported-payments-note">Available payment options may vary depending on the assigned processing instructions.</p>
+      </section>
 
       <form
         class="payment-upload-form"
@@ -69,7 +100,7 @@
               </svg>
             </span>
             <span class="upload-text">
-              <span><strong>Tap to upload</strong> or drag and drop your payment screenshot here.</span>
+              <span><strong>Tap to upload</strong> or drag and drop your payment confirmation screenshot here.</span>
               <span>JPG, JPEG or PNG only</span>
             </span>
             <input
@@ -91,7 +122,7 @@
         <div class="submit-section">
           <p class="form-status" id="payment-form-status" role="status" aria-live="polite" hidden></p>
           <button class="button button-primary button-full submit-button" id="submitButton" type="submit">
-            Submit Payment Confirmation
+            Submit Payment Verification
           </button>
         </div>
       </form>
@@ -105,10 +136,10 @@
               <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h2>Prefer Email Confirmation?</h2>
-          <p>If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.</p>
+          <h2>Prefer Email Verification?</h2>
+          <p>If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Katherine for private verification.</p>
           <a href="mailto:riordankatherine0@gmail.com?subject=Payment%20Confirmation%20Upload" class="email-link">
-            <span>Send Email Confirmation</span>
+            <span>Send Email Verification</span>
           </a>
         </div>
       </div>
@@ -183,14 +214,18 @@
 
     function currentPaymentLanguage() {
       const params = new URLSearchParams(window.location.search);
-      const language = params.get('lang') ||
+      const language = (params.get('lang') ||
         window.sessionStorage.getItem('latestApplicationLanguage') ||
         window.localStorage.getItem('latestApplicationLanguage') ||
         window.localStorage.getItem('site-language') ||
         document.documentElement.lang ||
-        'en';
+        'en').toLowerCase().split('-')[0];
 
-      return ['en', 'es', 'zh', 'fr', 'ar'].includes(language) ? language : 'en';
+      const supportedLanguage = ['en', 'es', 'zh', 'fr', 'ar'].includes(language) ? language : 'en';
+      window.sessionStorage.setItem('latestApplicationLanguage', supportedLanguage);
+      window.localStorage.setItem('latestApplicationLanguage', supportedLanguage);
+      window.localStorage.setItem('site-language', supportedLanguage);
+      return supportedLanguage;
     }
 
     function paymentMessage(key) {

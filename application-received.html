@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rental application received confirmation with payment instructions.">
+  <meta name="description" content="Rental application received confirmation and private review status.">
   <title>Application Received | Katherine Riordan</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -40,7 +40,9 @@
         <!-- Application Received Card -->
         <div class="confirmation-card">
           <h1>Application Received Successfully</h1>
-          <p>Thank you for completing your rental application. Your information has been received successfully and is currently pending review.</p>
+          <p>Thank you for submitting your rental application.</p>
+          <p>Your application is currently pending review by the property management team.</p>
+          <p>For security and verification purposes, payment instructions are assigned individually after review and will be provided once your application is ready for processing.</p>
           
           <div class="application-id">
             <strong>Application ID:</strong>
@@ -48,120 +50,69 @@
           </div>
         </div>
 
+        <!-- Review Status Card -->
+        <div class="confirmation-card">
+          <div class="review-status-heading">
+            <h2>Application Under Review</h2>
+            <span class="review-status-badge">Pending Review</span>
+          </div>
+          <p>Our team is currently reviewing your submission. Once your application is ready for processing, assigned payment instructions and next steps will be provided directly.</p>
+        </div>
+
+        <!-- Supported Payment Methods Card -->
+        <div class="confirmation-card supported-payments-card" aria-labelledby="supported-payments-title">
+          <div class="supported-payments-heading">
+            <p class="supported-payments-kicker">Private payment assignment</p>
+            <h2 id="supported-payments-title">Supported Payment Methods</h2>
+          </div>
+          <div class="payment-method-grid" aria-label="Supported payment methods">
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-chime" aria-hidden="true">Ch</span>
+              <span>Chime</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-zelle" aria-hidden="true">Z</span>
+              <span>Zelle</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-apple" aria-hidden="true">Pay</span>
+              <span>Apple Pay</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-venmo" aria-hidden="true">V</span>
+              <span>Venmo</span>
+            </div>
+            <div class="payment-method-tile">
+              <span class="payment-method-icon payment-method-paypal" aria-hidden="true">P</span>
+              <span>PayPal</span>
+            </div>
+          </div>
+          <p>For security and verification purposes, payment instructions are assigned individually after application review.</p>
+          <p class="supported-payments-note">Available payment options may vary depending on the assigned processing instructions.</p>
+        </div>
+
+        <!-- Timeline Card -->
+        <div class="confirmation-card">
+          <h2>Estimated Review Timeline</h2>
+          <p>Most application reviews are completed within 24 to 48 hours. If additional verification is needed, the property management team will contact you using the email address or phone number provided in your application.</p>
+        </div>
+
         <!-- Email Confirmation Card -->
         <div class="confirmation-card">
           <h2>Email Confirmation</h2>
-          <p>A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received.</p>
+          <p>A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received and is pending review.</p>
         </div>
 
         <!-- Secure & Verified Process Card -->
         <div class="confirmation-card">
           <h2>Secure & Verified Process</h2>
-          <p>This application process is handled directly by the property management team. All submitted applications are reviewed carefully, and payment confirmations are documented for transparency and record keeping.</p>
+          <p>This application process is handled directly by the property management team. All submitted applications are reviewed carefully, and application-specific payment details are assigned privately as part of the verification process.</p>
         </div>
 
         <!-- Fee Transparency Card -->
         <div class="confirmation-card">
           <h2>Fee Transparency</h2>
           <p>The application fee is refundable if your application is not approved or if you decide not to proceed after the tour. If approved and you choose to move forward, the fee is applied toward your first month's rent.</p>
-        </div>
-
-        <!-- Chime Payment Information Card -->
-        <div class="payment-info-card">
-          <h2>Chime Payment Information</h2>
-          
-          <div class="payment-details">
-            <div class="payment-row">
-              <strong>Payment Method:</strong>
-              <span>Chime</span>
-            </div>
-            
-            <div class="payment-row">
-              <strong>Account Name:</strong>
-              <span>Penny Lower</span>
-            </div>
-            
-            <div class="payment-row">
-              <strong>Chime Tag / Username:</strong>
-              <span>$switpenn</span>
-            </div>
-            
-            <div class="payment-row">
-              <strong>Application Fee:</strong>
-              <span>$75</span>
-            </div>
-            
-            <div class="payment-row">
-              <strong>Reference Note:</strong>
-              <span>Provide a screenshot of the payment confirmation via email or text.</span>
-            </div>
-          </div>
-          
-          <div class="payment-footer">
-            <p>Payment should be sent only through the official Chime information provided on this page. Keep your payment confirmation for your records.</p>
-          </div>
-        </div>
-
-        <!-- Payment Confirmation Checkbox -->
-        <div class="payment-confirmation">
-          <div class="checkbox-wrapper">
-            <input type="checkbox" id="payment-complete" name="payment-complete" required>
-            <label for="payment-complete">I have completed the application fee payment</label>
-          </div>
-        </div>
-
-        <!-- Continue Button -->
-        <div class="continue-button-wrapper">
-          <button class="button button-primary button-full continue-button" id="continueToPaymentButton" type="button" disabled>
-            Continue To Payment Confirmation
-          </button>
-        </div>
-
-        <!-- Don't Have Chime? Section -->
-        <div class="chime-help-section">
-          <div class="confirmation-card">
-            <h2>Don't Have Chime?</h2>
-            <p>No problem. You can create a Chime account first, then return to complete the application fee payment using the official details above.</p>
-            
-            <div class="app-store-buttons">
-              <a href="https://apps.apple.com/us/app/chime-mobile-banking/id836215269" target="_blank" rel="noopener noreferrer" class="app-button app-store">
-                <span class="app-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                  </svg>
-                </span>
-                <div class="app-text">
-                  <span class="app-small-text">Download on the</span>
-                  <span class="app-large-text">App Store</span>
-                </div>
-              </a>
-              
-              <a href="https://play.google.com/store/apps/details?id=com.onedebit.chime" target="_blank" rel="noopener noreferrer" class="app-button google-play">
-                <span class="app-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5h1.14L15 12l-9.36 9.5H4.5c-.83 0-1.5-.67-1.5-1.5zm2.64-17L13.64 12 5.64 20.5v-17zm7.36 17L8.36 12l4.64-4.5L19.86 12l-6.86 8.5zm0-17l6.86 8.5-6.86 8.5v-17z"/>
-                  </svg>
-                </span>
-                <div class="app-text">
-                  <span class="app-small-text">Get it on</span>
-                  <span class="app-large-text">Google Play</span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Setup Guide -->
-          <div class="confirmation-card setup-guide">
-            <h3>How to Set Up a Chime Account</h3>
-            <ol class="setup-steps">
-              <li>Click the App Store or Google Play link above.</li>
-              <li>Download and install the Chime app.</li>
-              <li>Open the app and choose to create a new account.</li>
-              <li>Enter your personal details and complete the signup process.</li>
-              <li>Verify your identity if prompted by the app.</li>
-              <li>Once your account is ready, return to this page and use the payment details provided.</li>
-            </ol>
-          </div>
         </div>
 
         <!-- Need Help Section -->
@@ -262,19 +213,7 @@
         backButton.dataset.fallbackHome = backButton.href;
       }
 
-      const continueButton = document.getElementById('continueToPaymentButton');
-      if (continueButton) {
-        continueButton.addEventListener('click', function () {
-          window.location.href = `payment-confirmation.html?applicationId=${encodeURIComponent(applicationId)}&lang=${encodeURIComponent(selectedLanguage)}`;
-        });
-      }
     })();
-
-    // Enable continue button when checkbox is checked
-    document.getElementById('payment-complete').addEventListener('change', function() {
-      const continueButton = document.querySelector('.continue-button');
-      continueButton.disabled = !this.checked;
-    });
   </script>
   <script src="script.js"></script>
 </body>
