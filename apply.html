@@ -3,228 +3,249 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Submit a secure private rental application to Katherine Riordan.">
-  <title>Rental Application | Katherine Riordan</title>
+  <meta name="description" content="Complete a private rental application for review by Paul Goodling.">
+  <title>Rental Application | Paul Goodling</title>
+  <link rel="icon" href="image/logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site-header">
+<body class="apply-page">
+  <header class="site-header back-nav">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Katherine Riordan home">
-        <img class="brand-mark" src="image/logo.png" alt="" aria-hidden="true">
-        <span class="brand-copy">
-          <strong>Katherine Riordan</strong>
-          <span>Private Property Manager</span>
-        </span>
-      </a>
-
-      <div class="language-switcher header-language" aria-label="Language selector">
-        <span aria-hidden="true">Language</span>
-        <select class="language-select" aria-label="Select language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="zh">中文</option>
-          <option value="fr">Français</option>
-          <option value="ar">العربية</option>
-        </select>
-      </div>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-        <span class="sr-only">Open navigation</span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <div class="nav-panel-header">
-          <span class="nav-panel-title">Navigation</span>
-          <span class="nav-panel-subtitle">Katherine Riordan</span>
-        </div>
-        <a href="index.html#home"><span class="nav-icon" aria-hidden="true"></span>Home</a>
-        <a href="index.html#about"><span class="nav-icon" aria-hidden="true"></span>About</a>
-        <a href="index.html#process"><span class="nav-icon" aria-hidden="true"></span>Rental Process</a>
-        <a href="index.html#faq"><span class="nav-icon" aria-hidden="true"></span>FAQ</a>
-        <a href="index.html#contact"><span class="nav-icon" aria-hidden="true"></span>Contact</a>
-        <a href="index.html#consultation"><span class="nav-icon" aria-hidden="true"></span>Request Consultation</a>
-        <div class="language-switcher nav-language" aria-label="Language selector">
-          <span>Language</span>
-          <select class="language-select" aria-label="Select language">
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="zh">中文</option>
-            <option value="fr">Français</option>
-            <option value="ar">العربية</option>
-          </select>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <div class="back-nav" aria-label="Page navigation">
-    <div class="container narrow">
       <button class="back-button" type="button" data-fallback-home="index.html" aria-label="Back">
         <span class="back-button-icon" aria-hidden="true">←</span>
         <span>Back</span>
       </button>
     </div>
+  </header>
+
+  <div class="apply-page-stepper-wrap" aria-label="Application progress overview">
+    <p class="apply-page-stepper__status" aria-live="polite">
+      <span class="sr-only">Step 1 of 4:</span> Application
+    </p>
+    <ol class="apply-page-stepper">
+      <li class="apply-page-step is-active" aria-current="step">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">
+            <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.2L5.6 10.3L11.5 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="apply-page-step__label">Application</span>
+        </span>
+        <span class="apply-page-step__rail is-partial" aria-hidden="true"></span>
+      </li>
+      <li class="apply-page-step is-upcoming">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">2</span>
+          <span class="apply-page-step__label">Review</span>
+        </span>
+        <span class="apply-page-step__rail" aria-hidden="true"></span>
+      </li>
+      <li class="apply-page-step is-upcoming">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">3</span>
+          <span class="apply-page-step__label">Payment</span>
+        </span>
+        <span class="apply-page-step__rail" aria-hidden="true"></span>
+      </li>
+      <li class="apply-page-step is-upcoming">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">4</span>
+          <span class="apply-page-step__label">Confirmation</span>
+        </span>
+      </li>
+    </ol>
   </div>
 
   <main>
     <section class="page-hero section">
       <div class="container narrow">
-        <p class="eyebrow">Secure rental application</p>
         <h1>Rental Application Form</h1>
-        <p class="hero-copy">Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.</p>
+        <p class="hero-copy">Please complete this form accurately and truthfully. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application (Incomplete applications may result in processing delays)</p>
       </div>
     </section>
 
     <section class="section form-section">
       <div class="container narrow">
-        <div class="form-intro">
-          <p>This is a privately managed rental. All applications are reviewed directly by the property owner.</p>
-          
-          <div class="trust-badges">
-            <div class="equal-housing-badge" aria-label="Equal Housing Opportunity">
-              <div class="trust-badge-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M12 22V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div class="trust-badge-text">
-                <strong>Equal Housing Opportunity</strong>
-              </div>
-            </div>
-            
-            <div class="ssl-badge" aria-label="Secure SSL Encrypted Application">
-              <div class="trust-badge-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke="currentColor" stroke-width="1.5"/>
-                  <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  <circle cx="12" cy="16" r="1" fill="currentColor"/>
-                </svg>
-              </div>
-              <div class="trust-badge-text">
-                <strong>Secure SSL Encrypted Application</strong>
-              </div>
-            </div>
-          </div>
-          
-          <div class="zillow-badge" aria-label="Zillow Rental Manager application support indicator">
-            <div class="zillow-logo-placeholder" aria-hidden="true">
-              <img src="images/zillow.jpeg" alt="" width="200" height="64" loading="lazy" decoding="async">
-            </div>
-            <div class="zillow-text">
-              <strong>Application Process Supported Through Zillow Rental Manager</strong>
-              <span>Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.</span>
-            </div>
-          </div>
-        </div>
-
-        
         <form
           class="application-form"
           id="application-form"
           data-confirmation="application-received.html"
-          data-formspree-endpoint="https://formspree.io/f/xnjgpoga"
-          data-emailjs-service="service_mjphomm"
-          data-emailjs-template="template_6l8twg5"
-          data-emailjs-public-key="5DMw1roXD7XmNjRqk"
-          data-recipient-email="riordankatherine0@gmail.com"
+          data-formspree-endpoint="https://formspree.io/f/xnjrpagv"
+          data-emailjs-service="service_931i15m"
+          data-emailjs-template="template_8uscd9q"
+          data-emailjs-public-key="qgu2V41l8Rp9A3ejZ"
+          data-recipient-email="support@property-management.group"
         >
-          <input type="hidden" name="_subject" value="New Rental Application - Katherine Riordan">
+          <input type="hidden" name="application-id" value="">
+          <input type="hidden" name="selected-language" value="">
+          <input type="hidden" name="support_email" value="support@property-management.group">
+          <input type="hidden" name="_subject" value="New Rental Application - Paul Goodling">
           <fieldset>
             <legend>Property Information</legend>
-            <label for="property">Property applying for</label>
-            <input id="property" name="property" type="text" placeholder="Enter property address or listing name">
+            <label for="property">Property Information</label>
+            <input id="property" name="property" type="text" placeholder="Your answer">
+
+            <label for="application-date">Date of Application</label>
+            <input id="application-date" name="application-date" type="date" placeholder="Your answer" required>
 
             <label for="move-date">Desired move-in date</label>
-            <input id="move-date" name="move-date" type="date" required>
+            <input id="move-date" name="move-date" type="date" placeholder="Your answer" required>
+
+            <label for="lease-term">Lease Term Requested</label>
+            <select id="lease-term" name="lease-term">
+              <option value="">Choose lease term</option>
+              <option value="Month to month">Month to month</option>
+              <option value="6 months">6 months</option>
+              <option value="12 months (1 year)">12 months (1 year)</option>
+              <option value="18 months">18 months</option>
+              <option value="24 months (2 years)">24 months (2 years)</option>
+              <option value="Other - please specify">Other - please specify</option>
+            </select>
           </fieldset>
 
           <fieldset>
             <legend>Applicant Information</legend>
-            <label for="full-name">Full legal name</label>
-            <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+            <label for="full-name">Full legal name (First, Middle, Last)</label>
+            <input id="full-name" name="name" type="text" autocomplete="name" placeholder="Your answer" required>
 
             <label for="email">Email address</label>
-            <input id="email" name="email" type="email" autocomplete="email">
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Your answer" required>
 
-            <label for="phone">Phone number</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            <label for="phone">Mobile number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Your answer" required>
 
             <label for="dob">Date of birth</label>
-            <input id="dob" name="dob" type="date" required>
+            <input id="dob" name="dob" type="date" placeholder="Your answer" required>
+
+            <label for="residency-status">Citizenship/Residency Status</label>
+            <select id="residency-status" name="residency-status">
+              <option value="">Choose status</option>
+              <option value="US Citizen">US Citizen</option>
+              <option value="Permanent Resident (Green Card Holder)">Permanent Resident (Green Card Holder)</option>
+              <option value="Non-Citizen / Temporary Resident (Visa Holder)">Non-Citizen / Temporary Resident (Visa Holder)</option>
+              <option value="Other">Other</option>
+            </select>
           </fieldset>
 
           <fieldset>
             <legend>Residency History</legend>
-            <label for="current-address">Current address</label>
-            <textarea id="current-address" name="current-address" rows="3"></textarea>
+            <label for="current-address">Current Address (With Dates Of Residency)</label>
+            <input id="current-address" name="current-address" type="text" placeholder="Your answer">
 
-            <label for="current-landlord">Current landlord or manager</label>
-            <input id="current-landlord" name="current-landlord" type="text">
+            <label for="previous-address">Previous Address</label>
+            <input id="previous-address" name="previous-address" type="text" placeholder="Your answer">
 
-            <label for="residency-length">How long have you lived there?</label>
-            <input id="residency-length" name="residency-length" type="text" placeholder="Example: 2 years">
           </fieldset>
 
           <fieldset>
             <legend>Employment &amp; Income</legend>
-            <label for="employer">Employer or income source</label>
-            <input id="employer" name="employer" type="text">
+            <label for="employer">Current Employer</label>
+            <input id="employer" name="employer" type="text" placeholder="Your answer">
 
-            <label for="job-title">Job title</label>
-            <input id="job-title" name="job-title" type="text">
+            <label for="monthly-income">Monthly Gross Income</label>
+            <input id="monthly-income" name="monthly-income" type="number" min="0" inputmode="decimal" placeholder="Your answer">
 
-            <label for="monthly-income">Gross monthly income</label>
-            <input id="monthly-income" name="monthly-income" type="number" min="0" inputmode="decimal">
-
-            <label for="employer-name">Employer name</label>
-            <input id="employer-name" name="employer-name" type="text" placeholder="Enter employer or company name">
-          </fieldset>
-
-          <fieldset>
-            <legend>Background Questions</legend>
-            <label for="evicted">Have you ever been evicted?</label>
-            <select id="evicted" name="evicted">
-              <option value="">Select an answer</option>
-              <option>No</option>
-              <option>Yes</option>
+            <label for="other-income-source">Other Sources Of Income</label>
+            <select id="other-income-source" name="other-income-source">
+              <option value="">Select an option</option>
+              <option value="None">None</option>
+              <option value="Alimony">Alimony</option>
+              <option value="Child support">Child support</option>
+              <option value="Disability benefits">Disability benefits</option>
+              <option value="Retirement income">Retirement income</option>
+              <option value="Other">Other</option>
             </select>
 
           </fieldset>
 
           <fieldset>
+            <legend>Financial and Background</legend>
+            <label for="credit-score">Credit Score</label>
+            <input id="credit-score" name="credit-score" type="number" min="300" max="850" inputmode="numeric" placeholder="Your answer">
+
+            <label for="evicted">Have You Ever Been Evicted</label>
+            <select id="evicted" name="evicted">
+              <option value="">Select an answer</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+
+            <label for="eviction-explanation">If Yes, Explain</label>
+            <textarea id="eviction-explanation" name="eviction-explanation" rows="1" placeholder="Your answer"></textarea>
+
+            <label for="convicted">Have You Ever Been Convicted Of A Crime</label>
+            <select id="convicted" name="convicted">
+              <option value="">Select an answer</option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+
+            <label for="convicted-explanation">If Yes, Explain</label>
+            <textarea id="convicted-explanation" name="convicted-explanation" rows="1" placeholder="Your answer"></textarea>
+          </fieldset>
+
+          <fieldset>
             <legend>Additional Information</legend>
-            <label for="occupants">Additional occupants</label>
-            <textarea id="occupants" name="occupants" rows="3" placeholder="Names and relationship to applicant"></textarea>
+            <label for="reason-moving">Reason For Moving</label>
+            <textarea id="reason-moving" name="reason-moving" rows="2" placeholder="Your answer"></textarea>
 
-            <label for="pets">Pets</label>
-            <textarea id="pets" name="pets" rows="3" placeholder="Type, breed"></textarea>
+            <label for="number-applicants">Number Of Applicants Or Adults</label>
+            <select id="number-applicants" name="number-applicants">
+              <option value="">Select an answer</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="others">Others</option>
+            </select>
 
-            <label for="notes">Anything else you would like to share?</label>
-            <textarea id="notes" name="notes" rows="4"></textarea>
+            <label for="applicant-names">Name Of Applicants</label>
+            <textarea id="applicant-names" name="applicant-names" rows="2" placeholder="Your answer"></textarea>
+
+            <label for="number-occupants">Number Of Occupants</label>
+            <select id="number-occupants" name="number-occupants">
+              <option value="">Select an answer</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="others">Others</option>
+            </select>
+
+            <label for="pets">Pet Information, Type And Breed</label>
+            <textarea id="pets" name="pets" rows="3" placeholder="Your answer"></textarea>
+
+            <label for="vehicle-information">Vehicle Information, Make, Model, Color And Plate Number</label>
+            <textarea id="vehicle-information" name="vehicle-information" rows="3" placeholder="Your answer"></textarea>
+
+            <label for="references">References</label>
+            <select id="references" name="references">
+              <option value="">Select an answer</option>
+              <option value="previous-landlord">Previous landlord</option>
+              <option value="employer">Employer</option>
+              <option value="personal-reference">Personal reference</option>
+              <option value="family-member">Family member</option>
+              <option value="co-worker">Co worker</option>
+            </select>
           </fieldset>
 
           <fieldset>
             <legend>Emergency Contact</legend>
-            <label for="emergency-name">Emergency contact name</label>
-            <input id="emergency-name" name="emergency-name" type="text">
-
-            <label for="emergency-phone">Emergency contact phone</label>
-            <input id="emergency-phone" name="emergency-phone" type="tel">
-
-            <label for="emergency-relationship">Relationship</label>
-            <input id="emergency-relationship" name="emergency-relationship" type="text">
+            <label for="emergency-contact-full">Emergency Contact, Full Name, Relationship And Phone</label>
+            <textarea id="emergency-contact-full" name="emergency-contact-full" rows="2" placeholder="Your answer"></textarea>
           </fieldset>
 
           <fieldset>
-            <legend>Agreement</legend>
-            <div class="check-row">
-              <input id="agreement" name="agreement" type="checkbox" required>
-              <label for="agreement">I certify that the information provided is true and complete to the best of my knowledge.</label>
+            <legend class="sr-only">Final step agreement</legend>
+            <div class="check-row final-step-check">
+              <input id="agreement" name="agreement" type="checkbox" required aria-labelledby="final-step-heading">
+              <div class="final-step-copy">
+                <h3 class="final-step-heading" id="final-step-heading">Final Step Important (Read Before Submitting)</h3>
+                <p>I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.</p>
+                <p>I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.</p>
+              </div>
             </div>
           </fieldset>
 
@@ -238,14 +259,14 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-identity">
-        <strong>Katherine Riordan</strong>
+        <strong>Paul Goodling</strong>
         <span class="footer-role">Property Manager</span>
       </div>
       <div class="footer-contact-lines contact-channels" role="list">
-        <a class="contact-channel" role="listitem" href="mailto:riordankatherine0@gmail.com" aria-label="Email Katherine Riordan"><span class="contact-channel-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4V6zm0 0 8 6 8-6"/></svg></span><span class="contact-channel-text contact-email-ltr">riordankatherine0@gmail.com</span></a>
-        <a class="contact-channel" role="listitem" href="tel:+15136286294" aria-label="Call Katherine Riordan"><span class="contact-channel-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span><span class="contact-channel-text contact-phone-ltr">+1 (513) 628-6294</span></a>
+        <a class="contact-channel" role="listitem" href="mailto:support@property-management.group" aria-label="Email Paul Goodling"><span class="contact-channel-text contact-email-ltr">support@property-management.group</span></a>
+        <a class="contact-channel" role="listitem" href="tel:+15136286294" aria-label="Contact Paul Goodling"><span class="contact-channel-text contact-phone-ltr">+1 (513) 628-6294</span></a>
       </div>
-      <p class="footer-legal">&copy; 2026 Katherine Riordan. Privately managed rentals.</p>
+      <p class="footer-legal">&copy; 2026 Paul Goodling. Privately managed rentals.</p>
     </div>
   </footer>
 

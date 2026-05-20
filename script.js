@@ -15,8 +15,8 @@
 
   const translations = {
     es: {
-      "Private Property Manager": "Administradora Privada de Propiedades",
-      "Katherine Riordan home": "Inicio de Katherine Riordan",
+      "Private Property Manager": "Administrador Privado de Propiedades",
+      "Paul Goodling home": "Inicio de Paul Goodling",
       "Open navigation": "Abrir navegación",
       "Main navigation": "Navegación principal",
       "Language": "Idioma",
@@ -53,18 +53,16 @@
       "Gallery navigation": "Navegación de galería",
       "Privately managed rentals": "Alquileres administrados de forma privada",
       "Quality rental homes with a simple and transparent application process.": "Viviendas de alquiler de calidad con un proceso de solicitud simple y transparente.",
-      "Katherine Riordan offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Katherine Riordan ofrece viviendas de alquiler administradas de forma privada, con enfoque en transparencia, comunicación receptiva y una experiencia de arrendamiento fluida.",
+      "Paul Goodling offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Paul Goodling ofrece viviendas de alquiler administradas de forma privada, con enfoque en transparencia, comunicación receptiva y una experiencia de arrendamiento fluida.",
       "Secure Application Processing": "Procesamiento seguro de solicitudes",
-      "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.": "Las solicitudes se procesan de forma segura mediante Zillow Rental Manager en colaboración con la propietaria.",
-      "About Katherine": "Acerca de Katherine",
-      "Private rental management with direct owner oversight.": "Administración privada de alquileres con supervisión directa de la propietaria.",
-      "Katherine Riordan is a dedicated private property manager focused on providing organized, transparent, and professional rental support for both property owners and prospective tenants.": "Katherine Riordan es una administradora privada de propiedades dedicada a brindar apoyo de alquiler organizado, transparente y profesional tanto para propietarios como para posibles inquilinos.",
-      "She works closely with applicants throughout the leasing process, helping them understand application requirements, schedule property tours, and navigate each step with clarity and confidence.": "Trabaja de cerca con los solicitantes durante todo el proceso de arrendamiento, ayudándoles a comprender los requisitos de solicitud, programar visitas a la propiedad y avanzar en cada paso con claridad y confianza.",
-      "With a strong emphasis on communication, reliability, and professionalism, Katherine is committed to creating a rental experience that feels smooth, well-structured, and respectful for everyone involved.": "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Katherine se compromete a crear una experiencia de alquiler fluida, bien estructurada y respetuosa para todos los involucrados.",
-      "Her approach is centered around responsive communication, transparent expectations, and making the rental process as straightforward and stress-free as possible.": "Su enfoque se centra en la comunicación receptiva, expectativas transparentes y hacer que el proceso de alquiler sea lo más sencillo y libre de estrés posible.",
+      "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.": "Las solicitudes se procesan de forma segura mediante Zillow Rental Manager en colaboración con el propietario.",
+      "Meet Paul Goodling": "Conozca a Paul Goodling",
+      "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.": "Paul Goodling es un administrador de propiedades dedicado a brindar apoyo de alquiler organizado, transparente y profesional para propietarios y posibles inquilinos.",
+      "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.": "Paul Goodling trabaja de cerca con los solicitantes durante todo el proceso de alquiler, ayudándoles a comprender los requisitos, programar visitas a la propiedad y avanzar en cada paso con claridad y confianza.",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Paul Goodling está comprometido a hacer que la experiencia de arrendamiento sea fluida, bien estructurada y respetuosa para todos los involucrados.",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Paul Goodling está comprometido a hacer que la experiencia de arrendamiento sea fluida, bien estructurada y respetuosa para todos los involucrados.",
       "HOA Logo": "Logo HOA",
       "Community & HOA Guidelines Respected": "Se respetan las pautas de la comunidad y la HOA",
-      "Managed in alignment with community standards": "Administrado en alineación con los estándares de la comunidad",
       "Rental process": "Proceso de alquiler",
       "Simple next steps": "Siguientes pasos simples",
       "View Property Details": "Ver detalles de la propiedad",
@@ -85,41 +83,45 @@
       "How will I be contacted?": "¿Cómo me contactarán?",
       "Applicants are typically contacted using the phone number or email provided in the application form.": "Normalmente se contacta a los solicitantes usando el número de teléfono o correo electrónico proporcionado en el formulario.",
       "Request guidance regarding availability, application steps, move-in timing, or general rental questions before proceeding.": "Solicite orientación sobre disponibilidad, pasos de la solicitud, calendario de mudanza u otras consultas relacionadas con el alquiler antes de continuar.",
-      "Property Manager": "Administradora de propiedades",
+      "Property Manager": "Administrador de propiedades",
       "Direct Contact": "Contacto directo",
-      "For rental inquiries or application support, contact Katherine directly.": "Para consultas sobre alquiler o apoyo con su solicitud, comuníquese directamente con Katherine.",
-      "If you have questions regarding the application process, please contact Katherine Riordan directly.": "Si tiene preguntas sobre el proceso de solicitud, comuníquese directamente con Katherine Riordan.",
-      "Email Katherine Riordan": "Enviar correo electrónico a Katherine Riordan",
-      "Call Katherine Riordan": "Llamar a Katherine Riordan",
-      "© 2026 Katherine Riordan. Privately managed rentals.": "© 2026 Katherine Riordan. Alquileres administrados de forma privada.",
+      "For rental inquiries or application support, contact Paul Goodling directly.": "Para consultas sobre alquiler o apoyo con su solicitud, comuníquese directamente con Paul Goodling.",
+      "If you have questions regarding the application process, please contact Paul Goodling directly.": "Si tiene preguntas sobre el proceso de solicitud, comuníquese directamente con Paul Goodling.",
+      "Email Paul Goodling": "Enviar correo electrónico a Paul Goodling",
+      "Call Paul Goodling": "Llamar a Paul Goodling",
+      "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. Alquileres administrados de forma privada.",
       "Secure rental application": "Solicitud segura de alquiler",
       "Rental Application Form": "Formulario de Solicitud de Alquiler",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "Complete este formulario con precisión. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado.",
-      "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria. No participan agentes externos.",
-      "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria.",
+      "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario. No participan agentes externos.",
+      "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario.",
       "Equal Housing Opportunity": "Igualdad de oportunidad de vivienda",
       "Equal Housing Opportunity Logo": "Logo de Igualdad de Oportunidad de Vivienda",
       "Secure SSL Encrypted Application": "Solicitud segura con cifrado SSL",
       "Application Process Supported Through Zillow Rental Manager": "Proceso de solicitud respaldado mediante Zillow Rental Manager",
       "Zillow Rental Manager application support indicator": "Indicador de respaldo de solicitudes con Zillow Rental Manager",
-      "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.": "Las solicitudes se envían de forma segura mediante Zillow Rental Manager en colaboración con la propietaria. No participan agentes de arrendamiento externos.",
+      "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.": "Las solicitudes se envían de forma segura mediante Zillow Rental Manager en colaboración con el propietario. No participan agentes de arrendamiento externos.",
       "Property Information": "Información de la propiedad",
       "Property applying for": "Propiedad para la que aplica",
       "Enter property address or listing name": "Ingrese la dirección o el nombre del anuncio",
       "Select a property": "Seleccione una propiedad",
       "Desired move-in date": "Fecha deseada de mudanza",
+      "Date of Application": "Fecha de solicitud",
+      "Lease Term Requested": "Plazo de arrendamiento solicitado",
+      "Citizenship/Residency Status": "Estatus de ciudadanía/residencia",
       "Applicant Information": "Información del solicitante",
-      "Full legal name": "Nombre legal completo",
+      "Full legal name (First, Middle, Last)": "Nombre legal completo (nombre, segundo nombre, apellido)",
       "Email address": "Correo electrónico",
-      "Phone number": "Número de teléfono",
+      "Mobile number": "Número móvil",
       "Date of birth": "Fecha de nacimiento",
       "Residency History": "Historial de residencia",
-      "Current address": "Dirección actual",
+      "Current Address (With Dates Of Residency)": "Dirección actual (con fechas de residencia)",
+      "Previous Address": "Dirección anterior",
       "Current landlord or manager": "Propietario o administrador actual",
       "Landlord phone number": "Teléfono del propietario o administrador",
       "How long have you lived there?": "¿Cuánto tiempo ha vivido ahí?",
       "Employment & Income": "Empleo e ingresos",
-      "Employer or income source": "Empleador o fuente de ingresos",
+      "Current Employer": "Empleador actual",
       "Job title": "Puesto de trabajo",
       "Gross monthly income": "Ingreso mensual bruto",
       "Employer phone number": "Teléfono del empleador",
@@ -142,15 +144,18 @@
       "Relationship": "Relación",
       "Agreement": "Acuerdo",
       "I certify that the information provided is true and complete to the best of my knowledge.": "Certifico que la información proporcionada es verdadera y completa a mi leal saber y entender.",
+      "Final Step Important (Read Before Submitting)": "Paso final importante (leer antes de enviar)",
+      "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "Certifico que toda la información proporcionada en esta solicitud es completa y exacta según mi leal saber y entender. Entiendo que proporcionar información falsa o engañosa puede resultar en la denegación de mi solicitud, y autorizo al propietario o administrador de la propiedad a verificar la información proporcionada.",
+      "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "También entiendo que las instrucciones de pago para la tarifa de solicitud reembolsable se proporcionarán después del envío. Una vez confirmado el pago, mi solicitud pasará a la revisión, aprobación y siguientes pasos del proceso.",
       "Application received": "Solicitud recibida",
       "Thank you. Your application has been submitted.": "Gracias. Su solicitud ha sido enviada.",
-      "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.": "Su solicitud aparece como recibida. Revise su correo electrónico o teléfono para actualizaciones de Katherine sobre el estado de revisión, programación de visita o instrucciones de siguientes pasos.",
+      "Your application is marked as received. Please watch your email or phone for updates from Paul Goodling about review status, tour scheduling, or next-step instructions.": "Su solicitud aparece como recibida. Revise su correo electrónico o teléfono para actualizaciones de Paul Goodling sobre el estado de revisión, programación de visita o instrucciones de siguientes pasos.",
       "Status: Received": "Estado: Recibida",
-      "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.": "Las solicitudes son revisadas directamente por la propietaria. Se le contactará si se necesita más información.",
+      "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.": "Las solicitudes son revisadas directamente por el propietario. Se le contactará si se necesita más información.",
       "Secure processing note": "Nota de procesamiento seguro",
-      "Application details may be processed through Zillow Rental Manager in partnership with the property owner.": "Los detalles de la solicitud pueden procesarse mediante Zillow Rental Manager en colaboración con la propietaria.",
+      "Application details may be processed through Zillow Rental Manager in partnership with the property owner.": "Los detalles de la solicitud pueden procesarse mediante Zillow Rental Manager en colaboración con el propietario.",
       "Return Home": "Volver al inicio",
-      "Contact Katherine": "Contactar a Katherine",
+      "Contact Paul Goodling": "Contactar a Paul Goodling",
       "Example: 2 years": "Ejemplo: 2 años",
       "Names and relationship to applicant": "Nombres y relación con el solicitante",
       "Type, breed": "Tipo, raza",
@@ -168,7 +173,9 @@
       "Pending": "Pendiente",
       "Application status": "Estado de la solicitud",
       "Email Confirmation": "Confirmación por correo electrónico",
-      "A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received.": "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud. Ese correo confirmará que su solicitud fue recibida.",
+      "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.",
+      "Please note that a refundable $75 application fee is required before the approval process can begin.": "Tenga en cuenta que se requiere una tarifa de solicitud reembolsable de $75 antes de que pueda comenzar el proceso de aprobación.",
+      "Once the payment has been confirmed, your application review and approval process will officially commence.": "Una vez confirmado el pago, comenzará oficialmente el proceso de revisión y aprobación de su solicitud.",
       "Secure & Verified Process": "Proceso seguro y verificado",
       "This application process is handled directly by the property management team. All submitted applications are reviewed carefully, and payment confirmations are documented for transparency and record keeping.": "Este proceso de solicitud es gestionado directamente por el equipo de administración de la propiedad. Todas las solicitudes enviadas se revisan cuidadosamente y las confirmaciones de pago se documentan para transparencia y registro.",
       "Fee Transparency": "Transparencia de tarifas",
@@ -197,10 +204,14 @@
       "Selected File": "Archivo seleccionado",
       "Submit Payment Confirmation": "Enviar confirmación de pago",
       "Prefer Email Confirmation?": "¿Prefiere confirmar por correo?",
-      "If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.": "Si prefiere enviar la confirmación de pago por correo, envíela directamente a Katherine para su procesamiento.",
+      "If you would prefer to email your payment confirmation instead, send it directly to Paul Goodling for processing.": "Si prefiere enviar la confirmación de pago por correo, envíela directamente a Paul Goodling para su procesamiento.",
       "Send Email Confirmation": "Enviar confirmación por correo",
       "Payment Confirmation Submitted": "Confirmación de pago enviada",
-      "Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.": "Su captura de pantalla del pago fue recibida y está pendiente de verificación privada. Katherine revisará su confirmación junto con los detalles de su solicitud."
+      "Your payment screenshot has been received and is pending private verification. Paul Goodling will review your confirmation with your application details.": "Su captura de pantalla del pago fue recibida y está pendiente de verificación privada. Paul Goodling revisará su confirmación junto con los detalles de su solicitud.",
+      "How would you like to contact?": "¿Cómo desea contactar?",
+      "Call": "Llamar",
+      "Text": "Enviar mensaje",
+      "Cancel": "Cancelar"
     },
     zh: {
       "Private Property Manager": "私人物业经理",
@@ -236,18 +247,15 @@
       "Gallery navigation": "图库导航",
       "Privately managed rentals": "私人管理租赁",
       "Quality rental homes with a simple and transparent application process.": "优质出租住宅，申请流程简单透明。",
-      "Katherine Riordan offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Katherine Riordan 提供私人管理的出租住宅，注重透明沟通、及时回应和顺畅的租赁体验。",
+      "Paul Goodling offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Paul Goodling 提供私人管理的出租住宅，注重透明沟通、及时回应和顺畅的租赁体验。",
       "Secure Application Processing": "安全申请处理",
       "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.": "申请通过 Zillow Rental Manager 与业主合作进行安全处理。",
-      "About Katherine": "关于 Katherine",
-      "Private rental management with direct owner oversight.": "由业主直接监督的私人租赁管理。",
-      "Katherine Riordan is a dedicated private property manager focused on providing organized, transparent, and professional rental support for both property owners and prospective tenants.": "Katherine Riordan 是一位专注的私人物业经理，致力于为业主和潜在租户提供有条理、透明且专业的租赁支持。",
-      "She works closely with applicants throughout the leasing process, helping them understand application requirements, schedule property tours, and navigate each step with clarity and confidence.": "她在整个租赁过程中与申请人密切合作，帮助他们了解申请要求、安排看房，并清晰自信地完成每一步。",
-      "With a strong emphasis on communication, reliability, and professionalism, Katherine is committed to creating a rental experience that feels smooth, well-structured, and respectful for everyone involved.": "Katherine 高度重视沟通、可靠性和专业精神，致力于为所有相关人员营造顺畅、有序且相互尊重的租赁体验。",
-      "Her approach is centered around responsive communication, transparent expectations, and making the rental process as straightforward and stress-free as possible.": "她的工作方式以快速回应、透明预期为核心，并尽可能让租赁流程简单、清晰、少压力。",
+      "Meet Paul Goodling": "关于 Paul Goodling",
+      "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.": "Paul Goodling 是一位专注的私人物业经理，致力于为业主和潜在租户提供有条理、透明且专业的租赁支持。",
+      "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.": "Paul Goodling 在整个租赁过程中与申请人密切合作，帮助他们了解申请要求、安排看房，并清晰自信地完成每一步。",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "Paul Goodling 高度重视沟通、可靠性和专业精神，致力于为所有相关人员营造顺畅、有序且相互尊重的租赁体验。",
       "HOA Logo": "HOA 标志",
       "Community & HOA Guidelines Respected": "尊重社区与 HOA 指南",
-      "Managed in alignment with community standards": "按照社区标准协调管理",
       "Rental process": "租赁流程",
       "Simple next steps": "简单的后续步骤",
       "View Property Details": "查看房源详情",
@@ -270,11 +278,11 @@
       "Request guidance regarding availability, application steps, move-in timing, or general rental questions before proceeding.": "在采取下一步行动前，您可就可租情况、申请步骤、入住时间及其他租赁相关问题寻求指导。",
       "Property Manager": "物业经理",
       "Direct Contact": "直接联系",
-      "For rental inquiries or application support, contact Katherine directly.": "如有关于租赁事宜或申请表协助的事项，请直接联系 Katherine。",
-      "If you have questions regarding the application process, please contact Katherine Riordan directly.": "如对申请流程有任何疑问，请直接联系 Katherine Riordan。",
-      "Email Katherine Riordan": "向 Katherine Riordan 发送电子邮件",
-      "Call Katherine Riordan": "致电 Katherine Riordan",
-      "© 2026 Katherine Riordan. Privately managed rentals.": "© 2026 Katherine Riordan。私人管理租赁。",
+      "For rental inquiries or application support, contact Paul Goodling directly.": "如有关于租赁事宜或申请表协助的事项，请直接联系 Paul Goodling。",
+      "If you have questions regarding the application process, please contact Paul Goodling directly.": "如对申请流程有任何疑问，请直接联系 Paul Goodling。",
+      "Email Paul Goodling": "向 Paul Goodling 发送电子邮件",
+      "Call Paul Goodling": "致电 Paul Goodling",
+      "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling。私人管理租赁。",
       "Secure rental application": "安全租赁申请",
       "Rental Application Form": "租赁申请表",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "请准确填写此表。所有提供的信息都将保持保密，仅用于租赁申请审批流程。每位申请入住该单元的成年人（18岁及以上）都必须单独填写一份申请。",
@@ -325,13 +333,13 @@
       "I certify that the information provided is true and complete to the best of my knowledge.": "我确认所提供的信息据我所知真实且完整。",
       "Application received": "申请已收到",
       "Thank you. Your application has been submitted.": "谢谢。您的申请已提交。",
-      "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.": "您的申请已标记为收到。请留意电子邮件或电话，Katherine 将提供审核状态、看房安排或下一步说明。",
+      "Your application is marked as received. Please watch your email or phone for updates from Paul Goodling about review status, tour scheduling, or next-step instructions.": "您的申请已标记为收到。请留意电子邮件或电话，Paul Goodling 将提供审核状态、看房安排或下一步说明。",
       "Status: Received": "状态：已收到",
       "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.": "申请由业主直接审核。如需更多信息，将与您联系。",
       "Secure processing note": "安全处理说明",
       "Application details may be processed through Zillow Rental Manager in partnership with the property owner.": "申请详情可能通过 Zillow Rental Manager 与业主合作处理。",
       "Return Home": "返回首页",
-      "Contact Katherine": "联系 Katherine",
+      "Contact Paul Goodling": "联系 Paul Goodling",
       "Example: 2 years": "例如：2 年",
       "Names and relationship to applicant": "姓名及与申请人的关系",
       "Type, breed": "类型、品种",
@@ -340,11 +348,15 @@
       "Submitting securely...": "正在安全提交...",
       "Application submitted. Redirecting...": "申请已提交。正在跳转...",
       "Submitted. Redirecting...": "已提交。正在跳转...",
-      "Something went wrong. Please try again.": "出现问题。请重试。"
+      "Something went wrong. Please try again.": "出现问题。请重试。",
+      "How would you like to contact?": "您希望如何联系？",
+      "Call": "拨打电话",
+      "Text": "发送短信",
+      "Cancel": "取消"
     },
     fr: {
-      "Private Property Manager": "Gestionnaire privée de propriétés",
-      "Katherine Riordan home": "Accueil Katherine Riordan",
+      "Private Property Manager": "Gestionnaire privé de propriétés",
+      "Paul Goodling home": "Accueil Paul Goodling",
       "Open navigation": "Ouvrir la navigation",
       "Main navigation": "Navigation principale",
       "Language": "Langue",
@@ -381,18 +393,15 @@
       "Gallery navigation": "Navigation de la galerie",
       "Privately managed rentals": "Locations gérées en privé",
       "Quality rental homes with a simple and transparent application process.": "Des logements locatifs de qualité avec un processus de demande simple et transparent.",
-      "Katherine Riordan offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Katherine Riordan propose des logements locatifs gérés en privé, avec transparence, communication réactive et expérience de location fluide.",
+      "Paul Goodling offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Paul Goodling propose des logements locatifs gérés en privé, avec transparence, communication réactive et expérience de location fluide.",
       "Secure Application Processing": "Traitement sécurisé des demandes",
       "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.": "Les demandes sont traitées de manière sécurisée via Zillow Rental Manager en partenariat avec la propriétaire.",
-      "About Katherine": "À propos de Katherine",
-      "Private rental management with direct owner oversight.": "Gestion locative privée avec supervision directe de la propriétaire.",
-      "Katherine Riordan is a dedicated private property manager focused on providing organized, transparent, and professional rental support for both property owners and prospective tenants.": "Katherine Riordan est une gestionnaire privée de propriétés dévouée, axée sur un accompagnement locatif organisé, transparent et professionnel pour les propriétaires comme pour les futurs locataires.",
-      "She works closely with applicants throughout the leasing process, helping them understand application requirements, schedule property tours, and navigate each step with clarity and confidence.": "Elle travaille étroitement avec les candidats tout au long du processus de location, les aidant à comprendre les exigences de demande, à planifier les visites et à avancer à chaque étape avec clarté et confiance.",
-      "With a strong emphasis on communication, reliability, and professionalism, Katherine is committed to creating a rental experience that feels smooth, well-structured, and respectful for everyone involved.": "Avec une forte priorité donnée à la communication, à la fiabilité et au professionnalisme, Katherine s’engage à créer une expérience de location fluide, bien structurée et respectueuse pour toutes les personnes impliquées.",
-      "Her approach is centered around responsive communication, transparent expectations, and making the rental process as straightforward and stress-free as possible.": "Son approche repose sur une communication réactive, des attentes transparentes et un processus de location aussi simple et serein que possible.",
+      "Meet Paul Goodling": "À propos de Paul Goodling",
+      "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.": "Paul Goodling est un gestionnaire privé de propriétés dévoué, axé sur un accompagnement locatif organisé, transparent et professionnel pour les propriétaires comme pour les futurs locataires.",
+      "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.": "Paul Goodling travaille étroitement avec les candidats tout au long du processus de location, les aidant à comprendre les exigences de demande, à planifier les visites et à avancer à chaque étape avec clarté et confiance.",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "Avec une forte priorité donnée à la communication, à la fiabilité et au professionnalisme, Paul Goodling s’engage à créer une expérience de location fluide, bien structurée et respectueuse pour toutes les personnes impliquées.",
       "HOA Logo": "Logo HOA",
       "Community & HOA Guidelines Respected": "Directives de la communauté et de la HOA respectées",
-      "Managed in alignment with community standards": "Géré en accord avec les standards de la communauté",
       "Rental process": "Processus de location",
       "Simple next steps": "Étapes simples",
       "View Property Details": "Consulter les détails du bien",
@@ -415,11 +424,11 @@
       "Request guidance regarding availability, application steps, move-in timing, or general rental questions before proceeding.": "Demandez des précisions concernant les disponibilités, les étapes de candidature, le calendrier d’emménagement ou vos questions générales sur la location avant de poursuivre.",
       "Property Manager": "Gestionnaire de propriétés",
       "Direct Contact": "Contact direct",
-      "For rental inquiries or application support, contact Katherine directly.": "Pour toute demande liée à la location ou au dossier de candidature, vous pouvez contacter Katherine directement.",
-      "If you have questions regarding the application process, please contact Katherine Riordan directly.": "Pour toute question sur le déroulement de la candidature, veuillez contacter Katherine Riordan directement.",
-      "Email Katherine Riordan": "Envoyer un e-mail à Katherine Riordan",
-      "Call Katherine Riordan": "Appeler Katherine Riordan",
-      "© 2026 Katherine Riordan. Privately managed rentals.": "© 2026 Katherine Riordan. Locations gérées en privé.",
+      "For rental inquiries or application support, contact Paul Goodling directly.": "Pour toute demande liée à la location ou au dossier de candidature, vous pouvez contacter Paul Goodling directement.",
+      "If you have questions regarding the application process, please contact Paul Goodling directly.": "Pour toute question sur le déroulement de la candidature, veuillez contacter Paul Goodling directement.",
+      "Email Paul Goodling": "Envoyer un e-mail à Paul Goodling",
+      "Call Paul Goodling": "Appeler Paul Goodling",
+      "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. Locations gérées en privé.",
       "Secure rental application": "Demande de location sécurisée",
       "Rental Application Form": "Formulaire de demande de location",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "Veuillez remplir ce formulaire avec précision. Toutes les informations fournies resteront confidentielles et sont requises uniquement pour le processus d’approbation de la demande de location. Chaque adulte (18 ans et plus) souhaitant vivre dans le logement doit remplir une demande distincte.",
@@ -472,13 +481,13 @@
       "I certify that the information provided is true and complete to the best of my knowledge.": "Je certifie que les informations fournies sont vraies et complètes à ma connaissance.",
       "Application received": "Demande reçue",
       "Thank you. Your application has been submitted.": "Merci. Votre demande a été envoyée.",
-      "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.": "Votre demande est marquée comme reçue. Surveillez votre e-mail ou téléphone pour les mises à jour de Katherine concernant l’examen, les visites ou les prochaines étapes.",
+      "Your application is marked as received. Please watch your email or phone for updates from Paul Goodling about review status, tour scheduling, or next-step instructions.": "Votre demande est marquée comme reçue. Surveillez votre e-mail ou téléphone pour les mises à jour de Paul Goodling concernant l’examen, les visites ou les prochaines étapes.",
       "Status: Received": "Statut : reçue",
       "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.": "Les demandes sont examinées directement par la propriétaire. Vous serez contacté si des informations supplémentaires sont nécessaires.",
       "Secure processing note": "Note de traitement sécurisé",
       "Application details may be processed through Zillow Rental Manager in partnership with the property owner.": "Les détails de la demande peuvent être traités via Zillow Rental Manager en partenariat avec la propriétaire.",
       "Return Home": "Retour à l’accueil",
-      "Contact Katherine": "Contacter Katherine",
+      "Contact Paul Goodling": "Contacter Paul Goodling",
       "Example: 2 years": "Exemple : 2 ans",
       "Names and relationship to applicant": "Noms et relation avec le candidat",
       "Type, breed": "Type, race",
@@ -487,10 +496,14 @@
       "Submitting securely...": "Envoi sécurisé en cours...",
       "Application submitted. Redirecting...": "Demande envoyée. Redirection...",
       "Submitted. Redirecting...": "Envoyée. Redirection...",
-      "Something went wrong. Please try again.": "Une erreur est survenue. Veuillez réessayer."
+      "Something went wrong. Please try again.": "Une erreur est survenue. Veuillez réessayer.",
+      "How would you like to contact?": "Comment souhaitez-vous contacter ?",
+      "Call": "Appeler",
+      "Text": "Envoyer un SMS",
+      "Cancel": "Annuler"
     },
     pt: {
-      "Private Property Manager": "Administradora Privada de Propriedades",
+      "Private Property Manager": "Administrador Privado de Propriedades",
       "Open navigation": "Abrir navegação",
       "Main navigation": "Navegação principal",
       "Language": "Idioma",
@@ -523,18 +536,15 @@
       "Gallery navigation": "Navegação da galeria",
       "Privately managed rentals": "Aluguéis administrados de forma privada",
       "Quality rental homes with a simple and transparent application process.": "Imóveis de aluguel de qualidade com um processo de solicitação simples e transparente.",
-      "Katherine Riordan offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Katherine Riordan oferece imóveis de aluguel administrados de forma privada, com foco em transparência, comunicação rápida e uma experiência de locação tranquila.",
+      "Paul Goodling offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "Paul Goodling oferece imóveis de aluguel administrados de forma privada, com foco em transparência, comunicação rápida e uma experiência de locação tranquila.",
       "Secure Application Processing": "Processamento seguro de solicitações",
       "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.": "As solicitações são processadas com segurança pelo Zillow Rental Manager em parceria com a proprietária.",
-      "About Katherine": "Sobre Katherine",
-      "Private rental management with direct owner oversight.": "Administração privada de aluguel com supervisão direta da proprietária.",
-      "Katherine Riordan is a dedicated private property manager focused on providing organized, transparent, and professional rental support for both property owners and prospective tenants.": "Katherine Riordan é uma administradora privada de propriedades dedicada a oferecer suporte de aluguel organizado, transparente e profissional para proprietários e possíveis inquilinos.",
-      "She works closely with applicants throughout the leasing process, helping them understand application requirements, schedule property tours, and navigate each step with clarity and confidence.": "Ela trabalha de perto com os candidatos durante todo o processo de locação, ajudando-os a entender os requisitos da solicitação, agendar visitas ao imóvel e avançar em cada etapa com clareza e confiança.",
-      "With a strong emphasis on communication, reliability, and professionalism, Katherine is committed to creating a rental experience that feels smooth, well-structured, and respectful for everyone involved.": "Com forte ênfase em comunicação, confiabilidade e profissionalismo, Katherine se compromete a criar uma experiência de aluguel tranquila, bem estruturada e respeitosa para todos os envolvidos.",
-      "Her approach is centered around responsive communication, transparent expectations, and making the rental process as straightforward and stress-free as possible.": "Sua abordagem é centrada em comunicação ágil, expectativas transparentes e em tornar o processo de aluguel o mais simples e livre de estresse possível.",
+      "Meet Paul Goodling": "Sobre Paul Goodling",
+      "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.": "Paul Goodling é um administrador privado de propriedades dedicado a oferecer suporte de aluguel organizado, transparente e profissional para proprietários e possíveis inquilinos.",
+      "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.": "Paul Goodling trabalha de perto com os candidatos durante todo o processo de locação, ajudando-os a entender os requisitos da solicitação, agendar visitas ao imóvel e avançar em cada etapa com clareza e confiança.",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "Com forte ênfase em comunicação, confiabilidade e profissionalismo, Paul Goodling se compromete a criar uma experiência de aluguel tranquila, bem estruturada e respeitosa para todos os envolvidos.",
       "HOA Logo": "Logo HOA",
       "Community & HOA Guidelines Respected": "Diretrizes da comunidade e da HOA respeitadas",
-      "Managed in alignment with community standards": "Administrado em alinhamento com os padrões da comunidade",
       "Rental process": "Processo de aluguel",
       "Simple next steps": "Próximos passos simples",
       "View Property Details": "Ver detalhes do imóvel",
@@ -557,11 +567,11 @@
       "Request guidance regarding availability, application steps, move-in timing, or general rental questions before proceeding.": "Solicite orientação sobre disponibilidade, etapas da candidatura, datas de mudança ou perguntas gerais sobre o aluguel antes de prosseguir.",
       "Property Manager": "Gestora de propriedades",
       "Direct Contact": "Contato direto",
-      "For rental inquiries or application support, contact Katherine directly.": "Para dúvidas sobre aluguel ou apoio com sua candidatura, entre em contato diretamente com Katherine.",
-      "If you have questions regarding the application process, please contact Katherine Riordan directly.": "Em caso de dúvidas sobre o processo de solicitação, entre em contato diretamente com Katherine Riordan.",
-      "Email Katherine Riordan": "Enviar e-mail para Katherine Riordan",
-      "Call Katherine Riordan": "Ligar para Katherine Riordan",
-      "© 2026 Katherine Riordan. Privately managed rentals.": "© 2026 Katherine Riordan. Aluguéis administrados de forma privada.",
+      "For rental inquiries or application support, contact Paul Goodling directly.": "Para dúvidas sobre aluguel ou apoio com sua candidatura, entre em contato diretamente com Paul Goodling.",
+      "If you have questions regarding the application process, please contact Paul Goodling directly.": "Em caso de dúvidas sobre o processo de solicitação, entre em contato diretamente com Paul Goodling.",
+      "Email Paul Goodling": "Enviar e-mail para Paul Goodling",
+      "Call Paul Goodling": "Ligar para Paul Goodling",
+      "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. Aluguéis administrados de forma privada.",
       "Secure rental application": "Solicitação segura de aluguel",
       "Rental Application Form": "Formulário de Solicitação de Aluguel",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "Preencha este formulário com precisão. Todas as informações fornecidas permanecerão confidenciais e são necessárias exclusivamente para o processo de aprovação da solicitação de aluguel. Cada adulto (18+) que se candidatar para morar na unidade deve preencher uma solicitação separada.",
@@ -612,13 +622,13 @@
       "I certify that the information provided is true and complete to the best of my knowledge.": "Certifico que as informações fornecidas são verdadeiras e completas conforme meu conhecimento.",
       "Application received": "Solicitação recebida",
       "Thank you. Your application has been submitted.": "Obrigado. Sua solicitação foi enviada.",
-      "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.": "Sua solicitação foi marcada como recebida. Verifique seu e-mail ou telefone para atualizações de Katherine sobre análise, visitas ou próximos passos.",
+      "Your application is marked as received. Please watch your email or phone for updates from Paul Goodling about review status, tour scheduling, or next-step instructions.": "Sua solicitação foi marcada como recebida. Verifique seu e-mail ou telefone para atualizações de Paul Goodling sobre análise, visitas ou próximos passos.",
       "Status: Received": "Status: recebida",
       "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.": "As solicitações são analisadas diretamente pela proprietária. Você será contatado se forem necessárias mais informações.",
       "Secure processing note": "Nota de processamento seguro",
       "Application details may be processed through Zillow Rental Manager in partnership with the property owner.": "Os detalhes da solicitação podem ser processados pelo Zillow Rental Manager em parceria com a proprietária.",
       "Return Home": "Voltar ao início",
-      "Contact Katherine": "Contatar Katherine",
+      "Contact Paul Goodling": "Contatar Paul Goodling",
       "Example: 2 years": "Exemplo: 2 anos",
       "Names and relationship to applicant": "Nomes e relação com o candidato",
       "Type, breed": "Tipo, raça",
@@ -627,11 +637,15 @@
       "Submitting securely...": "Enviando com segurança...",
       "Application submitted. Redirecting...": "Solicitação enviada. Redirecionando...",
       "Submitted. Redirecting...": "Enviada. Redirecionando...",
-      "Something went wrong. Please try again.": "Algo deu errado. Tente novamente."
+      "Something went wrong. Please try again.": "Algo deu errado. Tente novamente.",
+      "How would you like to contact?": "Como você gostaria de entrar em contato?",
+      "Call": "Ligar",
+      "Text": "Enviar mensagem",
+      "Cancel": "Cancelar"
     },
     ar: {
-      "Private Property Manager": "مديرة عقارات خاصة",
-      "Katherine Riordan home": "الصفحة الرئيسية لـ Katherine Riordan",
+      "Private Property Manager": "مدير عقارات خاص",
+      "Paul Goodling home": "الصفحة الرئيسية لـ Paul Goodling",
       "Open navigation": "فتح التنقل",
       "Main navigation": "التنقل الرئيسي",
       "Language": "اللغة",
@@ -668,18 +682,15 @@
       "Gallery navigation": "تنقل المعرض",
       "Privately managed rentals": "إيجارات بإدارة خاصة",
       "Quality rental homes with a simple and transparent application process.": "منازل إيجار عالية الجودة مع عملية تقديم بسيطة وشفافة.",
-      "Katherine Riordan offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "تقدم Katherine Riordan منازل إيجار بإدارة خاصة تركز على الشفافية والتواصل السريع وتجربة تأجير سلسة.",
+      "Paul Goodling offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.": "تقدم Paul Goodling منازل إيجار بإدارة خاصة تركز على الشفافية والتواصل السريع وتجربة تأجير سلسة.",
       "Secure Application Processing": "معالجة آمنة للطلبات",
       "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.": "تتم معالجة الطلبات بأمان عبر Zillow Rental Manager بالشراكة مع مالكة العقار.",
-      "About Katherine": "نبذة عن Katherine",
-      "Private rental management with direct owner oversight.": "إدارة إيجار خاصة بإشراف مباشر من المالكة.",
-      "Katherine Riordan is a dedicated private property manager focused on providing organized, transparent, and professional rental support for both property owners and prospective tenants.": "Katherine Riordan مديرة عقارات خاصة متفانية تركز على تقديم دعم إيجاري منظم وشفاف ومهني لكل من مالكي العقارات والمستأجرين المحتملين.",
-      "She works closely with applicants throughout the leasing process, helping them understand application requirements, schedule property tours, and navigate each step with clarity and confidence.": "تعمل عن قرب مع المتقدمين طوال عملية التأجير، وتساعدهم على فهم متطلبات الطلب وجدولة جولات العقار والتنقل في كل خطوة بوضوح وثقة.",
-      "With a strong emphasis on communication, reliability, and professionalism, Katherine is committed to creating a rental experience that feels smooth, well-structured, and respectful for everyone involved.": "مع تركيز قوي على التواصل والموثوقية والمهنية، تلتزم Katherine بخلق تجربة إيجار سلسة ومنظمة ومحترمة لجميع الأطراف.",
-      "Her approach is centered around responsive communication, transparent expectations, and making the rental process as straightforward and stress-free as possible.": "يرتكز نهجها على التواصل السريع والتوقعات الشفافة وجعل عملية الإيجار مباشرة وخالية من التوتر قدر الإمكان.",
+      "Meet Paul Goodling": "نبذة عن Paul Goodling",
+      "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.": "Paul Goodling مدير عقارات خاص متفانٍ يركز على تقديم دعم إيجاري منظم وشفاف ومهني لكل من مالكي العقارات والمستأجرين المحتملين.",
+      "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.": "Paul Goodling يعمل عن قرب مع المتقدمين طوال عملية التأجير، ويساعدهم على فهم متطلبات الطلب وجدولة جولات العقار والتنقل في كل خطوة بوضوح وثقة.",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "مع تركيز قوي على التواصل والموثوقية والمهنية، تلتزم Paul Goodling بخلق تجربة إيجار سلسة ومنظمة ومحترمة لجميع الأطراف.",
       "HOA Logo": "شعار HOA",
       "Community & HOA Guidelines Respected": "احترام إرشادات المجتمع و HOA",
-      "Managed in alignment with community standards": "تتم الإدارة بما يتماشى مع معايير المجتمع",
       "Rental process": "عملية الإيجار",
       "Simple next steps": "خطوات تالية بسيطة",
       "View Property Details": "عرض تفاصيل العقار",
@@ -700,13 +711,13 @@
       "How will I be contacted?": "كيف سيتم التواصل معي؟",
       "Applicants are typically contacted using the phone number or email provided in the application form.": "عادة يتم التواصل مع المتقدمين عبر رقم الهاتف أو البريد الإلكتروني المقدم في نموذج الطلب.",
       "Request guidance regarding availability, application steps, move-in timing, or general rental questions before proceeding.": "اطلب الإرشاد بشأن التوفّر أو خطوات الطلب أو مواعيد الانتقال أو أي استفسارات عامة حول الإيجار قبل المتابعة.",
-      "Property Manager": "مديرة عقارية",
+      "Property Manager": "مدير عقاري",
       "Direct Contact": "تواصل مباشر",
-      "For rental inquiries or application support, contact Katherine directly.": "للاستفسارات عن الإيجار أو الدعم بخصوص الطلب، يمكنكم التواصل مع Katherine مباشرةً.",
-      "If you have questions regarding the application process, please contact Katherine Riordan directly.": "إذا كان لديكم أي أسئلة بشأن عملية التقديم، يُرجى التواصل مباشرةً مع Katherine Riordan.",
-      "Email Katherine Riordan": "مراسلة Katherine Riordan عبر البريد الإلكتروني",
-      "Call Katherine Riordan": "الاتصال بـ Katherine Riordan",
-      "© 2026 Katherine Riordan. Privately managed rentals.": "© 2026 Katherine Riordan. إيجارات بإدارة خاصة.",
+      "For rental inquiries or application support, contact Paul Goodling directly.": "للاستفسارات عن الإيجار أو الدعم بخصوص الطلب، يمكنكم التواصل مع Paul Goodling مباشرةً.",
+      "If you have questions regarding the application process, please contact Paul Goodling directly.": "إذا كان لديكم أي أسئلة بشأن عملية التقديم، يُرجى التواصل مباشرةً مع Paul Goodling.",
+      "Email Paul Goodling": "مراسلة Paul Goodling عبر البريد الإلكتروني",
+      "Call Paul Goodling": "الاتصال بـ Paul Goodling",
+      "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. إيجارات بإدارة خاصة.",
       "Secure rental application": "طلب إيجار آمن",
       "Rental Application Form": "نموذج طلب الإيجار",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "يرجى إكمال هذا النموذج بدقة. ستبقى جميع المعلومات المقدمة سرية وهي مطلوبة فقط لعملية الموافقة على طلب الإيجار. يجب على كل بالغ (18+) يتقدم للسكن في الوحدة إكمال طلب منفصل.",
@@ -759,13 +770,13 @@
       "I certify that the information provided is true and complete to the best of my knowledge.": "أقر بأن المعلومات المقدمة صحيحة وكاملة حسب علمي.",
       "Application received": "تم استلام الطلب",
       "Thank you. Your application has been submitted.": "شكراً لك. تم إرسال طلبك.",
-      "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.": "تم وضع علامة على طلبك كطلب مستلم. يرجى متابعة بريدك الإلكتروني أو هاتفك للحصول على تحديثات من Katherine حول حالة المراجعة أو جدولة الجولة أو تعليمات الخطوة التالية.",
+      "Your application is marked as received. Please watch your email or phone for updates from Paul Goodling about review status, tour scheduling, or next-step instructions.": "تم وضع علامة على طلبك كطلب مستلم. يرجى متابعة بريدك الإلكتروني أو هاتفك للحصول على تحديثات من Paul Goodling حول حالة المراجعة أو جدولة الجولة أو تعليمات الخطوة التالية.",
       "Status: Received": "الحالة: تم الاستلام",
       "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.": "تتم مراجعة الطلبات مباشرة من مالكة العقار. سيتم التواصل معك إذا كانت هناك حاجة إلى مزيد من المعلومات.",
       "Secure processing note": "ملاحظة المعالجة الآمنة",
       "Application details may be processed through Zillow Rental Manager in partnership with the property owner.": "قد تتم معالجة تفاصيل الطلب عبر Zillow Rental Manager بالشراكة مع مالكة العقار.",
       "Return Home": "العودة للرئيسية",
-      "Contact Katherine": "التواصل مع Katherine",
+      "Contact Paul Goodling": "التواصل مع Paul Goodling",
       "Example: 2 years": "مثال: سنتان",
       "Names and relationship to applicant": "الأسماء والعلاقة بالمتقدم",
       "Type, breed": "النوع والسلالة",
@@ -774,15 +785,19 @@
       "Submitting securely...": "جارٍ الإرسال بأمان...",
       "Application submitted. Redirecting...": "تم إرسال الطلب. جارٍ التحويل...",
       "Submitted. Redirecting...": "تم الإرسال. جارٍ التحويل...",
-      "Something went wrong. Please try again.": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+      "Something went wrong. Please try again.": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+      "How would you like to contact?": "كيف تود التواصل؟",
+      "Call": "اتصال",
+      "Text": "رسالة نصية",
+      "Cancel": "إلغاء"
     }
   };
 
   const aliases = {
-    "Administradora Privada de Propiedades": "Private Property Manager",
+    "Administrador Privado de Propiedades": "Private Property Manager",
     "Abrir navegación": "Open navigation",
     "Navegación principal": "Main navigation",
-    "Inicio de Katherine Riordan": "Katherine Riordan home",
+    "Inicio de Paul Goodling": "Paul Goodling home",
     "Idioma": "Language",
     "Selector de idioma": "Language selector",
     "Seleccionar idioma": "Select language",
@@ -817,18 +832,16 @@
     "Navegación de galería": "Gallery navigation",
     "Alquileres administrados de forma privada": "Privately managed rentals",
     "Viviendas de alquiler de calidad con un proceso de solicitud simple y transparente.": "Quality rental homes with a simple and transparent application process.",
-    "Katherine Riordan ofrece viviendas de alquiler administradas de forma privada, con enfoque en transparencia, comunicación receptiva y una experiencia de arrendamiento fluida.": "Katherine Riordan offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.",
+    "Paul Goodling ofrece viviendas de alquiler administradas de forma privada, con enfoque en transparencia, comunicación receptiva y una experiencia de arrendamiento fluida.": "Paul Goodling offers privately managed rental homes focused on transparency, responsive communication, and a smooth leasing experience.",
     "Procesamiento seguro de solicitudes": "Secure Application Processing",
-    "Las solicitudes se procesan de forma segura mediante Zillow Rental Manager en colaboración con la propietaria.": "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.",
-    "Acerca de Katherine": "About Katherine",
-    "Administración privada de alquileres con supervisión directa de la propietaria.": "Private rental management with direct owner oversight.",
-    "Katherine Riordan es una administradora privada de propiedades dedicada a brindar apoyo de alquiler organizado, transparente y profesional tanto para propietarios como para posibles inquilinos.": "Katherine Riordan is a dedicated private property manager focused on providing organized, transparent, and professional rental support for both property owners and prospective tenants.",
-    "Trabaja de cerca con los solicitantes durante todo el proceso de arrendamiento, ayudándoles a comprender los requisitos de solicitud, programar visitas a la propiedad y avanzar en cada paso con claridad y confianza.": "She works closely with applicants throughout the leasing process, helping them understand application requirements, schedule property tours, and navigate each step with clarity and confidence.",
-    "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Katherine se compromete a crear una experiencia de alquiler fluida, bien estructurada y respetuosa para todos los involucrados.": "With a strong emphasis on communication, reliability, and professionalism, Katherine is committed to creating a rental experience that feels smooth, well-structured, and respectful for everyone involved.",
-    "Su enfoque se centra en la comunicación receptiva, expectativas transparentes y hacer que el proceso de alquiler sea lo más sencillo y libre de estrés posible.": "Her approach is centered around responsive communication, transparent expectations, and making the rental process as straightforward and stress-free as possible.",
+    "Las solicitudes se procesan de forma segura mediante Zillow Rental Manager en colaboración con el propietario.": "Applications are securely processed through Zillow Rental Manager in partnership with the property owner.",
+    "Conozca a Paul Goodling": "Meet Paul Goodling",
+    "Paul Goodling es un administrador de propiedades dedicado a brindar apoyo de alquiler organizado, transparente y profesional para propietarios y posibles inquilinos.": "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.",
+    "Paul Goodling trabaja de cerca con los solicitantes durante todo el proceso de alquiler, ayudándoles a comprender los requisitos, programar visitas a la propiedad y avanzar en cada paso con claridad y confianza.": "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.",
+    "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Paul Goodling está comprometido a hacer que la experiencia de arrendamiento sea fluida, bien estructurada y respetuosa para todos los involucrados.": "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.",
+    "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Paul Goodling está comprometido a hacer que la experiencia de arrendamiento sea fluida, bien estructurada y respetuosa para todos los involucrados.": "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.",
     "Logo HOA": "HOA Logo",
     "Se respetan las pautas de la comunidad y la HOA": "Community & HOA Guidelines Respected",
-    "Administrado en alineación con los estándares de la comunidad": "Managed in alignment with community standards",
     "Siguientes pasos simples": "Simple next steps",
     "Ver detalles de la propiedad": "View Property Details",
     "Revise la información disponible de la propiedad antes de aplicar.": "Review available property information before applying.",
@@ -849,41 +862,45 @@
     "¿Cómo me contactarán?": "How will I be contacted?",
     "Normalmente se contacta a los solicitantes usando el número de teléfono o correo electrónico proporcionado en el formulario.": "Applicants are typically contacted using the phone number or email provided in the application form.",
     "Solicite orientación sobre disponibilidad, pasos de la solicitud, calendario de mudanza u otras consultas relacionadas con el alquiler antes de continuar.": "Request guidance regarding availability, application steps, move-in timing, or general rental questions before proceeding.",
-    "Administradora de propiedades": "Property Manager",
+    "Administrador de propiedades": "Property Manager",
     "Contacto directo": "Direct Contact",
-    "Para consultas sobre alquiler o apoyo con su solicitud, comuníquese directamente con Katherine.": "For rental inquiries or application support, contact Katherine directly.",
-    "Si tiene preguntas sobre el proceso de solicitud, comuníquese directamente con Katherine Riordan.": "If you have questions regarding the application process, please contact Katherine Riordan directly.",
-    "Enviar correo electrónico a Katherine Riordan": "Email Katherine Riordan",
-    "Llamar a Katherine Riordan": "Call Katherine Riordan",
-    "© 2026 Katherine Riordan. Alquileres administrados de forma privada.": "© 2026 Katherine Riordan. Privately managed rentals.",
+    "Para consultas sobre alquiler o apoyo con su solicitud, comuníquese directamente con Paul Goodling.": "For rental inquiries or application support, contact Paul Goodling directly.",
+    "Si tiene preguntas sobre el proceso de solicitud, comuníquese directamente con Paul Goodling.": "If you have questions regarding the application process, please contact Paul Goodling directly.",
+    "Enviar correo electrónico a Paul Goodling": "Email Paul Goodling",
+    "Llamar a Paul Goodling": "Call Paul Goodling",
+    "© 2026 Paul Goodling. Alquileres administrados de forma privada.": "© 2026 Paul Goodling. Privately managed rentals.",
     "Solicitud segura de alquiler": "Secure rental application",
     "Formulario de Solicitud de Alquiler": "Rental Application Form",
     "Complete este formulario con precisión. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado.": "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.",
-    "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria. No participan agentes externos.": "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.",
-    "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por la propietaria.": "This is a privately managed rental. All applications are reviewed directly by the property owner.",
+    "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario. No participan agentes externos.": "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.",
+    "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario.": "This is a privately managed rental. All applications are reviewed directly by the property owner.",
     "Igualdad de oportunidad de vivienda": "Equal Housing Opportunity",
     "Logo de Igualdad de Oportunidad de Vivienda": "Equal Housing Opportunity Logo",
     "Solicitud segura con cifrado SSL": "Secure SSL Encrypted Application",
     "Proceso de solicitud respaldado mediante Zillow Rental Manager": "Application Process Supported Through Zillow Rental Manager",
     "Indicador de respaldo de solicitudes con Zillow Rental Manager": "Zillow Rental Manager application support indicator",
-    "Las solicitudes se envían de forma segura mediante Zillow Rental Manager en colaboración con la propietaria. No participan agentes de arrendamiento externos.": "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.",
+    "Las solicitudes se envían de forma segura mediante Zillow Rental Manager en colaboración con el propietario. No participan agentes de arrendamiento externos.": "Applications are securely submitted through Zillow Rental Manager in partnership with the property owner. No outside leasing agents are involved.",
     "Información de la propiedad": "Property Information",
     "Propiedad para la que aplica": "Property applying for",
     "Ingrese la dirección o el nombre del anuncio": "Enter property address or listing name",
     "Seleccione una propiedad": "Select a property",
     "Fecha deseada de mudanza": "Desired move-in date",
+    "Fecha de solicitud": "Date of Application",
+    "Plazo de arrendamiento solicitado": "Lease Term Requested",
+    "Estatus de ciudadanía/residencia": "Citizenship/Residency Status",
     "Información del solicitante": "Applicant Information",
-    "Nombre legal completo": "Full legal name",
+    "Nombre legal completo (nombre, segundo nombre, apellido)": "Full legal name (First, Middle, Last)",
     "Correo electrónico": "Email address",
-    "Número de teléfono": "Phone number",
+    "Número móvil": "Mobile number",
     "Fecha de nacimiento": "Date of birth",
     "Historial de residencia": "Residency History",
-    "Dirección actual": "Current address",
+    "Dirección actual (con fechas de residencia)": "Current Address (With Dates Of Residency)",
+    "Dirección anterior": "Previous Address",
     "Propietario o administrador actual": "Current landlord or manager",
     "Teléfono del propietario o administrador": "Landlord phone number",
     "¿Cuánto tiempo ha vivido ahí?": "How long have you lived there?",
     "Empleo e ingresos": "Employment & Income",
-    "Empleador o fuente de ingresos": "Employer or income source",
+    "Empleador actual": "Current Employer",
     "Puesto de trabajo": "Job title",
     "Ingreso mensual bruto": "Gross monthly income",
     "Teléfono del empleador": "Employer phone number",
@@ -907,14 +924,14 @@
     "Certifico que la información proporcionada es verdadera y completa a mi leal saber y entender.": "I certify that the information provided is true and complete to the best of my knowledge.",
     "Solicitud recibida": "Application received",
     "Gracias. Su solicitud ha sido enviada.": "Thank you. Your application has been submitted.",
-    "Su solicitud aparece como recibida. Revise su correo electrónico o teléfono para actualizaciones de Katherine sobre el estado de revisión, programación de visita o instrucciones de siguientes pasos.": "Your application is marked as received. Please watch your email or phone for updates from Katherine about review status, tour scheduling, or next-step instructions.",
+    "Su solicitud aparece como recibida. Revise su correo electrónico o teléfono para actualizaciones de Paul Goodling sobre el estado de revisión, programación de visita o instrucciones de siguientes pasos.": "Your application is marked as received. Please watch your email or phone for updates from Paul Goodling about review status, tour scheduling, or next-step instructions.",
     "Estado: Recibida": "Status: Received",
     "Estado de la solicitud": "Application status",
-    "Las solicitudes son revisadas directamente por la propietaria. Se le contactará si se necesita más información.": "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.",
+    "Las solicitudes son revisadas directamente por el propietario. Se le contactará si se necesita más información.": "Applications are reviewed directly by the property owner. You will be contacted if more information is needed.",
     "Nota de procesamiento seguro": "Secure processing note",
-    "Los detalles de la solicitud pueden procesarse mediante Zillow Rental Manager en colaboración con la propietaria.": "Application details may be processed through Zillow Rental Manager in partnership with the property owner.",
+    "Los detalles de la solicitud pueden procesarse mediante Zillow Rental Manager en colaboración con el propietario.": "Application details may be processed through Zillow Rental Manager in partnership with the property owner.",
     "Volver al inicio": "Return Home",
-    "Contactar a Katherine": "Contact Katherine",
+    "Contactar a Paul Goodling": "Contact Paul Goodling",
     "Ejemplo: 2 años": "Example: 2 years",
     "Nombres y relación con el solicitante": "Names and relationship to applicant",
     "Tipo, raza": "Type, breed",
@@ -922,24 +939,30 @@
   };
 
   Object.assign(aliases, {
+    "Administración de alquileres y apoyo de arrendamiento": "Rental Management & Leasing Support",
+    "Paul Goodling es un administrador de propiedades dedicado a brindar apoyo de alquiler organizado, transparente y profesional para propietarios y posibles inquilinos.": "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.",
+    "Paul Goodling trabaja de cerca con los solicitantes durante todo el proceso de alquiler, ayudándoles a comprender los requisitos, programar visitas a la propiedad y avanzar en cada paso con claridad y confianza.": "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.",
+    "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Paul Goodling está comprometido a hacer que la experiencia de arrendamiento sea fluida, bien estructurada y respetuosa para todos los involucrados.": "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.",
     "Cómo funciona el proceso de alquiler": "How the Rental Process Works",
+    "Revise la información disponible de la propiedad antes de comenzar la solicitud.": "Review the available property information before beginning the application.",
     "Revise cuidadosamente la información disponible de la propiedad antes de comenzar el proceso de solicitud.": "Review the available property information carefully before beginning the application process.",
     "Complete el formulario de solicitud de alquiler con información precisa.": "Complete the rental application form with accurate information.",
+    "Su solicitud se revisa antes de asignar cualquier instrucción de pago específica.": "Your submission is reviewed before any application-specific payment instructions are assigned.",
     "Pago de tarifa de solicitud reembolsable": "Refundable Application Fee Payment",
     "Una tarifa de solicitud reembolsable es un pago que se le devolverá si su solicitud no es aprobada o si decide no continuar después de la visita.": "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.",
     "Los solicitantes calificados serán contactados con actualizaciones, detalles de la visita o instrucciones adicionales.": "Qualified applicants will be contacted with updates, tour details, or further instructions.",
-    "Preguntas frecuentes sobre el proceso de alquiler": "Rental Process FAQ",
+    "Una mirada más cercana al entorno comunitario y la experiencia residencial.": "A closer look at the community setting and residential experience.",
     "Puede aplicar completando el formulario de solicitud de alquiler en este sitio web.": "You can apply by completing the rental application form on this website.",
     "Sí, puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Las instrucciones de procesamiento de pago se asignan de forma privada y se proporcionan solo cuando su solicitud está lista para procesamiento.": "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.",
     "No siempre. La disponibilidad de alquiler puede cambiar en cualquier momento.": "Not always. Rental availability may change at any time.",
     "¿Cómo me contactarán después de aplicar?": "How will I be contacted after applying?",
     "Normalmente se contacta a los solicitantes usando el correo electrónico o número de teléfono proporcionado en el formulario de solicitud.": "Applicants are typically contacted using the email address or phone number provided in the application form.",
     "Privado": "Private",
-    "Solicitudes revisadas por la propietaria": "Owner-reviewed applications",
+    "Solicitudes revisadas por el propietario": "Owner-reviewed applications",
     "Seguro": "Secure",
     "Procesamiento asistido por Zillow": "Zillow-assisted processing",
     "Claro": "Clear",
-    "Actualizaciones directas de siguientes pasos": "Direct next-step updates",
+    "Actualizaciones directas de siguientes pasos": "Direct next-step updates"
   });
 
   const optionLabels = {
@@ -958,14 +981,13 @@
       "Refundable Application Fee Payment": "Pago de tarifa de solicitud reembolsable",
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Una tarifa de solicitud reembolsable es un pago que se le devolverá si su solicitud no es aprobada o si decide no continuar después de la visita.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "Los solicitantes calificados serán contactados con actualizaciones, detalles de la visita o instrucciones adicionales.",
-      "Rental Process FAQ": "Preguntas frecuentes sobre el proceso de alquiler",
       "You can apply by completing the rental application form on this website.": "Puede aplicar completando el formulario de solicitud de alquiler en este sitio web.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Sí, puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Las instrucciones de procesamiento de pago se asignan de forma privada y se proporcionan solo cuando su solicitud está lista para procesamiento.",
       "Not always. Rental availability may change at any time.": "No siempre. La disponibilidad de alquiler puede cambiar en cualquier momento.",
       "How will I be contacted after applying?": "¿Cómo me contactarán después de aplicar?",
       "Applicants are typically contacted using the email address or phone number provided in the application form.": "Normalmente se contacta a los solicitantes usando el correo electrónico o número de teléfono proporcionado en el formulario de solicitud.",
       "Private": "Privado",
-      "Owner-reviewed applications": "Solicitudes revisadas por la propietaria",
+      "Owner-reviewed applications": "Solicitudes revisadas por el propietario",
       "Secure": "Seguro",
       "Zillow-assisted processing": "Procesamiento asistido por Zillow",
       "Clear": "Claro",
@@ -978,7 +1000,6 @@
       "Refundable Application Fee Payment": "可退还申请费付款",
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "可退还申请费是指如果您的申请未获批准，或您看房后决定不继续，该费用将退还给您。",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "符合条件的申请人将收到更新、看房详情或进一步说明。",
-      "Rental Process FAQ": "租赁流程常见问题",
       "You can apply by completing the rental application form on this website.": "您可以在本网站填写租赁申请表进行申请。",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "是的，审核后可能会收取可退还申请费。付款处理说明会私下分配，并且仅在您的申请准备进入处理阶段时提供。",
       "Not always. Rental availability may change at any time.": "不一定。出租房源可用情况可能随时变化。",
@@ -998,7 +1019,6 @@
       "Refundable Application Fee Payment": "Paiement des frais de demande remboursables",
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Des frais de demande remboursables sont un paiement qui vous sera retourné si votre demande n’est pas approuvée ou si vous décidez de ne pas poursuivre après la visite.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "Les candidats qualifiés seront contactés avec des mises à jour, les détails de visite ou des instructions supplémentaires.",
-      "Rental Process FAQ": "FAQ du processus de location",
       "You can apply by completing the rental application form on this website.": "Vous pouvez postuler en remplissant le formulaire de demande de location sur ce site.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Oui, des frais de demande remboursables peuvent s’appliquer après examen. Les instructions de traitement du paiement sont attribuées en privé et fournies uniquement lorsque votre demande est prête à être traitée.",
       "Not always. Rental availability may change at any time.": "Pas toujours. La disponibilité des locations peut changer à tout moment.",
@@ -1018,7 +1038,6 @@
       "Refundable Application Fee Payment": "Pagamento da taxa de solicitação reembolsável",
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Uma taxa de solicitação reembolsável é um pagamento que será devolvido se sua solicitação não for aprovada ou se você decidir não prosseguir após a visita.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "Candidatos qualificados serão contatados com atualizações, detalhes da visita ou instruções adicionais.",
-      "Rental Process FAQ": "Perguntas sobre o processo de aluguel",
       "You can apply by completing the rental application form on this website.": "Você pode aplicar preenchendo o formulário de solicitação de aluguel neste site.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Sim, uma taxa de solicitação reembolsável pode ser aplicada após a análise. As instruções de pagamento são atribuídas de forma privada quando sua solicitação estiver pronta para processamento.",
       "Not always. Rental availability may change at any time.": "Nem sempre. A disponibilidade de aluguel pode mudar a qualquer momento.",
@@ -1038,7 +1057,6 @@
       "Refundable Application Fee Payment": "دفع رسوم طلب قابلة للاسترداد",
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "رسوم الطلب القابلة للاسترداد هي دفعة ستعاد إليك إذا لم تتم الموافقة على طلبك أو إذا قررت عدم المتابعة بعد الجولة.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "سيتم التواصل مع المتقدمين المؤهلين بالتحديثات أو تفاصيل الجولة أو التعليمات الإضافية.",
-      "Rental Process FAQ": "الأسئلة الشائعة حول عملية الإيجار",
       "You can apply by completing the rental application form on this website.": "يمكنك التقديم من خلال إكمال نموذج طلب الإيجار على هذا الموقع.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "نعم، قد تُطبق رسوم طلب قابلة للاسترداد بعد المراجعة. يتم تخصيص تعليمات معالجة الدفع بشكل خاص ولا تُقدم إلا عندما يصبح طلبك جاهزًا للمعالجة.",
       "Not always. Rental availability may change at any time.": "ليس دائماً. قد يتغير توافر الإيجار في أي وقت.",
@@ -1055,6 +1073,26 @@
 
   Object.keys(premiumTranslations).forEach((language) => {
     Object.assign(translations[language], premiumTranslations[language]);
+  });
+
+  const polishTranslations = {
+    es: {
+      "Rental Management & Leasing Support": "Administración de alquileres y apoyo de arrendamiento",
+      "Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.": "Paul Goodling es un administrador de propiedades dedicado a brindar apoyo de alquiler organizado, transparente y profesional para propietarios y posibles inquilinos.",
+      "Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.": "Paul Goodling trabaja de cerca con los solicitantes durante todo el proceso de alquiler, ayudándoles a comprender los requisitos, programar visitas a la propiedad y avanzar en cada paso con claridad y confianza.",
+      "With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.": "Con un fuerte énfasis en la comunicación, la confiabilidad y el profesionalismo, Paul Goodling está comprometido a hacer que la experiencia de arrendamiento sea fluida, bien estructurada y respetuosa para todos los involucrados.",
+      "Review the available property information before beginning the application.": "Revise la información disponible de la propiedad antes de comenzar la solicitud.",
+      "Your submission is reviewed before any application-specific payment instructions are assigned.": "Su solicitud se revisa antes de asignar cualquier instrucción de pago específica.",
+      "A closer look at the community setting and residential experience.": "Una mirada más cercana al entorno comunitario y la experiencia residencial."
+    },
+    zh: {},
+    fr: {},
+    pt: {},
+    ar: {}
+  };
+
+  Object.keys(polishTranslations).forEach((language) => {
+    Object.assign(translations[language], polishTranslations[language]);
   });
 
   const validationTranslations = {
@@ -1095,9 +1133,28 @@
       "Application Received Successfully": "Solicitud recibida correctamente",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "Gracias por completar su solicitud de alquiler. Su información se recibió correctamente y está pendiente de revisión.",
       "Thank you for submitting your rental application.": "Gracias por enviar su solicitud de alquiler.",
+      "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.",
+      "Please note that a refundable $75 application fee is required before the approval process can begin.": "Tenga en cuenta que se requiere una tarifa de solicitud reembolsable de $75 antes de que pueda comenzar el proceso de aprobación.",
+      "Once the payment has been confirmed, your application review and approval process will officially commence.": "Una vez confirmado el pago, comenzará oficialmente el proceso de revisión y aprobación de su solicitud.",
       "Your application is currently pending review by the property management team.": "Su solicitud está actualmente pendiente de revisión por parte del equipo de administración de la propiedad.",
       "For security and verification purposes, payment instructions are assigned individually after review and will be provided once your application is ready for processing.": "Por motivos de seguridad y verificación, las instrucciones de pago se asignan individualmente después de la revisión y se proporcionarán cuando su solicitud esté lista para procesamiento.",
       "Application ID:": "ID de solicitud:",
+      "I understand that a refundable application fee is required to proceed with the application process.": "Entiendo que se requiere una tarifa de solicitud reembolsable para continuar con el proceso de solicitud.",
+      "Continue to Payment Instructions": "Continuar a las instrucciones de pago",
+      "Payment Instructions": "Instrucciones de pago",
+      "Payment & Next Steps": "Pago y siguientes pasos",
+      "Application Fee & Next Steps": "Tarifa de solicitud y siguientes pasos",
+      "Thank you for confirming that you are ready to proceed with the refundable application fee. The steps below explain what happens next.": "Gracias por confirmar que está listo para continuar con la tarifa de solicitud reembolsable. Los pasos a continuación explican qué sucede a continuación.",
+      "Fee overview": "Resumen de la tarifa",
+      "A refundable $75 application fee is required before your application can move into the formal review and approval process.": "Se requiere una tarifa de solicitud reembolsable de $75 antes de que su solicitud pueda pasar al proceso formal de revisión y aprobación.",
+      "Payment instructions": "Instrucciones de pago",
+      "Your assigned payment instructions will be provided directly for this application. Use only the method and details linked to your Application ID.": "Sus instrucciones de pago asignadas se proporcionarán directamente para esta solicitud. Use solo el método y los detalles vinculados a su ID de solicitud.",
+      "Submit payment confirmation": "Enviar confirmación de pago",
+      "After you complete payment, you may be asked to upload a confirmation screenshot or send verification using the contact details provided with your instructions.": "Después de completar el pago, se le puede pedir que suba una captura de pantalla de confirmación o envíe verificación usando los datos de contacto proporcionados con sus instrucciones.",
+      "Review begins after confirmation": "La revisión comienza después de la confirmación",
+      "Once payment is confirmed, your application review and approval process will officially begin. Watch your email for updates from the property management team.": "Una vez confirmado el pago, comenzará oficialmente el proceso de revisión y aprobación de su solicitud. Revise su correo electrónico para actualizaciones del equipo de administración de la propiedad.",
+      "If you have not received payment instructions yet, please wait for direct contact before sending any payment. Instructions are provided individually for security and verification.": "Si aún no ha recibido instrucciones de pago, espere contacto directo antes de enviar cualquier pago. Las instrucciones se proporcionan individualmente por seguridad y verificación.",
+      "Back to Application Received": "Volver a solicitud recibida",
       "Email Confirmation": "Confirmación por correo electrónico",
       "Application Review In Progress": "Solicitud en revisión",
       "Application Under Review": "Solicitud en revisión",
@@ -1132,7 +1189,7 @@
       "Keep your payment confirmation for your records.": "Verifique su identidad si la aplicación se lo solicita.",
       "Upload confirmation only after completing the assigned payment.": "Cuando su cuenta esté lista, regrese a esta página y use los datos de pago proporcionados.",
       "Need Help or Want to Verify?": "¿Necesita ayuda o desea verificar?",
-      "For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.": "Para preguntas, aclaraciones o verificación sobre el proceso de solicitud, puede contactar directamente a Katherine usando la información siguiente.",
+      "For any questions, clarification, or verification regarding the application process, you can contact Paul Goodling directly using the information below.": "Para preguntas, aclaraciones o verificación sobre el proceso de solicitud, puede contactar directamente a Paul Goodling usando la información siguiente.",
       "Email:": "Correo electrónico:",
       "Phone:": "Teléfono:",
       "You can also review the main property management website for additional information.": "También puede revisar el sitio principal de administración de propiedades para obtener información adicional.",
@@ -1149,10 +1206,10 @@
       "Selected File": "Archivo seleccionado",
       "Submit Payment Verification": "Enviar verificación de pago",
       "Prefer Email Verification?": "¿Prefiere verificación por correo?",
-      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Katherine for private verification.": "Si ya recibió instrucciones de pago asignadas y prefiere enviar su confirmación de pago por correo, envíela directamente a Katherine para verificación privada.",
+      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Paul Goodling for private verification.": "Si ya recibió instrucciones de pago asignadas y prefiere enviar su confirmación de pago por correo, envíela directamente a Paul Goodling para verificación privada.",
       "Send Email Verification": "Enviar verificación por correo",
       "Payment Verification Submitted": "Verificación de pago enviada",
-      "Your payment confirmation screenshot has been received for private verification. Katherine will review it with your Application ID and assigned payment processing instructions.": "Su captura de pantalla de confirmación de pago fue recibida para verificación privada. Katherine la revisará con su ID de solicitud y las instrucciones de procesamiento de pago asignadas.",
+      "Your payment confirmation screenshot has been received for private verification. Paul Goodling will review it with your Application ID and assigned payment processing instructions.": "Su captura de pantalla de confirmación de pago fue recibida para verificación privada. Paul Goodling la revisará con su ID de solicitud y las instrucciones de procesamiento de pago asignadas.",
       "Please select a payment screenshot before submitting.": "Seleccione una captura de pantalla del pago antes de enviar.",
       "Please upload a JPG, JPEG, or PNG file.": "Suba un archivo JPG, JPEG o PNG.",
       "File size must be less than 10MB.": "El archivo debe pesar menos de 10 MB.",
@@ -1163,6 +1220,22 @@
       "Application Received Successfully": "Demande reçue avec succès",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "Merci d’avoir rempli votre demande de location. Vos informations ont bien été reçues et sont actuellement en cours d’examen.",
       "Application ID:": "ID de demande :",
+      "I understand that a refundable application fee is required to proceed with the application process.": "Je comprends qu’une demande de frais de dossier remboursables est requise pour poursuivre le processus de demande.",
+      "Continue to Payment Instructions": "Continuer vers les instructions de paiement",
+      "Payment Instructions": "Instructions de paiement",
+      "Payment & Next Steps": "Paiement et prochaines étapes",
+      "Application Fee & Next Steps": "Frais de demande et prochaines étapes",
+      "Thank you for confirming that you are ready to proceed with the refundable application fee. The steps below explain what happens next.": "Merci d’avoir confirmé que vous êtes prêt à procéder aux frais de demande remboursables. Les étapes ci-dessous expliquent la suite.",
+      "Fee overview": "Aperçu des frais",
+      "A refundable $75 application fee is required before your application can move into the formal review and approval process.": "Des frais de demande remboursables de 75 $ sont requis avant que votre dossier puisse entrer dans le processus formel d’examen et d’approbation.",
+      "Payment instructions": "Instructions de paiement",
+      "Your assigned payment instructions will be provided directly for this application. Use only the method and details linked to your Application ID.": "Vos instructions de paiement attribuées vous seront fournies directement pour cette demande. Utilisez uniquement la méthode et les détails liés à votre ID de demande.",
+      "Submit payment confirmation": "Envoyer la confirmation de paiement",
+      "After you complete payment, you may be asked to upload a confirmation screenshot or send verification using the contact details provided with your instructions.": "Après le paiement, il peut vous être demandé de téléverser une capture d’écran de confirmation ou d’envoyer une vérification avec les coordonnées fournies dans vos instructions.",
+      "Review begins after confirmation": "L’examen commence après confirmation",
+      "Once payment is confirmed, your application review and approval process will officially begin. Watch your email for updates from the property management team.": "Une fois le paiement confirmé, l’examen et l’approbation de votre demande commenceront officiellement. Surveillez votre e-mail pour les mises à jour de l’équipe de gestion.",
+      "If you have not received payment instructions yet, please wait for direct contact before sending any payment. Instructions are provided individually for security and verification.": "Si vous n’avez pas encore reçu d’instructions de paiement, attendez un contact direct avant d’envoyer un paiement. Les instructions sont fournies individuellement pour la sécurité et la vérification.",
+      "Back to Application Received": "Retour à la demande reçue",
       "Pending": "En attente",
       "Application status": "Statut de la demande",
       "Email Confirmation": "Confirmation par e-mail",
@@ -1193,7 +1266,7 @@
       "Keep your payment confirmation for your records.": "Vérifiez votre identité si l’application vous le demande.",
       "Upload confirmation only after completing the assigned payment.": "Une fois votre compte prêt, revenez sur cette page et utilisez les informations de paiement fournies.",
       "Need Help or Want to Verify?": "Besoin d’aide ou de vérifier ?",
-      "For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.": "Pour toute question, précision ou vérification concernant le processus de demande, vous pouvez contacter Katherine directement avec les coordonnées ci-dessous.",
+      "For any questions, clarification, or verification regarding the application process, you can contact Paul Goodling directly using the information below.": "Pour toute question, précision ou vérification concernant le processus de demande, vous pouvez contacter Paul Goodling directement avec les coordonnées ci-dessous.",
       "Email:": "E-mail :",
       "Phone:": "Téléphone :",
       "You can also review the main property management website for additional information.": "Vous pouvez également consulter le site principal de gestion immobilière pour plus d’informations.",
@@ -1210,10 +1283,10 @@
       "Selected File": "Fichier sélectionné",
       "Submit Payment Confirmation": "Envoyer la confirmation de paiement",
       "Prefer Email Confirmation?": "Vous préférez confirmer par e-mail ?",
-      "If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.": "Si vous préférez envoyer votre confirmation de paiement par e-mail, adressez-la directement à Katherine pour traitement.",
+      "If you would prefer to email your payment confirmation instead, send it directly to Paul Goodling for processing.": "Si vous préférez envoyer votre confirmation de paiement par e-mail, adressez-la directement à Paul Goodling pour traitement.",
       "Send Email Confirmation": "Envoyer la confirmation par e-mail",
       "Payment Confirmation Submitted": "Confirmation de paiement envoyée",
-      "Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.": "Votre capture d’écran de paiement a été reçue et est en attente de vérification privée. Katherine l’examinera avec les détails de votre demande.",
+      "Your payment screenshot has been received and is pending private verification. Paul Goodling will review your confirmation with your application details.": "Votre capture d’écran de paiement a été reçue et est en attente de vérification privée. Paul Goodling l’examinera avec les détails de votre demande.",
       "Please select a payment screenshot before submitting.": "Veuillez sélectionner une capture d’écran du paiement avant d’envoyer.",
       "Please upload a JPG, JPEG, or PNG file.": "Veuillez téléverser un fichier JPG, JPEG ou PNG.",
       "File size must be less than 10MB.": "Le fichier doit faire moins de 10 Mo.",
@@ -1252,7 +1325,7 @@
       "Keep your payment confirmation for your records.": "Verifique sua identidade se o aplicativo solicitar.",
       "Upload confirmation only after completing the assigned payment.": "Quando sua conta estiver pronta, volte a esta página e use os dados de pagamento fornecidos.",
       "Need Help or Want to Verify?": "Precisa de ajuda ou deseja verificar?",
-      "For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.": "Para dúvidas, esclarecimentos ou verificação sobre o processo de solicitação, entre em contato diretamente com Katherine usando as informações abaixo.",
+      "For any questions, clarification, or verification regarding the application process, you can contact Paul Goodling directly using the information below.": "Para dúvidas, esclarecimentos ou verificação sobre o processo de solicitação, entre em contato diretamente com Paul Goodling usando as informações abaixo.",
       "Email:": "E-mail:",
       "Phone:": "Telefone:",
       "You can also review the main property management website for additional information.": "Você também pode consultar o site principal de administração de propriedades para obter mais informações.",
@@ -1269,10 +1342,10 @@
       "Selected File": "Arquivo selecionado",
       "Submit Payment Confirmation": "Enviar confirmação de pagamento",
       "Prefer Email Confirmation?": "Prefere confirmar por e-mail?",
-      "If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.": "Se preferir enviar a confirmação de pagamento por e-mail, envie diretamente para Katherine para processamento.",
+      "If you would prefer to email your payment confirmation instead, send it directly to Paul Goodling for processing.": "Se preferir enviar a confirmação de pagamento por e-mail, envie diretamente para Paul Goodling para processamento.",
       "Send Email Confirmation": "Enviar confirmação por e-mail",
       "Payment Confirmation Submitted": "Confirmação de pagamento enviada",
-      "Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.": "Sua captura de tela do pagamento foi recebida e está pendente de verificação privada. Katherine analisará sua confirmação junto com os detalhes da solicitação.",
+      "Your payment screenshot has been received and is pending private verification. Paul Goodling will review your confirmation with your application details.": "Sua captura de tela do pagamento foi recebida e está pendente de verificação privada. Paul Goodling analisará sua confirmação junto com os detalhes da solicitação.",
       "Please select a payment screenshot before submitting.": "Selecione uma captura de tela do pagamento antes de enviar.",
       "Please upload a JPG, JPEG, or PNG file.": "Envie um arquivo JPG, JPEG ou PNG.",
       "File size must be less than 10MB.": "O arquivo deve ter menos de 10 MB.",
@@ -1283,6 +1356,22 @@
       "Application Received Successfully": "申请已成功收到",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "感谢您完成租赁申请。您的信息已成功收到，目前正在等待审核。",
       "Application ID:": "申请编号：",
+      "I understand that a refundable application fee is required to proceed with the application process.": "我理解需要支付可退还的申请费才能继续申请流程。",
+      "Continue to Payment Instructions": "继续查看付款说明",
+      "Payment Instructions": "付款说明",
+      "Payment & Next Steps": "付款与后续步骤",
+      "Application Fee & Next Steps": "申请费与后续步骤",
+      "Thank you for confirming that you are ready to proceed with the refundable application fee. The steps below explain what happens next.": "感谢您确认已准备好继续支付可退还申请费。以下步骤说明后续流程。",
+      "Fee overview": "费用概览",
+      "A refundable $75 application fee is required before your application can move into the formal review and approval process.": "在进入正式审核和批准流程之前，需要支付可退还的 75 美元申请费。",
+      "Payment instructions": "付款说明",
+      "Your assigned payment instructions will be provided directly for this application. Use only the method and details linked to your Application ID.": "系统将直接为您的申请提供分配的付款说明。请仅使用与您的申请编号关联的方式和详情。",
+      "Submit payment confirmation": "提交付款确认",
+      "After you complete payment, you may be asked to upload a confirmation screenshot or send verification using the contact details provided with your instructions.": "完成付款后，您可能需要上传确认截图，或使用说明中提供的联系方式发送验证信息。",
+      "Review begins after confirmation": "确认后开始审核",
+      "Once payment is confirmed, your application review and approval process will officially begin. Watch your email for updates from the property management team.": "付款确认后，您的申请审核和批准流程将正式开始。请留意物业管理团队发送的电子邮件更新。",
+      "If you have not received payment instructions yet, please wait for direct contact before sending any payment. Instructions are provided individually for security and verification.": "如果您尚未收到付款说明，请在发送任何付款前等待直接联系。出于安全和验证目的，说明将单独提供。",
+      "Back to Application Received": "返回申请已收到页面",
       "Email Confirmation": "电子邮件确认",
       "A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received.": "确认邮件将很快发送到您在申请中提供的电子邮箱。该邮件将确认您的申请已收到。",
       "Secure & Verified Process": "安全且已验证的流程",
@@ -1311,7 +1400,7 @@
       "Keep your payment confirmation for your records.": "如果应用提示，请验证您的身份。",
       "Upload confirmation only after completing the assigned payment.": "账户准备好后，请返回此页面并使用提供的付款信息。",
       "Need Help or Want to Verify?": "需要帮助或想要核实？",
-      "For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.": "如需咨询、说明或核实申请流程，您可以使用以下信息直接联系 Katherine。",
+      "For any questions, clarification, or verification regarding the application process, you can contact Paul Goodling directly using the information below.": "如需咨询、说明或核实申请流程，您可以使用以下信息直接联系 Paul Goodling。",
       "Email:": "电子邮件：",
       "Phone:": "电话：",
       "You can also review the main property management website for additional information.": "您也可以查看主物业管理网站以获取更多信息。",
@@ -1328,10 +1417,10 @@
       "Selected File": "已选择文件",
       "Submit Payment Confirmation": "提交付款确认",
       "Prefer Email Confirmation?": "更愿意通过电子邮件确认？",
-      "If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.": "如果您更愿意通过电子邮件发送付款确认，请直接发送给 Katherine 处理。",
+      "If you would prefer to email your payment confirmation instead, send it directly to Paul Goodling for processing.": "如果您更愿意通过电子邮件发送付款确认，请直接发送给 Paul Goodling 处理。",
       "Send Email Confirmation": "发送电子邮件确认",
       "Payment Confirmation Submitted": "付款确认已提交",
-      "Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.": "您的付款截图已收到，目前等待私下核验。Katherine 将结合您的申请详情审核该确认。",
+      "Your payment screenshot has been received and is pending private verification. Paul Goodling will review your confirmation with your application details.": "您的付款截图已收到，目前等待私下核验。Paul Goodling 将结合您的申请详情审核该确认。",
       "Please select a payment screenshot before submitting.": "提交前请选择付款截图。",
       "Please upload a JPG, JPEG, or PNG file.": "请上传 JPG、JPEG 或 PNG 文件。",
       "File size must be less than 10MB.": "文件大小必须小于 10 MB。",
@@ -1342,6 +1431,22 @@
       "Application Received Successfully": "تم استلام طلبك بنجاح",
       "Thank you for completing your rental application. Your information has been received successfully and is currently pending review.": "شكرًا لك على إكمال طلب الإيجار. تم استلام معلوماتك بنجاح وهي الآن قيد المراجعة.",
       "Application ID:": "رقم الطلب:",
+      "I understand that a refundable application fee is required to proceed with the application process.": "أفهم أن رسوم طلب قابلة للاسترداد مطلوبة للمتابعة في عملية التقديم.",
+      "Continue to Payment Instructions": "المتابعة إلى تعليمات الدفع",
+      "Payment Instructions": "تعليمات الدفع",
+      "Payment & Next Steps": "الدفع والخطوات التالية",
+      "Application Fee & Next Steps": "رسوم الطلب والخطوات التالية",
+      "Thank you for confirming that you are ready to proceed with the refundable application fee. The steps below explain what happens next.": "شكرًا لتأكيدك أنك مستعد للمتابعة مع رسوم الطلب القابلة للاسترداد. توضح الخطوات أدناه ما يحدث بعد ذلك.",
+      "Fee overview": "نظرة عامة على الرسوم",
+      "A refundable $75 application fee is required before your application can move into the formal review and approval process.": "مطلوب رسوم طلب قابلة للاسترداد بقيمة 75 دولارًا قبل أن ينتقل طلبك إلى عملية المراجعة والموافقة الرسمية.",
+      "Payment instructions": "تعليمات الدفع",
+      "Your assigned payment instructions will be provided directly for this application. Use only the method and details linked to your Application ID.": "سيتم تزويدك بتعليمات الدفع المخصصة مباشرة لهذا الطلب. استخدم فقط الطريقة والتفاصيل المرتبطة برقم طلبك.",
+      "Submit payment confirmation": "إرسال تأكيد الدفع",
+      "After you complete payment, you may be asked to upload a confirmation screenshot or send verification using the contact details provided with your instructions.": "بعد إتمام الدفع، قد يُطلب منك رفع لقطة شاشة للتأكيد أو إرسال التحقق باستخدام بيانات الاتصال المقدمة مع تعليماتك.",
+      "Review begins after confirmation": "تبدأ المراجعة بعد التأكيد",
+      "Once payment is confirmed, your application review and approval process will officially begin. Watch your email for updates from the property management team.": "بمجرد تأكيد الدفع، ستبدأ عملية مراجعة طلبك والموافقة عليه رسميًا. تابع بريدك الإلكتروني للحصول على تحديثات من فريق إدارة العقار.",
+      "If you have not received payment instructions yet, please wait for direct contact before sending any payment. Instructions are provided individually for security and verification.": "إذا لم تتلقَ تعليمات الدفع بعد، يرجى انتظار التواصل المباشر قبل إرسال أي دفعة. يتم توفير التعليمات بشكل فردي للأمان والتحقق.",
+      "Back to Application Received": "العودة إلى صفحة استلام الطلب",
       "Pending": "قيد الانتظار",
       "Application status": "حالة الطلب",
       "Email Confirmation": "تأكيد عبر البريد الإلكتروني",
@@ -1372,7 +1477,7 @@
       "Keep your payment confirmation for your records.": "تحقق من هويتك إذا طلب التطبيق ذلك.",
       "Upload confirmation only after completing the assigned payment.": "بعد أن يصبح حسابك جاهزًا، عُد إلى هذه الصفحة واستخدم بيانات الدفع المقدمة.",
       "Need Help or Want to Verify?": "هل تحتاج إلى مساعدة أو ترغب في التحقق؟",
-      "For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.": "لأي أسئلة أو توضيحات أو للتحقق من عملية الطلب، يمكنك التواصل مباشرة مع Katherine باستخدام المعلومات أدناه.",
+      "For any questions, clarification, or verification regarding the application process, you can contact Paul Goodling directly using the information below.": "لأي أسئلة أو توضيحات أو للتحقق من عملية الطلب، يمكنك التواصل مباشرة مع Paul Goodling باستخدام المعلومات أدناه.",
       "Email:": "البريد الإلكتروني:",
       "Phone:": "الهاتف:",
       "You can also review the main property management website for additional information.": "يمكنك أيضًا مراجعة الموقع الرئيسي لإدارة العقارات للحصول على معلومات إضافية.",
@@ -1389,10 +1494,10 @@
       "Selected File": "الملف المحدد",
       "Submit Payment Confirmation": "إرسال تأكيد الدفع",
       "Prefer Email Confirmation?": "تفضل التأكيد عبر البريد الإلكتروني؟",
-      "If you would prefer to email your payment confirmation instead, send it directly to Katherine for processing.": "إذا كنت تفضل إرسال تأكيد الدفع عبر البريد الإلكتروني، فأرسله مباشرة إلى Katherine لمعالجته.",
+      "If you would prefer to email your payment confirmation instead, send it directly to Paul Goodling for processing.": "إذا كنت تفضل إرسال تأكيد الدفع عبر البريد الإلكتروني، فأرسله مباشرة إلى Paul Goodling لمعالجته.",
       "Send Email Confirmation": "إرسال التأكيد عبر البريد الإلكتروني",
       "Payment Confirmation Submitted": "تم إرسال تأكيد الدفع",
-      "Your payment screenshot has been received and is pending private verification. Katherine will review your confirmation with your application details.": "تم استلام لقطة شاشة الدفع وهي بانتظار التحقق الخاص. ستراجع Katherine التأكيد مع تفاصيل طلبك.",
+      "Your payment screenshot has been received and is pending private verification. Paul Goodling will review your confirmation with your application details.": "تم استلام لقطة شاشة الدفع وهي بانتظار التحقق الخاص. ستراجع Paul Goodling التأكيد مع تفاصيل طلبك.",
       "Please select a payment screenshot before submitting.": "يرجى اختيار لقطة شاشة للدفع قبل الإرسال.",
       "Please upload a JPG, JPEG, or PNG file.": "يرجى رفع ملف بصيغة JPG أو JPEG أو PNG.",
       "File size must be less than 10MB.": "يجب أن يكون حجم الملف أقل من 10 ميغابايت.",
@@ -1416,7 +1521,13 @@
       "Available payment options may vary depending on the assigned processing instructions.": "Las opciones de pago disponibles pueden variar según las instrucciones de procesamiento asignadas."
     },
     zh: {
+      "Final Step Important (Read Before Submitting)": "重要最后一步（提交前请阅读）",
+      "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "本人证明本申请所提供的信息据本人所知完整准确。本人理解提供虚假或误导信息可能导致申请被拒，并授权房东/物业管理人员核实所提供的信息。",
+      "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "本人亦理解，可退还申请费的付款说明将在提交后提供。付款确认后，申请将进入审核、批准及后续处理步骤。",
       "Thank you for submitting your rental application.": "感谢您提交租赁申请。",
+      "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "确认邮件将很快发送至您在申请中提供的电子邮箱，以核实您的申请已成功收到。",
+      "Please note that a refundable $75 application fee is required before the approval process can begin.": "请注意，在审批流程开始之前，需要支付可退还的 75 美元申请费。",
+      "Once the payment has been confirmed, your application review and approval process will officially commence.": "付款确认后，您的申请审核和批准流程将正式开始。",
       "Your application is currently pending review by the property management team.": "您的申请目前正在等待物业管理团队审核。",
       "For security and verification purposes, payment instructions are assigned individually after review and will be provided once your application is ready for processing.": "出于安全和验证目的，付款说明会在审核后单独分配，并会在您的申请准备进入处理阶段时提供。",
       "Application Review In Progress": "申请正在审核中",
@@ -1432,10 +1543,10 @@
       "or drag and drop your payment confirmation screenshot here.": "或将付款确认截图拖放到此处。",
       "Submit Payment Verification": "提交付款验证",
       "Prefer Email Verification?": "更愿意通过电子邮件验证？",
-      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Katherine for private verification.": "如果您已收到分配的付款说明，并希望通过电子邮件发送付款确认，请直接发送给 Katherine 进行私下验证。",
+      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Paul Goodling for private verification.": "如果您已收到分配的付款说明，并希望通过电子邮件发送付款确认，请直接发送给 Paul Goodling 进行私下验证。",
       "Send Email Verification": "发送电子邮件验证",
       "Payment Verification Submitted": "付款验证已提交",
-      "Your payment confirmation screenshot has been received for private verification. Katherine will review it with your Application ID and assigned payment processing instructions.": "您的付款确认截图已收到，将用于私下验证。Katherine 会结合您的申请编号和分配的付款处理说明进行审核。",
+      "Your payment confirmation screenshot has been received for private verification. Paul Goodling will review it with your Application ID and assigned payment processing instructions.": "您的付款确认截图已收到，将用于私下验证。Paul Goodling 会结合您的申请编号和分配的付款处理说明进行审核。",
       "Application Review": "申请审核",
       "Your submission is reviewed by the property management team before any application-specific payment instructions are assigned.": "物业管理团队会先审核您的提交内容，然后才会分配任何申请专属付款说明。",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "是的，审核后可能会收取可退还申请费。付款处理说明会私下分配，并且仅在您的申请准备进入处理阶段时提供。",
@@ -1446,7 +1557,13 @@
       "Available payment options may vary depending on the assigned processing instructions.": "可用付款选项可能会根据分配的处理说明而有所不同。"
     },
     fr: {
+      "Final Step Important (Read Before Submitting)": "Étape finale importante (à lire avant d’envoyer)",
+      "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "Je certifie que toutes les informations fournies dans cette demande sont complètes et exactes au meilleur de ma connaissance. Je comprends que fournir des informations fausses ou trompeuses peut entraîner le refus de ma demande, et j’autorise le propriétaire ou le gestionnaire à vérifier les informations fournies.",
+      "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "Je comprends également que les instructions de paiement pour les frais de demande remboursables seront fournies après l’envoi. Une fois le paiement confirmé, ma demande passera à l’examen, à l’approbation et aux prochaines étapes du traitement.",
       "Thank you for submitting your rental application.": "Merci d’avoir envoyé votre demande de location.",
+      "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "Un e-mail de confirmation sera envoyé prochainement à l’adresse indiquée dans votre demande afin de vérifier que votre dossier a bien été reçu.",
+      "Please note that a refundable $75 application fee is required before the approval process can begin.": "Veuillez noter qu’une demande de frais de dossier remboursables de 75 $ est requise avant que le processus d’approbation puisse commencer.",
+      "Once the payment has been confirmed, your application review and approval process will officially commence.": "Une fois le paiement confirmé, l’examen et le processus d’approbation de votre demande commenceront officiellement.",
       "Your application is currently pending review by the property management team.": "Votre demande est actuellement en attente d’examen par l’équipe de gestion immobilière.",
       "For security and verification purposes, payment instructions are assigned individually after review and will be provided once your application is ready for processing.": "Pour des raisons de sécurité et de vérification, les instructions de paiement sont attribuées individuellement après examen et seront fournies lorsque votre demande sera prête à être traitée.",
       "Application Review In Progress": "Demande en cours d’examen",
@@ -1462,10 +1579,10 @@
       "or drag and drop your payment confirmation screenshot here.": "ou glissez-déposez votre capture d’écran de confirmation de paiement ici.",
       "Submit Payment Verification": "Envoyer la vérification du paiement",
       "Prefer Email Verification?": "Vous préférez la vérification par e-mail ?",
-      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Katherine for private verification.": "Si vous avez déjà reçu des instructions de paiement attribuées et préférez envoyer votre confirmation par e-mail, adressez-la directement à Katherine pour une vérification privée.",
+      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Paul Goodling for private verification.": "Si vous avez déjà reçu des instructions de paiement attribuées et préférez envoyer votre confirmation par e-mail, adressez-la directement à Paul Goodling pour une vérification privée.",
       "Send Email Verification": "Envoyer la vérification par e-mail",
       "Payment Verification Submitted": "Vérification du paiement envoyée",
-      "Your payment confirmation screenshot has been received for private verification. Katherine will review it with your Application ID and assigned payment processing instructions.": "Votre capture d’écran de confirmation de paiement a été reçue pour vérification privée. Katherine l’examinera avec votre ID de demande et les instructions de traitement du paiement attribuées.",
+      "Your payment confirmation screenshot has been received for private verification. Paul Goodling will review it with your Application ID and assigned payment processing instructions.": "Votre capture d’écran de confirmation de paiement a été reçue pour vérification privée. Paul Goodling l’examinera avec votre ID de demande et les instructions de traitement du paiement attribuées.",
       "Application Review": "Examen de la demande",
       "Your submission is reviewed by the property management team before any application-specific payment instructions are assigned.": "Votre dossier est examiné par l’équipe de gestion immobilière avant l’attribution de toute instruction de paiement propre à la demande.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Oui, des frais de demande remboursables peuvent s’appliquer après examen. Les instructions de traitement du paiement sont attribuées en privé et fournies uniquement lorsque votre demande est prête à être traitée.",
@@ -1476,7 +1593,13 @@
       "Available payment options may vary depending on the assigned processing instructions.": "Les options de paiement disponibles peuvent varier selon les instructions de traitement attribuées."
     },
     ar: {
+      "Final Step Important (Read Before Submitting)": "الخطوة الأخيرة المهمة (اقرأ قبل الإرسال)",
+      "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "أقر بأن جميع المعلومات المقدمة في هذا الطلب كاملة ودقيقة حسب علمي. أفهم أن تقديم معلومات كاذبة أو مضللة قد يؤدي إلى رفض طلبي، وأفوض المالك/مدير العقار بالتحقق من المعلومات المقدمة.",
+      "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "أفهم أيضًا أنه سيتم تقديم تعليمات الدفع لرسوم الطلب القابلة للاسترداد بعد الإرسال. وبمجرد تأكيد الدفع، سينتقل طلبي إلى المراجعة والموافقة وخطوات المعالجة التالية.",
       "Thank you for submitting your rental application.": "شكرًا لك على إرسال طلب الإيجار.",
+      "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "سيتم إرسال رسالة تأكيد قريبًا إلى عنوان البريد الإلكتروني المذكور في طلبك للتحقق من أن طلبك قد تم استلامه بنجاح.",
+      "Please note that a refundable $75 application fee is required before the approval process can begin.": "يرجى ملاحظة أن رسوم طلب قابلة للاسترداد بقيمة 75 دولارًا أمريكيًا مطلوبة قبل أن تبدأ عملية الموافقة.",
+      "Once the payment has been confirmed, your application review and approval process will officially commence.": "بمجرد تأكيد الدفع، ستبدأ عملية مراجعة طلبك والموافقة عليه رسميًا.",
       "Your application is currently pending review by the property management team.": "طلبك حاليًا بانتظار مراجعة فريق إدارة العقار.",
       "For security and verification purposes, payment instructions are assigned individually after review and will be provided once your application is ready for processing.": "لأغراض الأمان والتحقق، يتم تخصيص تعليمات الدفع بشكل فردي بعد المراجعة، وسيتم توفيرها عندما يصبح طلبك جاهزًا للمعالجة.",
       "Application Review In Progress": "الطلب قيد المراجعة",
@@ -1492,10 +1615,10 @@
       "or drag and drop your payment confirmation screenshot here.": "أو اسحب لقطة شاشة تأكيد الدفع وأفلتها هنا.",
       "Submit Payment Verification": "إرسال التحقق من الدفع",
       "Prefer Email Verification?": "تفضل التحقق عبر البريد الإلكتروني؟",
-      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Katherine for private verification.": "إذا كنت قد تلقيت بالفعل تعليمات دفع مخصصة وتفضل إرسال تأكيد الدفع عبر البريد الإلكتروني، فأرسله مباشرة إلى Katherine للتحقق الخاص.",
+      "If you have already received assigned payment instructions and would prefer to email your payment confirmation instead, send it directly to Paul Goodling for private verification.": "إذا كنت قد تلقيت بالفعل تعليمات دفع مخصصة وتفضل إرسال تأكيد الدفع عبر البريد الإلكتروني، فأرسله مباشرة إلى Paul Goodling للتحقق الخاص.",
       "Send Email Verification": "إرسال التحقق عبر البريد الإلكتروني",
       "Payment Verification Submitted": "تم إرسال التحقق من الدفع",
-      "Your payment confirmation screenshot has been received for private verification. Katherine will review it with your Application ID and assigned payment processing instructions.": "تم استلام لقطة شاشة تأكيد الدفع للتحقق الخاص. ستراجعها Katherine مع رقم طلبك وتعليمات معالجة الدفع المخصصة.",
+      "Your payment confirmation screenshot has been received for private verification. Paul Goodling will review it with your Application ID and assigned payment processing instructions.": "تم استلام لقطة شاشة تأكيد الدفع للتحقق الخاص. ستراجعها Paul Goodling مع رقم طلبك وتعليمات معالجة الدفع المخصصة.",
       "Application Review": "مراجعة الطلب",
       "Your submission is reviewed by the property management team before any application-specific payment instructions are assigned.": "تتم مراجعة طلبك من قبل فريق إدارة العقار قبل تخصيص أي تعليمات دفع خاصة بالطلب.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "نعم، قد تُطبق رسوم طلب قابلة للاسترداد بعد المراجعة. يتم تخصيص تعليمات معالجة الدفع بشكل خاص ولا تُقدم إلا عندما يصبح طلبك جاهزًا للمعالجة.",
@@ -1511,7 +1634,116 @@
     Object.assign(translations[language], workflowTranslations[language]);
   });
 
+  const applicationTrustTranslations = {
+    es: {
+      "Please complete this form accurately and truthfully. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application (Incomplete applications may result in processing delays)": "Complete este formulario con precisión y veracidad. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado (Las solicitudes incompletas pueden causar retrasos en el procesamiento)",
+      "Property Information": "Información de la propiedad",
+      "Applicant Screening": "Evaluación del solicitante",
+      "Send Application for Review": "Enviar solicitud para revisión",
+      "Send Application": "Enviar solicitud",
+      "Complete the rental application form so the details can be reviewed.": "Complete el formulario de solicitud de alquiler para que los detalles puedan revisarse.",
+      "Your application is reviewed first. Any fee or verification details are provided only if they apply to your next step.": "Su solicitud se revisa primero. Cualquier detalle de tarifa o verificación se proporciona solo si corresponde al siguiente paso.",
+      "A refundable application fee may apply after review. If a fee is needed, Paul Goodling will provide clear instructions directly before you send anything.": "Puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Si se necesita una tarifa, Paul Goodling le dará instrucciones claras directamente antes de que envíe cualquier pago.",
+      "Start Application": "Iniciar solicitud",
+      "Application Received": "Solicitud recibida",
+      "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.",
+      "Please note that a refundable $75 application fee is required before the approval process can begin.": "Tenga en cuenta que se requiere una tarifa de solicitud reembolsable de $75 antes de que pueda comenzar el proceso de aprobación.",
+      "Once the payment has been confirmed, your application review and approval process will officially commence.": "Una vez confirmado el pago, comenzará oficialmente el proceso de revisión y aprobación de su solicitud.",
+      "Your submission is being reviewed for completeness and next-step fit. Paul Goodling will contact you directly if more information, tour scheduling, or a refundable fee step is needed.": "Su solicitud se está revisando para confirmar que esté completa y definir los próximos pasos. Paul Goodling se comunicará directamente si se necesita más información, programar una visita o un paso de tarifa reembolsable.",
+      "Only if requested after review": "Solo si se solicita después de la revisión",
+      "Possible Payment Options": "Posibles opciones de pago",
+      "Some application steps may require a refundable fee after review. If that applies, instructions are provided directly and should match your Application ID.": "Algunos pasos de la solicitud pueden requerir una tarifa reembolsable después de la revisión. Si corresponde, las instrucciones se proporcionan directamente y deben coincidir con su ID de solicitud.",
+      "Do not send payment unless Paul Goodling has provided instructions for your application.": "No envíe ningún pago a menos que Paul Goodling le haya proporcionado instrucciones para su solicitud.",
+      "Most application reviews are completed within 24 to 48 hours. If more information is needed, you will be contacted using the email address or phone number provided in your application.": "La mayoría de las revisiones de solicitud se completan dentro de 24 a 48 horas. Si se necesita más información, se le contactará usando el correo electrónico o número de teléfono proporcionado en su solicitud.",
+      "Private Review Process": "Proceso de revisión privado",
+      "The application process is handled directly by the property management team. Submitted details are reviewed carefully, and any next-step instructions are tied to your application.": "El proceso de solicitud es gestionado directamente por el equipo de administración de la propiedad. Los datos enviados se revisan con cuidado, y cualquier instrucción de próximo paso se vincula a su solicitud.",
+      "If a refundable application fee is requested after review, it is returned if the application is not approved or if you decide not to continue after the tour. If approved and you move forward, it is applied toward your first month's rent.": "Si se solicita una tarifa de solicitud reembolsable después de la revisión, se devuelve si la solicitud no es aprobada o si usted decide no continuar después de la visita. Si se aprueba y sigue adelante, se aplica al primer mes de renta.",
+      "Questions or Verification": "Preguntas o verificación",
+      "If you want to confirm a message, ask about timing, or clarify the application process, contact Paul Goodling directly using the information below.": "Si desea confirmar un mensaje, preguntar sobre tiempos o aclarar el proceso de solicitud, contacte directamente a Paul Goodling usando la información siguiente.",
+      "Payment Verification": "Verificación de pago",
+      "Use this page only if Paul Goodling has already provided payment instructions for your application. Upload a confirmation screenshot after completing that assigned step.": "Use esta página solo si Paul Goodling ya le proporcionó instrucciones de pago para su solicitud. Suba una captura de confirmación después de completar ese paso asignado.",
+      "For assigned application steps only": "Solo para pasos asignados de la solicitud",
+      "Accepted Payment Options": "Opciones de pago aceptadas",
+      "Payment instructions are provided individually only when they apply to your reviewed application.": "Las instrucciones de pago se proporcionan individualmente solo cuando corresponden a su solicitud revisada.",
+      "If you have not received instructions directly, no payment is needed from this page.": "Si no ha recibido instrucciones directamente, no se necesita ningún pago desde esta página.",
+      "Choose screenshot": "Elegir captura",
+      "or drag and drop your payment confirmation here.": "o arrastre y suelte su confirmación de pago aquí.",
+      "Send Verification": "Enviar verificación",
+      "Prefer to Email It?": "¿Prefiere enviarla por correo?",
+      "If you have already received instructions and prefer email, you can send the confirmation directly to Paul Goodling for review.": "Si ya recibió instrucciones y prefiere usar correo electrónico, puede enviar la confirmación directamente a Paul Goodling para revisión.",
+      "Email Confirmation": "Enviar confirmación por correo",
+      "Verification Received": "Verificación recibida",
+      "Your confirmation has been received for private review. Paul Goodling will match it with your Application ID and follow up if anything else is needed.": "Su confirmación fue recibida para revisión privada. Paul Goodling la asociará con su ID de solicitud y se comunicará si se necesita algo más.",
+      "Sending...": "Enviando...",
+      "Sending application for review...": "Enviando solicitud para revisión...",
+      "Sending confirmation email...": "Enviando correo de confirmación...",
+      "Your application was saved, but the confirmation email could not be sent. Please contact support@property-management.group.": "Su solicitud fue guardada, pero no se pudo enviar el correo de confirmación. Comuníquese con support@property-management.group.",
+      "Application received. Opening confirmation...": "Solicitud recibida. Abriendo confirmación...",
+      "Application received...": "Solicitud recibida..."
+    },
+    zh: {
+      "Start Application": "开始申请",
+      "Request consultation": "申请咨询",
+      "Contact Paul Goodling": "联系 Paul Goodling"
+    },
+    fr: {
+      "Start Application": "Commencer la demande",
+      "Request consultation": "Demander une consultation",
+      "Contact Paul Goodling": "Contacter Paul Goodling"
+    },
+    pt: {
+      "Start Application": "Iniciar solicitação",
+      "Request consultation": "Solicitar consulta",
+      "Contact Paul Goodling": "Contatar Paul Goodling"
+    },
+    ar: {
+      "Start Application": "بدء الطلب",
+      "Request consultation": "طلب استشارة",
+      "Contact Paul Goodling": "التواصل مع Paul Goodling"
+    }
+  };
+
+  Object.keys(applicationTrustTranslations).forEach((language) => {
+    Object.assign(translations[language], applicationTrustTranslations[language]);
+  });
+
   Object.assign(aliases, {
+    "Complete este formulario con precisión y veracidad. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado (Las solicitudes incompletas pueden causar retrasos en el procesamiento)": "Please complete this form accurately and truthfully. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application (Incomplete applications may result in processing delays)",
+    "Información de la propiedad": "Property Information",
+    "Evaluación del solicitante": "Applicant Screening",
+    "Enviar solicitud para revisión": "Send Application for Review",
+    "Complete el formulario de solicitud de alquiler para que los detalles puedan revisarse.": "Complete the rental application form so the details can be reviewed.",
+    "Su solicitud se revisa primero. Cualquier detalle de tarifa o verificación se proporciona solo si corresponde al siguiente paso.": "Your application is reviewed first. Any fee or verification details are provided only if they apply to your next step.",
+    "Puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Si se necesita una tarifa, Paul Goodling le dará instrucciones claras directamente antes de que envíe cualquier pago.": "A refundable application fee may apply after review. If a fee is needed, Paul Goodling will provide clear instructions directly before you send anything.",
+    "Iniciar solicitud": "Start Application",
+    "Solicitud recibida": "Application Received",
+    "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.": "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.",
+    "Tenga en cuenta que se requiere una tarifa de solicitud reembolsable de $75 antes de que pueda comenzar el proceso de aprobación.": "Please note that a refundable $75 application fee is required before the approval process can begin.",
+    "Una vez confirmado el pago, comenzará oficialmente el proceso de revisión y aprobación de su solicitud.": "Once the payment has been confirmed, your application review and approval process will officially commence.",
+    "Su solicitud se está revisando para confirmar que esté completa y definir los próximos pasos. Paul Goodling se comunicará directamente si se necesita más información, programar una visita o un paso de tarifa reembolsable.": "Your submission is being reviewed for completeness and next-step fit. Paul Goodling will contact you directly if more information, tour scheduling, or a refundable fee step is needed.",
+    "Solo si se solicita después de la revisión": "Only if requested after review",
+    "Posibles opciones de pago": "Possible Payment Options",
+    "Algunos pasos de la solicitud pueden requerir una tarifa reembolsable después de la revisión. Si corresponde, las instrucciones se proporcionan directamente y deben coincidir con su ID de solicitud.": "Some application steps may require a refundable fee after review. If that applies, instructions are provided directly and should match your Application ID.",
+    "No envíe ningún pago a menos que Paul Goodling le haya proporcionado instrucciones para su solicitud.": "Do not send payment unless Paul Goodling has provided instructions for your application.",
+    "La mayoría de las revisiones de solicitud se completan dentro de 24 a 48 horas. Si se necesita más información, se le contactará usando el correo electrónico o número de teléfono proporcionado en su solicitud.": "Most application reviews are completed within 24 to 48 hours. If more information is needed, you will be contacted using the email address or phone number provided in your application.",
+    "Proceso de revisión privado": "Private Review Process",
+    "El proceso de solicitud es gestionado directamente por el equipo de administración de la propiedad. Los datos enviados se revisan con cuidado, y cualquier instrucción de próximo paso se vincula a su solicitud.": "The application process is handled directly by the property management team. Submitted details are reviewed carefully, and any next-step instructions are tied to your application.",
+    "Si se solicita una tarifa de solicitud reembolsable después de la revisión, se devuelve si la solicitud no es aprobada o si usted decide no continuar después de la visita. Si se aprueba y sigue adelante, se aplica al primer mes de renta.": "If a refundable application fee is requested after review, it is returned if the application is not approved or if you decide not to continue after the tour. If approved and you move forward, it is applied toward your first month's rent.",
+    "Preguntas o verificación": "Questions or Verification",
+    "Si desea confirmar un mensaje, preguntar sobre tiempos o aclarar el proceso de solicitud, contacte directamente a Paul Goodling usando la información siguiente.": "If you want to confirm a message, ask about timing, or clarify the application process, contact Paul Goodling directly using the information below.",
+    "Verificación de pago": "Payment Verification",
+    "Use esta página solo si Paul Goodling ya le proporcionó instrucciones de pago para su solicitud. Suba una captura de confirmación después de completar ese paso asignado.": "Use this page only if Paul Goodling has already provided payment instructions for your application. Upload a confirmation screenshot after completing that assigned step.",
+    "Solo para pasos asignados de la solicitud": "For assigned application steps only",
+    "Opciones de pago aceptadas": "Accepted Payment Options",
+    "Las instrucciones de pago se proporcionan individualmente solo cuando corresponden a su solicitud revisada.": "Payment instructions are provided individually only when they apply to your reviewed application.",
+    "Si no ha recibido instrucciones directamente, no se necesita ningún pago desde esta página.": "If you have not received instructions directly, no payment is needed from this page.",
+    "Elegir captura": "Choose screenshot",
+    "o arrastre y suelte su confirmación de pago aquí.": "or drag and drop your payment confirmation here.",
+    "Enviar verificación": "Send Verification",
+    "¿Prefiere enviarla por correo?": "Prefer to Email It?",
+    "Si ya recibió instrucciones y prefiere usar correo electrónico, puede enviar la confirmación directamente a Paul Goodling para revisión.": "If you have already received instructions and prefer email, you can send the confirmation directly to Paul Goodling for review.",
+    "Verificación recibida": "Verification Received",
+    "Su confirmación fue recibida para revisión privada. Paul Goodling la asociará con su ID de solicitud y se comunicará si se necesita algo más.": "Your confirmation has been received for private review. Paul Goodling will match it with your Application ID and follow up if anything else is needed.",
     "Revisión de solicitud": "Application Review",
     "Su envío es revisado por el equipo de administración de la propiedad antes de asignar cualquier instrucción de pago específica de la solicitud.": "Your submission is reviewed by the property management team before any application-specific payment instructions are assigned.",
     "Sí, puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Las instrucciones de procesamiento de pago se asignan de forma privada y se proporcionan solo cuando su solicitud está lista para procesamiento.": "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.",
@@ -1530,7 +1762,7 @@
     "Proceso seguro y verificado": "Secure & Verified Process",
     "Este proceso de solicitud es gestionado directamente por el equipo de administración de la propiedad. Todas las solicitudes enviadas se revisan cuidadosamente, y los detalles de pago específicos de cada solicitud se asignan de forma privada como parte del proceso de verificación.": "This application process is handled directly by the property management team. All submitted applications are reviewed carefully, and application-specific payment details are assigned privately as part of the verification process.",
     "¿Necesita ayuda o desea verificar?": "Need Help or Want to Verify?",
-    "Para preguntas, aclaraciones o verificación sobre el proceso de solicitud, puede contactar directamente a Katherine usando la información siguiente.": "For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.",
+    "Para preguntas, aclaraciones o verificación sobre el proceso de solicitud, puede contactar directamente a Paul Goodling usando la información siguiente.": "For any questions, clarification, or verification regarding the application process, you can contact Paul Goodling directly using the information below.",
     "Correo electrónico:": "Email:",
     "Teléfono:": "Phone:",
     "Asignación privada de pago": "Private payment assignment",
@@ -1679,6 +1911,44 @@
     return languageHomeFallbacks[storedLanguage()] || languageHomeFallbacks.en;
   }
 
+  function currentHomeFile() {
+    const file = window.location.pathname.split("/").pop() || "index.html";
+    return file === "" ? "index.html" : file;
+  }
+
+  function isHomePage() {
+    const file = currentHomeFile();
+    return file === "index.html" || file === "es.html";
+  }
+
+  function redirectForHomeLanguage(language) {
+    if (!isHomePage()) {
+      return false;
+    }
+
+    const lang = normalizeLanguage(language);
+    const target = languageHomeFallbacks[lang] || languageHomeFallbacks.en;
+    const targetUrl = new URL(target, window.location.href);
+    const currentUrl = new URL(window.location.href);
+
+    if (
+      currentUrl.pathname.split("/").pop() !== targetUrl.pathname.split("/").pop() ||
+      currentUrl.search !== targetUrl.search
+    ) {
+      window.location.href = targetUrl.href;
+      return true;
+    }
+
+    return false;
+  }
+
+  function syncFloatingApplyHref(language) {
+    const lang = normalizeLanguage(language);
+    document.querySelectorAll("a.floating-apply").forEach((link) => {
+      link.href = lang === "en" ? "apply.html" : `apply.html?lang=${encodeURIComponent(lang)}`;
+    });
+  }
+
   function syncBackFallbacks(language) {
     const supportedLanguage = normalizeLanguage(language);
     backButtons.forEach((button) => {
@@ -1705,7 +1975,7 @@
     const spanishGalleryDot = text.match(/^Ir a la imagen (\d{1,2})$/);
 
     if (spanishGalleryDot) {
-      const n = Math.min(Math.max(parseInt(spanishGalleryDot[1], 10) || 1, 1), 15);
+      const n = Math.min(Math.max(parseInt(spanishGalleryDot[1], 10) || 1, 1), 7);
       return `Go to image ${n}`;
     }
 
@@ -1717,7 +1987,7 @@
 
     const galleryDot = key.match(/^Go to image (\d{1,2})$/);
     if (galleryDot && language !== "en") {
-      const number = String(Math.min(Math.max(parseInt(galleryDot[1], 10) || 1, 1), 15));
+      const number = String(Math.min(Math.max(parseInt(galleryDot[1], 10) || 1, 1), 7));
       const labels = {
         es: `Ir a la imagen ${number}`,
         zh: `转到第 ${number} 张图片`,
@@ -1864,6 +2134,9 @@
         button.setAttribute("aria-label", language.label);
         button.innerHTML = `<span class="language-flag" aria-hidden="true">${language.flag}</span><span class="language-code">${language.shortLabel}</span>`;
         button.addEventListener("click", function () {
+          if (redirectForHomeLanguage(language.value)) {
+            return;
+          }
           applyLanguage(language.value);
         });
         bar.appendChild(button);
@@ -1882,6 +2155,7 @@
     syncLanguageSelects(supportedLanguage);
     syncLanguageMenus(supportedLanguage);
     syncBackFallbacks(supportedLanguage);
+    syncFloatingApplyHref(supportedLanguage);
     document.querySelectorAll("input, select, textarea").forEach((field) => field.setCustomValidity(""));
     window.localStorage.setItem("site-language", supportedLanguage);
   }
@@ -1949,6 +2223,7 @@
     const prev = slider.querySelector(".community-control-prev");
     const next = slider.querySelector(".community-control-next");
     const dotsTrack = slider.querySelector(".community-dots");
+    const images = Array.from(slider.querySelectorAll(".community-slide img"));
     let currentIndex = slides.findIndex((slide) => slide.classList.contains("is-active"));
     let timer = null;
     let touchStartX = 0;
@@ -1966,6 +2241,10 @@
     if (currentIndex < 0) {
       currentIndex = 0;
     }
+
+    images.forEach((image) => {
+      image.loading = "eager";
+    });
 
     function scrollDotIntoView(dotIndex) {
       if (!dotsTrack || dotIndex < 0 || dotIndex >= dotCount) {
@@ -2123,6 +2402,9 @@
 
   languageSelects.forEach((select) => {
     select.addEventListener("change", function (event) {
+      if (redirectForHomeLanguage(event.target.value)) {
+        return;
+      }
       applyLanguage(event.target.value);
     });
   });
@@ -2149,7 +2431,10 @@
 
   enhanceLanguageSwitchers();
   setupLocalizedValidation();
-  applyLanguage(normalizeLanguage(defaultLanguage));
+  const initialLanguage = normalizeLanguage(defaultLanguage);
+  if (!redirectForHomeLanguage(initialLanguage)) {
+    applyLanguage(initialLanguage);
+  }
 
   document.querySelectorAll(".accordion-item").forEach((item) => {
     item.addEventListener("toggle", function () {
@@ -2170,13 +2455,6 @@
     });
   });
 
-  function formatFieldLabel(name) {
-    return name
-      .replace(/^_/, "")
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (character) => character.toUpperCase());
-  }
-
   function generateApplicationId() {
     const now = new Date();
     const datePart = [
@@ -2189,128 +2467,417 @@
     return `APP-${datePart}-${randomPart}`;
   }
 
+  const FORMSPREE_APPLICATION_ENDPOINT = "https://formspree.io/f/xnjrpagv";
+  const APPLICATION_NOTIFICATION_EMAIL = "support@property-management.group";
+  const EMAILJS_PUBLIC_KEY = "qgu2V41l8Rp9A3ejZ";
+  const EMAILJS_CONFIRMATION_SERVICE = "service_931i15m";
+  const EMAILJS_CONFIRMATION_TEMPLATE = "template_8uscd9q";
+  const EMAILJS_SDK_URL = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+  const FORMSPREE_ONLY_FIELD_NAMES = ["_subject"];
+  let emailJsInitPromise = null;
+
+  function resolveNotificationEmail(form) {
+    return (form.dataset.recipientEmail || APPLICATION_NOTIFICATION_EMAIL).trim();
+  }
+
+  function isValidEmailAddress(value) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || "").trim());
+  }
+
+  function assertEmailJsCompatibleOrigin() {
+    if (window.location.protocol !== "file:") {
+      return;
+    }
+
+    const error = new Error(
+      "EmailJS cannot send email from a file:// page. Run a local server and open http://localhost:8765/apply.html (for example: python3 -m http.server 8765)."
+    );
+    error.stage = "email";
+    throw error;
+  }
+
+  function updateHiddenFormField(form, name, value) {
+    let field = form.querySelector(`input[type="hidden"][name="${CSS.escape(name)}"]`);
+    if (!field) {
+      field = document.createElement("input");
+      field.type = "hidden";
+      field.name = name;
+      form.appendChild(field);
+    }
+    field.value = value;
+  }
+
+  function logEmailJsDebug(label, details) {
+    console.log(`[EmailJS] ${label}`, details || "");
+  }
+
+  function logEmailJsError(label, error) {
+    console.error(`[EmailJS] ${label}`, {
+      message: error?.message,
+      status: error?.status,
+      text: error?.text,
+      stage: error?.stage,
+      originalError: error?.originalError || error
+    });
+  }
+
+  function formatEmailJsError(error) {
+    if (!error) {
+      return "Unknown EmailJS error";
+    }
+
+    const status = error.status || error.statusCode;
+    const text = error.text || error.message || String(error);
+
+    if (status === 403) {
+      if (/non-browser/i.test(text)) {
+        return "EmailJS blocked the request (security settings). Allow your site domain in the EmailJS dashboard.";
+      }
+      return `EmailJS 403: ${text || "Forbidden — add this website URL under EmailJS Account → Security → Allowed domains."}`;
+    }
+
+    if (status === 422) {
+      return `EmailJS 422: ${text || "Invalid template or recipient — confirm To Email is {{email}} in template_8uscd9q."}`;
+    }
+
+    return status ? `EmailJS ${status}: ${text}` : text;
+  }
+
+  function setFormspreeOnlyFieldsDisabled(form, disabled) {
+    FORMSPREE_ONLY_FIELD_NAMES.forEach((fieldName) => {
+      const field = form.querySelector(`[name="${CSS.escape(fieldName)}"]`);
+      if (!field) {
+        return;
+      }
+
+      if (disabled) {
+        field.dataset.emailjsPrevDisabled = field.disabled ? "1" : "0";
+        field.disabled = true;
+        return;
+      }
+
+      field.disabled = field.dataset.emailjsPrevDisabled === "1";
+      delete field.dataset.emailjsPrevDisabled;
+    });
+  }
+
+  function prepareEmailJs() {
+    if (!emailJsInitPromise) {
+      emailJsInitPromise = loadEmailJsSdk()
+        .then((emailjs) => {
+          logEmailJsDebug("Initializing SDK", {
+            publicKeyPrefix: `${EMAILJS_PUBLIC_KEY.slice(0, 4)}...`,
+            serviceId: EMAILJS_CONFIRMATION_SERVICE,
+            templateId: EMAILJS_CONFIRMATION_TEMPLATE
+          });
+          emailjs.init({
+            publicKey: EMAILJS_PUBLIC_KEY,
+            blockHeadless: false
+          });
+          logEmailJsDebug("SDK init complete", { sendForm: typeof emailjs.sendForm === "function" });
+          return emailjs;
+        })
+        .catch((error) => {
+          emailJsInitPromise = null;
+          logEmailJsError("SDK init failed", error);
+          throw error;
+        });
+    }
+
+    return emailJsInitPromise;
+  }
+
+  function recordApplicationEmailStatus(status) {
+    try {
+      window.sessionStorage.setItem("applicationEmailStatus", JSON.stringify(status));
+    } catch (error) {
+      console.warn("Could not store application email status:", error);
+    }
+  }
+
+  function prepareApplicationFormForEmailJs(form, applicationId) {
+    const applicantEmail = String(new FormData(form).get("email") || "").trim();
+    const supportEmail = resolveNotificationEmail(form);
+    const selectedLanguage = currentLanguage();
+
+    updateHiddenFormField(form, "application-id", applicationId);
+    updateHiddenFormField(form, "selected-language", selectedLanguage);
+    updateHiddenFormField(form, "support_email", supportEmail);
+    updateHiddenFormField(form, "to_email", applicantEmail);
+
+    return applicantEmail;
+  }
+
+  function collectEmailJsTemplateParams(form) {
+    const params = {};
+    const formData = new FormData(form);
+
+    formData.forEach((value, key) => {
+      if (FORMSPREE_ONLY_FIELD_NAMES.includes(key)) {
+        return;
+      }
+      params[key] = typeof value === "string" ? value : String(value);
+    });
+
+    const applicantEmail = String(params.email || "").trim();
+    if (applicantEmail) {
+      params.email = applicantEmail;
+      params.to_email = applicantEmail;
+    }
+
+    return params;
+  }
+
+  async function sendApplicationConfirmationEmail(form, applicationId) {
+    assertEmailJsCompatibleOrigin();
+
+    logEmailJsDebug("Confirmation send starting", {
+      applicationId,
+      formId: form.id,
+      origin: window.location.origin,
+      serviceId: EMAILJS_CONFIRMATION_SERVICE,
+      templateId: EMAILJS_CONFIRMATION_TEMPLATE
+    });
+
+    const emailjs = await prepareEmailJs();
+    const applicantEmail = prepareApplicationFormForEmailJs(form, applicationId);
+    const templateParams = collectEmailJsTemplateParams(form);
+
+    if (!isValidEmailAddress(applicantEmail)) {
+      const error = new Error("Applicant email is missing or invalid.");
+      error.stage = "email";
+      logEmailJsError("Invalid applicant email before send", error);
+      throw error;
+    }
+
+    logEmailJsDebug("Template params prepared", {
+      applicationId,
+      applicantEmail,
+      fieldCount: Object.keys(templateParams).length,
+      hasName: Boolean(templateParams.name),
+      hasEmail: Boolean(templateParams.email)
+    });
+
+    try {
+      const result = await emailjs.send(
+        EMAILJS_CONFIRMATION_SERVICE,
+        EMAILJS_CONFIRMATION_TEMPLATE,
+        templateParams
+      );
+      logEmailJsDebug("Confirmation email sent successfully", {
+        status: result?.status,
+        text: result?.text
+      });
+      recordApplicationEmailStatus({
+        applicant: "sent",
+        admin: "skipped",
+        errors: []
+      });
+      return result;
+    } catch (error) {
+      const formattedError = formatEmailJsError(error);
+      logEmailJsError("Confirmation email failed", error);
+      logEmailJsDebug("Failed send context", {
+        formattedError,
+        templateParams
+      });
+      recordApplicationEmailStatus({
+        applicant: "failed",
+        admin: "skipped",
+        errors: [formattedError]
+      });
+      const submissionError = new Error(formattedError);
+      submissionError.stage = "email";
+      submissionError.originalError = error;
+      throw submissionError;
+    }
+  }
+
+  function loadEmailJsSdk(maxWaitMs = 15000) {
+    return new Promise((resolve, reject) => {
+      const deadline = Date.now() + maxWaitMs;
+
+      const tryResolve = () => {
+        if (window.emailjs?.init && window.emailjs?.send) {
+          logEmailJsDebug("SDK load success", {
+            hasInit: true,
+            hasSend: true
+          });
+          resolve(window.emailjs);
+          return true;
+        }
+        return false;
+      };
+
+      const fail = (message) => {
+        logEmailJsError("SDK load failed", new Error(message));
+        reject(new Error(message));
+      };
+
+      const poll = () => {
+        if (tryResolve()) {
+          return;
+        }
+
+        if (Date.now() >= deadline) {
+          fail("EmailJS SDK failed to load before timeout.");
+          return;
+        }
+
+        window.setTimeout(poll, 50);
+      };
+
+      const existingScript = document.querySelector('script[src*="@emailjs/browser"]');
+
+      if (!existingScript) {
+        logEmailJsDebug("Injecting EmailJS SDK script", { url: EMAILJS_SDK_URL });
+        const script = document.createElement("script");
+        script.src = EMAILJS_SDK_URL;
+        script.async = true;
+        script.onload = poll;
+        script.onerror = () => fail("EmailJS SDK script failed to load.");
+        document.head.appendChild(script);
+        poll();
+        return;
+      }
+
+      existingScript.addEventListener("load", poll, { once: true });
+      existingScript.addEventListener("error", () => fail("EmailJS SDK script failed to load."), { once: true });
+      poll();
+    });
+  }
+
+  function safePersistApplicationSession(applicationId, selectedLanguage, applicantProfile) {
+    try {
+      window.sessionStorage.setItem("latestApplicationId", applicationId);
+      window.localStorage.setItem("latestApplicationId", applicationId);
+      window.sessionStorage.setItem("latestApplicationLanguage", selectedLanguage);
+      window.localStorage.setItem("latestApplicationLanguage", selectedLanguage);
+
+      const applicantName = String(applicantProfile?.name || "").trim();
+      const applicantEmail = String(applicantProfile?.email || "").trim();
+
+      if (applicantName) {
+        window.sessionStorage.setItem("latestApplicantName", applicantName);
+        window.localStorage.setItem("latestApplicantName", applicantName);
+      }
+
+      if (applicantEmail) {
+        window.sessionStorage.setItem("latestApplicantEmail", applicantEmail);
+        window.localStorage.setItem("latestApplicantEmail", applicantEmail);
+      }
+    } catch (error) {
+      console.warn("Could not persist application session data:", error);
+    }
+  }
+
   function buildApplicationPayload(form, applicationId) {
     const formData = new FormData(form);
     const selectedLanguage = currentLanguage();
     formData.set("application-id", applicationId);
     formData.set("selected-language", selectedLanguage);
 
-    const entries = [
-      ["application-id", applicationId],
-      ["selected-language", selectedLanguage],
-      ...Array.from(formData.entries()).filter(([name]) => name !== "_subject" && name !== "application-id" && name !== "selected-language")
-    ];
-    const details = entries
-      .map(([name, value]) => `${formatFieldLabel(name)}: ${value || "Not provided"}`)
-      .join("\n");
-    const get = (name) => formData.get(name) || "";
+    const applicantEmail = String(formData.get("email") || "").trim();
+    if (applicantEmail) {
+      formData.set("_replyto", applicantEmail);
+    }
 
-    return {
-      formData,
-      emailParams: {
-        to_email: form.dataset.recipientEmail || "riordankatherine0@gmail.com",
-        recipient_email: form.dataset.recipientEmail || "riordankatherine0@gmail.com",
-        subject: "New Rental Application - Katherine Riordan",
-        application_id: applicationId,
-        applicationId,
-        app_id: applicationId,
-        selected_language: selectedLanguage,
-        language: selectedLanguage,
-        applicant_name: get("full-name"),
-        name: get("full-name"),
-        full_name: get("full-name"),
-        applicant_email: get("email"),
-        email: get("email"),
-        phone: get("phone"),
-        property: get("property"),
-        move_date: get("move-date"),
-        date_of_birth: get("dob"),
-        current_address: get("current-address"),
-        current_landlord: get("current-landlord"),
-        residency_length: get("residency-length"),
-        employer: get("employer"),
-        job_title: get("job-title"),
-        monthly_income: get("monthly-income"),
-        employer_name: get("employer-name"),
-        evicted: get("evicted"),
-        occupants: get("occupants"),
-        pets: get("pets"),
-        notes: get("notes"),
-        emergency_name: get("emergency-name"),
-        emergency_phone: get("emergency-phone"),
-        emergency_relationship: get("emergency-relationship"),
-        agreement: get("agreement") ? "Certified as true and complete" : "Not certified",
-        application_details: details,
-        message: details
-      }
-    };
+    return { formData, applicantEmail };
+  }
+
+  function formatApplicationSubmitError(error) {
+    if (error?.stage === "email") {
+      const base = translateText(
+        "Your application was saved, but the confirmation email could not be sent. Please contact support@property-management.group.",
+        currentLanguage()
+      );
+      const detail = error?.message ? ` ${error.message}` : "";
+      return `${base}${detail}`;
+    }
+
+    return formatFormspreeError(error);
+  }
+
+  function formatFormspreeError(error) {
+    if (!error) {
+      return translateText("Something went wrong. Please try again.", currentLanguage());
+    }
+
+    const message = error.message || String(error);
+    if (/timed out/i.test(message)) {
+      return translateText("The submission timed out. Please check your connection and try again.", currentLanguage());
+    }
+
+    return translateText("Something went wrong. Please try again.", currentLanguage());
   }
 
   async function submitMainApplication(form, submitButton, statusMessage) {
-    const endpoint = form.dataset.formspreeEndpoint;
-    const serviceId = form.dataset.emailjsService;
-    const templateId = form.dataset.emailjsTemplate;
-    const publicKey = form.dataset.emailjsPublicKey;
+    const endpoint = form.dataset.formspreeEndpoint || FORMSPREE_APPLICATION_ENDPOINT;
 
-    if (!endpoint || !serviceId || !templateId || !publicKey) {
+    if (!endpoint) {
       throw new Error("Application services are not available.");
     }
 
     const applicationId = generateApplicationId();
     const selectedLanguage = currentLanguage();
-    console.log("Generated application ID:", applicationId);
+    console.log("[Application] Submission started", { applicationId, language: selectedLanguage });
 
-    window.sessionStorage.setItem("latestApplicationId", applicationId);
-    window.localStorage.setItem("latestApplicationId", applicationId);
-    window.sessionStorage.setItem("latestApplicationLanguage", selectedLanguage);
-    window.localStorage.setItem("latestApplicationLanguage", selectedLanguage);
+    const { formData, applicantEmail } = buildApplicationPayload(form, applicationId);
+    const applicantName = String(formData.get("name") || "").trim();
 
-    const { formData, emailParams } = buildApplicationPayload(form, applicationId);
-
-    const formspreeRequest = withServiceTimeout(
-      submitApplicationToFormspree(endpoint, formData),
-      15000,
-      "Formspree submission timed out."
-    );
-    const emailRequest = withServiceTimeout(
-      sendApplicationEmailNotification(serviceId, templateId, publicKey, emailParams),
-      12000,
-      "EmailJS notification timed out."
-    );
+    safePersistApplicationSession(applicationId, selectedLanguage, {
+      name: applicantName,
+      email: applicantEmail
+    });
 
     if (statusMessage) {
-      statusMessage.textContent = translateText("Submitting securely...", currentLanguage());
+      statusMessage.textContent = translateText("Sending application for review...", currentLanguage());
       statusMessage.classList.remove("is-error", "is-success");
     }
 
-    const [formspreeResult, emailResult] = await Promise.allSettled([formspreeRequest, emailRequest]);
-    const formspreeSucceeded = formspreeResult.status === "fulfilled";
-    const emailSucceeded = emailResult.status === "fulfilled";
-
-    if (formspreeSucceeded) {
-      console.log("Formspree submission succeeded:", formspreeResult.value);
-    } else {
-      console.error("Formspree submission failed:", formspreeResult.reason);
-    }
-
-    if (emailSucceeded) {
-      console.log("EmailJS notification succeeded:", emailResult.value);
-    } else {
-      console.error("EmailJS notification failed:", emailResult.reason);
-    }
-
-    if (!formspreeSucceeded && !emailSucceeded) {
-      throw new Error("Application submission failed.");
-    }
+    const formspreeResult = await withServiceTimeout(
+      submitApplicationToFormspree(endpoint, formData),
+      20000,
+      "Formspree submission timed out."
+    );
+    console.log("[Application] Formspree submission succeeded", formspreeResult);
 
     if (statusMessage) {
-      statusMessage.textContent = translateText("Application submitted. Redirecting...", currentLanguage());
+      statusMessage.textContent = translateText("Sending confirmation email...", currentLanguage());
+    }
+
+    await withServiceTimeout(
+      sendApplicationConfirmationEmail(form, applicationId),
+      45000,
+      "EmailJS notification timed out."
+    ).catch((error) => {
+      if (!error.stage) {
+        error.stage = "email";
+      }
+
+      if (/timed out/i.test(error.message)) {
+        const timeoutMessage =
+          window.location.protocol === "file:"
+            ? "EmailJS cannot send from a file:// page. Use http://localhost:8765/apply.html (run: python3 -m http.server 8765 in your project folder)."
+            : "EmailJS timed out. Check your connection and add this site URL under EmailJS Account → Security → Allowed domains.";
+        const timeoutError = new Error(timeoutMessage);
+        timeoutError.stage = "email";
+        timeoutError.originalError = error;
+        throw timeoutError;
+      }
+
+      throw error;
+    });
+    console.log("[Application] EmailJS confirmation email completed");
+
+    if (statusMessage) {
+      statusMessage.textContent = translateText("Application received. Opening confirmation...", currentLanguage());
       statusMessage.classList.add("is-success");
       statusMessage.classList.remove("is-error");
     }
 
     if (submitButton) {
-      submitButton.textContent = translateText("Submitted. Redirecting...", currentLanguage());
+      submitButton.textContent = translateText("Application received...", currentLanguage());
     }
 
     window.setTimeout(() => {
@@ -2318,7 +2885,7 @@
       const redirectUrl = `${confirmationPage}?applicationId=${encodeURIComponent(applicationId)}&lang=${encodeURIComponent(selectedLanguage)}`;
       console.log("Application redirect triggered:", redirectUrl);
       window.location.href = redirectUrl;
-    }, 900);
+    }, 1200);
   }
 
   async function submitApplicationToFormspree(endpoint, formData) {
@@ -2330,109 +2897,233 @@
       body: formData
     });
 
+    let responseBody = null;
+    try {
+      responseBody = await response.json();
+    } catch (error) {
+      responseBody = null;
+    }
+
     if (!response.ok) {
-      throw new Error(`Formspree submission failed with status ${response.status}.`);
+      const formspreeMessage = Array.isArray(responseBody?.errors)
+        ? responseBody.errors.map((entry) => entry.message).filter(Boolean).join(" ")
+        : responseBody?.error;
+      throw new Error(formspreeMessage || `Formspree submission failed with status ${response.status}.`);
     }
 
     return {
       ok: response.ok,
       status: response.status,
-      statusText: response.statusText
+      statusText: response.statusText,
+      body: responseBody
     };
   }
 
-  async function sendApplicationEmailNotification(serviceId, templateId, publicKey, emailParams) {
-    if (!window.emailjs) {
-      await loadEmailJsSdk();
-    }
-
-    window.emailjs.init({ publicKey });
-    return window.emailjs.send(serviceId, templateId, emailParams);
-  }
-
   function withServiceTimeout(promise, timeoutMs, message) {
-    return Promise.race([
-      promise,
-      new Promise((_, reject) => {
-        window.setTimeout(() => reject(new Error(message)), timeoutMs);
-      })
-    ]);
-  }
+    let timeoutId;
 
-  function loadEmailJsSdk() {
-    return new Promise((resolve, reject) => {
-      if (window.emailjs) {
-        resolve(window.emailjs);
-        return;
-      }
+    const timeoutPromise = new Promise((_, reject) => {
+      timeoutId = window.setTimeout(() => reject(new Error(message)), timeoutMs);
+    });
 
-      const existingScript = document.querySelector('script[src*="@emailjs/browser"]');
-      if (existingScript) {
-        existingScript.addEventListener("load", () => resolve(window.emailjs), { once: true });
-        existingScript.addEventListener("error", reject, { once: true });
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
-      script.async = true;
-      script.onload = () => resolve(window.emailjs);
-      script.onerror = reject;
-      document.head.appendChild(script);
+    return Promise.race([promise, timeoutPromise]).finally(() => {
+      window.clearTimeout(timeoutId);
     });
   }
 
-  if (applicationForm) {
-    applicationForm.addEventListener("submit", async function (event) {
-      event.preventDefault();
+  function initPhoneChoicePrompt() {
+    let dialogEl = null;
+    let lastFocus = null;
 
-      if (!applicationForm.checkValidity()) {
-        applicationForm.reportValidity();
+    function phoneLabels() {
+      const lang = currentLanguage();
+      return {
+        title: translateText("How would you like to contact?", lang),
+        call: translateText("Call", lang),
+        text: translateText("Text", lang),
+        cancel: translateText("Cancel", lang)
+      };
+    }
+
+    function ensureDialog() {
+      if (dialogEl) {
+        return dialogEl;
+      }
+
+      dialogEl = document.createElement("div");
+      dialogEl.id = "phone-choice-dialog";
+      dialogEl.className = "phone-choice-dialog";
+      dialogEl.setAttribute("role", "dialog");
+      dialogEl.setAttribute("aria-modal", "true");
+      dialogEl.setAttribute("aria-labelledby", "phone-choice-title");
+      dialogEl.hidden = true;
+      dialogEl.innerHTML = `
+        <button type="button" class="phone-choice-dialog__backdrop" data-phone-choice-dismiss aria-label="Close"></button>
+        <div class="phone-choice-dialog__panel">
+          <p class="phone-choice-dialog__title" id="phone-choice-title"></p>
+          <p class="phone-choice-dialog__number contact-phone-ltr" id="phone-choice-number"></p>
+          <div class="phone-choice-dialog__actions">
+            <a class="button button-primary phone-choice-dialog__action" id="phone-choice-call" href="#">Call</a>
+            <a class="button button-secondary phone-choice-dialog__action" id="phone-choice-text" href="#">Text</a>
+            <button type="button" class="button button-secondary phone-choice-dialog__cancel" data-phone-choice-dismiss>Cancel</button>
+          </div>
+        </div>
+      `;
+
+      dialogEl.querySelectorAll("[data-phone-choice-dismiss]").forEach((control) => {
+        control.addEventListener("click", closeDialog);
+      });
+
+      document.body.appendChild(dialogEl);
+      return dialogEl;
+    }
+
+    function closeDialog() {
+      if (!dialogEl || dialogEl.hidden) {
         return;
       }
 
-      const submitButton = applicationForm.querySelector('button[type="submit"]');
+      dialogEl.hidden = true;
+      document.body.classList.remove("phone-choice-open");
+
+      if (lastFocus && typeof lastFocus.focus === "function") {
+        lastFocus.focus();
+      }
+    }
+
+    function openDialog(telHref, displayNumber) {
+      const dialog = ensureDialog();
+      const labels = phoneLabels();
+      const digits = telHref.replace(/^tel:/i, "");
+      const numberEl = dialog.querySelector("#phone-choice-number");
+      const callEl = dialog.querySelector("#phone-choice-call");
+      const textEl = dialog.querySelector("#phone-choice-text");
+      const cancelEl = dialog.querySelector(".phone-choice-dialog__cancel");
+      const backdropEl = dialog.querySelector(".phone-choice-dialog__backdrop");
+
+      lastFocus = document.activeElement;
+      dialog.querySelector("#phone-choice-title").textContent = labels.title;
+      numberEl.textContent = displayNumber || digits;
+      callEl.textContent = labels.call;
+      callEl.href = telHref;
+      textEl.textContent = labels.text;
+      textEl.href = `sms:${digits}`;
+      cancelEl.textContent = labels.cancel;
+      backdropEl.setAttribute("aria-label", labels.cancel);
+
+      dialog.hidden = false;
+      document.body.classList.add("phone-choice-open");
+      callEl.focus();
+    }
+
+    document.addEventListener("click", function (event) {
+      const link = event.target.closest('a[href^="tel:"]');
+      if (!link) {
+        return;
+      }
+
+      event.preventDefault();
+      const display =
+        link.querySelector(".contact-channel-text")?.textContent.trim() ||
+        link.textContent.trim();
+      openDialog(link.getAttribute("href"), display);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeDialog();
+      }
+    });
+  }
+
+  initPhoneChoicePrompt();
+
+  function initApplicationFormSubmission() {
+    const form = document.getElementById("application-form");
+
+    if (!form) {
+      console.log("[Application] No #application-form found on this page; submit handler not attached.");
+      return;
+    }
+
+    if (form.dataset.applicationSubmitBound === "true") {
+      console.warn("[Application] Submit handler already bound; skipping duplicate listener.");
+      return;
+    }
+
+    form.dataset.applicationSubmitBound = "true";
+    console.log("[Application] Form detected", {
+      id: form.id,
+      emailjsService: EMAILJS_CONFIRMATION_SERVICE,
+      emailjsTemplate: EMAILJS_CONFIRMATION_TEMPLATE
+    });
+
+    prepareEmailJs().catch((error) => {
+      logEmailJsError("Preload failed (will retry on submit)", error);
+    });
+
+    let isSubmitting = false;
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      if (isSubmitting) {
+        console.warn("[Application] Submit ignored because a submission is already in progress.");
+        return;
+      }
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const submitButton = form.querySelector('button[type="submit"]');
       const originalButtonText = submitButton ? submitButton.textContent : "";
-      const statusMessage = applicationForm.querySelector(".form-status");
-      const usesApplicationServices = Boolean(applicationForm.dataset.formspreeEndpoint);
+      const statusMessage = form.querySelector(".form-status");
+      const usesApplicationServices = Boolean(form.dataset.formspreeEndpoint || FORMSPREE_APPLICATION_ENDPOINT);
 
       if (submitButton && submitButton.disabled) {
         return;
       }
 
       if (!usesApplicationServices) {
-        window.location.href = applicationForm.dataset.confirmation || "application-received.html";
+        window.location.href = form.dataset.confirmation || "application-received.html";
         return;
       }
+
+      isSubmitting = true;
 
       if (submitButton) {
         submitButton.disabled = true;
         submitButton.setAttribute("aria-busy", "true");
-        submitButton.textContent = translateText("Submitting...", currentLanguage());
+        submitButton.textContent = translateText("Sending...", currentLanguage());
       }
 
       if (statusMessage) {
-        statusMessage.textContent = translateText("Submitting securely...", currentLanguage());
+        statusMessage.textContent = translateText("Sending application for review...", currentLanguage());
         statusMessage.classList.remove("is-error", "is-success");
       }
 
       try {
-        await submitMainApplication(applicationForm, submitButton, statusMessage);
+        await submitMainApplication(form, submitButton, statusMessage);
       } catch (error) {
-        console.error("Application submission failed; showing user-facing error:", error);
+        isSubmitting = false;
+        logEmailJsError("Application submission failed", error);
 
         if (submitButton) {
           submitButton.disabled = false;
           submitButton.removeAttribute("aria-busy");
-          submitButton.textContent = originalButtonText || "Submit Application";
+          submitButton.textContent = originalButtonText || "Send Application for Review";
         }
 
         if (statusMessage) {
-          statusMessage.textContent = translateText("Something went wrong. Please try again.", currentLanguage());
+          statusMessage.textContent = formatApplicationSubmitError(error);
           statusMessage.classList.add("is-error");
           statusMessage.classList.remove("is-success");
         }
       }
     });
   }
+
+  initApplicationFormSubmission();
 })();

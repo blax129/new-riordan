@@ -4,29 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Rental application received confirmation and private review status.">
-  <title>Application Received | Katherine Riordan</title>
+  <title>Application Received | Paul Goodling</title>
+  <link rel="icon" href="image/logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="simple-flow-page">
-  <header class="site-header">
+<body class="application-received-page">
+  <header class="site-header back-nav">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Katherine Riordan home">
-        <img class="brand-mark" src="image/logo.png" alt="" aria-hidden="true">
-        <span class="brand-copy">
-          <strong>Katherine Riordan</strong>
-          <span>Private Property Manager</span>
-        </span>
-      </a>
-    </div>
-  </header>
-
-  <div class="back-nav" aria-label="Page navigation">
-    <div class="container narrow">
       <a href="apply.html" class="back-button" id="applicationBackButton" aria-label="Back to Application">
         <span class="back-button-icon" aria-hidden="true">←</span>
         <span>Back</span>
       </a>
     </div>
+  </header>
+
+  <div class="apply-page-stepper-wrap apply-page-stepper-wrap--at-review" aria-label="Application progress overview">
+    <p class="apply-page-stepper__status" aria-live="polite">
+      <span class="sr-only">Step 2 of 4:</span> Review
+    </p>
+    <ol class="apply-page-stepper">
+      <li class="apply-page-step is-done">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">
+            <svg viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2.5 7.2L5.6 10.3L11.5 3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="apply-page-step__label">Application</span>
+        </span>
+        <span class="apply-page-step__rail is-done" aria-hidden="true"></span>
+      </li>
+      <li class="apply-page-step is-active" aria-current="step">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">2</span>
+          <span class="apply-page-step__label">Review</span>
+        </span>
+        <span class="apply-page-step__rail is-partial" aria-hidden="true"></span>
+      </li>
+      <li class="apply-page-step is-upcoming">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">3</span>
+          <span class="apply-page-step__label">Payment</span>
+        </span>
+        <span class="apply-page-step__rail" aria-hidden="true"></span>
+      </li>
+      <li class="apply-page-step is-upcoming">
+        <span class="apply-page-step__node">
+          <span class="apply-page-step__marker" aria-hidden="true">4</span>
+          <span class="apply-page-step__label">Confirmation</span>
+        </span>
+      </li>
+    </ol>
   </div>
 
   <main>
@@ -34,107 +60,40 @@
       <div class="container narrow">
         <!-- Status Badge -->
         <div class="status-badge">
-          <span>Submission Received</span>
+          <span>Application Submitted Successfully</span>
         </div>
 
         <!-- Application Received Card -->
         <div class="confirmation-card">
-          <h1>Application Received Successfully</h1>
+          <h1>Application Received</h1>
           <p>Thank you for submitting your rental application.</p>
-          <p>Your application is currently pending review by the property management team.</p>
-          <p>For security and verification purposes, payment instructions are assigned individually after review and will be provided once your application is ready for processing.</p>
+          <p>A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.</p>
+          <p>Please note that a refundable $75 application fee is required before the approval process can begin.</p>
+          <p>Once the payment has been confirmed, your application review and approval process will officially commence.</p>
           
           <div class="application-id">
             <strong>Application ID:</strong>
             <span id="application-id-value">Pending</span>
           </div>
-        </div>
 
-        <!-- Review Status Card -->
-        <div class="confirmation-card">
-          <div class="review-status-heading">
-            <h2>Application Under Review</h2>
-            <span class="review-status-badge">Pending Review</span>
-          </div>
-          <p>Our team is currently reviewing your submission. Once your application is ready for processing, assigned payment instructions and next steps will be provided directly.</p>
-        </div>
-
-        <!-- Supported Payment Methods Card -->
-        <div class="confirmation-card supported-payments-card" aria-labelledby="supported-payments-title">
-          <div class="supported-payments-heading">
-            <p class="supported-payments-kicker">Private payment assignment</p>
-            <h2 id="supported-payments-title">Supported Payment Methods</h2>
-          </div>
-          <div class="payment-method-grid" aria-label="Supported payment methods">
-            <div class="payment-method-tile">
-              <span class="payment-method-icon payment-method-chime" aria-hidden="true">Ch</span>
-              <span>Chime</span>
-            </div>
-            <div class="payment-method-tile">
-              <span class="payment-method-icon payment-method-zelle" aria-hidden="true">Z</span>
-              <span>Zelle</span>
-            </div>
-            <div class="payment-method-tile">
-              <span class="payment-method-icon payment-method-apple" aria-hidden="true">Pay</span>
-              <span>Apple Pay</span>
-            </div>
-            <div class="payment-method-tile">
-              <span class="payment-method-icon payment-method-venmo" aria-hidden="true">V</span>
-              <span>Venmo</span>
-            </div>
-            <div class="payment-method-tile">
-              <span class="payment-method-icon payment-method-paypal" aria-hidden="true">P</span>
-              <span>PayPal</span>
+          <div class="received-payment-ready">
+            <label class="check-row received-fee-check" for="ready-to-pay-fee">
+              <input id="ready-to-pay-fee" name="ready-to-pay-fee" type="checkbox">
+              <span>I understand that a refundable application fee is required to proceed with the application process.</span>
+            </label>
+            <div class="received-actions">
+              <a
+                id="payment-next-steps-link"
+                class="button button-primary button-full is-disabled"
+                href="payment.html"
+                aria-disabled="true"
+                tabindex="-1"
+              >Continue to Payment Instructions</a>
             </div>
           </div>
-          <p>For security and verification purposes, payment instructions are assigned individually after application review.</p>
-          <p class="supported-payments-note">Available payment options may vary depending on the assigned processing instructions.</p>
         </div>
 
-        <!-- Timeline Card -->
-        <div class="confirmation-card">
-          <h2>Estimated Review Timeline</h2>
-          <p>Most application reviews are completed within 24 to 48 hours. If additional verification is needed, the property management team will contact you using the email address or phone number provided in your application.</p>
-        </div>
 
-        <!-- Email Confirmation Card -->
-        <div class="confirmation-card">
-          <h2>Email Confirmation</h2>
-          <p>A confirmation email will be sent shortly to the email address provided in your application. That email will confirm that your application has been received and is pending review.</p>
-        </div>
-
-        <!-- Secure & Verified Process Card -->
-        <div class="confirmation-card">
-          <h2>Secure & Verified Process</h2>
-          <p>This application process is handled directly by the property management team. All submitted applications are reviewed carefully, and application-specific payment details are assigned privately as part of the verification process.</p>
-        </div>
-
-        <!-- Fee Transparency Card -->
-        <div class="confirmation-card">
-          <h2>Fee Transparency</h2>
-          <p>The application fee is refundable if your application is not approved or if you decide not to proceed after the tour. If approved and you choose to move forward, the fee is applied toward your first month's rent.</p>
-        </div>
-
-        <!-- Need Help Section -->
-        <div class="help-section">
-          <div class="confirmation-card">
-            <h2>Need Help or Want to Verify?</h2>
-            <p>For any questions, clarification, or verification regarding the application process, you can contact Katherine directly using the information below.</p>
-            
-            <div class="contact-info">
-              <div class="contact-item">
-                <strong>Email:</strong>
-                <a href="mailto:riordankatherine0@gmail.com">riordankatherine0@gmail.com</a>
-              </div>
-              <div class="contact-item">
-                <strong>Phone:</strong>
-                <a href="tel:+15136286294">+1 (513) 628-6294</a>
-              </div>
-            </div>
-            
-            <p class="website-note">You can also review the main property management website for additional information.</p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -157,10 +116,10 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-identity">
-        <strong>Katherine Riordan</strong>
+        <strong>Paul Goodling</strong>
         <span class="footer-role">Property Manager</span>
       </div>
-      <p class="footer-legal">&copy; 2026 Katherine Riordan. Privately managed rentals.</p>
+      <p class="footer-legal">&copy; 2026 Paul Goodling. Privately managed rentals.</p>
     </div>
   </footer>
 
@@ -180,7 +139,7 @@
         return supportedLanguages.includes(value) ? value : 'en';
       };
       const storedId = window.sessionStorage.getItem('latestApplicationId') || window.localStorage.getItem('latestApplicationId');
-      const applicationId = idFromUrl || storedId || 'APP-PENDING-REVIEW';
+      const applicationId = idFromUrl || storedId;
       const selectedLanguage = normalizeLanguage(languageFromUrl ||
         window.sessionStorage.getItem('latestApplicationLanguage') ||
         window.localStorage.getItem('latestApplicationLanguage') ||
@@ -188,7 +147,9 @@
         document.documentElement.lang ||
         'en');
 
-      idTarget.textContent = applicationId;
+      if (applicationId) {
+        idTarget.textContent = applicationId;
+      }
 
       if (idFromUrl) {
         window.sessionStorage.setItem('latestApplicationId', idFromUrl);
@@ -211,6 +172,61 @@
       if (backButton) {
         backButton.href = selectedLanguage === 'en' ? 'apply.html' : `apply.html?lang=${encodeURIComponent(selectedLanguage)}`;
         backButton.dataset.fallbackHome = backButton.href;
+      }
+
+      const readyCheckbox = document.getElementById('ready-to-pay-fee');
+      const paymentLink = document.getElementById('payment-next-steps-link');
+
+      const buildPaymentUrl = () => {
+        const params = new URLSearchParams();
+        if (applicationId) {
+          params.set('applicationId', applicationId);
+        }
+        if (selectedLanguage && selectedLanguage !== 'en') {
+          params.set('lang', selectedLanguage);
+        }
+        const query = params.toString();
+        return query ? `payment.html?${query}` : 'payment.html';
+      };
+
+      const updatePaymentLink = () => {
+        if (!paymentLink) {
+          return;
+        }
+
+        paymentLink.href = buildPaymentUrl();
+        const enabled = Boolean(readyCheckbox && readyCheckbox.checked);
+        paymentLink.classList.toggle('is-disabled', !enabled);
+        paymentLink.setAttribute('aria-disabled', enabled ? 'false' : 'true');
+        paymentLink.tabIndex = enabled ? 0 : -1;
+      };
+
+      readyCheckbox?.addEventListener('change', updatePaymentLink);
+      paymentLink?.addEventListener('click', (event) => {
+        if (!readyCheckbox?.checked) {
+          event.preventDefault();
+        }
+      });
+
+      updatePaymentLink();
+
+      try {
+        const emailStatusRaw = window.sessionStorage.getItem('applicationEmailStatus');
+        if (emailStatusRaw) {
+          const emailStatus = JSON.parse(emailStatusRaw);
+          const confirmationParagraph = document.querySelector('.confirmation-card p:nth-of-type(2)');
+
+          if (emailStatus.applicant !== 'sent' && confirmationParagraph) {
+            confirmationParagraph.insertAdjacentHTML(
+              'afterend',
+              '<p class="form-status is-error" role="status">We saved your application, but the confirmation email could not be sent automatically. Please contact support@property-management.group if you do not receive it soon.</p>'
+            );
+          }
+
+          window.sessionStorage.removeItem('applicationEmailStatus');
+        }
+      } catch (error) {
+        console.warn('Could not read application email status:', error);
       }
 
     })();
