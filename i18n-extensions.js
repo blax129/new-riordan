@@ -16,17 +16,17 @@
       fr: "Finalisez votre demande",
       ar: "أكمل طلبك"
     },
-    "Your application is almost complete. Please submit the application fee using one of the secure methods below.": {
-      es: "Su solicitud está casi completa. Envíe la tarifa de solicitud mediante uno de los métodos seguros que aparecen a continuación.",
-      zh: "您的申请即将完成。请使用以下任一安全方式提交申请费。",
-      fr: "Votre demande est presque terminée. Veuillez régler les frais de dossier via l’un des modes sécurisés ci-dessous.",
-      ar: "طلبك على وشك الاكتمال. يُرجى دفع رسوم الطلب بإحدى الطرق الآمنة أدناه."
+    "Your application is almost complete. Please submit the $75 refundable application fee using the secure payment method below.": {
+      es: "Su solicitud está casi completa. Envíe la tarifa de solicitud reembolsable de $75 mediante el método de pago seguro que aparece a continuación.",
+      zh: "您的申请即将完成。请使用下方安全付款方式提交 75 美元可退还申请费。",
+      fr: "Votre demande est presque terminée. Veuillez régler les frais de dossier remboursables de 75 $ via le mode de paiement sécurisé ci-dessous.",
+      ar: "طلبك على وشك الاكتمال. يُرجى دفع رسوم الطلب القابلة للاسترداد بقيمة 75 دولارًا عبر طريقة الدفع الآمنة أدناه."
     },
-    "Refundable Application Fee Required": {
-      es: "Se requiere tarifa de solicitud reembolsable",
-      zh: "需支付可退还申请费",
-      fr: "Frais de demande remboursables requis",
-      ar: "مطلوب رسوم طلب قابلة للاسترداد"
+    "Refundable application fee": {
+      es: "Tarifa de solicitud reembolsable",
+      zh: "可退还申请费",
+      fr: "Frais de demande remboursables",
+      ar: "رسوم طلب قابلة للاسترداد"
     },
     "Debit & Credit Card": {
       es: "Tarjeta de débito y crédito",
@@ -106,11 +106,11 @@
       fr: "Chime Pay Anyone",
       ar: "Chime Pay Anyone"
     },
-    "Send your refundable application fee securely through Chime using the Pay Anyone feature.": {
-      es: "Envíe su tarifa de solicitud reembolsable de forma segura a través de Chime con la función Pay Anyone.",
-      zh: "通过 Chime 的 Pay Anyone 功能安全支付可退还的申请费。",
-      fr: "Envoyez vos frais de candidature remboursables en toute sécurité via Chime avec la fonction Pay Anyone.",
-      ar: "أرسل رسوم الطلب القابلة للاسترداد بأمان عبر Chime باستخدام ميزة Pay Anyone."
+    "Send your $75 refundable application fee securely through Chime using the Pay Anyone feature.": {
+      es: "Envíe su tarifa de solicitud reembolsable de $75 de forma segura a través de Chime con la función Pay Anyone.",
+      zh: "通过 Chime 的 Pay Anyone 功能安全支付 75 美元可退还申请费。",
+      fr: "Envoyez vos frais de candidature remboursables de 75 $ en toute sécurité via Chime avec la fonction Pay Anyone.",
+      ar: "أرسل رسوم الطلب القابلة للاسترداد بقيمة 75 دولارًا بأمان عبر Chime باستخدام ميزة Pay Anyone."
     },
     "Payment Phone Number": {
       es: "Número de teléfono de pago",
@@ -159,6 +159,60 @@
       zh: "付款前请仔细核对电话号码。收到付款确认后，我们将开始审核您的申请。",
       fr: "Vérifiez attentivement le numéro de téléphone avant d’envoyer le paiement. L’examen de votre candidature commencera une fois la confirmation de paiement reçue.",
       ar: "يُرجى التأكد من رقم الهاتف بعناية قبل إرسال الدفع. ستبدأ مراجعة طلبك بمجرد استلام تأكيد الدفع."
+    },
+    "Don't Have Chime?": {
+      es: "¿No tiene Chime?",
+      zh: "还没有 Chime？",
+      fr: "Vous n’avez pas Chime ?",
+      ar: "ليس لديك Chime؟"
+    },
+    "Follow these steps to create a Chime account, then return here to complete your $75 application fee payment.": {
+      es: "Siga estos pasos para crear una cuenta Chime y luego regrese aquí para completar el pago de su tarifa de solicitud de $75.",
+      zh: "按以下步骤创建 Chime 账户，然后返回此页面完成 75 美元申请费付款。",
+      fr: "Suivez ces étapes pour créer un compte Chime, puis revenez ici pour régler vos frais de demande remboursables de 75 $.",
+      ar: "اتبع هذه الخطوات لإنشاء حساب Chime، ثم عد إلى هنا لإكمال دفع رسوم الطلب البالغة 75 دولارًا."
+    },
+    "Download the official Chime mobile banking app using the links below.": {
+      es: "Descargue la aplicación oficial de banca móvil Chime usando los enlaces a continuación.",
+      zh: "使用下方链接下载官方 Chime 手机银行应用。",
+      fr: "Téléchargez l’application officielle de banque mobile Chime via les liens ci-dessous.",
+      ar: "حمّل تطبيق Chime الرسمي للخدمات المصرفية عبر الروابط أدناه."
+    },
+    "Open the app and tap Sign Up to begin your application.": {
+      es: "Abra la aplicación y toque Sign Up para iniciar su solicitud.",
+      zh: "打开应用并点击 Sign Up 开始申请。",
+      fr: "Ouvrez l’application et appuyez sur Sign Up pour commencer votre demande.",
+      ar: "افتح التطبيق واضغط على Sign Up لبدء طلبك."
+    },
+    "Enter your personal information and complete identity verification as prompted.": {
+      es: "Ingrese su información personal y complete la verificación de identidad según se le indique.",
+      zh: "输入个人信息并按提示完成身份验证。",
+      fr: "Saisissez vos informations personnelles et complétez la vérification d’identité comme demandé.",
+      ar: "أدخل معلوماتك الشخصية وأكمل التحقق من الهوية كما هو مطلوب."
+    },
+    "Once your account is approved, return to this page and send your payment using Pay Anyone.": {
+      es: "Una vez aprobada su cuenta, regrese a esta página y envíe su pago con Pay Anyone.",
+      zh: "账户获批后，返回此页面并使用 Pay Anyone 发送付款。",
+      fr: "Une fois votre compte approuvé, revenez sur cette page et envoyez votre paiement via Pay Anyone.",
+      ar: "بعد الموافقة على حسابك، عد إلى هذه الصفحة وأرسل دفعتك باستخدام Pay Anyone."
+    },
+    "Download the Chime App": {
+      es: "Descargar la aplicación Chime",
+      zh: "下载 Chime 应用",
+      fr: "Télécharger l’application Chime",
+      ar: "تنزيل تطبيق Chime"
+    },
+    "App Store": {
+      es: "App Store",
+      zh: "App Store",
+      fr: "App Store",
+      ar: "App Store"
+    },
+    "Google Play": {
+      es: "Google Play",
+      zh: "Google Play",
+      fr: "Google Play",
+      ar: "Google Play"
     },
     "After payment, upload a screenshot or receipt confirmation.": {
       es: "Después del pago, suba una captura de pantalla o comprobante de confirmación.",

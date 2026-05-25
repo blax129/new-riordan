@@ -7232,6 +7232,36 @@ fieldset,
   color: var(--text) !important;
 }
 
+.received-fee-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(15, 39, 68, 0.04);
+  border: 1px solid rgba(15, 39, 68, 0.08);
+}
+
+.received-fee-summary__text {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.received-fee-summary__amount {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
 .profile-image-card {
   box-shadow: var(--shadow-lg) !important;
   border-color: rgba(15, 39, 68, 0.1) !important;
