@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Privately managed rental homes by Paul Goodling with a simple, secure application process.">
   <title>Paul Goodling | Private Property Manager</title>
   <link rel="icon" href="image/logo.png">
@@ -22,24 +22,9 @@
 <body class="home-page">
   <header class="site-header" id="home">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Paul Goodling home">
-        <img class="brand-mark" src="image/logo.png" alt="Paul Goodling logo" width="48" height="48" decoding="async">
-        <span class="brand-copy">
-          <strong>Paul Goodling</strong>
-          <span>Private Property Manager</span>
-        </span>
+      <a href="#home" class="brand" aria-label="Home">
+        <img src="image/ppm-group-logo.svg" alt="Private Property Management" class="brand-mark" width="64" height="64" decoding="async">
       </a>
-
-      <div class="language-switcher header-language" aria-label="Language selector">
-        <span aria-hidden="true">Language</span>
-        <select class="language-select" aria-label="Select language">
-          <option value="en">English</option>
-          <option value="es">Español</option>
-          <option value="zh">中文</option>
-          <option value="fr">Français</option>
-          <option value="ar">العربية</option>
-        </select>
-      </div>
 
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
         <span class="sr-only">Open navigation</span>
@@ -52,9 +37,8 @@
         <a href="#home"><span class="nav-icon" aria-hidden="true"></span>Home</a>
         <a href="#about"><span class="nav-icon" aria-hidden="true"></span>About</a>
         <a href="#services-section"><span class="nav-icon" aria-hidden="true"></span>Services</a>
-        <a href="#faq"><span class="nav-icon" aria-hidden="true"></span>FAQ</a>
+        <a href="#faq"><span class="nav-icon" aria-hidden="true"></span>Rental Process FAQ</a>
         <a href="#contact"><span class="nav-icon" aria-hidden="true"></span>Contact</a>
-        <a href="#consultation"><span class="nav-icon" aria-hidden="true"></span>Request Consultation</a>
         <div class="language-switcher nav-language" aria-label="Language selector">
           <span>Language</span>
           <select class="language-select" aria-label="Select language">
@@ -70,35 +54,63 @@
   </header>
 
   <main>
-    <section class="hero profile-hero" aria-labelledby="hero-title">
+    <section class="hero profile-hero" id="about" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy-block">
-          <p class="eyebrow">Private property management</p>
-          <h1 id="hero-title">Rental Management & Leasing Support</h1>
+          <h1 class="eyebrow" id="hero-title">Private property management</h1>
+          <div class="copy-panel">
+            <p>Private Property Management delivers professional rental support for privately managed homes and prospective tenants, with a focus on consistency, transparency, and accountability at every stage of the leasing process.</p>
+            <p>From initial inquiries and scheduling to application guidance and communication, our approach is structured and service-oriented. We prioritize clear expectations, timely follow-through, and dependable coordination so both property owners and applicants experience a smooth, efficient, and respectful process.</p>
+          </div>
         </div>
 
-        <aside class="profile-image-card" aria-label="Paul Goodling">
-          <div class="profile-photo-frame">
-            <img class="profile-photo-img" src="images/jimmie-hatcher.jpg" alt="Paul Goodling, professional portrait" width="1153" height="1152" decoding="async" fetchpriority="high">
-          </div>
-          <div class="profile-card-caption">
-            <strong>Paul Goodling</strong>
-            <span>Private Property Manager</span>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <section class="section about-section" id="about" aria-labelledby="about-title">
-      <div class="container split-section">
+    <section class="section why-work-section" id="why-work" aria-labelledby="why-work-title">
+      <div class="container">
         <div class="section-heading">
-          <h2 id="about-title">Meet Paul Goodling</h2>
+          <h2 id="why-work-title">Why work with Private property management</h2>
         </div>
-        <div class="copy-panel">
-          <p>Paul Goodling is a dedicated property manager focused on providing organized, transparent, and professional rental support for property owners and prospective tenants.</p>
-          <p>Paul Goodling works closely with applicants throughout the rental process, helping them understand requirements, schedule property tours, and move through each step with clarity and confidence.</p>
-          <p>With a strong emphasis on communication, reliability, and professionalism, Paul Goodling is committed to making the leasing experience smooth, well structured, and respectful for everyone involved.</p>
+
+        <div class="community-slider" data-community-slider aria-roledescription="carousel" aria-label="Why work with Private property management">
+          <div class="community-track">
+            <figure class="community-slide is-active">
+              <img src="images/why-work/why-work-1.png" alt="Private property management team group photo" loading="lazy" decoding="async">
+            </figure>
+            <figure class="community-slide">
+              <img src="images/why-work/why-work-2.png" alt="Office team gathering and celebration moment" loading="lazy" decoding="async">
+            </figure>
+            <figure class="community-slide">
+              <img src="images/why-work/why-work-3.png" alt="Team members posing in office with flag display" loading="lazy" decoding="async">
+            </figure>
+            <figure class="community-slide">
+              <img src="images/why-work/why-work-4.png" alt="Staff group photo in conference room" loading="lazy" decoding="async">
+            </figure>
+          </div>
+
+          <button class="community-control community-control-prev" type="button" aria-label="Previous image">
+            <span aria-hidden="true">&lsaquo;</span>
+          </button>
+          <button class="community-control community-control-next" type="button" aria-label="Next image">
+            <span aria-hidden="true">&rsaquo;</span>
+          </button>
+
+          <div class="community-dots" aria-label="Gallery navigation">
+            <button class="community-dot is-active" type="button" aria-label="Go to image 1"></button>
+            <button class="community-dot" type="button" aria-label="Go to image 2"></button>
+            <button class="community-dot" type="button" aria-label="Go to image 3"></button>
+            <button class="community-dot" type="button" aria-label="Go to image 4"></button>
+          </div>
         </div>
+
+        <ul class="why-work-points" aria-label="Why work with Private property management points">
+          <li>Professional and organized rental management process</li>
+          <li>Clear and transparent communication</li>
+          <li>Responsive support for applicants and inquiries</li>
+          <li>Reliable coordination between tenants and property owners</li>
+          <li>A focus on professionalism and smooth leasing experiences</li>
+        </ul>
       </div>
     </section>
 
@@ -151,13 +163,13 @@
           </li>
           <li>
             <span>02</span>
-            <h3>Send Application</h3>
-            <p>Complete the rental application form so the details can be reviewed.</p>
+            <h3>Submit Application</h3>
+            <p>Complete the rental application form with accurate information.</p>
           </li>
           <li>
             <span>03</span>
-            <h3>Application Review</h3>
-            <p>Your application is reviewed first. Any fee or verification details are provided only if they apply to your next step.</p>
+            <h3>Refundable Application Fee Payment</h3>
+            <p>A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.</p>
           </li>
           <li>
             <span>04</span>
@@ -168,63 +180,10 @@
       </div>
     </section>
 
-    <section class="section community-section" id="gallery-section" aria-labelledby="community-title">
-      <div class="container">
-        <div class="community-heading">
-          <div class="section-heading">
-            <h2 id="community-title">Community &amp; Moments</h2>
-          </div>
-        </div>
-
-        <div class="community-slider" data-community-slider aria-roledescription="carousel" aria-label="Community & Moments">
-          <div class="community-track">
-            <figure class="community-slide is-active">
-              <img src="images/com1.jpg" alt="Warm residential courtyard with elegant outdoor seating" fetchpriority="high" decoding="async">
-            </figure>
-            <figure class="community-slide">
-              <img src="images/com4.jpg" alt="Tree lined residential walking path with warm lighting" loading="lazy" decoding="async">
-            </figure>
-            <figure class="community-slide">
-              <img src="images/com5.jpg" alt="Rooftop community terrace at sunset" loading="lazy" decoding="async">
-            </figure>
-            <figure class="community-slide">
-              <img src="images/com11.jpg" alt="Sunlit clubhouse dining warmed by layered natural textures" loading="lazy" decoding="async">
-            </figure>
-            <figure class="community-slide">
-              <img src="images/com12.jpg" alt="Reflective water feature edging manicured planters and evening light" loading="lazy" decoding="async">
-            </figure>
-            <figure class="community-slide">
-              <img src="images/com13.jpg" alt="Contemporary coworking vignette highlighted by artisan lighting" loading="lazy" decoding="async">
-            </figure>
-            <figure class="community-slide">
-              <img src="images/com14.jpg" alt="Twilight pool deck with luminous architectural lines" loading="lazy" decoding="async">
-            </figure>
-          </div>
-
-          <button class="community-control community-control-prev" type="button" aria-label="Previous image">
-            <span aria-hidden="true">&lsaquo;</span>
-          </button>
-          <button class="community-control community-control-next" type="button" aria-label="Next image">
-            <span aria-hidden="true">&rsaquo;</span>
-          </button>
-
-          <div class="community-dots" aria-label="Gallery navigation">
-            <button class="community-dot is-active" type="button" aria-label="Go to image 1"></button>
-            <button class="community-dot" type="button" aria-label="Go to image 2"></button>
-            <button class="community-dot" type="button" aria-label="Go to image 3"></button>
-            <button class="community-dot" type="button" aria-label="Go to image 4"></button>
-            <button class="community-dot" type="button" aria-label="Go to image 5"></button>
-            <button class="community-dot" type="button" aria-label="Go to image 6"></button>
-            <button class="community-dot" type="button" aria-label="Go to image 7"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section faq-section" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-heading faq-heading-wrap">
-          <h2 class="faq-heading" id="faq-title">FAQ</h2>
+          <h2 class="faq-heading" id="faq-title">Rental Process FAQ</h2>
         </div>
 
         <div class="faq-accordion">
@@ -237,7 +196,7 @@
           <details class="faq-card accordion-item">
             <summary>Is there an application fee?</summary>
             <div class="accordion-content">
-              <p>A refundable application fee may apply after review. If a fee is needed, Paul Goodling will provide clear instructions directly before you send anything.</p>
+              <p>Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.</p>
             </div>
           </details>
           <details class="faq-card accordion-item">
@@ -258,23 +217,15 @@
 
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container consultation-panel" id="consultation">
-        <h2 class="sr-only" id="contact-title">Request Consultation</h2>
+        <h2 class="sr-only" id="contact-title">Contact</h2>
         <div class="consultation-copy">
-          <p class="eyebrow">Request consultation</p>
+          <div class="contact-section-logo">
+            <img src="image/ppm-group-logo.svg" alt="Private Property Management" class="contact-brand-mark" width="72" height="72" loading="lazy" decoding="async">
+          </div>
           <div class="direct-contact-mini">
             <div class="contact-channels" role="list">
               <a class="contact-channel" role="listitem" href="mailto:support@property-management.group" aria-label="Email Paul Goodling"><span class="contact-channel-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4V6zm0 0 8 6 8-6"/></svg></span><span class="contact-channel-text contact-email-ltr">support@property-management.group</span></a>
               <a class="contact-channel" role="listitem" href="tel:+15136286294" aria-label="Call Paul Goodling"><span class="contact-channel-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></span><span class="contact-channel-text contact-phone-ltr">+1 (513) 628-6294</span></a>
-            </div>
-          </div>
-        </div>
-        <div class="consultation-actions">
-          <div class="hoa-badge" aria-label="Community and HOA trust indicator">
-            <div class="hoa-logo-placeholder" aria-hidden="true">
-              <img src="images/hoa.jpeg" alt="" width="160" height="120" loading="lazy" decoding="async">
-            </div>
-            <div class="hoa-text">
-              <strong>Community &amp; HOA Guidelines Respected</strong>
             </div>
           </div>
         </div>

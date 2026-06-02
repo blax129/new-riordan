@@ -68,7 +68,7 @@
       "Services": "Servicios",
       "Gallery": "Galería",
       "Rental Process": "Proceso de alquiler",
-      "FAQ": "Preguntas",
+      "Rental Process FAQ": "Preguntas del proceso de alquiler",
       "Contact": "Contacto",
       "Request Consultation": "Solicitar consulta",
       "Apply Now": "Aplicar Ahora",
@@ -117,6 +117,7 @@
       "You can apply directly through the secure rental application form on this website.": "Puede aplicar directamente mediante el formulario seguro de solicitud de alquiler en este sitio web.",
       "Is there an application fee?": "¿Hay una tarifa de solicitud?",
       "Yes. A refundable application fee may apply after submitting the application.": "Sí. Puede aplicarse una tarifa de solicitud reembolsable después de enviar la solicitud.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Sí, hay una tarifa de solicitud reembolsable de $75, que se paga a través de Chime después de enviar su solicitud.",
       "Are listings always available?": "¿Los listados siempre están disponibles?",
       "Availability may change at any time depending on current occupancy and application status.": "La disponibilidad puede cambiar en cualquier momento según la ocupación actual y el estado de las solicitudes.",
       "How will I be contacted?": "¿Cómo me contactarán?",
@@ -131,6 +132,8 @@
       "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. Alquileres administrados de forma privada.",
       "Secure rental application": "Solicitud segura de alquiler",
       "Rental Application Form": "Formulario de Solicitud de Alquiler",
+      "Rental Application": "Solicitud de alquiler",
+      "Complete the form below to begin your application process.": "Complete el formulario a continuación para iniciar su proceso de solicitud.",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "Complete este formulario con precisión. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario. No participan agentes externos.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario.",
@@ -146,7 +149,8 @@
       "Select a property": "Seleccione una propiedad",
       "Desired move-in date": "Fecha deseada de mudanza",
       "Date of Application": "Fecha de solicitud",
-      "Lease Term Requested": "Plazo de arrendamiento solicitado",
+      "lease duration": "duración del arrendamiento",
+      "choose lease duration": "Elija la duración del arrendamiento",
       "Citizenship/Residency Status": "Estatus de ciudadanía/residencia",
       "Applicant Information": "Información del solicitante",
       "Full legal name (First, Middle, Last)": "Nombre legal completo (nombre, segundo nombre, apellido)",
@@ -184,6 +188,12 @@
       "Agreement": "Acuerdo",
       "I certify that the information provided is true and complete to the best of my knowledge.": "Certifico que la información proporcionada es verdadera y completa a mi leal saber y entender.",
       "Final Step Important (Read Before Submitting)": "Paso final importante (leer antes de enviar)",
+      "Before you submit": "Antes de enviar",
+      "Certification & Acknowledgment": "Certificación y confirmación",
+      "Application certification": "Certificación de la solicitud",
+      "Fee & next steps": "Tarifa y siguientes pasos",
+      "I have read and agree to the statements above.": "He leído y acepto las declaraciones anteriores.",
+      "Payment method for the fee": "Método de pago de la tarifa",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "Certifico que toda la información proporcionada en esta solicitud es completa y exacta según mi leal saber y entender. Entiendo que proporcionar información falsa o engañosa puede resultar en la denegación de mi solicitud, y autorizo al propietario o administrador de la propiedad a verificar la información proporcionada.",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "También entiendo que las instrucciones de pago para la tarifa de solicitud reembolsable se proporcionarán después del envío. Una vez confirmado el pago, mi solicitud pasará a la revisión, aprobación y siguientes pasos del proceso.",
       "Application received": "Solicitud recibida",
@@ -263,7 +273,7 @@
       "Services": "服务",
       "Gallery": "图库",
       "Rental Process": "租赁流程",
-      "FAQ": "常见问题",
+      "Rental Process FAQ": "租赁流程常见问题",
       "Contact": "联系",
       "Request Consultation": "申请咨询",
       "Apply Now": "立即申请",
@@ -310,6 +320,7 @@
       "You can apply directly through the secure rental application form on this website.": "您可以直接通过本网站的安全租赁申请表申请。",
       "Is there an application fee?": "是否有申请费？",
       "Yes. A refundable application fee may apply after submitting the application.": "是的。提交申请后可能会收取可退还申请费。",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "是的，有一笔 75 美元的可退还申请费，需在提交申请后通过 Chime 支付。",
       "Are listings always available?": "房源是否始终可用？",
       "Availability may change at any time depending on current occupancy and application status.": "可租情况可能随当前入住和申请状态随时变化。",
       "How will I be contacted?": "会如何联系我？",
@@ -324,6 +335,8 @@
       "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling。私人管理租赁。",
       "Secure rental application": "安全租赁申请",
       "Rental Application Form": "租赁申请表",
+      "Rental Application": "租赁申请",
+      "Complete the form below to begin your application process.": "请填写以下表格以开始您的申请流程。",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "请准确填写此表。所有提供的信息都将保持保密，仅用于租赁申请审批流程。每位申请入住该单元的成年人（18岁及以上）都必须单独填写一份申请。",
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "这是私人管理的出租房。所有申请均由业主直接审核，不涉及第三方代理。",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "这是私人管理的出租房。所有申请均由业主直接审核。",
@@ -408,7 +421,7 @@
       "Services": "Services",
       "Gallery": "Galerie",
       "Rental Process": "Processus de location",
-      "FAQ": "FAQ",
+      "Rental Process FAQ": "FAQ — processus de location",
       "Contact": "Contact",
       "Request Consultation": "Demander une consultation",
       "Apply Now": "Postuler Maintenant",
@@ -456,6 +469,7 @@
       "You can apply directly through the secure rental application form on this website.": "Vous pouvez postuler directement via le formulaire sécurisé de ce site.",
       "Is there an application fee?": "Y a-t-il des frais de demande ?",
       "Yes. A refundable application fee may apply after submitting the application.": "Oui. Des frais de demande remboursables peuvent s’appliquer après l’envoi de la demande.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Oui, il y a des frais de demande remboursables de 75 $, payés via Chime après l’envoi de votre demande.",
       "Are listings always available?": "Les annonces sont-elles toujours disponibles ?",
       "Availability may change at any time depending on current occupancy and application status.": "La disponibilité peut changer à tout moment selon l’occupation actuelle et l’état des demandes.",
       "How will I be contacted?": "Comment serai-je contacté ?",
@@ -470,6 +484,8 @@
       "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. Locations gérées en privé.",
       "Secure rental application": "Demande de location sécurisée",
       "Rental Application Form": "Formulaire de demande de location",
+      "Rental Application": "Demande de location",
+      "Complete the form below to begin your application process.": "Remplissez le formulaire ci-dessous pour commencer votre processus de demande.",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "Veuillez remplir ce formulaire avec précision. Toutes les informations fournies resteront confidentielles et sont requises uniquement pour le processus d’approbation de la demande de location. Chaque adulte (18 ans et plus) souhaitant vivre dans le logement doit remplir une demande distincte.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Il s’agit d’une location gérée en privé. Toutes les demandes sont examinées directement par la propriétaire. Aucun agent tiers n’intervient.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Il s’agit d’une location gérée en privé. Toutes les demandes sont examinées directement par la propriétaire.",
@@ -552,7 +568,7 @@
       "Services": "Serviços",
       "Gallery": "Galeria",
       "Rental Process": "Processo de aluguel",
-      "FAQ": "Perguntas",
+      "Rental Process FAQ": "FAQ do processo de aluguel",
       "Contact": "Contato",
       "Request Consultation": "Solicitar consulta",
       "Apply Now": "Aplicar Agora",
@@ -599,6 +615,7 @@
       "You can apply directly through the secure rental application form on this website.": "Você pode aplicar diretamente pelo formulário seguro de solicitação de aluguel neste site.",
       "Is there an application fee?": "Há uma taxa de solicitação?",
       "Yes. A refundable application fee may apply after submitting the application.": "Sim. Uma taxa de solicitação reembolsável pode ser aplicada após o envio.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Sim, há uma taxa de solicitação reembolsável de US$ 75, paga pelo Chime após o envio da solicitação.",
       "Are listings always available?": "Os imóveis estão sempre disponíveis?",
       "Availability may change at any time depending on current occupancy and application status.": "A disponibilidade pode mudar a qualquer momento conforme a ocupação atual e o status das solicitações.",
       "How will I be contacted?": "Como entraremos em contato?",
@@ -613,6 +630,8 @@
       "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. Aluguéis administrados de forma privada.",
       "Secure rental application": "Solicitação segura de aluguel",
       "Rental Application Form": "Formulário de Solicitação de Aluguel",
+      "Rental Application": "Solicitação de aluguel",
+      "Complete the form below to begin your application process.": "Preencha o formulário abaixo para iniciar seu processo de solicitação.",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "Preencha este formulário com precisão. Todas as informações fornecidas permanecerão confidenciais e são necessárias exclusivamente para o processo de aprovação da solicitação de aluguel. Cada adulto (18+) que se candidatar para morar na unidade deve preencher uma solicitação separada.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "Este é um aluguel administrado de forma privada. Todas as solicitações são analisadas diretamente pela proprietária. Não há agentes terceiros envolvidos.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "Este é um aluguel administrado de forma privada. Todas as solicitações são analisadas diretamente pela proprietária.",
@@ -697,7 +716,7 @@
       "Services": "الخدمات",
       "Gallery": "المعرض",
       "Rental Process": "عملية الإيجار",
-      "FAQ": "الأسئلة الشائعة",
+      "Rental Process FAQ": "الأسئلة الشائعة عن عملية الإيجار",
       "Contact": "اتصال",
       "Request Consultation": "طلب استشارة",
       "Apply Now": "قدم الآن",
@@ -745,6 +764,7 @@
       "You can apply directly through the secure rental application form on this website.": "يمكنك التقديم مباشرة عبر نموذج طلب الإيجار الآمن على هذا الموقع.",
       "Is there an application fee?": "هل توجد رسوم طلب؟",
       "Yes. A refundable application fee may apply after submitting the application.": "نعم. قد تطبق رسوم طلب قابلة للاسترداد بعد إرسال الطلب.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "نعم، توجد رسوم طلب قابلة للاسترداد بقيمة 75 دولارًا، وتُدفع عبر Chime بعد إرسال طلبك.",
       "Are listings always available?": "هل القوائم متاحة دائماً؟",
       "Availability may change at any time depending on current occupancy and application status.": "قد يتغير التوافر في أي وقت حسب الإشغال الحالي وحالة الطلبات.",
       "How will I be contacted?": "كيف سيتم التواصل معي؟",
@@ -759,6 +779,8 @@
       "© 2026 Paul Goodling. Privately managed rentals.": "© 2026 Paul Goodling. إيجارات بإدارة خاصة.",
       "Secure rental application": "طلب إيجار آمن",
       "Rental Application Form": "نموذج طلب الإيجار",
+      "Rental Application": "طلب الإيجار",
+      "Complete the form below to begin your application process.": "أكمل النموذج أدناه لبدء عملية تقديم طلبك.",
       "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.": "يرجى إكمال هذا النموذج بدقة. ستبقى جميع المعلومات المقدمة سرية وهي مطلوبة فقط لعملية الموافقة على طلب الإيجار. يجب على كل بالغ (18+) يتقدم للسكن في الوحدة إكمال طلب منفصل.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.": "هذا إيجار بإدارة خاصة. تتم مراجعة جميع الطلبات مباشرة من مالكة العقار. لا يشارك أي وكلاء من طرف ثالث.",
       "This is a privately managed rental. All applications are reviewed directly by the property owner.": "هذا إيجار بإدارة خاصة. تتم مراجعة جميع الطلبات مباشرة من مالكة العقار.",
@@ -847,7 +869,7 @@
     "Servicios": "Services",
     "Galería": "Gallery",
     "Proceso de alquiler": "Rental Process",
-    "Preguntas": "FAQ",
+    "Preguntas del proceso de alquiler": "Rental Process FAQ",
     "Contacto": "Contact",
     "Solicitar consulta": "Request Consultation",
     "Aplicar Ahora": "Apply Now",
@@ -890,7 +912,7 @@
     "Las tarifas de solicitud son reembolsables si la solicitud no es aprobada o si el solicitante decide no continuar después de la visita.": "Application fees are refundable if the application is not approved or the applicant chooses not to move forward after the tour.",
     "Siguientes pasos": "Next Steps",
     "Los solicitantes calificados recibirán actualizaciones, programación de visita e instrucciones adicionales.": "Qualified applicants will receive updates, tour scheduling, and further instructions.",
-    "Preguntas frecuentes": "FAQ",
+    "Preguntas frecuentes": "Rental Process FAQ",
     "Preguntas sobre la solicitud de alquiler": "Rental application questions",
     "¿Cómo aplico para un alquiler?": "How do I apply for a rental?",
     "Puede aplicar directamente mediante el formulario seguro de solicitud de alquiler en este sitio web.": "You can apply directly through the secure rental application form on this website.",
@@ -910,6 +932,7 @@
     "© 2026 Paul Goodling. Alquileres administrados de forma privada.": "© 2026 Paul Goodling. Privately managed rentals.",
     "Solicitud segura de alquiler": "Secure rental application",
     "Formulario de Solicitud de Alquiler": "Rental Application Form",
+    "Solicitud de alquiler": "Rental Application",
     "Complete este formulario con precisión. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado.": "Please complete this form accurately. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application.",
     "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario. No participan agentes externos.": "This is a privately managed rental. All applications are reviewed directly by the property owner. No third-party agents are involved.",
     "Este es un alquiler administrado de forma privada. Todas las solicitudes son revisadas directamente por el propietario.": "This is a privately managed rental. All applications are reviewed directly by the property owner.",
@@ -925,7 +948,8 @@
     "Seleccione una propiedad": "Select a property",
     "Fecha deseada de mudanza": "Desired move-in date",
     "Fecha de solicitud": "Date of Application",
-    "Plazo de arrendamiento solicitado": "Lease Term Requested",
+    "duración del arrendamiento": "lease duration",
+    "Elija la duración del arrendamiento": "choose lease duration",
     "Estatus de ciudadanía/residencia": "Citizenship/Residency Status",
     "Información del solicitante": "Applicant Information",
     "Nombre legal completo (nombre, segundo nombre, apellido)": "Full legal name (First, Middle, Last)",
@@ -1021,6 +1045,7 @@
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Una tarifa de solicitud reembolsable es un pago que se le devolverá si su solicitud no es aprobada o si decide no continuar después de la visita.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "Los solicitantes calificados serán contactados con actualizaciones, detalles de la visita o instrucciones adicionales.",
       "You can apply by completing the rental application form on this website.": "Puede aplicar completando el formulario de solicitud de alquiler en este sitio web.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Sí, hay una tarifa de solicitud reembolsable de $75, que se paga a través de Chime después de enviar su solicitud.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Sí, puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Las instrucciones de procesamiento de pago se asignan de forma privada y se proporcionan solo cuando su solicitud está lista para procesamiento.",
       "Not always. Rental availability may change at any time.": "No siempre. La disponibilidad de alquiler puede cambiar en cualquier momento.",
       "How will I be contacted after applying?": "¿Cómo me contactarán después de aplicar?",
@@ -1031,6 +1056,21 @@
       "Zillow-assisted processing": "Procesamiento asistido por Zillow",
       "Clear": "Claro",
       "Direct next-step updates": "Actualizaciones directas de siguientes pasos",
+      "Private Property Management delivers professional rental support for privately managed homes and prospective tenants, with a focus on consistency, transparency, and accountability at every stage of the leasing process.": "Private Property Management ofrece apoyo profesional de alquiler para viviendas administradas de forma privada y posibles inquilinos, con enfoque en consistencia, transparencia y responsabilidad en cada etapa del proceso de arrendamiento.",
+      "From initial inquiries and scheduling to application guidance and communication, our approach is structured and service-oriented. We prioritize clear expectations, timely follow-through, and dependable coordination so both property owners and applicants experience a smooth, efficient, and respectful process.": "Desde consultas iniciales y programación hasta orientación en la solicitud y comunicación, nuestro enfoque es estructurado y orientado al servicio. Priorizamos expectativas claras, seguimiento oportuno y coordinación confiable para que propietarios y solicitantes tengan un proceso fluido, eficiente y respetuoso.",
+      "Why work with Private property management": "Por qué trabajar con administración privada de propiedades",
+      "Why work with Private property management points": "Puntos sobre por qué trabajar con administración privada de propiedades",
+      "Private property management team group photo": "Foto grupal del equipo de administración privada de propiedades",
+      "Office team gathering and celebration moment": "Momento de reunión y celebración del equipo en la oficina",
+      "Team members posing in office with flag display": "Miembros del equipo posando en la oficina con bandera",
+      "Staff group photo in conference room": "Foto grupal del personal en sala de conferencias",
+      "Professional and organized rental management process": "Proceso de administración de alquiler profesional y organizado",
+      "Clear and transparent communication": "Comunicación clara y transparente",
+      "Responsive support for applicants and inquiries": "Apoyo receptivo para solicitantes y consultas",
+      "Reliable coordination between tenants and property owners": "Coordinación confiable entre inquilinos y propietarios",
+      "A focus on professionalism and smooth leasing experiences": "Enfoque en profesionalismo y experiencias de arrendamiento fluidas",
+      "Review the available property information before beginning the application.": "Revise la información disponible de la propiedad antes de comenzar la solicitud.",
+      "Community trust badge": "Distintivo de confianza comunitaria",
     },
     zh: {
       "How the Rental Process Works": "租赁流程如何运作",
@@ -1040,6 +1080,7 @@
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "可退还申请费是指如果您的申请未获批准，或您看房后决定不继续，该费用将退还给您。",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "符合条件的申请人将收到更新、看房详情或进一步说明。",
       "You can apply by completing the rental application form on this website.": "您可以在本网站填写租赁申请表进行申请。",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "是的，有一笔 75 美元的可退还申请费，需在提交申请后通过 Chime 支付。",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "是的，审核后可能会收取可退还申请费。付款处理说明会私下分配，并且仅在您的申请准备进入处理阶段时提供。",
       "Not always. Rental availability may change at any time.": "不一定。出租房源可用情况可能随时变化。",
       "How will I be contacted after applying?": "申请后会如何联系我？",
@@ -1050,6 +1091,21 @@
       "Zillow-assisted processing": "Zillow 协助处理",
       "Clear": "清晰",
       "Direct next-step updates": "直接的后续更新",
+      "Private Property Management delivers professional rental support for privately managed homes and prospective tenants, with a focus on consistency, transparency, and accountability at every stage of the leasing process.": "Private Property Management 为私人管理的房源和潜在租户提供专业租赁支持，在租赁流程的每个阶段都注重一致性、透明度和责任。",
+      "From initial inquiries and scheduling to application guidance and communication, our approach is structured and service-oriented. We prioritize clear expectations, timely follow-through, and dependable coordination so both property owners and applicants experience a smooth, efficient, and respectful process.": "从初步咨询和预约到申请指导和沟通，我们的方式结构化且以服务为导向。我们优先确保期望清晰、及时跟进和可靠协调，让业主和申请人都能获得顺畅、高效且受尊重的体验。",
+      "Why work with Private property management": "为何选择私人物业管理",
+      "Why work with Private property management points": "选择私人物业管理的要点",
+      "Private property management team group photo": "私人物业管理团队合影",
+      "Office team gathering and celebration moment": "办公室团队聚会庆祝瞬间",
+      "Team members posing in office with flag display": "团队成员在办公室与旗帜合影",
+      "Staff group photo in conference room": "员工在会议室的合影",
+      "Professional and organized rental management process": "专业且有条理的租赁管理流程",
+      "Clear and transparent communication": "清晰透明的沟通",
+      "Responsive support for applicants and inquiries": "为申请人和咨询提供及时支持",
+      "Reliable coordination between tenants and property owners": "租户与业主之间的可靠协调",
+      "A focus on professionalism and smooth leasing experiences": "注重专业性与顺畅的租赁体验",
+      "Review the available property information before beginning the application.": "开始申请前，请查看可用的房源信息。",
+      "Community trust badge": "社区信任标识",
     },
     fr: {
       "How the Rental Process Works": "Comment fonctionne le processus de location",
@@ -1059,6 +1115,7 @@
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Des frais de demande remboursables sont un paiement qui vous sera retourné si votre demande n’est pas approuvée ou si vous décidez de ne pas poursuivre après la visite.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "Les candidats qualifiés seront contactés avec des mises à jour, les détails de visite ou des instructions supplémentaires.",
       "You can apply by completing the rental application form on this website.": "Vous pouvez postuler en remplissant le formulaire de demande de location sur ce site.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Oui, il y a des frais de demande remboursables de 75 $, payés via Chime après l’envoi de votre demande.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Oui, des frais de demande remboursables peuvent s’appliquer après examen. Les instructions de traitement du paiement sont attribuées en privé et fournies uniquement lorsque votre demande est prête à être traitée.",
       "Not always. Rental availability may change at any time.": "Pas toujours. La disponibilité des locations peut changer à tout moment.",
       "How will I be contacted after applying?": "Comment serai-je contacté après avoir postulé ?",
@@ -1069,6 +1126,21 @@
       "Zillow-assisted processing": "Traitement assisté par Zillow",
       "Clear": "Clair",
       "Direct next-step updates": "Mises à jour directes",
+      "Private Property Management delivers professional rental support for privately managed homes and prospective tenants, with a focus on consistency, transparency, and accountability at every stage of the leasing process.": "Private Property Management offre un accompagnement locatif professionnel pour les logements gérés en privé et les candidats locataires, avec un accent sur la cohérence, la transparence et la responsabilité à chaque étape du processus de location.",
+      "From initial inquiries and scheduling to application guidance and communication, our approach is structured and service-oriented. We prioritize clear expectations, timely follow-through, and dependable coordination so both property owners and applicants experience a smooth, efficient, and respectful process.": "Des premières demandes et la planification à l’accompagnement de la candidature et à la communication, notre approche est structurée et orientée service. Nous privilégions des attentes claires, un suivi rapide et une coordination fiable pour que propriétaires et candidats vivent un processus fluide, efficace et respectueux.",
+      "Why work with Private property management": "Pourquoi travailler avec la gestion privée de propriétés",
+      "Why work with Private property management points": "Points sur la gestion privée de propriétés",
+      "Private property management team group photo": "Photo de groupe de l’équipe de gestion privée",
+      "Office team gathering and celebration moment": "Moment de réunion et de célébration de l’équipe au bureau",
+      "Team members posing in office with flag display": "Membres de l’équipe posant au bureau avec un drapeau",
+      "Staff group photo in conference room": "Photo de groupe du personnel en salle de conférence",
+      "Professional and organized rental management process": "Processus de gestion locative professionnel et organisé",
+      "Clear and transparent communication": "Communication claire et transparente",
+      "Responsive support for applicants and inquiries": "Assistance réactive pour les candidats et les demandes",
+      "Reliable coordination between tenants and property owners": "Coordination fiable entre locataires et propriétaires",
+      "A focus on professionalism and smooth leasing experiences": "Accent sur le professionnalisme et des expériences de location fluides",
+      "Review the available property information before beginning the application.": "Consultez les informations disponibles sur le bien avant de commencer la demande.",
+      "Community trust badge": "Badge de confiance communautaire",
     },
     pt: {
       "How the Rental Process Works": "Como funciona o processo de aluguel",
@@ -1078,6 +1150,7 @@
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Uma taxa de solicitação reembolsável é um pagamento que será devolvido se sua solicitação não for aprovada ou se você decidir não prosseguir após a visita.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "Candidatos qualificados serão contatados com atualizações, detalhes da visita ou instruções adicionais.",
       "You can apply by completing the rental application form on this website.": "Você pode aplicar preenchendo o formulário de solicitação de aluguel neste site.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Sim, há uma taxa de solicitação reembolsável de US$ 75, paga pelo Chime após o envio da solicitação.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "Sim, uma taxa de solicitação reembolsável pode ser aplicada após a análise. As instruções de pagamento são atribuídas de forma privada quando sua solicitação estiver pronta para processamento.",
       "Not always. Rental availability may change at any time.": "Nem sempre. A disponibilidade de aluguel pode mudar a qualquer momento.",
       "How will I be contacted after applying?": "Como serei contatado após aplicar?",
@@ -1097,6 +1170,7 @@
       "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "رسوم الطلب القابلة للاسترداد هي دفعة ستعاد إليك إذا لم تتم الموافقة على طلبك أو إذا قررت عدم المتابعة بعد الجولة.",
       "Qualified applicants will be contacted with updates, tour details, or further instructions.": "سيتم التواصل مع المتقدمين المؤهلين بالتحديثات أو تفاصيل الجولة أو التعليمات الإضافية.",
       "You can apply by completing the rental application form on this website.": "يمكنك التقديم من خلال إكمال نموذج طلب الإيجار على هذا الموقع.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "نعم، توجد رسوم طلب قابلة للاسترداد بقيمة 75 دولارًا، وتُدفع عبر Chime بعد إرسال طلبك.",
       "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.": "نعم، قد تُطبق رسوم طلب قابلة للاسترداد بعد المراجعة. يتم تخصيص تعليمات معالجة الدفع بشكل خاص ولا تُقدم إلا عندما يصبح طلبك جاهزًا للمعالجة.",
       "Not always. Rental availability may change at any time.": "ليس دائماً. قد يتغير توافر الإيجار في أي وقت.",
       "How will I be contacted after applying?": "كيف سيتم التواصل معي بعد التقديم؟",
@@ -1107,6 +1181,21 @@
       "Zillow-assisted processing": "معالجة بمساعدة Zillow",
       "Clear": "واضح",
       "Direct next-step updates": "تحديثات مباشرة للخطوات التالية",
+      "Private Property Management delivers professional rental support for privately managed homes and prospective tenants, with a focus on consistency, transparency, and accountability at every stage of the leasing process.": "توفر Private Property Management دعمًا إيجاريًا احترافيًا للمساكن المُدارة بشكل خاص وللمتقدمين المحتملين، مع التركيز على الاتساق والشفافية والمساءلة في كل مرحلة من مراحل عملية التأجير.",
+      "From initial inquiries and scheduling to application guidance and communication, our approach is structured and service-oriented. We prioritize clear expectations, timely follow-through, and dependable coordination so both property owners and applicants experience a smooth, efficient, and respectful process.": "من الاستفسارات الأولية والجدولة إلى إرشاد الطلب والتواصل، نتبع نهجًا منظمًا وموجهًا للخدمة. نعطي الأولوية لتوقعات واضحة ومتابعة في الوقت المناسب وتنسيق موثوق حتى يحصل المالكون والمتقدمون على تجربة سلسة وفعالة ومحترمة.",
+      "Why work with Private property management": "لماذا التعامل مع إدارة العقارات الخاصة",
+      "Why work with Private property management points": "نقاط حول العمل مع إدارة العقارات الخاصة",
+      "Private property management team group photo": "صورة جماعية لفريق إدارة العقارات الخاصة",
+      "Office team gathering and celebration moment": "لحظة تجمع واحتفال الفريق في المكتب",
+      "Team members posing in office with flag display": "أعضاء الفريق في المكتب مع عرض للعلم",
+      "Staff group photo in conference room": "صورة جماعية للموظفين في غرفة الاجتماعات",
+      "Professional and organized rental management process": "عملية إدارة إيجار احترافية ومنظمة",
+      "Clear and transparent communication": "تواصل واضح وشفاف",
+      "Responsive support for applicants and inquiries": "دعم سريع للمتقدمين والاستفسارات",
+      "Reliable coordination between tenants and property owners": "تنسيق موثوق بين المستأجرين ومالكي العقارات",
+      "A focus on professionalism and smooth leasing experiences": "التركيز على الاحترافية وتجارب تأجير سلسة",
+      "Review the available property information before beginning the application.": "راجع معلومات العقار المتاحة قبل بدء التقديم.",
+      "Community trust badge": "شارة ثقة المجتمع",
     }
   };
 
@@ -1124,10 +1213,16 @@
       "Your submission is reviewed before any application-specific payment instructions are assigned.": "Su solicitud se revisa antes de asignar cualquier instrucción de pago específica.",
       "A closer look at the community setting and residential experience.": "Una mirada más cercana al entorno comunitario y la experiencia residencial."
     },
-    zh: {},
-    fr: {},
+    zh: {
+      "Review the available property information before beginning the application.": "开始申请前，请查看可用的房源信息。"
+    },
+    fr: {
+      "Review the available property information before beginning the application.": "Consultez les informations disponibles sur le bien avant de commencer la demande."
+    },
     pt: {},
-    ar: {}
+    ar: {
+      "Review the available property information before beginning the application.": "راجع معلومات العقار المتاحة قبل بدء التقديم."
+    }
   };
 
   Object.keys(polishTranslations).forEach((language) => {
@@ -1565,6 +1660,12 @@
     },
     zh: {
       "Final Step Important (Read Before Submitting)": "重要最后一步（提交前请阅读）",
+      "Before you submit": "提交前",
+      "Certification & Acknowledgment": "认证与确认",
+      "Application certification": "申请认证",
+      "Fee & next steps": "费用与后续步骤",
+      "I have read and agree to the statements above.": "我已阅读并同意以上声明。",
+      "Payment method for the fee": "费用支付方式",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "本人证明本申请所提供的信息据本人所知完整准确。本人理解提供虚假或误导信息可能导致申请被拒，并授权房东/物业管理人员核实所提供的信息。",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "本人亦理解，可退还申请费的付款说明将在提交后提供。付款确认后，申请将进入审核、批准及后续处理步骤。",
       "Thank you for submitting your rental application.": "感谢您提交租赁申请。",
@@ -1601,6 +1702,12 @@
     },
     fr: {
       "Final Step Important (Read Before Submitting)": "Étape finale importante (à lire avant d’envoyer)",
+      "Before you submit": "Avant d’envoyer",
+      "Certification & Acknowledgment": "Certification et confirmation",
+      "Application certification": "Certification de la demande",
+      "Fee & next steps": "Frais et prochaines étapes",
+      "I have read and agree to the statements above.": "J’ai lu et j’accepte les déclarations ci-dessus.",
+      "Payment method for the fee": "Mode de paiement des frais",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "Je certifie que toutes les informations fournies dans cette demande sont complètes et exactes au meilleur de ma connaissance. Je comprends que fournir des informations fausses ou trompeuses peut entraîner le refus de ma demande, et j’autorise le propriétaire ou le gestionnaire à vérifier les informations fournies.",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "Je comprends également que les instructions de paiement pour les frais de demande remboursables seront fournies après l’envoi. Une fois le paiement confirmé, ma demande passera à l’examen, à l’approbation et aux prochaines étapes du traitement.",
       "Thank you for submitting your rental application.": "Merci d’avoir envoyé votre demande de location.",
@@ -1637,6 +1744,12 @@
     },
     ar: {
       "Final Step Important (Read Before Submitting)": "الخطوة الأخيرة المهمة (اقرأ قبل الإرسال)",
+      "Before you submit": "قبل الإرسال",
+      "Certification & Acknowledgment": "التصديق والإقرار",
+      "Application certification": "تصديق الطلب",
+      "Fee & next steps": "الرسوم والخطوات التالية",
+      "I have read and agree to the statements above.": "لقد قرأت وأوافق على البيانات أعلاه.",
+      "Payment method for the fee": "طريقة دفع الرسوم",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "أقر بأن جميع المعلومات المقدمة في هذا الطلب كاملة ودقيقة حسب علمي. أفهم أن تقديم معلومات كاذبة أو مضللة قد يؤدي إلى رفض طلبي، وأفوض المالك/مدير العقار بالتحقق من المعلومات المقدمة.",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "أفهم أيضًا أنه سيتم تقديم تعليمات الدفع لرسوم الطلب القابلة للاسترداد بعد الإرسال. وبمجرد تأكيد الدفع، سينتقل طلبي إلى المراجعة والموافقة وخطوات المعالجة التالية.",
       "Thank you for submitting your rental application.": "شكرًا لك على إرسال طلب الإيجار.",
@@ -1679,14 +1792,16 @@
 
   const applicationTrustTranslations = {
     es: {
+      "Rental Application": "Solicitud de alquiler",
+      "Complete the form below to begin your application process.": "Complete el formulario a continuación para iniciar su proceso de solicitud.",
       "Please complete this form accurately and truthfully. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application (Incomplete applications may result in processing delays)": "Complete este formulario con precisión y veracidad. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado (Las solicitudes incompletas pueden causar retrasos en el procesamiento)",
       "Property Information": "Información de la propiedad",
       "Applicant Screening": "Evaluación del solicitante",
       "Send Application for Review": "Enviar solicitud para revisión",
       "Send Application": "Enviar solicitud",
       "Complete the rental application form so the details can be reviewed.": "Complete el formulario de solicitud de alquiler para que los detalles puedan revisarse.",
-      "Your application is reviewed first. Any fee or verification details are provided only if they apply to your next step.": "Su solicitud se revisa primero. Cualquier detalle de tarifa o verificación se proporciona solo si corresponde al siguiente paso.",
-      "A refundable application fee may apply after review. If a fee is needed, Paul Goodling will provide clear instructions directly before you send anything.": "Puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Si se necesita una tarifa, Paul Goodling le dará instrucciones claras directamente antes de que envíe cualquier pago.",
+      "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.": "Una tarifa de solicitud reembolsable es un pago que se le devolverá si su solicitud no es aprobada o si decide no continuar después de la visita.",
+      "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.": "Sí, hay una tarifa de solicitud reembolsable de $75, que se paga a través de Chime después de enviar su solicitud.",
       "Start Application": "Iniciar solicitud",
       "Application Received": "Solicitud recibida",
       "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.",
@@ -1716,7 +1831,7 @@
       "If you have already received instructions and prefer email, you can send the confirmation directly to Paul Goodling for review.": "Si ya recibió instrucciones y prefiere usar correo electrónico, puede enviar la confirmación directamente a Paul Goodling para revisión.",
       "Email Confirmation": "Enviar confirmación por correo",
       "Verification Received": "Verificación recibida",
-      "Your confirmation has been received for private review. Paul Goodling will match it with your Application ID and follow up if anything else is needed.": "Su confirmación fue recibida para revisión privada. Paul Goodling la asociará con su ID de solicitud y se comunicará si se necesita algo más.",
+      "Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed": "Su confirmación fue recibida y actualmente está en revisión. Se asociará con su ID de solicitud y se le contactará si se necesita información adicional.",
       "Sending...": "Enviando...",
       "Sending application for review...": "Enviando solicitud para revisión...",
       "Sending confirmation email...": "Enviando correo de confirmación...",
@@ -1727,17 +1842,32 @@
     zh: {
       "Start Application": "开始申请",
       "Request consultation": "申请咨询",
-      "Contact Paul Goodling": "联系 Paul Goodling"
+      "Contact Paul Goodling": "联系 Paul Goodling",
+      "Verification Received": "验证已收到",
+      "Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed": "您的确认已收到，目前正在审核中。它将与您申请编号匹配，如需补充信息会与您联系。",
+      "Application Submitted Successfully": "申请已成功提交",
+      "Thank you for submitting your rental application.": "感谢您提交租赁申请。",
+      "Continue to Payment Instructions": "继续查看付款说明"
     },
     fr: {
       "Start Application": "Commencer la demande",
       "Request consultation": "Demander une consultation",
-      "Contact Paul Goodling": "Contacter Paul Goodling"
+      "Contact Paul Goodling": "Contacter Paul Goodling",
+      "Verification Received": "Vérification reçue",
+      "Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed": "Votre confirmation a été reçue et est actuellement en cours d’examen. Elle sera associée à votre ID de demande et vous serez contacté si des informations supplémentaires sont nécessaires.",
+      "Application Submitted Successfully": "Demande envoyée avec succès",
+      "Thank you for submitting your rental application.": "Merci d’avoir envoyé votre demande de location.",
+      "Continue to Payment Instructions": "Continuer vers les instructions de paiement"
     },
     ar: {
       "Start Application": "بدء الطلب",
       "Request consultation": "طلب استشارة",
-      "Contact Paul Goodling": "التواصل مع Paul Goodling"
+      "Contact Paul Goodling": "التواصل مع Paul Goodling",
+      "Verification Received": "تم استلام التحقق",
+      "Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed": "تم استلام تأكيدك وهو قيد المراجعة حاليًا. سيتم ربطه برقم طلبك، وسيتم التواصل معك إذا لزم أي معلومات إضافية.",
+      "Application Submitted Successfully": "تم إرسال الطلب بنجاح",
+      "Thank you for submitting your rental application.": "شكرًا لك على إرسال طلب الإيجار.",
+      "Continue to Payment Instructions": "المتابعة إلى تعليمات الدفع"
     }
   };
 
@@ -1746,13 +1876,15 @@
   });
 
   Object.assign(aliases, {
+    "Solicitud de alquiler": "Rental Application",
+    "Complete el formulario a continuación para iniciar su proceso de solicitud.": "Complete the form below to begin your application process.",
     "Complete este formulario con precisión y veracidad. Toda la información proporcionada permanecerá confidencial y se requiere únicamente para el proceso de aprobación de la solicitud de alquiler. Cada adulto (18+) que solicite vivir en la unidad debe completar una solicitud por separado (Las solicitudes incompletas pueden causar retrasos en el procesamiento)": "Please complete this form accurately and truthfully. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application (Incomplete applications may result in processing delays)",
     "Información de la propiedad": "Property Information",
     "Evaluación del solicitante": "Applicant Screening",
     "Enviar solicitud para revisión": "Send Application for Review",
     "Complete el formulario de solicitud de alquiler para que los detalles puedan revisarse.": "Complete the rental application form so the details can be reviewed.",
-    "Su solicitud se revisa primero. Cualquier detalle de tarifa o verificación se proporciona solo si corresponde al siguiente paso.": "Your application is reviewed first. Any fee or verification details are provided only if they apply to your next step.",
-    "Puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Si se necesita una tarifa, Paul Goodling le dará instrucciones claras directamente antes de que envíe cualquier pago.": "A refundable application fee may apply after review. If a fee is needed, Paul Goodling will provide clear instructions directly before you send anything.",
+    "Una tarifa de solicitud reembolsable es un pago que se le devolverá si su solicitud no es aprobada o si decide no continuar después de la visita.": "A refundable application fee is a payment that will be returned to you if your application is not approved or if you decide not to move forward after the tour.",
+    "Sí, hay una tarifa de solicitud reembolsable de $75, que se paga a través de Chime después de enviar su solicitud.": "Yes, there is a refundable application fee of $75, which is paid through Chime after your application is submitted.",
     "Iniciar solicitud": "Start Application",
     "Solicitud recibida": "Application Received",
     "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.": "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.",
@@ -1781,7 +1913,7 @@
     "¿Prefiere enviarla por correo?": "Prefer to Email It?",
     "Si ya recibió instrucciones y prefiere usar correo electrónico, puede enviar la confirmación directamente a Paul Goodling para revisión.": "If you have already received instructions and prefer email, you can send the confirmation directly to Paul Goodling for review.",
     "Verificación recibida": "Verification Received",
-    "Su confirmación fue recibida para revisión privada. Paul Goodling la asociará con su ID de solicitud y se comunicará si se necesita algo más.": "Your confirmation has been received for private review. Paul Goodling will match it with your Application ID and follow up if anything else is needed.",
+    "Su confirmación fue recibida y actualmente está en revisión. Se asociará con su ID de solicitud y se le contactará si se necesita información adicional.": "Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed",
     "Revisión de solicitud": "Application Review",
     "Su envío es revisado por el equipo de administración de la propiedad antes de asignar cualquier instrucción de pago específica de la solicitud.": "Your submission is reviewed by the property management team before any application-specific payment instructions are assigned.",
     "Sí, puede aplicarse una tarifa de solicitud reembolsable después de la revisión. Las instrucciones de procesamiento de pago se asignan de forma privada y se proporcionan solo cuando su solicitud está lista para procesamiento.": "Yes, a refundable application fee may apply after review. Payment processing instructions are assigned privately and provided only when your application is ready for processing.",
@@ -2742,16 +2874,32 @@
     });
   });
 
+  function getLocalDateInputValue(date = new Date()) {
+    return [
+      date.getFullYear(),
+      String(date.getMonth() + 1).padStart(2, "0"),
+      String(date.getDate()).padStart(2, "0")
+    ].join("-");
+  }
+
   function generateApplicationId() {
-    const now = new Date();
-    const datePart = [
-      now.getFullYear(),
-      String(now.getMonth() + 1).padStart(2, "0"),
-      String(now.getDate()).padStart(2, "0")
-    ].join("");
+    const datePart = getLocalDateInputValue().replace(/-/g, "");
     const randomPart = String(Math.floor(100000 + Math.random() * 900000));
 
     return `APP-${datePart}-${randomPart}`;
+  }
+
+  function initApplicationDateDefaults() {
+    if (!applicationForm) {
+      return;
+    }
+
+    const today = getLocalDateInputValue();
+    applicationForm.querySelectorAll("#application-date, #move-date, #dob").forEach((field) => {
+      if (!field.value) {
+        field.value = today;
+      }
+    });
   }
 
   const FORMSPREE_APPLICATION_ENDPOINT = "https://formspree.io/f/xnjrpagv";
@@ -3425,7 +3573,7 @@
         if (submitButton) {
           submitButton.disabled = false;
           submitButton.removeAttribute("aria-busy");
-          submitButton.textContent = originalButtonText || "Send Application for Review";
+          submitButton.textContent = originalButtonText || "Submit Application";
         }
 
         if (statusMessage) {
@@ -3437,5 +3585,6 @@
     });
   }
 
+  initApplicationDateDefaults();
   initApplicationFormSubmission();
 })();

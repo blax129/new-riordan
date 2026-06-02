@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Complete a private rental application for review by Paul Goodling.">
   <title>Rental Application | Paul Goodling</title>
   <link rel="icon" href="image/logo.png">
@@ -58,8 +58,8 @@
   <main>
     <section class="page-hero section">
       <div class="container narrow">
-        <h1>Rental Application Form</h1>
-        <p class="hero-copy">Please complete this form accurately and truthfully. All information provided will remain confidential and is required solely for the rental application approval process. Each adult (18+) applying to live in the unit must complete a separate application (Incomplete applications may result in processing delays)</p>
+        <h1>Rental Application</h1>
+        <p class="hero-copy">Complete the form below to begin your application process.</p>
       </div>
     </section>
 
@@ -82,7 +82,7 @@
           <input type="hidden" name="_subject" value="New Rental Application - Paul Goodling">
           <fieldset>
             <legend>Property Information</legend>
-            <label for="property">Property Information</label>
+            <label for="property">Property applying for</label>
             <input id="property" name="property" type="text" placeholder="Your answer">
 
             <label for="application-date">Date of Application</label>
@@ -91,9 +91,9 @@
             <label for="move-date">Desired move-in date</label>
             <input id="move-date" name="move-date" type="date" placeholder="Your answer" required>
 
-            <label for="lease-term">Lease Term Requested</label>
+            <label for="lease-term">lease duration</label>
             <select id="lease-term" name="lease-term">
-              <option value="">Choose lease term</option>
+              <option value="">choose lease duration</option>
               <option value="Month to month">Month to month</option>
               <option value="6 months">6 months</option>
               <option value="12 months (1 year)">12 months (1 year)</option>
@@ -228,7 +228,7 @@
               <option value="employer">Employer</option>
               <option value="personal-reference">Personal reference</option>
               <option value="family-member">Family member</option>
-              <option value="co-worker">Co worker</option>
+              <option value="co-worker">Co-worker</option>
             </select>
           </fieldset>
 
@@ -238,14 +238,45 @@
             <textarea id="emergency-contact-full" name="emergency-contact-full" rows="2" placeholder="Your answer"></textarea>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="final-step-fieldset">
             <legend class="sr-only">Final step agreement</legend>
-            <div class="check-row final-step-check">
-              <input id="agreement" name="agreement" type="checkbox" required aria-labelledby="final-step-heading">
-              <div class="final-step-copy">
-                <h3 class="final-step-heading" id="final-step-heading">Final Step Important (Read Before Submitting)</h3>
-                <p>I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.</p>
-                <p>I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.</p>
+            <div class="agreement-panel">
+              <div class="agreement-panel__header">
+                <div class="agreement-panel__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                    <path d="M12 3l8 4v5c0 5-3.5 8.7-8 9-4.5-.3-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                    <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="agreement-panel__intro">
+                  <p class="agreement-panel__eyebrow">Before you submit</p>
+                  <h3 class="agreement-panel__title" id="final-step-heading">Certification &amp; Acknowledgment</h3>
+                </div>
+              </div>
+
+              <div class="agreement-panel__body">
+                <section class="agreement-panel__section" aria-labelledby="agreement-certification-heading">
+                  <h4 class="agreement-panel__section-title" id="agreement-certification-heading">Application certification</h4>
+                  <p>I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.</p>
+                </section>
+                <section class="agreement-panel__section" aria-labelledby="agreement-fee-heading">
+                  <h4 class="agreement-panel__section-title" id="agreement-fee-heading">Fee &amp; next steps</h4>
+                  <p>I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.</p>
+                </section>
+              </div>
+
+              <div class="agreement-panel__confirm">
+                <label class="agreement-panel__label" for="agreement">
+                  <input id="agreement" name="agreement" type="checkbox" required aria-labelledby="final-step-heading agreement-confirm-text">
+                  <span class="agreement-panel__label-text" id="agreement-confirm-text">I have read and agree to the statements above.</span>
+                </label>
+
+                <div class="agreement-panel__payment-method" aria-labelledby="agreement-payment-method-heading">
+                  <p class="agreement-panel__payment-method-title" id="agreement-payment-method-heading">Payment method for the fee</p>
+                  <div class="agreement-panel__payment-method-logo">
+                    <img src="image/chime-logo.svg" alt="Chime" width="132" height="36" loading="lazy" decoding="async">
+                  </div>
+                </div>
               </div>
             </div>
           </fieldset>

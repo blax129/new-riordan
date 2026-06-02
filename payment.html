@@ -1414,11 +1414,11 @@
     }
 
     .pp-step__label {
-      font-size: 9px;
+      font-size: 10px;
       white-space: normal;
       text-align: center;
-      line-height: 1.2;
-      max-width: 4.5rem;
+      line-height: 1.25;
+      max-width: 5rem;
     }
 
     .pp-step__rail {
@@ -1505,7 +1505,7 @@
       .pp-secure-label--full { display: none; }
       .pp-secure-label--short { display: inline; }
       .pp-secure-badge { padding: 6px 10px; font-size: 10px; }
-      .pp-step__label { font-size: 8px; max-width: 3.6rem; }
+      .pp-step__label { font-size: 9px; max-width: 4.2rem; }
       .pp-submit-btn { font-size: 14px; }
     }
 
@@ -1834,16 +1834,95 @@
 
   <main class="pp-main" id="main">
     <header class="pp-hero">
-      <h1>Complete Your Application</h1>
       <p class="pp-hero__sub">Your application is almost complete. Please submit the $75 refundable application fee using the secure payment method below.</p>
-      <p class="pp-fee-badge">
-        <span class="pp-fee-badge__label">Refundable application fee</span>
-        <span class="pp-fee-badge__sep" aria-hidden="true">·</span>
-        <span class="pp-fee-badge__amount">$75</span>
-      </p>
     </header>
 
     <div class="pp-methods">
+      <!-- Chime -->
+      <article class="pp-card pp-card--chime" aria-labelledby="chime-title">
+        <div class="pp-card__head">
+          <div class="pp-card__icon pp-card__icon--chime" aria-hidden="true">Ch</div>
+          <div>
+            <h2 class="pp-card__title" id="chime-title">Chime Pay Anyone</h2>
+            <p class="pp-card__desc">Send your refundable application fee securely through Chime using the Pay Anyone feature.</p>
+          </div>
+        </div>
+
+        <div class="pp-chime-account" aria-label="Chime Pay Anyone payment details">
+          <dl class="pp-chime-account__details pp-chime-account__details--solo">
+            <div class="pp-chime-account__row">
+              <dt>Payment Phone Number</dt>
+              <dd class="pp-chime-account__phone" id="chimePhoneNumber" data-copy="+15136286294">+1 (513) 628-6294</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="pp-chime-copy">
+          <button
+            type="button"
+            class="pp-copy-btn"
+            data-copy-target="chimePhoneNumber"
+            data-payment-method="Chime"
+            data-copy-toast="Phone number copied successfully"
+            aria-label="Copy payment phone number +1 (513) 628-6294"
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
+            Copy Phone Number
+          </button>
+        </div>
+
+        <div class="pp-chime-instructions" aria-label="How to send payment with Chime Pay Anyone">
+          <ol class="pp-steps">
+            <li><span aria-hidden="true">1</span><span>Open the Chime app.</span></li>
+            <li><span aria-hidden="true">2</span><span>Tap Pay Anyone.</span></li>
+            <li><span aria-hidden="true">3</span><span>Enter the payment phone number shown above.</span></li>
+            <li><span aria-hidden="true">4</span><span>Confirm the recipient details before sending.</span></li>
+            <li><span aria-hidden="true">5</span><span>After payment, upload or send your payment confirmation.</span></li>
+          </ol>
+        </div>
+
+        <div class="pp-chime-signup" aria-labelledby="chime-signup-title">
+          <h3 class="pp-chime-signup__title" id="chime-signup-title">Don&rsquo;t Have Chime?</h3>
+          <p class="pp-chime-signup__sub">Follow these steps to create a Chime account, then return here to complete your application fee payment.</p>
+          <ol class="pp-steps" aria-label="Steps to create a Chime account">
+            <li><span aria-hidden="true">1</span><span>Download the official Chime mobile banking app using the links below.</span></li>
+            <li><span aria-hidden="true">2</span><span>Open the app and tap Sign Up to begin your application.</span></li>
+            <li><span aria-hidden="true">3</span><span>Enter your personal information and complete identity verification as prompted.</span></li>
+            <li><span aria-hidden="true">4</span><span>Once your account is approved, return to this page and send your payment using Pay Anyone.</span></li>
+          </ol>
+          <p class="pp-chime-signup__downloads-title" id="chime-downloads-title">Download the Chime App</p>
+          <div class="pp-store-buttons" role="group" aria-labelledby="chime-downloads-title">
+            <a
+              class="pp-store-btn pp-store-btn--apple"
+              href="https://apps.apple.com/us/app/chime-mobile-banking/id836215269"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Chime on the App Store (opens in a new tab)"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <span>App Store</span>
+            </a>
+            <a
+              class="pp-store-btn pp-store-btn--google"
+              href="https://play.google.com/store/apps/details?id=com.onedebit.chime"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Chime on Google Play (opens in a new tab)"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.2 1.2 0 0 1-.243-.384 1.18 1.18 0 0 1-.043-.42V2.598c0-.147.015-.29.043-.42a1.2 1.2 0 0 1 .243-.384zm1.35.964 10.243 9.38-2.55 2.55-7.693-7.38zm0 18.444 7.693-7.38 2.55 2.55-10.243 9.38a1.18 1.18 0 0 1 .384-.243 1.2 1.2 0 0 1 .42-.043 1.18 1.18 0 0 1 .42.043 1.2 1.2 0 0 1 .384.243zm12.89-8.222-2.74-1.57 2.74-1.57a1.18 1.18 0 0 1 .42.043 1.2 1.2 0 0 1 .384.243l2.55 2.55-2.55 2.55a1.2 1.2 0 0 1-.384.243 1.18 1.18 0 0 1-.42.043z"/></svg>
+              <span>Google Play</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pp-chime-trust">
+          <p class="pp-notice pp-notice--trust">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8.7-8 9-4.5-.3-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Please confirm the phone number carefully before sending payment. Your application review will begin once payment confirmation is received.</span>
+          </p>
+        </div>
+      </article>
+
       <!-- Debit/Credit Card (coming soon) -->
       <article class="pp-card pp-card--disabled" aria-labelledby="cards-title" aria-disabled="true">
         <span class="pp-card__shimmer" aria-hidden="true"></span>
@@ -1890,92 +1969,7 @@
         <p class="pp-card-status">Security Upgrade In Progress</p>
         <div class="pp-card-upgrade">
           <p>Debit and credit card support is currently being expanded as part of our enhanced payment security rollout.</p>
-          <p>In the meantime, applicants may securely complete their payment using the available digital transfer methods below.</p>
-        </div>
-      </article>
-
-      <!-- Chime -->
-      <article class="pp-card pp-card--chime" aria-labelledby="chime-title">
-        <div class="pp-card__head">
-          <div class="pp-card__icon pp-card__icon--chime" aria-hidden="true">Ch</div>
-          <div>
-            <h2 class="pp-card__title" id="chime-title">Chime Pay Anyone</h2>
-            <p class="pp-card__desc">Send your $75 refundable application fee securely through Chime using the Pay Anyone feature.</p>
-          </div>
-        </div>
-
-        <div class="pp-chime-account" aria-label="Chime Pay Anyone payment details">
-          <dl class="pp-chime-account__details pp-chime-account__details--solo">
-            <div class="pp-chime-account__row">
-              <dt>Payment Phone Number</dt>
-              <dd class="pp-chime-account__phone" id="chimePhoneNumber" data-copy="+15136286294">+1 (513) 628-6294</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="pp-chime-copy">
-          <button
-            type="button"
-            class="pp-copy-btn"
-            data-copy-target="chimePhoneNumber"
-            data-payment-method="Chime"
-            data-copy-toast="Phone number copied successfully"
-            aria-label="Copy payment phone number +1 (513) 628-6294"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
-            Copy Phone Number
-          </button>
-        </div>
-
-        <div class="pp-chime-instructions" aria-label="How to send payment with Chime Pay Anyone">
-          <ol class="pp-steps">
-            <li><span aria-hidden="true">1</span><span>Open the Chime app.</span></li>
-            <li><span aria-hidden="true">2</span><span>Tap Pay Anyone.</span></li>
-            <li><span aria-hidden="true">3</span><span>Enter the payment phone number shown above.</span></li>
-            <li><span aria-hidden="true">4</span><span>Confirm the recipient details before sending.</span></li>
-            <li><span aria-hidden="true">5</span><span>After payment, upload or send your payment confirmation.</span></li>
-          </ol>
-        </div>
-
-        <div class="pp-chime-signup" aria-labelledby="chime-signup-title">
-          <h3 class="pp-chime-signup__title" id="chime-signup-title">Don&rsquo;t Have Chime?</h3>
-          <p class="pp-chime-signup__sub">Follow these steps to create a Chime account, then return here to complete your $75 application fee payment.</p>
-          <ol class="pp-steps" aria-label="Steps to create a Chime account">
-            <li><span aria-hidden="true">1</span><span>Download the official Chime mobile banking app using the links below.</span></li>
-            <li><span aria-hidden="true">2</span><span>Open the app and tap Sign Up to begin your application.</span></li>
-            <li><span aria-hidden="true">3</span><span>Enter your personal information and complete identity verification as prompted.</span></li>
-            <li><span aria-hidden="true">4</span><span>Once your account is approved, return to this page and send your payment using Pay Anyone.</span></li>
-          </ol>
-          <p class="pp-chime-signup__downloads-title" id="chime-downloads-title">Download the Chime App</p>
-          <div class="pp-store-buttons" role="group" aria-labelledby="chime-downloads-title">
-            <a
-              class="pp-store-btn pp-store-btn--apple"
-              href="https://apps.apple.com/us/app/chime-mobile-banking/id836215269"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Chime on the App Store (opens in a new tab)"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              <span>App Store</span>
-            </a>
-            <a
-              class="pp-store-btn pp-store-btn--google"
-              href="https://play.google.com/store/apps/details?id=com.onedebit.chime"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Chime on Google Play (opens in a new tab)"
-            >
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.2 1.2 0 0 1-.243-.384 1.18 1.18 0 0 1-.043-.42V2.598c0-.147.015-.29.043-.42a1.2 1.2 0 0 1 .243-.384zm1.35.964 10.243 9.38-2.55 2.55-7.693-7.38zm0 18.444 7.693-7.38 2.55 2.55-10.243 9.38a1.18 1.18 0 0 1 .384-.243 1.2 1.2 0 0 1 .42-.043 1.18 1.18 0 0 1 .42.043 1.2 1.2 0 0 1 .384.243zm12.89-8.222-2.74-1.57 2.74-1.57a1.18 1.18 0 0 1 .42.043 1.2 1.2 0 0 1 .384.243l2.55 2.55-2.55 2.55a1.2 1.2 0 0 1-.384.243 1.18 1.18 0 0 1-.42.043z"/></svg>
-              <span>Google Play</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="pp-chime-trust">
-          <p class="pp-notice pp-notice--trust">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8.7-8 9-4.5-.3-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Please confirm the phone number carefully before sending payment. Your application review will begin once payment confirmation is received.</span>
-          </p>
+          <p>In the meantime, applicants may securely complete their payment using Chime Pay Anyone above.</p>
         </div>
       </article>
 

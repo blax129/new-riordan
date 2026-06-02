@@ -9,14 +9,14 @@
       fr: "Date de la demande",
       ar: "تاريخ الطلب"
     },
-    "Lease Term Requested": {
-      es: "Plazo de arrendamiento solicitado",
-      zh: "申请的租期",
-      fr: "Durée de bail demandée",
-      ar: "مدة الإيجار المطلوبة"
+    "lease duration": {
+      es: "duración del arrendamiento",
+      zh: "租期",
+      fr: "durée du bail",
+      ar: "مدة الإيجار"
     },
-    "Choose lease term": {
-      es: "Elija el plazo de arrendamiento",
+    "choose lease duration": {
+      es: "Elija la duración del arrendamiento",
       zh: "选择租期",
       fr: "Choisir la durée du bail",
       ar: "اختر مدة الإيجار"
@@ -267,7 +267,7 @@
       fr: "Membre de la famille",
       ar: "أحد أفراد العائلة"
     },
-    "Co worker": {
+    "Co-worker": {
       es: "Compañero de trabajo",
       zh: "同事",
       fr: "Collègue",
@@ -320,6 +320,60 @@
       zh: "申请已收到。正在打开确认页面...",
       fr: "Demande reçue. Ouverture de la confirmation...",
       ar: "تم استلام الطلب. جارٍ فتح صفحة التأكيد..."
+    },
+    "Before you submit": {
+      es: "Antes de enviar",
+      zh: "提交前",
+      fr: "Avant d’envoyer",
+      ar: "قبل الإرسال"
+    },
+    "Certification & Acknowledgment": {
+      es: "Certificación y confirmación",
+      zh: "认证与确认",
+      fr: "Certification et confirmation",
+      ar: "التصديق والإقرار"
+    },
+    "Application certification": {
+      es: "Certificación de la solicitud",
+      zh: "申请认证",
+      fr: "Certification de la demande",
+      ar: "تصديق الطلب"
+    },
+    "Fee & next steps": {
+      es: "Tarifa y siguientes pasos",
+      zh: "费用与后续步骤",
+      fr: "Frais et prochaines étapes",
+      ar: "الرسوم والخطوات التالية"
+    },
+    "I have read and agree to the statements above.": {
+      es: "He leído y acepto las declaraciones anteriores.",
+      zh: "我已阅读并同意以上声明。",
+      fr: "J’ai lu et j’accepte les déclarations ci-dessus.",
+      ar: "لقد قرأت وأوافق على البيانات أعلاه."
+    },
+    "Payment method for the fee": {
+      es: "Método de pago de la tarifa",
+      zh: "费用支付方式",
+      fr: "Mode de paiement des frais",
+      ar: "طريقة دفع الرسوم"
+    },
+    "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": {
+      es: "Certifico que toda la información proporcionada en esta solicitud es completa y exacta según mi leal saber y entender. Entiendo que proporcionar información falsa o engañosa puede resultar en la denegación de mi solicitud, y autorizo al propietario o administrador de la propiedad a verificar la información proporcionada.",
+      zh: "本人证明本申请所提供的信息据本人所知完整准确。本人理解提供虚假或误导信息可能导致申请被拒，并授权房东/物业管理人员核实所提供的信息。",
+      fr: "Je certifie que toutes les informations fournies dans cette demande sont complètes et exactes au meilleur de ma connaissance. Je comprends que fournir des informations fausses ou trompeuses peut entraîner le refus de ma demande, et j’autorise le propriétaire ou le gestionnaire à vérifier les informations fournies.",
+      ar: "أقر بأن جميع المعلومات المقدمة في هذا الطلب كاملة ودقيقة حسب علمي. أفهم أن تقديم معلومات كاذبة أو مضللة قد يؤدي إلى رفض طلبي، وأفوض المالك/مدير العقار بالتحقق من المعلومات المقدمة."
+    },
+    "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": {
+      es: "También entiendo que las instrucciones de pago para la tarifa de solicitud reembolsable se proporcionarán después del envío. Una vez confirmado el pago, mi solicitud pasará a la revisión, aprobación y siguientes pasos del proceso.",
+      zh: "本人亦理解，可退还申请费的付款说明将在提交后提供。付款确认后，申请将进入审核、批准及后续处理步骤。",
+      fr: "Je comprends également que les instructions de paiement pour les frais de demande remboursables seront fournies après l’envoi. Une fois le paiement confirmé, ma demande passera à l’examen, à l’approbation et aux prochaines étapes du traitement.",
+      ar: "أفهم أيضًا أنه سيتم تقديم تعليمات الدفع لرسوم الطلب القابلة للاسترداد بعد الإرسال. وبمجرد تأكيد الدفع، سينتقل طلبي إلى المراجعة والموافقة وخطوات المعالجة التالية."
+    },
+    "A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.": {
+      es: "Pronto se enviará un correo de confirmación a la dirección proporcionada en su solicitud para verificar que su solicitud se recibió correctamente.",
+      zh: "确认邮件将很快发送至您在申请中提供的电子邮箱，以核实您的申请已成功收到。",
+      fr: "Un e-mail de confirmation sera envoyé prochainement à l’adresse indiquée dans votre demande afin de vérifier que votre dossier a bien été reçu.",
+      ar: "سيتم إرسال رسالة تأكيد قريبًا إلى عنوان البريد الإلكتروني المذكور في طلبك للتحقق من أن طلبك قد تم استلامه بنجاح."
     }
   };
 

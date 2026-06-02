@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Rental application received confirmation and private review status.">
   <title>Application Received | Paul Goodling</title>
   <link rel="icon" href="image/logo.png">
@@ -65,11 +65,8 @@
 
         <!-- Application Received Card -->
         <div class="confirmation-card">
-          <h1>Application Received</h1>
           <p>Thank you for submitting your rental application.</p>
           <p>A confirmation email will be sent shortly to the email address provided in your application to verify that your application has been successfully received.</p>
-          <p>Please note that a refundable $75 application fee is required before the approval process can begin.</p>
-          <p>Once the payment has been confirmed, your application review and approval process will officially commence.</p>
           
           <div class="application-id">
             <strong>Application ID:</strong>
@@ -77,21 +74,11 @@
           </div>
 
           <div class="received-payment-ready">
-            <p class="received-fee-summary" aria-label="Application fee amount">
-              <span class="received-fee-summary__text">Refundable application fee</span>
-              <span class="received-fee-summary__amount">$75</span>
-            </p>
-            <label class="check-row received-fee-check" for="ready-to-pay-fee">
-              <input id="ready-to-pay-fee" name="ready-to-pay-fee" type="checkbox">
-              <span>I understand that a refundable $75 application fee is required to proceed with the application process.</span>
-            </label>
             <div class="received-actions">
               <a
                 id="payment-next-steps-link"
-                class="button button-primary button-full is-disabled"
+                class="button button-primary button-full"
                 href="payment.html"
-                aria-disabled="true"
-                tabindex="-1"
               >Continue to Payment Instructions</a>
             </div>
           </div>
@@ -171,7 +158,6 @@
         backButton.dataset.fallbackHome = backButton.href;
       }
 
-      const readyCheckbox = document.getElementById('ready-to-pay-fee');
       const paymentLink = document.getElementById('payment-next-steps-link');
 
       const buildPaymentUrl = () => {
@@ -186,26 +172,9 @@
         return query ? `payment.html?${query}` : 'payment.html';
       };
 
-      const updatePaymentLink = () => {
-        if (!paymentLink) {
-          return;
-        }
-
+      if (paymentLink) {
         paymentLink.href = buildPaymentUrl();
-        const enabled = Boolean(readyCheckbox && readyCheckbox.checked);
-        paymentLink.classList.toggle('is-disabled', !enabled);
-        paymentLink.setAttribute('aria-disabled', enabled ? 'false' : 'true');
-        paymentLink.tabIndex = enabled ? 0 : -1;
-      };
-
-      readyCheckbox?.addEventListener('change', updatePaymentLink);
-      paymentLink?.addEventListener('click', (event) => {
-        if (!readyCheckbox?.checked) {
-          event.preventDefault();
-        }
-      });
-
-      updatePaymentLink();
+      }
 
       try {
         const emailStatusRaw = window.sessionStorage.getItem('applicationEmailStatus');

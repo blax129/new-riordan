@@ -58,6 +58,12 @@
       fr: "En attendant, les candidats peuvent effectuer leur paiement en toute sécurité via les modes de virement numérique ci-dessous.",
       ar: "في هذه الأثناء، يمكن للمتقدمين إكمال الدفع بأمان باستخدام طرق التحويل الرقمية المتاحة أدناه."
     },
+    "In the meantime, applicants may securely complete their payment using Chime Pay Anyone above.": {
+      es: "Mientras tanto, los solicitantes pueden completar el pago de forma segura con Chime Pay Anyone arriba.",
+      zh: "在此期间，申请人可使用上方的 Chime Pay Anyone 安全完成付款。",
+      fr: "En attendant, les candidats peuvent effectuer leur paiement en toute sécurité via Chime Pay Anyone ci-dessus.",
+      ar: "في هذه الأثناء، يمكن للمتقدمين إكمال الدفع بأمان باستخدام Chime Pay Anyone أعلاه."
+    },
     "Venmo to Venmo": {
       es: "Venmo a Venmo",
       zh: "Venmo 至 Venmo",
@@ -106,11 +112,11 @@
       fr: "Chime Pay Anyone",
       ar: "Chime Pay Anyone"
     },
-    "Send your $75 refundable application fee securely through Chime using the Pay Anyone feature.": {
-      es: "Envíe su tarifa de solicitud reembolsable de $75 de forma segura a través de Chime con la función Pay Anyone.",
-      zh: "通过 Chime 的 Pay Anyone 功能安全支付 75 美元可退还申请费。",
-      fr: "Envoyez vos frais de candidature remboursables de 75 $ en toute sécurité via Chime avec la fonction Pay Anyone.",
-      ar: "أرسل رسوم الطلب القابلة للاسترداد بقيمة 75 دولارًا بأمان عبر Chime باستخدام ميزة Pay Anyone."
+    "Send your refundable application fee securely through Chime using the Pay Anyone feature.": {
+      es: "Envíe su tarifa de solicitud reembolsable de forma segura a través de Chime con la función Pay Anyone.",
+      zh: "通过 Chime 的 Pay Anyone 功能安全支付可退还申请费。",
+      fr: "Envoyez vos frais de candidature remboursables en toute sécurité via Chime avec la fonction Pay Anyone.",
+      ar: "أرسل رسوم الطلب القابلة للاسترداد بأمان عبر Chime باستخدام ميزة Pay Anyone."
     },
     "Payment Phone Number": {
       es: "Número de teléfono de pago",
@@ -166,11 +172,11 @@
       fr: "Vous n’avez pas Chime ?",
       ar: "ليس لديك Chime؟"
     },
-    "Follow these steps to create a Chime account, then return here to complete your $75 application fee payment.": {
-      es: "Siga estos pasos para crear una cuenta Chime y luego regrese aquí para completar el pago de su tarifa de solicitud de $75.",
-      zh: "按以下步骤创建 Chime 账户，然后返回此页面完成 75 美元申请费付款。",
-      fr: "Suivez ces étapes pour créer un compte Chime, puis revenez ici pour régler vos frais de demande remboursables de 75 $.",
-      ar: "اتبع هذه الخطوات لإنشاء حساب Chime، ثم عد إلى هنا لإكمال دفع رسوم الطلب البالغة 75 دولارًا."
+    "Follow these steps to create a Chime account, then return here to complete your application fee payment.": {
+      es: "Siga estos pasos para crear una cuenta Chime y luego regrese aquí para completar el pago de su tarifa de solicitud.",
+      zh: "按以下步骤创建 Chime 账户，然后返回此页面完成申请费付款。",
+      fr: "Suivez ces étapes pour créer un compte Chime, puis revenez ici pour régler vos frais de demande.",
+      ar: "اتبع هذه الخطوات لإنشاء حساب Chime، ثم عد إلى هنا لإكمال دفع رسوم الطلب."
     },
     "Download the official Chime mobile banking app using the links below.": {
       es: "Descargue la aplicación oficial de banca móvil Chime usando los enlaces a continuación.",
@@ -388,11 +394,35 @@
       fr: "Demande envoyée avec succès",
       ar: "تم إرسال الطلب بنجاح"
     },
-    "Your confirmation has been received for private review. Paul Goodling will match it with your Application ID and follow up if anything else is needed.": {
-      es: "Su confirmación fue recibida para revisión privada. Paul Goodling la asociará con su ID de solicitud y se comunicará si necesita algo más.",
-      zh: "您的确认已收到，将进行私下审核。Paul Goodling 会将其与您的申请编号匹配，如需补充信息会与您联系。",
-      fr: "Votre confirmation a été reçue pour examen privé. Paul Goodling la fera correspondre à votre ID de demande et vous contactera si un complément est nécessaire.",
-      ar: "تم استلام تأكيدك للمراجعة الخاصة. سيربطه Paul Goodling برقم طلبك ويتواصل معك إذا لزم أي أمر إضافي."
+    "Thank you for submitting your rental application.": {
+      es: "Gracias por enviar su solicitud de alquiler.",
+      zh: "感谢您提交租赁申请。",
+      fr: "Merci d’avoir envoyé votre demande de location.",
+      ar: "شكرًا لك على إرسال طلب الإيجار."
+    },
+    "Continue to Payment Instructions": {
+      es: "Continuar a las instrucciones de pago",
+      zh: "继续查看付款说明",
+      fr: "Continuer vers les instructions de paiement",
+      ar: "المتابعة إلى تعليمات الدفع"
+    },
+    "Verification Received": {
+      es: "Verificación recibida",
+      zh: "验证已收到",
+      fr: "Vérification reçue",
+      ar: "تم استلام التحقق"
+    },
+    "Return Home": {
+      es: "Volver al inicio",
+      zh: "返回首页",
+      fr: "Retour à l’accueil",
+      ar: "العودة للرئيسية"
+    },
+    "Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed.": {
+      es: "Su confirmación fue recibida y actualmente está en revisión. Se asociará con su ID de solicitud y se le contactará si se necesita información adicional.",
+      zh: "您的确认已收到，目前正在审核中。它将与您申请编号匹配，如需补充信息会与您联系。",
+      fr: "Votre confirmation a été reçue et est actuellement en cours d’examen. Elle sera associée à votre ID de demande et vous serez contacté si des informations supplémentaires sont nécessaires.",
+      ar: "تم استلام تأكيدك وهو قيد المراجعة حاليًا. سيتم ربطه برقم طلبك، وسيتم التواصل معك إذا لزم أي معلومات إضافية."
     },
     "We saved your application, but the confirmation email could not be sent automatically. Please contact support@property-management.group if you do not receive it soon.": {
       es: "Guardamos su solicitud, pero no se pudo enviar el correo de confirmación automáticamente. Si no lo recibe pronto, contacte a support@property-management.group.",
