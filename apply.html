@@ -271,6 +271,31 @@
                   <span class="agreement-panel__label-text" id="agreement-confirm-text">I have read and agree to the statements above.</span>
                 </label>
 
+                <div class="agreement-panel__privacy-card" aria-labelledby="agreement-privacy-heading">
+                  <div class="agreement-panel__privacy-header">
+                    <p class="agreement-panel__privacy-title" id="agreement-privacy-heading">Privacy &amp; Data Processing Consent</p>
+                    <a class="agreement-panel__privacy-link" id="privacy-notice-link" href="privacy-notice.html">
+                      <span>View Privacy Notice</span>
+                      <svg viewBox="0 0 12 12" width="12" height="12" fill="none" aria-hidden="true">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H4.75M8.5 3.5V7.25" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </a>
+                  </div>
+                  <label class="agreement-panel__label agreement-panel__label--consent" for="privacy-consent">
+                    <input id="privacy-consent" name="privacy-consent" type="checkbox" required aria-labelledby="agreement-privacy-heading privacy-consent-text">
+                    <span class="agreement-panel__label-text agreement-panel__label-text--consent" id="privacy-consent-text">I consent to the collection, storage, verification, and processing of the information provided in this application for rental screening, application review, communication, and related property management purposes.</span>
+                  </label>
+                  <p class="agreement-panel__security-note" role="note">
+                    <span class="agreement-panel__security-icon" aria-hidden="true">
+                      <svg viewBox="0 0 16 16" fill="none" width="14" height="14">
+                        <path d="M8 1.75l4.5 2.25v3.25c0 3.1-1.95 5.45-4.5 6-2.55-.55-4.5-2.9-4.5-6V4L8 1.75z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                        <path d="M6 8l1.25 1.25L10 6.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                    <span class="agreement-panel__security-copy">Your information is transmitted securely and used only for application processing and communication purposes.</span>
+                  </p>
+                </div>
+
                 <div class="agreement-panel__payment-method" aria-labelledby="agreement-payment-method-heading">
                   <p class="agreement-panel__payment-method-title" id="agreement-payment-method-heading">Payment method for the fee</p>
                   <div class="agreement-panel__payment-method-logo">

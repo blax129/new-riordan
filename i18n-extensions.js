@@ -588,6 +588,13 @@
       zh: "验证已收到 | Property Management Group",
       fr: "Vérification reçue | Property Management Group",
       ar: "تم استلام التحقق | Property Management Group"
+    },
+    "privacy-notice.html": {
+      en: "Privacy Notice | Property Management Group",
+      es: "Aviso de privacidad | Property Management Group",
+      zh: "隐私声明 | Property Management Group",
+      fr: "Avis de confidentialité | Property Management Group",
+      ar: "إشعار الخصوصية | Property Management Group"
     }
   };
 })(

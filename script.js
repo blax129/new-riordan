@@ -194,6 +194,10 @@
       "Application certification": "Certificación de la solicitud",
       "Fee & next steps": "Tarifa y siguientes pasos",
       "I have read and agree to the statements above.": "He leído y acepto las declaraciones anteriores.",
+      "Privacy & Data Processing Consent": "Consentimiento de privacidad y procesamiento de datos",
+      "I consent to the collection, storage, verification, and processing of the information provided in this application for rental screening, application review, communication, and related property management purposes.": "Consiento la recopilación, almacenamiento, verificación y procesamiento de la información proporcionada en esta solicitud para la evaluación de alquiler, revisión de la solicitud, comunicación y fines relacionados con la administración de la propiedad.",
+      "View Privacy Notice": "Ver aviso de privacidad",
+      "Your information is transmitted securely and used only for application processing and communication purposes.": "Su información se transmite de forma segura y se utiliza únicamente para el procesamiento de la solicitud y fines de comunicación.",
       "Payment method for the fee": "Método de pago de la tarifa",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "Certifico que toda la información proporcionada en esta solicitud es completa y exacta según mi leal saber y entender. Entiendo que proporcionar información falsa o engañosa puede resultar en la denegación de mi solicitud, y autorizo al propietario o administrador de la propiedad a verificar la información proporcionada.",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "También entiendo que las instrucciones de pago para la tarifa de solicitud reembolsable se proporcionarán después del envío. Una vez confirmado el pago, mi solicitud pasará a la revisión, aprobación y siguientes pasos del proceso.",
@@ -279,6 +283,7 @@
       "Request Consultation": "申请咨询",
       "Apply Now": "立即申请",
       "Back": "返回",
+      "Back to Application": "返回申请",
       "Private property management": "私人物业管理",
       "Professional and transparent rental coordination for applicants": "面向申请人的专业透明租赁协调",
       "Professional Photo Coming Soon": "专业照片即将推出",
@@ -1671,6 +1676,10 @@
       "Application certification": "申请认证",
       "Fee & next steps": "费用与后续步骤",
       "I have read and agree to the statements above.": "我已阅读并同意以上声明。",
+      "Privacy & Data Processing Consent": "隐私与数据处理同意",
+      "I consent to the collection, storage, verification, and processing of the information provided in this application for rental screening, application review, communication, and related property management purposes.": "本人同意收集、存储、核实和处理本申请所提供的信息，用于租赁筛选、申请审核、沟通及相关物业管理目的。",
+      "View Privacy Notice": "查看隐私声明",
+      "Your information is transmitted securely and used only for application processing and communication purposes.": "您的信息会安全传输，且仅用于申请处理与沟通目的。",
       "Payment method for the fee": "费用支付方式",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "本人证明本申请所提供的信息据本人所知完整准确。本人理解提供虚假或误导信息可能导致申请被拒，并授权房东/物业管理人员核实所提供的信息。",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "本人亦理解，可退还申请费的付款说明将在提交后提供。付款确认后，申请将进入审核、批准及后续处理步骤。",
@@ -1713,6 +1722,10 @@
       "Application certification": "Certification de la demande",
       "Fee & next steps": "Frais et prochaines étapes",
       "I have read and agree to the statements above.": "J’ai lu et j’accepte les déclarations ci-dessus.",
+      "Privacy & Data Processing Consent": "Consentement à la confidentialité et au traitement des données",
+      "I consent to the collection, storage, verification, and processing of the information provided in this application for rental screening, application review, communication, and related property management purposes.": "Je consens à la collecte, au stockage, à la vérification et au traitement des informations fournies dans cette demande à des fins de sélection locataire, d’examen de la demande, de communication et de gestion immobilière connexe.",
+      "View Privacy Notice": "Voir l’avis de confidentialité",
+      "Your information is transmitted securely and used only for application processing and communication purposes.": "Vos informations sont transmises de manière sécurisée et utilisées uniquement pour le traitement de la demande et à des fins de communication.",
       "Payment method for the fee": "Mode de paiement des frais",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "Je certifie que toutes les informations fournies dans cette demande sont complètes et exactes au meilleur de ma connaissance. Je comprends que fournir des informations fausses ou trompeuses peut entraîner le refus de ma demande, et j’autorise le propriétaire ou le gestionnaire à vérifier les informations fournies.",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "Je comprends également que les instructions de paiement pour les frais de demande remboursables seront fournies après l’envoi. Une fois le paiement confirmé, ma demande passera à l’examen, à l’approbation et aux prochaines étapes du traitement.",
@@ -1755,6 +1768,10 @@
       "Application certification": "تصديق الطلب",
       "Fee & next steps": "الرسوم والخطوات التالية",
       "I have read and agree to the statements above.": "لقد قرأت وأوافق على البيانات أعلاه.",
+      "Privacy & Data Processing Consent": "الموافقة على الخصوصية ومعالجة البيانات",
+      "I consent to the collection, storage, verification, and processing of the information provided in this application for rental screening, application review, communication, and related property management purposes.": "أوافق على جمع وتخزين والتحقق من ومعالجة المعلومات المقدمة في هذا الطلب لأغراض فحص الإيجار ومراجعة الطلب والتواصل وأغراض إدارة العقار ذات الصلة.",
+      "View Privacy Notice": "عرض إشعار الخصوصية",
+      "Your information is transmitted securely and used only for application processing and communication purposes.": "يتم نقل معلوماتك بشكل آمن ولا تُستخدم إلا لأغراض معالجة الطلب والتواصل.",
       "Payment method for the fee": "طريقة دفع الرسوم",
       "I certify that all information provided in this application is complete and accurate to the best of my knowledge. I understand that providing false or misleading information may result in denial of my application, and I authorize the landlord/property manager to verify the information provided.": "أقر بأن جميع المعلومات المقدمة في هذا الطلب كاملة ودقيقة حسب علمي. أفهم أن تقديم معلومات كاذبة أو مضللة قد يؤدي إلى رفض طلبي، وأفوض المالك/مدير العقار بالتحقق من المعلومات المقدمة.",
       "I also understand that payment instructions for the refundable application fee will be provided after submission. Once payment is confirmed, my application will proceed to the review, approval, and next processing steps.": "أفهم أيضًا أنه سيتم تقديم تعليمات الدفع لرسوم الطلب القابلة للاسترداد بعد الإرسال. وبمجرد تأكيد الدفع، سينتقل طلبي إلى المراجعة والموافقة وخطوات المعالجة التالية.",
@@ -2107,7 +2124,7 @@
   }
 
   function syncPageLanguageUrl(language) {
-    if (isHomePage()) {
+    if (isHomePage() || document.body.classList.contains("privacy-notice-page")) {
       return;
     }
 
@@ -2302,10 +2319,33 @@
     });
   }
 
+  function privacyNoticeHref(language) {
+    const lang = normalizeLanguage(language);
+    return `privacy-notice.html?lang=${encodeURIComponent(lang)}`;
+  }
+
+  function syncPrivacyNoticeLink(language) {
+    const href = privacyNoticeHref(language);
+    document.querySelectorAll("#privacy-notice-link, a.agreement-panel__privacy-link[href*='privacy-notice.html']").forEach((link) => {
+      link.setAttribute("href", href);
+    });
+  }
+
   function syncBackFallbacks(language) {
     const supportedLanguage = normalizeLanguage(language);
+    const applyFallback =
+      supportedLanguage === "en" ? "apply.html" : `apply.html?lang=${encodeURIComponent(supportedLanguage)}`;
+
     backButtons.forEach((button) => {
       if (button.id === "applicationBackButton" || document.body.classList.contains("payment-confirmation-page")) {
+        return;
+      }
+
+      if (document.body.classList.contains("privacy-notice-page")) {
+        button.dataset.fallbackHome = applyFallback;
+        if (button.tagName === "A") {
+          button.setAttribute("href", applyFallback);
+        }
         return;
       }
 
@@ -2552,6 +2592,7 @@
     syncLanguageMenus(supportedLanguage);
     syncBackFallbacks(supportedLanguage);
     syncFloatingApplyHref(supportedLanguage);
+    syncPrivacyNoticeLink(supportedLanguage);
     syncPageLanguageUrl(supportedLanguage);
     document.querySelectorAll("input, select, textarea").forEach((field) => field.setCustomValidity(""));
     persistLanguageChoice(supportedLanguage);
@@ -2818,6 +2859,22 @@
       window.location.href = resolveBackFallback(button);
     });
   });
+
+  if (applicationForm) {
+    document.addEventListener(
+      "click",
+      function (event) {
+        const link = event.target.closest(
+          "#privacy-notice-link, a.agreement-panel__privacy-link[href*='privacy-notice.html']"
+        );
+        if (!link) {
+          return;
+        }
+        link.setAttribute("href", privacyNoticeHref(currentLanguage()));
+      },
+      true
+    );
+  }
 
   languageSelects.forEach((select) => {
     select.addEventListener("change", function (event) {

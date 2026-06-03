@@ -351,6 +351,30 @@
       fr: "J’ai lu et j’accepte les déclarations ci-dessus.",
       ar: "لقد قرأت وأوافق على البيانات أعلاه."
     },
+    "Privacy & Data Processing Consent": {
+      es: "Consentimiento de privacidad y procesamiento de datos",
+      zh: "隐私与数据处理同意",
+      fr: "Consentement à la confidentialité et au traitement des données",
+      ar: "الموافقة على الخصوصية ومعالجة البيانات"
+    },
+    "I consent to the collection, storage, verification, and processing of the information provided in this application for rental screening, application review, communication, and related property management purposes.": {
+      es: "Consiento la recopilación, almacenamiento, verificación y procesamiento de la información proporcionada en esta solicitud para la evaluación de alquiler, revisión de la solicitud, comunicación y fines relacionados con la administración de la propiedad.",
+      zh: "本人同意收集、存储、核实和处理本申请所提供的信息，用于租赁筛选、申请审核、沟通及相关物业管理目的。",
+      fr: "Je consens à la collecte, au stockage, à la vérification et au traitement des informations fournies dans cette demande à des fins de sélection locataire, d’examen de la demande, de communication et de gestion immobilière connexe.",
+      ar: "أوافق على جمع وتخزين والتحقق من ومعالجة المعلومات المقدمة في هذا الطلب لأغراض فحص الإيجار ومراجعة الطلب والتواصل وأغراض إدارة العقار ذات الصلة."
+    },
+    "View Privacy Notice": {
+      es: "Ver aviso de privacidad",
+      zh: "查看隐私声明",
+      fr: "Voir l’avis de confidentialité",
+      ar: "عرض إشعار الخصوصية"
+    },
+    "Your information is transmitted securely and used only for application processing and communication purposes.": {
+      es: "Su información se transmite de forma segura y se utiliza únicamente para el procesamiento de la solicitud y fines de comunicación.",
+      zh: "您的信息会安全传输，且仅用于申请处理与沟通目的。",
+      fr: "Vos informations sont transmises de manière sécurisée et utilisées uniquement pour le traitement de la demande et à des fins de communication.",
+      ar: "يتم نقل معلوماتك بشكل آمن ولا تُستخدم إلا لأغراض معالجة الطلب والتواصل."
+    },
     "Payment method for the fee": {
       es: "Método de pago de la tarifa",
       zh: "费用支付方式",
