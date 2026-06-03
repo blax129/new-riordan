@@ -460,29 +460,29 @@
       fr: "Confirmation",
       ar: "التأكيد"
     },
-    "Complete Payment | Paul Goodling": {
-      es: "Completar pago | Paul Goodling",
-      zh: "完成付款 | Paul Goodling",
-      fr: "Finaliser le paiement | Paul Goodling",
-      ar: "إكمال الدفع | Paul Goodling"
+    "Complete Payment | Property Management Group": {
+      es: "Completar pago | Property Management Group",
+      zh: "完成付款 | Property Management Group",
+      fr: "Finaliser le paiement | Property Management Group",
+      ar: "إكمال الدفع | Property Management Group"
     },
-    "Application Received | Paul Goodling": {
-      es: "Solicitud recibida | Paul Goodling",
-      zh: "申请已收到 | Paul Goodling",
-      fr: "Demande reçue | Paul Goodling",
-      ar: "تم استلام الطلب | Paul Goodling"
+    "Application Received | Property Management Group": {
+      es: "Solicitud recibida | Property Management Group",
+      zh: "申请已收到 | Property Management Group",
+      fr: "Demande reçue | Property Management Group",
+      ar: "تم استلام الطلب | Property Management Group"
     },
-    "Rental Application | Paul Goodling": {
-      es: "Solicitud de alquiler | Paul Goodling",
-      zh: "租赁申请 | Paul Goodling",
-      fr: "Demande de location | Paul Goodling",
-      ar: "طلب إيجار | Paul Goodling"
+    "Rental Application | Property Management Group": {
+      es: "Solicitud de alquiler | Property Management Group",
+      zh: "租赁申请 | Property Management Group",
+      fr: "Demande de location | Property Management Group",
+      ar: "طلب إيجار | Property Management Group"
     },
-    "Verification Received | Paul Goodling": {
-      es: "Verificación recibida | Paul Goodling",
-      zh: "验证已收到 | Paul Goodling",
-      fr: "Vérification reçue | Paul Goodling",
-      ar: "تم استلام التحقق | Paul Goodling"
+    "Verification Received | Property Management Group": {
+      es: "Verificación recibida | Property Management Group",
+      zh: "验证已收到 | Property Management Group",
+      fr: "Vérification reçue | Property Management Group",
+      ar: "تم استلام التحقق | Property Management Group"
     },
     "Could not read the selected image.": {
       es: "No se pudo leer la imagen seleccionada.",
@@ -508,11 +508,35 @@
       fr: "La compression d’image n’est pas prise en charge par ce navigateur.",
       ar: "ضغط الصور غير مدعوم في هذا المتصفح."
     },
-    "Payment verification received for Paul Goodling private rental application review.": {
-      es: "Verificación de pago recibida para la revisión privada de la solicitud de alquiler con Paul Goodling.",
-      zh: "已收到 Paul Goodling 私人租赁申请审核的付款验证。",
-      fr: "Vérification de paiement reçue pour l’examen privé de la demande de location avec Paul Goodling.",
-      ar: "تم استلام التحقق من الدفع لمراجعة طلب الإيجار الخاص مع Paul Goodling."
+    "Payment verification received for Property Management Group private rental application review.": {
+      es: "Verificación de pago recibida para la revisión privada de la solicitud de alquiler con Property Management Group.",
+      zh: "已收到 Property Management Group 私人租赁申请审核的付款验证。",
+      fr: "Vérification de paiement reçue pour l’examen privé de la demande de location avec Property Management Group.",
+      ar: "تم استلام التحقق من الدفع لمراجعة طلب الإيجار الخاص مع Property Management Group."
+    },
+    "© 2026 Property Management Group": {
+      es: "© 2026 Property Management Group",
+      zh: "© 2026 Property Management Group",
+      fr: "© 2026 Property Management Group",
+      ar: "© 2026 Property Management Group"
+    },
+    "Privately managed rental homes by Property Management Group with a simple, secure application process.": {
+      es: "Viviendas de alquiler administradas de forma privada por Property Management Group con un proceso de solicitud simple y seguro.",
+      zh: "由 Property Management Group 私人管理的出租房源，提供简单安全的申请流程。",
+      fr: "Logements locatifs gérés en privé par Property Management Group avec un processus de candidature simple et sécurisé.",
+      ar: "مساكن إيجار بإدارة خاصة من Property Management Group مع عملية تقديم بسيطة وآمنة."
+    },
+    "Complete a private rental application for review by Property Management Group.": {
+      es: "Complete una solicitud de alquiler privada para revisión por Property Management Group.",
+      zh: "填写私人租赁申请，由 Property Management Group 审核。",
+      fr: "Remplissez une demande de location privée pour examen par Property Management Group.",
+      ar: "أكمل طلب إيجار خاص للمراجعة من Property Management Group."
+    },
+    "Rental application received confirmation and private review status.": {
+      es: "Confirmación de solicitud de alquiler recibida y estado de revisión privada.",
+      zh: "租赁申请已收到确认及私人审核状态。",
+      fr: "Confirmation de demande de location reçue et statut d’examen privé.",
+      ar: "تأكيد استلام طلب الإيجار وحالة المراجعة الخاصة."
     }
   };
 
@@ -531,39 +555,39 @@
 
   global.__PPM_PAGE_TITLES__ = {
     "index.html": {
-      en: "Paul Goodling | Private Property Manager",
-      es: "Paul Goodling | Administrador Privado de Propiedades",
-      zh: "Paul Goodling | 私人物业经理",
-      fr: "Paul Goodling | Gestionnaire privé de propriétés",
-      ar: "Paul Goodling | مدير عقارات خاص"
+      en: "Property Management Group | Private Property Manager",
+      es: "Property Management Group | Administrador Privado de Propiedades",
+      zh: "Property Management Group | 私人物业经理",
+      fr: "Property Management Group | Gestionnaire privé de propriétés",
+      ar: "Property Management Group | مدير عقارات خاص"
     },
     "apply.html": {
-      en: "Rental Application | Paul Goodling",
-      es: "Solicitud de alquiler | Paul Goodling",
-      zh: "租赁申请 | Paul Goodling",
-      fr: "Demande de location | Paul Goodling",
-      ar: "طلب إيجار | Paul Goodling"
+      en: "Rental Application | Property Management Group",
+      es: "Solicitud de alquiler | Property Management Group",
+      zh: "租赁申请 | Property Management Group",
+      fr: "Demande de location | Property Management Group",
+      ar: "طلب إيجار | Property Management Group"
     },
     "application-received.html": {
-      en: "Application Received | Paul Goodling",
-      es: "Solicitud recibida | Paul Goodling",
-      zh: "申请已收到 | Paul Goodling",
-      fr: "Demande reçue | Paul Goodling",
-      ar: "تم استلام الطلب | Paul Goodling"
+      en: "Application Received | Property Management Group",
+      es: "Solicitud recibida | Property Management Group",
+      zh: "申请已收到 | Property Management Group",
+      fr: "Demande reçue | Property Management Group",
+      ar: "تم استلام الطلب | Property Management Group"
     },
     "payment.html": {
-      en: "Complete Payment | Paul Goodling",
-      es: "Completar pago | Paul Goodling",
-      zh: "完成付款 | Paul Goodling",
-      fr: "Finaliser le paiement | Paul Goodling",
-      ar: "إكمال الدفع | Paul Goodling"
+      en: "Complete Payment | Property Management Group",
+      es: "Completar pago | Property Management Group",
+      zh: "完成付款 | Property Management Group",
+      fr: "Finaliser le paiement | Property Management Group",
+      ar: "إكمال الدفع | Property Management Group"
     },
     "thankyou.html": {
-      en: "Verification Received | Paul Goodling",
-      es: "Verificación recibida | Paul Goodling",
-      zh: "验证已收到 | Paul Goodling",
-      fr: "Vérification reçue | Paul Goodling",
-      ar: "تم استلام التحقق | Paul Goodling"
+      en: "Verification Received | Property Management Group",
+      es: "Verificación recibida | Property Management Group",
+      zh: "验证已收到 | Property Management Group",
+      fr: "Vérification reçue | Property Management Group",
+      ar: "تم استلام التحقق | Property Management Group"
     }
   };
 })(
