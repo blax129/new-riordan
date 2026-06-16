@@ -2575,6 +2575,44 @@
     });
   }
 
+  function translateLocalizedDates(language) {
+    const localeMap = {
+      en: "en-US",
+      es: "es",
+      zh: "zh-CN",
+      fr: "fr-FR",
+      ar: "ar"
+    };
+    const locale = localeMap[language] || "en-US";
+
+    document.querySelectorAll("time[datetime]").forEach((element) => {
+      if (!element.dataset.dateEn) {
+        element.dataset.dateEn = element.textContent.trim();
+      }
+
+      const iso = element.getAttribute("datetime");
+      if (!iso) {
+        return;
+      }
+
+      if (language === "en") {
+        element.textContent = element.dataset.dateEn;
+        return;
+      }
+
+      const date = new Date(iso + "T12:00:00");
+      if (Number.isNaN(date.getTime())) {
+        return;
+      }
+
+      element.textContent = date.toLocaleDateString(locale, {
+        month: "long",
+        day: "numeric",
+        year: "numeric"
+      });
+    });
+  }
+
   function applyLanguage(language) {
     const supportedLanguage = normalizeLanguage(language);
     logI18n("applyLanguage", {
@@ -2586,6 +2624,7 @@
     document.documentElement.dir = supportedLanguage === "ar" ? "rtl" : "ltr";
     translateTextNodes(supportedLanguage);
     translateAttributes(supportedLanguage);
+    translateLocalizedDates(supportedLanguage);
     translatePageTitle(supportedLanguage);
     translateMetaDescription(supportedLanguage);
     syncLanguageSelects(supportedLanguage);
@@ -3579,6 +3618,222 @@
   }
 
   initPhoneChoicePrompt();
+
+  const APPLICATION_DRAFT_KEY = "ppm-application-draft";
+
+  function initApplicationDraft() {
+    const form = document.getElementById("application-form");
+    if (!form) {
+      return;
+    }
+
+    let saveTimer = null;
+
+    function serializeForm() {
+      const data = {};
+      const elements = form.querySelectorAll("input, select, textarea");
+
+      elements.forEach((field) => {
+        if (!field.name || field.type === "file") {
+          return;
+        }
+
+        if (field.type === "checkbox") {
+          data[field.name] = field.checked;
+          return;
+        }
+
+        if (field.type === "radio") {
+          if (field.checked) {
+            data[field.name] = field.value;
+          }
+          return;
+        }
+
+        data[field.name] = field.value;
+      });
+
+      return data;
+    }
+
+    function restoreForm(data) {
+      if (!data || typeof data !== "object") {
+        return false;
+      }
+
+      let restored = false;
+      Object.entries(data).forEach(([name, value]) => {
+        const fields = form.querySelectorAll(`[name="${CSS.escape(name)}"]`);
+        if (!fields.length) {
+          return;
+        }
+
+        fields.forEach((field) => {
+          if (field.type === "checkbox") {
+            field.checked = Boolean(value);
+            restored = true;
+            return;
+          }
+
+          if (field.type === "radio") {
+            field.checked = field.value === value;
+            if (field.checked) {
+              restored = true;
+            }
+            return;
+          }
+
+          field.value = value == null ? "" : String(value);
+          restored = true;
+        });
+      });
+
+      return restored;
+    }
+
+    function saveDraft() {
+      try {
+        window.localStorage.setItem(APPLICATION_DRAFT_KEY, JSON.stringify({
+          savedAt: Date.now(),
+          data: serializeForm()
+        }));
+      } catch (error) {
+        console.warn("Could not save application draft:", error);
+      }
+    }
+
+    function scheduleSave() {
+      window.clearTimeout(saveTimer);
+      saveTimer = window.setTimeout(saveDraft, 450);
+    }
+
+    try {
+      const raw = window.localStorage.getItem(APPLICATION_DRAFT_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (restoreForm(parsed.data)) {
+          /* Answers restored silently when the applicant returns. */
+        }
+      }
+    } catch (error) {
+      console.warn("Could not restore application draft:", error);
+    }
+
+    form.addEventListener("input", scheduleSave);
+    form.addEventListener("change", scheduleSave);
+
+    form.addEventListener("submit", function () {
+      try {
+        window.localStorage.removeItem(APPLICATION_DRAFT_KEY);
+      } catch (error) {
+        console.warn("Could not clear application draft:", error);
+      }
+    }, true);
+  }
+
+  function getTestimonialInitials(name) {
+    const parts = String(name || "")
+      .trim()
+      .split(/\s+/)
+      .filter(Boolean);
+
+    if (parts.length === 0) {
+      return "?";
+    }
+
+    if (parts.length === 1) {
+      return parts[0].slice(0, 2).toUpperCase();
+    }
+
+    return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+  }
+
+  function getTestimonialAvatarHue(name) {
+    let hash = 0;
+
+    for (let i = 0; i < name.length; i += 1) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    }
+
+    return Math.abs(hash) % 360;
+  }
+
+  function decorateTestimonialAvatar(avatar, name) {
+    if (!avatar || !name) {
+      return;
+    }
+
+    avatar.textContent = getTestimonialInitials(name);
+    avatar.style.setProperty("--avatar-hue", String(getTestimonialAvatarHue(name)));
+  }
+
+  function initTestimonialAvatars() {
+    document.querySelectorAll(".testimonial-author").forEach((author) => {
+      const avatar = author.querySelector(".testimonial-avatar");
+      const nameEl = author.querySelector("cite, strong");
+      if (!avatar || !nameEl) {
+        return;
+      }
+
+      decorateTestimonialAvatar(avatar, nameEl.textContent.trim());
+    });
+  }
+
+  function initTestimonialsComments() {
+    const form = document.getElementById("testimonialsCommentForm");
+    const status = document.getElementById("testimonialsCommentStatus");
+
+    if (!form) {
+      return;
+    }
+
+    const STORAGE_KEY = "ppm-testimonial-comments";
+
+    function saveComment(name, comment, isoDate) {
+      try {
+        const raw = window.localStorage.getItem(STORAGE_KEY);
+        const comments = raw ? JSON.parse(raw) : [];
+        comments.unshift({ name, comment, date: isoDate });
+        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(comments.slice(0, 50)));
+      } catch (error) {
+        console.warn("Could not save testimonial comment:", error);
+      }
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const nameInput = form.querySelector("#testimonial-name");
+      const commentInput = form.querySelector("#testimonial-comment");
+      const name = nameInput ? nameInput.value.trim() : "";
+      const comment = commentInput ? commentInput.value.trim() : "";
+
+      if (!name || !comment) {
+        if (status) {
+          status.textContent = translateText("Please enter your name and comment.", currentLanguage());
+          status.classList.add("is-error");
+        }
+        return;
+      }
+
+      const isoDate = new Date().toISOString().slice(0, 10);
+      saveComment(name, comment, isoDate);
+
+      form.reset();
+      if (status) {
+        status.textContent = translateText(
+          "Thank you — your comment has been submitted. It will not appear on this page.",
+          currentLanguage()
+        );
+        status.classList.remove("is-error");
+        status.classList.add("is-success");
+      }
+    });
+  }
+
+  initApplicationDraft();
+  initTestimonialAvatars();
+  initTestimonialsComments();
 
   function initApplicationFormSubmission() {
     const form = document.getElementById("application-form");

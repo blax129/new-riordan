@@ -537,6 +537,234 @@
       zh: "租赁申请已收到确认及私人审核状态。",
       fr: "Confirmation de demande de location reçue et statut d’examen privé.",
       ar: "تأكيد استلام طلب الإيجار وحالة المراجعة الخاصة."
+    },
+    "Why the application fee?": {
+      es: "¿Por qué la tarifa de solicitud?",
+      zh: "为什么收取申请费？",
+      fr: "Pourquoi des frais de dossier ?",
+      ar: "لماذا رسوم الطلب؟"
+    },
+    "A clear, refundable step that keeps the review process organized for every applicant.": {
+      es: "Un paso claro y reembolsable que mantiene organizado el proceso de revisión para cada solicitante.",
+      zh: "清晰且可退还的步骤，让每位申请人的审核流程更有序。",
+      fr: "Une étape claire et remboursable qui organise le processus d’examen pour chaque candidat.",
+      ar: "خطوة واضحة قابلة للاسترداد تُبقي عملية المراجعة منظمة لكل متقدم."
+    },
+    "Refund requests are processed within an hour of receiving your request, provided the application has not been approved.": {
+      es: "Las solicitudes de reembolso se procesan dentro de una hora después de recibir su solicitud, siempre que la solicitud no haya sido aprobada.",
+      zh: "在申请尚未获批的情况下，退款请求将在收到请求后一小时内处理。",
+      fr: "Les demandes de remboursement sont traitées dans l’heure suivant leur réception, si la demande n’a pas été approuvée.",
+      ar: "تتم معالجة طلبات الاسترداد خلال ساعة من استلام طلبك، بشرط ألا يكون الطلب قد تمت الموافقة عليه."
+    },
+    "Refund processing": {
+      es: "Procesamiento de reembolso",
+      zh: "退款处理",
+      fr: "Traitement du remboursement",
+      ar: "معالجة الاسترداد"
+    },
+    "Refund policy": {
+      es: "Política de reembolso",
+      zh: "退款政策",
+      fr: "Politique de remboursement",
+      ar: "سياسة الاسترداد"
+    },
+    "Within 1 hour": {
+      es: "Dentro de 1 hora",
+      zh: "1 小时内",
+      fr: "Sous 1 heure",
+      ar: "خلال ساعة واحدة"
+    },
+    "Typical processing time after request": {
+      es: "Tiempo de procesamiento habitual tras la solicitud",
+      zh: "收到请求后的常规处理时间",
+      fr: "Délai de traitement habituel après la demande",
+      ar: "وقت المعالجة المعتاد بعد الطلب"
+    },
+    "How quickly are application fee refunds processed?": {
+      es: "¿Qué tan rápido se procesan los reembolsos de la tarifa de solicitud?",
+      zh: "申请费退款需要多久处理？",
+      fr: "En combien de temps les remboursements des frais de dossier sont-ils traités ?",
+      ar: "ما سرعة معالجة استرداد رسوم الطلب؟"
+    },
+    "Leadership & team": {
+      es: "Liderazgo y equipo",
+      zh: "领导团队",
+      fr: "Direction et équipe",
+      ar: "القيادة والفريق"
+    },
+    "What applicants say": {
+      es: "Lo que dicen los solicitantes",
+      zh: "申请人怎么说",
+      fr: "Ce que disent les candidats",
+      ar: "ماذا يقول المتقدمون"
+    },
+    "Feedback from people who completed the application process.": {
+      es: "Comentarios de personas que completaron el proceso de solicitud.",
+      zh: "来自已完成申请流程人士的反馈。",
+      fr: "Commentaires de personnes ayant terminé le processus de candidature.",
+      ar: "ملاحظات من أشخاص أكملوا عملية التقديم."
+    },
+    "Your name": {
+      es: "Su nombre",
+      zh: "您的姓名",
+      fr: "Votre nom",
+      ar: "اسمك"
+    },
+    "Your comment": {
+      es: "Su comentario",
+      zh: "您的评论",
+      fr: "Votre commentaire",
+      ar: "تعليقك"
+    },
+    "First name and last initial": {
+      es: "Nombre y primera letra del apellido",
+      zh: "名和姓氏首字母",
+      fr: "Prénom et initiale du nom",
+      ar: "الاسم الأول والحرف الأول من اسم العائلة"
+    },
+    "Applicant comments": {
+      es: "Comentarios de solicitantes",
+      zh: "申请人评论",
+      fr: "Commentaires des candidats",
+      ar: "تعليقات المتقدمين"
+    },
+    "Post comment": {
+      es: "Publicar comentario",
+      zh: "发布评论",
+      fr: "Publier le commentaire",
+      ar: "نشر التعليق"
+    },
+    "Share your experience": {
+      es: "Comparta su experiencia",
+      zh: "分享您的体验",
+      fr: "Partagez votre expérience",
+      ar: "شارك تجربتك"
+    },
+    "Private feedback for our team.": {
+      es: "Comentarios privados para nuestro equipo.",
+      zh: "仅供团队内部查阅的私人反馈。",
+      fr: "Commentaire privé pour notre équipe.",
+      ar: "ملاحظات خاصة لفريقنا."
+    },
+    "Submit feedback": {
+      es: "Enviar comentario",
+      zh: "提交反馈",
+      fr: "Envoyer le commentaire",
+      ar: "إرسال الملاحظات"
+    },
+    "Thank you — your comment has been submitted. It will not appear on this page.": {
+      es: "Gracias — su comentario ha sido enviado. No aparecerá en esta página.",
+      zh: "谢谢 — 您的评论已提交，不会显示在本页面上。",
+      fr: "Merci — votre commentaire a été envoyé. Il n’apparaîtra pas sur cette page.",
+      ar: "شكرًا — تم إرسال تعليقك ولن يظهر على هذه الصفحة."
+    },
+    "Please enter your name and comment.": {
+      es: "Ingrese su nombre y comentario.",
+      zh: "请输入您的姓名和评论。",
+      fr: "Veuillez saisir votre nom et votre commentaire.",
+      ar: "يرجى إدخال اسمك وتعليقك."
+    },
+    "Just now": {
+      es: "Justo ahora",
+      zh: "刚刚",
+      fr: "À l’instant",
+      ar: "الآن"
+    },
+    "Refund requests are processed within an hour of receiving your request, provided the application has not been approved. Processed within an hour of request.": {
+      es: "Las solicitudes de reembolso se procesan dentro de una hora después de recibir su solicitud, siempre que la solicitud no haya sido aprobada. Procesado dentro de una hora de la solicitud.",
+      zh: "在申请尚未获批的情况下，退款请求将在收到请求后一小时内处理。请求后一小时内处理。",
+      fr: "Les demandes de remboursement sont traitées dans l’heure suivant leur réception, si la demande n’a pas été approuvée. Traité dans l’heure suivant la demande.",
+      ar: "تتم معالجة طلبات الاسترداد خلال ساعة من استلام طلبك، بشرط ألا يكون الطلب قد تمت الموافقة عليه. تتم المعالجة خلال ساعة من الطلب."
+    },
+    "Experienced professionals supporting applicants and property owners through every stage of the leasing process.": {
+      es: "Profesionales con experiencia que apoyan a solicitantes y propietarios en cada etapa del proceso de arrendamiento.",
+      zh: "经验丰富的专业人士，在租赁流程的每个阶段为申请人和业主提供支持。",
+      fr: "Des professionnels expérimentés qui accompagnent candidats et propriétaires à chaque étape du processus de location.",
+      ar: "محترفون ذوو خبرة يدعمون المتقدمين ومالكي العقارات في كل مرحلة من مراحل عملية التأجير."
+    },
+    "Property Manager": {
+      es: "Administrador de propiedades",
+      zh: "物业经理",
+      fr: "Gestionnaire immobilier",
+      ar: "مدير العقارات"
+    },
+    "Operations Manager": {
+      es: "Gerente de operaciones",
+      zh: "运营经理",
+      fr: "Responsable des opérations",
+      ar: "مدير العمليات"
+    },
+    "Tenant Relations Lead": {
+      es: "Líder de relaciones con inquilinos",
+      zh: "租户关系负责人",
+      fr: "Responsable des relations locataires",
+      ar: "مسؤول علاقات المستأجرين"
+    },
+    "Oversees leasing operations, applicant communication, and property owner coordination.": {
+      es: "Supervisa las operaciones de arrendamiento, la comunicación con solicitantes y la coordinación con propietarios.",
+      zh: "负责租赁运营、申请人沟通及与业主的协调工作。",
+      fr: "Supervise les opérations de location, la communication avec les candidats et la coordination avec les propriétaires.",
+      ar: "يشرف على عمليات التأجير والتواصل مع المتقدمين والتنسيق مع مالكي العقارات."
+    },
+    "Keeps the application workflow organized from submission through review and next steps.": {
+      es: "Mantiene organizado el flujo de solicitudes desde el envío hasta la revisión y los siguientes pasos.",
+      zh: "从提交到审核及后续步骤，保持申请流程井然有序。",
+      fr: "Organise le parcours de candidature, de la soumission à l’examen et aux étapes suivantes.",
+      ar: "ينظم سير عمل الطلبات من التقديم مرورًا بالمراجعة وحتى الخطوات التالية."
+    },
+    "Supports applicant questions, follow-up, and communication throughout the process.": {
+      es: "Atiende preguntas de solicitantes, seguimiento y comunicación durante todo el proceso.",
+      zh: "在整个流程中解答申请人疑问、跟进进度并保持沟通。",
+      fr: "Répond aux questions des candidats, assure le suivi et la communication tout au long du processus.",
+      ar: "يدعم أسئلة المتقدمين والمتابعة والتواصل طوال العملية."
+    },
+    "Applied on a Sunday and got a reply Monday morning. Straightforward process.": {
+      es: "Solicité un domingo y recibí respuesta el lunes por la mañana. Proceso sencillo.",
+      zh: "周日提交申请，周一早上就收到了回复。流程很顺畅。",
+      fr: "J’ai postulé un dimanche et j’ai reçu une réponse lundi matin. Processus simple.",
+      ar: "قدّمتُ الطلب يوم الأحد وتلقيتُ ردًا صباح الاثنين. عملية مباشرة."
+    },
+    "They walked me through the fee and refund policy upfront. No surprises.": {
+      es: "Me explicaron la tarifa y la política de reembolso desde el principio. Sin sorpresas.",
+      zh: "他们事先说明了申请费和退款政策。没有意外。",
+      fr: "Ils m’ont expliqué les frais et la politique de remboursement dès le départ. Aucune surprise.",
+      ar: "شرحوا لي الرسوم وسياسة الاسترداد مسبقًا. دون مفاجآت."
+    },
+    "Quick responses and clear next steps after I submitted.": {
+      es: "Respuestas rápidas y pasos claros después de enviar.",
+      zh: "提交后回复迅速，后续步骤也很清楚。",
+      fr: "Réponses rapides et prochaines étapes claires après ma soumission.",
+      ar: "ردود سريعة وخطوات واضحة بعد تقديم الطلب."
+    },
+    "Professional from start to finish. Felt like a real leasing office.": {
+      es: "Profesional de principio a fin. Pareció una oficina de arrendamiento real.",
+      zh: "从头到尾都很专业。感觉像真正的租赁办公室。",
+      fr: "Professionnel du début à la fin. On se croirait dans un vrai bureau de location.",
+      ar: "احترافية من البداية إلى النهاية. شعرت وكأنها مكتب تأجير حقيقي."
+    },
+    "Payment instructions were clear and the review moved fast.": {
+      es: "Las instrucciones de pago fueron claras y la revisión fue rápida.",
+      zh: "付款说明很清楚，审核也很快。",
+      fr: "Les instructions de paiement étaient claires et l’examen a été rapide.",
+      ar: "كانت تعليمات الدفع واضحة وتمت المراجعة بسرعة."
+    },
+    "Appreciated how direct everything was. No runaround.": {
+      es: "Agradecí lo directo que fue todo. Sin rodeos.",
+      zh: "感谢一切都很直接。没有推诿扯皮。",
+      fr: "J’ai apprécié la clarté de tout le processus. Pas de détours.",
+      ar: "قدّرتُ وضوح كل شيء. دون لفّ ودوران."
+    },
+    "Featured applicant testimonials": {
+      es: "Testimonios destacados de solicitantes",
+      zh: "精选申请人评价",
+      fr: "Témoignages de candidats en vedette",
+      ar: "شهادات مميزة من المتقدمين"
+    },
+    "More applicant testimonials": {
+      es: "Más testimonios de solicitantes",
+      zh: "更多申请人评价",
+      fr: "Plus de témoignages de candidats",
+      ar: "المزيد من شهادات المتقدمين"
     }
   };
 

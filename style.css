@@ -3812,6 +3812,38 @@ textarea:focus {
 }
 
 @media (max-width: 719px) {
+  .contact-section .contact-channels {
+    gap: 8px;
+  }
+
+  .contact-section .contact-channel {
+    gap: 10px !important;
+    padding: 9px 11px !important;
+    font-size: 12px !important;
+  }
+
+  .contact-section .contact-channel-icon {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 8px !important;
+  }
+
+  .contact-section .contact-channel-icon svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .contact-section .contact-channel-text {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+  }
+
+  .contact-section .contact-email-ltr {
+    font-size: 10.5px !important;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+
   .about-contact-cta .contact-channel,
   .consultation-copy .contact-channel,
   .application-contact-banner .contact-channel {
@@ -7789,22 +7821,22 @@ html:has(body.payment-confirmation-page) {
 }
 
 .contact-section .contact-channels {
-  gap: 12px;
+  gap: 10px;
 }
 
 .contact-section .contact-channel {
   display: flex !important;
   align-items: center !important;
-  gap: 14px !important;
+  gap: 12px !important;
   margin: 0 !important;
-  padding: 14px 16px !important;
+  padding: 11px 13px !important;
   background: #ffffff !important;
   border: 1px solid rgba(15, 39, 68, 0.12) !important;
   border-radius: var(--radius-sm) !important;
   color: var(--navy) !important;
-  font-size: clamp(15px, 2.6vw, 16px) !important;
+  font-size: clamp(13px, 2.1vw, 15px) !important;
   font-weight: 600 !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
   text-decoration: none !important;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.95),
@@ -7833,10 +7865,10 @@ html:has(body.payment-confirmation-page) {
   display: grid !important;
   place-items: center !important;
   flex-shrink: 0 !important;
-  width: 42px !important;
-  height: 42px !important;
+  width: 36px !important;
+  height: 36px !important;
   margin: 0 !important;
-  border-radius: 11px !important;
+  border-radius: 10px !important;
   color: var(--blue) !important;
   background: linear-gradient(180deg, #eef4fb 0%, #e2ebf6 100%) !important;
   border: 1px solid rgba(30, 77, 140, 0.16) !important;
@@ -7844,15 +7876,24 @@ html:has(body.payment-confirmation-page) {
 }
 
 .contact-section .contact-channel-icon svg {
-  width: 18px !important;
-  height: 18px !important;
+  width: 16px !important;
+  height: 16px !important;
 }
 
 .contact-section .contact-channel-text {
+  flex: 1 1 auto;
+  min-width: 0;
   color: var(--navy) !important;
+  font-size: inherit !important;
   font-weight: 600 !important;
-  letter-spacing: 0.01em;
-  line-height: 1.45 !important;
+  letter-spacing: 0;
+  line-height: 1.35 !important;
+}
+
+.contact-section .contact-email-ltr {
+  font-size: 0.92em;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .contact-section .consultation-actions {
@@ -8062,8 +8103,8 @@ html:has(body.payment-confirmation-page) {
   }
 
   .contact-section .contact-channel {
-    padding: 16px !important;
-    font-size: 16px !important;
+    padding: 9px 11px !important;
+    font-size: 12px !important;
   }
 
   .contact-section .hoa-badge {
@@ -8828,5 +8869,363 @@ body.phone-choice-open {
 
   [dir="rtl"] .privacy-document__contact li {
     align-items: flex-end;
+  }
+}
+
+/* —— Application fee explainer —— */
+.section-lead {
+  margin: 10px 0 0;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.fee-explainer-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.fee-explainer-card {
+  padding: 22px 22px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.fee-explainer-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+  color: var(--navy);
+}
+
+.fee-explainer-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.fee-explainer-card--refund {
+  grid-column: 1 / -1;
+  padding: 28px 28px 26px;
+  border: 1px solid rgba(15, 39, 68, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: var(--shadow);
+}
+
+.fee-refund-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.fee-explainer-card--refund h3 {
+  margin: 0 0 12px;
+  font-size: 1.18rem;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.fee-refund-text {
+  margin: 0;
+  max-width: 54ch;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.96rem;
+}
+
+.fee-explainer-card--highlight {
+  border-color: rgba(201, 169, 98, 0.45);
+  background: linear-gradient(180deg, #fffdf8 0%, #ffffff 100%);
+}
+
+.fee-explainer-note {
+  margin-top: 10px !important;
+  font-size: 0.82rem !important;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--blue-dark) !important;
+}
+
+/* —— Team section —— */
+.team-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.team-card {
+  padding: 24px 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.team-card__photo {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 14px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 50%;
+}
+
+.team-card__photo--katherine {
+  object-position: 54% 38%;
+}
+
+.team-card__photo--marcus {
+  object-position: 48% 40%;
+}
+
+.team-card__photo--paul {
+  object-position: 46% 42%;
+}
+
+.team-card__name {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.team-card__role {
+  margin: 0 0 10px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.team-card__bio {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+/* —— Testimonials —— */
+.testimonials-featured {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 14px;
+}
+
+.testimonials-featured--more {
+  margin-bottom: 28px;
+}
+
+.testimonial-card {
+  margin: 0;
+  padding: 20px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-card p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.testimonial-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.testimonial-card cite {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.testimonial-author__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.testimonial-avatar {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: #fff;
+  background: hsl(var(--avatar-hue, 210), 42%, 38%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.testimonial-author__text time {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+
+.testimonials-submit {
+  margin-top: 32px;
+  padding: 28px 26px 26px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, var(--surface-strong) 0%, var(--surface-solid) 100%);
+  box-shadow: var(--shadow);
+}
+
+.testimonials-submit__header {
+  margin-bottom: 22px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.testimonials-submit__title {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--navy);
+}
+
+.testimonials-submit__lead {
+  margin: 0;
+  max-width: 52ch;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.testimonials-submit__grid {
+  display: grid;
+  gap: 16px;
+}
+
+.testimonials-submit__field {
+  display: grid;
+  gap: 6px;
+}
+
+.testimonials-submit__field--full {
+  grid-column: 1 / -1;
+}
+
+.testimonials-submit__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--navy);
+}
+
+.testimonials-submit__input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: #fff;
+  box-shadow: inset 0 1px 2px rgba(15, 39, 68, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.testimonials-submit__input::placeholder {
+  color: var(--soft);
+}
+
+.testimonials-submit__input:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow:
+    inset 0 1px 2px rgba(15, 39, 68, 0.04),
+    0 0 0 3px rgba(30, 77, 140, 0.12);
+}
+
+.testimonials-submit__textarea {
+  min-height: 112px;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+.testimonials-submit__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 18px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.testimonials-submit__footer .button {
+  min-width: 168px;
+}
+
+.testimonials-submit__status {
+  margin: 0;
+  flex: 1 1 220px;
+  min-height: 1.2em;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.testimonials-submit__status.is-success {
+  color: var(--green);
+}
+
+.testimonials-submit__status.is-error {
+  color: #b42318;
+}
+
+@media (max-width: 960px) {
+  .team-grid,
+  .testimonials-featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 719px) {
+  .fee-explainer-grid,
+  .team-grid,
+  .testimonials-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card__meta {
+    flex-direction: row;
+    align-items: center;
   }
 }
