@@ -3844,6 +3844,15 @@ textarea:focus {
     white-space: nowrap;
   }
 
+  /* Center the email + phone text inside the small contact pills on mobile */
+  .contact-section .direct-contact-mini .contact-channel {
+    justify-content: center !important;
+  }
+
+  .contact-section .direct-contact-mini .contact-channel-text {
+    text-align: center !important;
+  }
+
   .about-contact-cta .contact-channel,
   .consultation-copy .contact-channel,
   .application-contact-banner .contact-channel {
