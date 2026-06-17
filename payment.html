@@ -1884,44 +1884,49 @@
         </div>
 
         <div class="pp-chime-account" aria-label="Chime Pay Anyone payment details">
-          <dl class="pp-chime-account__details pp-chime-account__details--solo">
-            <div class="pp-chime-account__row">
-              <dt>Payment Phone Number</dt>
-              <dd class="pp-chime-account__phone" id="chimePhoneNumber" data-copy="+13372920871">+1 (337) 292-0871</dd>
+          <div class="pp-chime-payment-block">
+            <dl class="pp-chime-account__details pp-chime-account__details--solo">
+              <div class="pp-chime-account__row">
+                <dt>Payment phone number</dt>
+                <dd class="pp-chime-account__phone" id="chimePhoneNumber" data-copy="+13372920871">+1 (337) 292-0871</dd>
+              </div>
+            </dl>
+            <div class="pp-chime-copy">
+              <button
+                type="button"
+                class="pp-copy-btn"
+                data-copy-target="chimePhoneNumber"
+                data-payment-method="Chime"
+                data-copy-toast="Phone number copied successfully"
+                aria-label="Copy phone number +1 (337) 292-0871"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
+                Copy phone number
+              </button>
             </div>
-            <div class="pp-chime-account__row">
-              <dt>Payment Email Address</dt>
-              <dd class="pp-chime-account__email" id="chimeEmailAddress" data-copy="riordankatherine0@gmail.com">riordankatherine0@gmail.com</dd>
+          </div>
+
+          <div class="pp-chime-payment-block">
+            <dl class="pp-chime-account__details pp-chime-account__details--solo">
+              <div class="pp-chime-account__row">
+                <dt>Payment email address</dt>
+                <dd class="pp-chime-account__email" id="chimeEmailAddress" data-copy="riordankatherine0@gmail.com">riordankatherine0@gmail.com</dd>
+              </div>
+            </dl>
+            <div class="pp-chime-copy">
+              <button
+                type="button"
+                class="pp-copy-btn"
+                data-copy-target="chimeEmailAddress"
+                data-payment-method="Chime Email"
+                data-copy-toast="Email address copied successfully"
+                aria-label="Copy email address riordankatherine0@gmail.com"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
+                Copy email address
+              </button>
             </div>
-          </dl>
-        </div>
-
-        <div class="pp-chime-copy">
-          <button
-            type="button"
-            class="pp-copy-btn"
-            data-copy-target="chimePhoneNumber"
-            data-payment-method="Chime"
-            data-copy-toast="Phone number copied successfully"
-            aria-label="Copy payment phone number +1 (337) 292-0871"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
-            Copy Phone Number
-          </button>
-        </div>
-
-        <div class="pp-chime-copy">
-          <button
-            type="button"
-            class="pp-copy-btn"
-            data-copy-target="chimeEmailAddress"
-            data-payment-method="Chime Email"
-            data-copy-toast="Email address copied successfully"
-            aria-label="Copy Email Address"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
-            Copy Email Address
-          </button>
+          </div>
         </div>
 
         <div class="pp-chime-instructions" aria-label="How to send payment with Chime Pay Anyone">

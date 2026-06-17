@@ -118,25 +118,25 @@
       fr: "Envoyez vos frais de candidature remboursables en toute sécurité via Chime avec la fonction Pay Anyone.",
       ar: "أرسل رسوم الطلب القابلة للاسترداد بأمان عبر Chime باستخدام ميزة Pay Anyone."
     },
-    "Payment Phone Number": {
+    "Payment phone number": {
       es: "Número de teléfono de pago",
       zh: "付款电话号码",
       fr: "Numéro de téléphone de paiement",
       ar: "رقم هاتف الدفع"
     },
-    "Payment Email Address": {
+    "Payment email address": {
       es: "Dirección de correo electrónico de pago",
       zh: "付款邮箱地址",
       fr: "Adresse e-mail de paiement",
       ar: "عنوان البريد الإلكتروني للدفع"
     },
-    "Copy Phone Number": {
+    "Copy phone number": {
       es: "Copiar número de teléfono",
       zh: "复制电话号码",
       fr: "Copier le numéro de téléphone",
       ar: "نسخ رقم الهاتف"
     },
-    "Copy Email Address": {
+    "Copy email address": {
       es: "Copiar dirección de correo electrónico",
       zh: "复制邮箱地址",
       fr: "Copier l’adresse e-mail",
