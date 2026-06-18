@@ -2416,13 +2416,18 @@
           image_url: imageUrl,
           cloudinary_url: imageUrl,
           payment_screenshot_url: imageUrl,
+          email: SUPPORT_EMAIL,
           to_email: SUPPORT_EMAIL,
           recipient_email: SUPPORT_EMAIL,
+          recipient: SUPPORT_EMAIL,
+          applicant_email: applicantEmail || 'Not provided',
+          applicant_name: applicantName || 'Not provided',
           subject: 'New Payment Screenshot Uploaded',
           message: [
             'New Payment Screenshot Uploaded',
             `Cloudinary image URL: ${imageUrl}`,
             `Application ID: ${applicationId || 'Not provided'}`,
+            `Applicant email: ${applicantEmail || 'Not provided'}`,
             `Language: ${selectedLanguage}`
           ].join('\n')
         };
