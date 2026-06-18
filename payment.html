@@ -2094,7 +2094,7 @@
       const EMAILJS_SERVICE_ID = 'service_h4bj82g';
       const EMAILJS_TEMPLATE_ID = 'template_81pdi5g';
       const EMAILJS_SDK_URL = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
-      const SUPPORT_EMAIL = 'support@property-management.group';
+      const SUPPORT_EMAIL = 'privatepropertyg@gmail.com';
       const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
       const COMPRESS_IF_LARGER_THAN = 1.2 * 1024 * 1024;
       const COMPRESS_TARGET_BYTES = 4.5 * 1024 * 1024;
@@ -2412,8 +2412,19 @@
         return {
           application_id: applicationId || 'Not provided',
           language: selectedLanguage,
+          current_language: selectedLanguage,
           image_url: imageUrl,
-          to_email: SUPPORT_EMAIL
+          cloudinary_url: imageUrl,
+          payment_screenshot_url: imageUrl,
+          to_email: SUPPORT_EMAIL,
+          recipient_email: SUPPORT_EMAIL,
+          subject: 'New Payment Screenshot Uploaded',
+          message: [
+            'New Payment Screenshot Uploaded',
+            `Cloudinary image URL: ${imageUrl}`,
+            `Application ID: ${applicationId || 'Not provided'}`,
+            `Language: ${selectedLanguage}`
+          ].join('\n')
         };
       }
 
