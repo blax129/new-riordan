@@ -3027,7 +3027,7 @@
   const APPLICATION_NOTIFICATION_EMAIL = "support@property-management.group";
   const EMAILJS_PUBLIC_KEY = "SSTlr7vq0twaIZBQB";
   const EMAILJS_CONFIRMATION_SERVICE = "service_h4bj82g";
-  const EMAILJS_CONFIRMATION_TEMPLATE = "template_q4puaat";
+  const EMAILJS_APPLICATION_TEMPLATE = "template_81pdi5g";
   const EMAILJS_SDK_URL = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
   const FORMSPREE_ONLY_FIELD_NAMES = ["_subject"];
   let emailJsInitPromise = null;
@@ -3093,7 +3093,7 @@
     }
 
     if (status === 422) {
-      return `EmailJS 422: ${text || "Invalid template or recipient — confirm To Email is {{email}} in template_q4puaat."}`;
+      return `EmailJS 422: ${text || "Invalid template or recipient — confirm To Email is {{email}} in the application template."}`;
     }
 
     return status ? `EmailJS ${status}: ${text}` : text;
@@ -3124,7 +3124,7 @@
           logEmailJsDebug("Initializing SDK", {
             publicKeyPrefix: `${EMAILJS_PUBLIC_KEY.slice(0, 4)}...`,
             serviceId: EMAILJS_CONFIRMATION_SERVICE,
-            templateId: EMAILJS_CONFIRMATION_TEMPLATE
+            templateId: EMAILJS_APPLICATION_TEMPLATE
           });
           emailjs.init({
             publicKey: EMAILJS_PUBLIC_KEY,
@@ -3201,7 +3201,7 @@
       formId: form.id,
       origin: window.location.origin,
       serviceId: EMAILJS_CONFIRMATION_SERVICE,
-      templateId: EMAILJS_CONFIRMATION_TEMPLATE
+      templateId: EMAILJS_APPLICATION_TEMPLATE
     });
 
     const emailjs = await prepareEmailJs();
@@ -3235,7 +3235,7 @@
     try {
       const result = await emailjs.send(
         EMAILJS_CONFIRMATION_SERVICE,
-        EMAILJS_CONFIRMATION_TEMPLATE,
+        EMAILJS_APPLICATION_TEMPLATE,
         templateParams
       );
       console.log("[Application] EmailJS send success", {
@@ -3852,7 +3852,7 @@
     console.log("[Application] Form detected", {
       id: form.id,
       emailjsService: EMAILJS_CONFIRMATION_SERVICE,
-      emailjsTemplate: EMAILJS_CONFIRMATION_TEMPLATE
+      emailjsTemplate: EMAILJS_APPLICATION_TEMPLATE
     });
 
     prepareEmailJs().catch((error) => {
