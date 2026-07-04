@@ -64,29 +64,71 @@
       fr: "En attendant, les candidats peuvent effectuer leur paiement en toute sécurité via Chime Pay Anyone ci-dessus.",
       ar: "في هذه الأثناء، يمكن للمتقدمين إكمال الدفع بأمان باستخدام Chime Pay Anyone أعلاه."
     },
-    "Venmo to Venmo": {
-      es: "Venmo a Venmo",
-      zh: "Venmo 至 Venmo",
-      fr: "Venmo à Venmo",
-      ar: "Venmo إلى Venmo"
+    "Chime sign": {
+      es: "Signo de Chime",
+      zh: "Chime 标识",
+      fr: "Signe Chime",
+      ar: "علامة Chime"
     },
-    "Send your payment securely using the verified Venmo account below.": {
-      es: "Envíe su pago de forma segura usando la cuenta Venmo verificada a continuación.",
-      zh: "请使用下方已验证的 Venmo 账户安全付款。",
-      fr: "Envoyez votre paiement en toute sécurité via le compte Venmo vérifié ci-dessous.",
-      ar: "أرسل دفعتك بأمان باستخدام حساب Venmo الموثّق أدناه."
+    "Recipient Name": {
+      es: "Nombre del destinatario",
+      zh: "收款人姓名",
+      fr: "Nom du destinataire",
+      ar: "اسم المستلم"
     },
-    "Venmo Username": {
-      es: "Usuario de Venmo",
-      zh: "Venmo 用户名",
-      fr: "Nom d’utilisateur Venmo",
-      ar: "اسم مستخدم Venmo"
+    "Copy Chime sign": {
+      es: "Copiar signo de Chime",
+      zh: "复制 Chime 标识",
+      fr: "Copier le signe Chime",
+      ar: "نسخ علامة Chime"
     },
-    "Account Holder Name": {
-      es: "Nombre del titular",
-      zh: "账户持有人姓名",
-      fr: "Nom du titulaire du compte",
-      ar: "اسم صاحب الحساب"
+    "Chime sign copied": {
+      es: "Signo de Chime copiado",
+      zh: "Chime 标识已复制",
+      fr: "Signe Chime copié",
+      ar: "تم نسخ علامة Chime"
+    },
+    "Copy recipient name": {
+      es: "Copiar nombre del destinatario",
+      zh: "复制收款人姓名",
+      fr: "Copier le nom du destinataire",
+      ar: "نسخ اسم المستلم"
+    },
+    "Recipient name copied": {
+      es: "Nombre del destinatario copiado",
+      zh: "收款人姓名已复制",
+      fr: "Nom du destinataire copié",
+      ar: "تم نسخ اسم المستلم"
+    },
+    "Enter the Chime sign shown above.": {
+      es: "Ingrese el signo de Chime que se muestra arriba.",
+      zh: "输入上方显示的 Chime 标识。",
+      fr: "Saisissez le signe Chime indiqué ci-dessus.",
+      ar: "أدخل علامة Chime الموضحة أعلاه."
+    },
+    "Confirm the recipient name is Bruce Glanzman before sending $85.": {
+      es: "Confirme que el nombre del destinatario es Bruce Glanzman antes de enviar $85.",
+      zh: "发送 85 美元前，请确认收款人姓名为 Bruce Glanzman。",
+      fr: "Confirmez que le nom du destinataire est Bruce Glanzman avant d’envoyer 85 $.",
+      ar: "تأكد من أن اسم المستلم هو Bruce Glanzman قبل إرسال 85 دولارًا."
+    },
+    "After payment, upload your payment confirmation below.": {
+      es: "Después del pago, suba su confirmación de pago a continuación.",
+      zh: "付款后，请在下方上传您的付款确认。",
+      fr: "Après le paiement, téléversez votre confirmation de paiement ci-dessous.",
+      ar: "بعد الدفع، ارفع تأكيد الدفع أدناه."
+    },
+    "Once your account is approved, return to this page and send your payment using the Chime sign shown above.": {
+      es: "Una vez aprobada su cuenta, regrese a esta página y envíe su pago usando el signo de Chime que se muestra arriba.",
+      zh: "账户获批后，返回此页面并使用上方显示的 Chime 标识发送付款。",
+      fr: "Une fois votre compte approuvé, revenez sur cette page et envoyez votre paiement avec le signe Chime indiqué ci-dessus.",
+      ar: "بعد الموافقة على حسابك، عد إلى هذه الصفحة وأرسل دفعتك باستخدام علامة Chime الموضحة أعلاه."
+    },
+    "Please verify the Chime sign and recipient name carefully before sending payment. Your application review will begin once payment confirmation is received.": {
+      es: "Verifique cuidadosamente el signo de Chime y el nombre del destinatario antes de enviar el pago. La revisión de su solicitud comenzará una vez recibida la confirmación de pago.",
+      zh: "付款前请仔细核对 Chime 标识和收款人姓名。收到付款确认后，我们将开始审核您的申请。",
+      fr: "Vérifiez attentivement le signe Chime et le nom du destinataire avant d’envoyer le paiement. L’examen de votre candidature commencera une fois la confirmation de paiement reçue.",
+      ar: "يُرجى التحقق بعناية من علامة Chime واسم المستلم قبل إرسال الدفع. ستبدأ مراجعة طلبك بمجرد استلام تأكيد الدفع."
     },
     "Verification Reference": {
       es: "Referencia de verificación",
@@ -267,12 +309,6 @@
       zh: "我已完成付款",
       fr: "J’ai envoyé le paiement",
       ar: "لقد أرسلت الدفع"
-    },
-    "Venmo username copied": {
-      es: "Usuario de Venmo copiado",
-      zh: "Venmo 用户名已复制",
-      fr: "Nom d’utilisateur Venmo copié",
-      ar: "تم نسخ اسم مستخدم Venmo"
     },
     "Phone number copied successfully": {
       es: "Número de teléfono copiado correctamente",

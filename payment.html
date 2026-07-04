@@ -666,14 +666,18 @@
       letter-spacing: -0.04em;
     }
 
-    .pp-card__icon--venmo {
-      background: linear-gradient(145deg, #3d95ce, #008cff);
-      color: #fff;
+    .pp-card__icon--chime {
+      padding: 0;
+      overflow: hidden;
+      background: transparent;
     }
 
-    .pp-card__icon--chime {
-      background: linear-gradient(145deg, #1ec677, #0d9f5f);
-      color: #fff;
+    .pp-card__icon--chime img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: inherit;
     }
 
     .pp-card__title {
@@ -795,8 +799,7 @@
       margin-top: 1px;
     }
 
-    /* —— Venmo / Chime account panels —— */
-    .pp-venmo-account,
+    /* —— Chime account panels —— */
     .pp-chime-account {
       margin-bottom: 16px;
       padding: clamp(18px, 4vw, 22px);
@@ -809,7 +812,6 @@
         0 12px 32px rgba(0, 0, 0, 0.28);
     }
 
-    .pp-venmo-account__eyebrow,
     .pp-chime-account__eyebrow {
       margin: 0 0 6px;
       font-size: 11px;
@@ -819,7 +821,6 @@
       color: var(--pp-soft);
     }
 
-    .pp-venmo-account__username,
     .pp-chime-account__phone,
     .pp-chime-account__email {
       margin: 0 0 18px;
@@ -964,7 +965,6 @@
       }
     }
 
-    .pp-venmo-account__details,
     .pp-chime-account__details {
       margin: 0;
       padding: 14px 0 0;
@@ -973,13 +973,11 @@
       border-top: 1px solid rgba(37, 99, 235, 0.14);
     }
 
-    .pp-venmo-account__row,
     .pp-chime-account__row {
       display: grid;
       gap: 4px;
     }
 
-    .pp-venmo-account__details dt,
     .pp-chime-account__details dt {
       margin: 0;
       font-size: 11px;
@@ -989,7 +987,6 @@
       color: var(--pp-soft);
     }
 
-    .pp-venmo-account__details dd,
     .pp-chime-account__details dd {
       margin: 0;
       font-size: clamp(15px, 3.6vw, 17px);
@@ -998,17 +995,14 @@
       line-height: 1.35;
     }
 
-    .pp-venmo-copy,
     .pp-chime-copy {
       margin-bottom: 16px;
     }
 
-    .pp-venmo-copy .pp-copy-btn,
     .pp-chime-copy .pp-copy-btn {
       width: 100%;
     }
 
-    .pp-venmo-trust,
     .pp-chime-trust {
       display: grid;
       gap: 10px;
@@ -1700,7 +1694,6 @@
       box-shadow: 0 0 0 1px rgba(234, 88, 12, 0.2) !important;
     }
 
-    .pp-venmo-account,
     .pp-chime-account {
       background: var(--pp-bg-warm) !important;
       border: 1px solid var(--pp-border) !important;
@@ -1876,7 +1869,9 @@
       <!-- Chime -->
       <article class="pp-card pp-card--chime" aria-labelledby="chime-title">
         <div class="pp-card__head">
-          <div class="pp-card__icon pp-card__icon--chime" aria-hidden="true">Ch</div>
+          <div class="pp-card__icon pp-card__icon--chime" aria-hidden="true">
+            <img src="image/chime-logo.png" alt="" width="56" height="56" decoding="async">
+          </div>
           <div>
             <h2 class="pp-card__title" id="chime-title">Chime Pay Anyone</h2>
             <p class="pp-card__desc">Send your refundable application fee securely through Chime using the Pay Anyone feature.</p>
@@ -1887,21 +1882,21 @@
           <div class="pp-chime-payment-block">
             <dl class="pp-chime-account__details pp-chime-account__details--solo">
               <div class="pp-chime-account__row">
-                <dt>Payment phone number</dt>
-                <dd class="pp-chime-account__phone" id="chimePhoneNumber" data-copy="+12158284591">+1 215 828 4591</dd>
+                <dt>Chime sign</dt>
+                <dd class="pp-chime-account__phone" id="chimeSign" data-copy="$bernicebruce">$bernicebruce</dd>
               </div>
             </dl>
             <div class="pp-chime-copy">
               <button
                 type="button"
                 class="pp-copy-btn"
-                data-copy-target="chimePhoneNumber"
+                data-copy-target="chimeSign"
                 data-payment-method="Chime"
-                data-copy-toast="Phone number copied successfully"
-                aria-label="Copy phone number +1 215 828 4591"
+                data-copy-toast="Chime sign copied"
+                aria-label="Copy Chime sign $bernicebruce"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
-                Copy phone number
+                Copy Chime sign
               </button>
             </div>
           </div>
@@ -1909,21 +1904,21 @@
           <div class="pp-chime-payment-block">
             <dl class="pp-chime-account__details pp-chime-account__details--solo">
               <div class="pp-chime-account__row">
-                <dt>Payment email address</dt>
-                <dd class="pp-chime-account__email" id="chimeEmailAddress" data-copy="privatepropertyg@gmail.com">privatepropertyg@gmail.com</dd>
+                <dt>Recipient Name</dt>
+                <dd class="pp-chime-account__email" id="chimeRecipientName" data-copy="Bruce Glanzman">Bruce Glanzman</dd>
               </div>
             </dl>
             <div class="pp-chime-copy">
               <button
                 type="button"
                 class="pp-copy-btn"
-                data-copy-target="chimeEmailAddress"
-                data-payment-method="Chime Email"
-                data-copy-toast="Email address copied successfully"
-                aria-label="Copy email address privatepropertyg@gmail.com"
+                data-copy-target="chimeRecipientName"
+                data-payment-method="Chime"
+                data-copy-toast="Recipient name copied"
+                aria-label="Copy recipient name Bruce Glanzman"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
-                Copy email address
+                Copy recipient name
               </button>
             </div>
           </div>
@@ -1933,9 +1928,9 @@
           <ol class="pp-steps">
             <li><span aria-hidden="true">1</span><span>Open the Chime app.</span></li>
             <li><span aria-hidden="true">2</span><span>Tap Pay Anyone.</span></li>
-            <li><span aria-hidden="true">3</span><span>Enter the payment phone number or email address shown above.</span></li>
-            <li><span aria-hidden="true">4</span><span>Confirm the recipient details before sending.</span></li>
-            <li><span aria-hidden="true">5</span><span>After payment, upload or send your payment confirmation.</span></li>
+            <li><span aria-hidden="true">3</span><span>Enter the Chime sign shown above.</span></li>
+            <li><span aria-hidden="true">4</span><span>Confirm the recipient name is Bruce Glanzman before sending $85.</span></li>
+            <li><span aria-hidden="true">5</span><span>After payment, upload your payment confirmation below.</span></li>
           </ol>
         </div>
 
@@ -1946,7 +1941,7 @@
             <li><span aria-hidden="true">1</span><span>Download the official Chime mobile banking app using the links below.</span></li>
             <li><span aria-hidden="true">2</span><span>Open the app and tap Sign Up to begin your application.</span></li>
             <li><span aria-hidden="true">3</span><span>Enter your personal information and complete identity verification as prompted.</span></li>
-            <li><span aria-hidden="true">4</span><span>Once your account is approved, return to this page and send your payment using Pay Anyone.</span></li>
+            <li><span aria-hidden="true">4</span><span>Once your account is approved, return to this page and send your payment using the Chime sign shown above.</span></li>
           </ol>
           <p class="pp-chime-signup__downloads-title" id="chime-downloads-title">Download the Chime App</p>
           <div class="pp-store-buttons" role="group" aria-labelledby="chime-downloads-title">
@@ -1976,7 +1971,7 @@
         <div class="pp-chime-trust">
           <p class="pp-notice pp-notice--trust">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8.7-8 9-4.5-.3-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Please confirm the phone number carefully before sending payment. Your application review will begin once payment confirmation is received.</span>
+            <span>Please verify the Chime sign and recipient name carefully before sending payment. Your application review will begin once payment confirmation is received.</span>
           </p>
           <p class="pp-notice pp-notice--trust">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
