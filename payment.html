@@ -2640,6 +2640,17 @@
         }
       }
 
+      function savePendingPaymentNotification(imageUrl) {
+        window.sessionStorage.setItem('pendingPaymentUploadNotification', JSON.stringify({
+          cloudinaryUrl: imageUrl,
+          uploadTimestamp: new Date().toISOString(),
+          applicationId: applicationId || '',
+          currentLanguage: selectedLanguage,
+          applicantEmail: applicantEmail || '',
+          applicantName: applicantName || ''
+        }));
+      }
+
       async function sendPaymentSupportNotification(imageUrl) {
         assertBrowserOrigin();
         const emailjs = await prepareEmailJs();
@@ -2709,16 +2720,21 @@
           submitBtn.textContent = t('Uploading…');
           setUploadStatus(t('Processing upload...'), 'loading');
           const imageUrl = await uploadScreenshotToCloudinary(file);
+          savePendingPaymentNotification(imageUrl);
           setUploadStatus(t('Upload complete. Sending confirmation...'), 'loading');
 
           submitBtn.textContent = t('Sending confirmation…');
           setUploadStatus(t('Sending confirmation...'), 'loading');
-          await sendPaymentSupportNotification(imageUrl);
+
+          try {
+            await sendPaymentSupportNotification(imageUrl);
+            window.sessionStorage.removeItem('pendingPaymentUploadNotification');
+          } catch (emailError) {
+            logPaymentError('EmailJS notification failed after Cloudinary upload', emailError);
+          }
 
           setUploadStatus(t('Payment confirmation received successfully.'), 'success', { autoFade: true, fadeDelayMs: 2200 });
           submitBtn.textContent = t('Confirmation sent');
-
-          window.sessionStorage.removeItem('pendingPaymentUploadNotification');
 
           window.setTimeout(() => {
             window.location.href = buildThankYouUrl();
@@ -2726,9 +2742,12 @@
         } catch (err) {
           logPaymentError('Payment submission failed', err);
           const rawMessage = err?.text || err?.message || '';
-          const message = /network/i.test(rawMessage)
+          const isUploadError = /cloudinary|upload failed|invalid response|network error during upload|compression|HEIC|5 MB|could not read/i.test(rawMessage);
+          const message = isUploadError && /network/i.test(rawMessage)
             ? t('Network issue while uploading. Please check your connection and try again.')
-            : t(rawMessage || 'Something went wrong. Please try again.');
+            : t(rawMessage || (isUploadError
+              ? 'Cloudinary upload failed. Please try again.'
+              : 'Something went wrong. Please try again.'));
           setUploadStatus(message, 'error');
           isSubmitting = false;
           submitBtn.disabled = false;
