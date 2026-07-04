@@ -3027,7 +3027,7 @@
   const APPLICATION_NOTIFICATION_EMAIL = "support@property-management.group";
   const EMAILJS_PUBLIC_KEY = "SSTlr7vq0twaIZBQB";
   const EMAILJS_CONFIRMATION_SERVICE = "service_h4bj82g";
-  const EMAILJS_CONFIRMATION_TEMPLATE = "template_81pdi5g";
+  const EMAILJS_CONFIRMATION_TEMPLATE = "template_q4puaat";
   const EMAILJS_SDK_URL = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
   const FORMSPREE_ONLY_FIELD_NAMES = ["_subject"];
   let emailJsInitPromise = null;
@@ -3093,7 +3093,7 @@
     }
 
     if (status === 422) {
-      return `EmailJS 422: ${text || "Invalid template or recipient — confirm To Email is {{email}} in template_81pdi5g."}`;
+      return `EmailJS 422: ${text || "Invalid template or recipient — confirm To Email is {{email}} in template_q4puaat."}`;
     }
 
     return status ? `EmailJS ${status}: ${text}` : text;
