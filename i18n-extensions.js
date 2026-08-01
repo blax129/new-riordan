@@ -106,11 +106,11 @@
       fr: "Saisissez le signe Chime indiqué ci-dessus.",
       ar: "أدخل علامة Chime الموضحة أعلاه."
     },
-    "Confirm the recipient name is Walter wheeler before sending $85.": {
-      es: "Confirme que el nombre del destinatario es Walter wheeler antes de enviar $85.",
-      zh: "发送 85 美元前，请确认收款人姓名为 Walter wheeler。",
-      fr: "Confirmez que le nom du destinataire est Walter wheeler avant d’envoyer 85 $.",
-      ar: "تأكد من أن اسم المستلم هو Walter wheeler قبل إرسال 85 دولارًا."
+    "Confirm the recipient name is William Ramsey before sending $85.": {
+      es: "Confirme que el nombre del destinatario es William Ramsey antes de enviar $85.",
+      zh: "发送 85 美元前，请确认收款人姓名为 William Ramsey。",
+      fr: "Confirmez que le nom du destinataire est William Ramsey avant d’envoyer 85 $.",
+      ar: "تأكد من أن اسم المستلم هو William Ramsey قبل إرسال 85 دولارًا."
     },
     "After payment, upload your payment confirmation below.": {
       es: "Después del pago, suba su confirmación de pago a continuación.",
