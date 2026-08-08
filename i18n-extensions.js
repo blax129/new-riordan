@@ -112,17 +112,29 @@
       fr: "E-mail de paiement copié",
       ar: "تم نسخ البريد الإلكتروني للدفع"
     },
-    "If Chime requests an email address, use the payment email shown above.": {
-      es: "Si Chime solicita una dirección de correo, use el correo de pago que se muestra arriba.",
-      zh: "如果 Chime 要求填写邮箱，请使用上方显示的付款邮箱。",
-      fr: "Si Chime demande une adresse e-mail, utilisez l’e-mail de paiement indiqué ci-dessus.",
-      ar: "إذا طلب Chime عنوان بريد إلكتروني، استخدم البريد الإلكتروني للدفع الموضح أعلاه."
+    "Enter the payment email shown above.": {
+      es: "Ingrese el correo de pago que se muestra arriba.",
+      zh: "输入上方显示的付款邮箱。",
+      fr: "Saisissez l’e-mail de paiement indiqué ci-dessus.",
+      ar: "أدخل البريد الإلكتروني للدفع الموضح أعلاه."
     },
-    "Please verify the Chime sign, payment email, and recipient name carefully before sending payment. Your application review will begin once payment confirmation is received.": {
-      es: "Verifique cuidadosamente el signo de Chime, el correo de pago y el nombre del destinatario antes de enviar el pago. La revisión de su solicitud comenzará una vez recibida la confirmación de pago.",
-      zh: "付款前请仔细核对 Chime 标识、付款邮箱和收款人姓名。收到付款确认后，我们将开始审核您的申请。",
-      fr: "Vérifiez attentivement le signe Chime, l’e-mail de paiement et le nom du destinataire avant d’envoyer le paiement. L’examen de votre candidature commencera une fois la confirmation de paiement reçue.",
-      ar: "يُرجى التحقق بعناية من علامة Chime والبريد الإلكتروني للدفع واسم المستلم قبل إرسال الدفع. ستبدأ مراجعة طلبك بمجرد استلام تأكيد الدفع."
+    "Send your $85 refundable application fee.": {
+      es: "Envíe su tarifa de solicitud reembolsable de $85.",
+      zh: "发送您的 85 美元可退还申请费。",
+      fr: "Envoyez vos frais de demande remboursables de 85 $.",
+      ar: "أرسل رسوم الطلب القابلة للاسترداد بقيمة 85 دولارًا."
+    },
+    "Please verify the payment email carefully before sending payment. Your application review will begin once payment confirmation is received.": {
+      es: "Verifique cuidadosamente el correo de pago antes de enviar el pago. La revisión de su solicitud comenzará una vez recibida la confirmación de pago.",
+      zh: "付款前请仔细核对付款邮箱。收到付款确认后，我们将开始审核您的申请。",
+      fr: "Vérifiez attentivement l’e-mail de paiement avant d’envoyer le paiement. L’examen de votre candidature commencera une fois la confirmation de paiement reçue.",
+      ar: "يُرجى التحقق بعناية من البريد الإلكتروني للدفع قبل إرسال الدفع. ستبدأ مراجعة طلبك بمجرد استلام تأكيد الدفع."
+    },
+    "Once your account is approved, return to this page and send your payment using the payment email shown above.": {
+      es: "Una vez aprobada su cuenta, regrese a esta página y envíe su pago usando el correo de pago que se muestra arriba.",
+      zh: "账户获批后，返回此页面并使用上方显示的付款邮箱发送付款。",
+      fr: "Une fois votre compte approuvé, revenez sur cette page et envoyez votre paiement avec l’e-mail de paiement indiqué ci-dessus.",
+      ar: "بعد الموافقة على حسابك، عد إلى هذه الصفحة وأرسل دفعتك باستخدام البريد الإلكتروني للدفع الموضح أعلاه."
     },
     "Recipient name copied": {
       es: "Nombre del destinatario copiado",
