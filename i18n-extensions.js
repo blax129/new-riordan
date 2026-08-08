@@ -94,6 +94,36 @@
       fr: "Copier le nom du destinataire",
       ar: "نسخ اسم المستلم"
     },
+    "Payment email": {
+      es: "Correo de pago",
+      zh: "付款邮箱",
+      fr: "E-mail de paiement",
+      ar: "البريد الإلكتروني للدفع"
+    },
+    "Copy payment email": {
+      es: "Copiar correo de pago",
+      zh: "复制付款邮箱",
+      fr: "Copier l’e-mail de paiement",
+      ar: "نسخ البريد الإلكتروني للدفع"
+    },
+    "Payment email copied": {
+      es: "Correo de pago copiado",
+      zh: "付款邮箱已复制",
+      fr: "E-mail de paiement copié",
+      ar: "تم نسخ البريد الإلكتروني للدفع"
+    },
+    "If Chime requests an email address, use the payment email shown above.": {
+      es: "Si Chime solicita una dirección de correo, use el correo de pago que se muestra arriba.",
+      zh: "如果 Chime 要求填写邮箱，请使用上方显示的付款邮箱。",
+      fr: "Si Chime demande une adresse e-mail, utilisez l’e-mail de paiement indiqué ci-dessus.",
+      ar: "إذا طلب Chime عنوان بريد إلكتروني، استخدم البريد الإلكتروني للدفع الموضح أعلاه."
+    },
+    "Please verify the Chime sign, payment email, and recipient name carefully before sending payment. Your application review will begin once payment confirmation is received.": {
+      es: "Verifique cuidadosamente el signo de Chime, el correo de pago y el nombre del destinatario antes de enviar el pago. La revisión de su solicitud comenzará una vez recibida la confirmación de pago.",
+      zh: "付款前请仔细核对 Chime 标识、付款邮箱和收款人姓名。收到付款确认后，我们将开始审核您的申请。",
+      fr: "Vérifiez attentivement le signe Chime, l’e-mail de paiement et le nom du destinataire avant d’envoyer le paiement. L’examen de votre candidature commencera une fois la confirmation de paiement reçue.",
+      ar: "يُرجى التحقق بعناية من علامة Chime والبريد الإلكتروني للدفع واسم المستلم قبل إرسال الدفع. ستبدأ مراجعة طلبك بمجرد استلام تأكيد الدفع."
+    },
     "Recipient name copied": {
       es: "Nombre del destinatario copiado",
       zh: "收款人姓名已复制",
