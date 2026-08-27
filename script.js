@@ -3023,7 +3023,7 @@
     });
   }
 
-  const FORMSPREE_APPLICATION_ENDPOINT = "https://formspree.io/f/xqeoodkz";
+  const FORMSPREE_APPLICATION_ENDPOINT = "https://formspree.io/f/mdeonjen";
   const APPLICATION_NOTIFICATION_EMAIL = "support@property-management.group";
   const EMAILJS_PUBLIC_KEY = "SSTlr7vq0twaIZBQB";
   const EMAILJS_CONFIRMATION_SERVICE = "service_h4bj82g";
