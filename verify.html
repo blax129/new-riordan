@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Verify Receipt | Property Management Group</title>
+  <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.verify-page {
+      background: #f4f6fb;
+    }
+
+    .verify-wrap {
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .verify-card {
+      background: #fff;
+      border: 1px solid #dbe3f0;
+      border-radius: 12px;
+      padding: 24px 20px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .verify-card h1 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+    }
+
+    .verify-card p {
+      margin: 0 0 16px;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .verify-form {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .verify-form label {
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .verify-form input {
+      width: 100%;
+      font-size: 16px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .verify-result {
+      border-top: 1px solid #e2e8f0;
+      padding-top: 16px;
+    }
+
+    .verify-status {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .verify-status--pending { background: #fef3c7; color: #92400e; }
+    .verify-status--paid { background: #dcfce7; color: #166534; }
+    .verify-status--rejected { background: #fee2e2; color: #991b1b; }
+
+    .verify-error {
+      color: #b91c1c;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body class="verify-page simple-flow-page">
+  <main class="verify-wrap">
+    <article class="verify-card">
+      <h1>Verify receipt status</h1>
+      <p>Enter a receipt number to check whether payment verification is pending, confirmed, or rejected. No personal details are shown here.</p>
+
+      <form class="verify-form" id="verifyForm">
+        <label for="receiptInput">Receipt number</label>
+        <input id="receiptInput" name="receipt" type="text" placeholder="PMG-YYYYMMDD-XXXXXX" autocomplete="off" required>
+        <button type="submit" class="button button-primary">Check status</button>
+      </form>
+
+      <div class="verify-result" id="verifyResult" hidden>
+        <p><strong>Receipt:</strong> <span id="verifyReceiptNumber">—</span></p>
+        <p><strong>Status:</strong> <span class="verify-status" id="verifyStatus">—</span></p>
+      </div>
+
+      <p class="verify-error" id="verifyError" hidden></p>
+    </article>
+  </main>
+
+  <script src="js/supabase-config.js"></script>
+  <script src="js/supabase-api.js"></script>
+  <script>
+    (async function () {
+      const params = new URLSearchParams(window.location.search);
+      const receiptInput = document.getElementById('receiptInput');
+      const verifyForm = document.getElementById('verifyForm');
+      const verifyResult = document.getElementById('verifyResult');
+      const verifyError = document.getElementById('verifyError');
+      const verifyReceiptNumber = document.getElementById('verifyReceiptNumber');
+      const verifyStatus = document.getElementById('verifyStatus');
+
+      if (params.get('r') && receiptInput) {
+        receiptInput.value = params.get('r');
+      }
+
+      async function lookupReceipt(receiptNumber) {
+        verifyError.hidden = true;
+        verifyResult.hidden = true;
+
+        if (!window.PPM_SUPABASE?.isConfigured?.()) {
+          verifyError.textContent = 'Verification service is not configured.';
+          verifyError.hidden = false;
+          return;
+        }
+
+        try {
+          const result = await window.PPM_SUPABASE.getPublicReceiptStatus(receiptNumber);
+          const status = String(result.status || 'pending').toLowerCase();
+
+          verifyReceiptNumber.textContent = result.receipt_number || receiptNumber;
+          verifyStatus.textContent = status;
+          verifyStatus.className = 'verify-status verify-status--' + status;
+          verifyResult.hidden = false;
+
+          const nextParams = new URLSearchParams(window.location.search);
+          nextParams.set('r', result.receipt_number || receiptNumber);
+          history.replaceState({}, '', `verify.html?${nextParams.toString()}`);
+        } catch (error) {
+          verifyError.textContent = 'Receipt not found. Check the number and try again.';
+          verifyError.hidden = false;
+        }
+      }
+
+      if (params.get('r')) {
+        lookupReceipt(params.get('r'));
+      }
+
+      verifyForm?.addEventListener('submit', (event) => {
+        event.preventDefault();
+        lookupReceipt(receiptInput.value.trim());
+      });
+    })();
+  </script>
+</body>
+</html>

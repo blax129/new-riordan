@@ -2132,6 +2132,7 @@
   <script src="i18n-apply-form.js"></script>
   <script src="js/supabase-config.js"></script>
   <script src="js/supabase-api.js"></script>
+  <script src="js/payment-amount-scanner.js"></script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
@@ -2269,9 +2270,11 @@
         return query ? `application-received.html?${query}` : 'application-received.html';
       };
 
-      const buildThankYouUrl = () => {
+      const buildThankYouUrl = (proofResult) => {
         const q = new URLSearchParams();
         if (selectedLanguage !== 'en') q.set('lang', selectedLanguage);
+        if (proofResult?.receipt_number) q.set('receipt', proofResult.receipt_number);
+        if (proofResult?.access_token) q.set('token', proofResult.access_token);
         const query = q.toString();
         return query ? `thankyou.html?${query}` : 'thankyou.html';
       };
@@ -2724,7 +2727,10 @@
                 secure_url: result.secure_url,
                 public_id: result.public_id
               });
-              resolve(result.secure_url);
+              resolve({
+                secureUrl: result.secure_url,
+                publicId: result.public_id || ''
+              });
               return;
             }
 
@@ -2766,15 +2772,45 @@
         }
       }
 
-      function savePendingPaymentNotification(imageUrl) {
+      function savePendingPaymentNotification(imageUrl, publicId, proofResult) {
         window.sessionStorage.setItem('pendingPaymentUploadNotification', JSON.stringify({
           cloudinaryUrl: imageUrl,
+          publicId: publicId || '',
           uploadTimestamp: new Date().toISOString(),
           applicationId: applicationId || '',
           currentLanguage: selectedLanguage,
           applicantEmail: applicantEmail || '',
-          applicantName: applicantName || ''
+          applicantName: applicantName || '',
+          receiptNumber: proofResult?.receipt_number || '',
+          proofToken: proofResult?.access_token || ''
         }));
+      }
+
+      async function scanPaymentAmount(file) {
+        if (!window.PPM_PAYMENT_AMOUNT_SCANNER?.detectPaymentAmountFromImage) {
+          return { amountCents: null, rawAmounts: [], source: 'unknown' };
+        }
+
+        return window.PPM_PAYMENT_AMOUNT_SCANNER.detectPaymentAmountFromImage(file, {
+          onProgress: (message) => setUploadStatus(t(message), 'loading')
+        });
+      }
+
+      async function savePaymentProofToSupabase(uploadResult, scanResult) {
+        if (!accessToken || !window.PPM_SUPABASE?.isConfigured?.()) {
+          console.warn('[Payment] Supabase not configured or missing application token — skipping proof save.');
+          return null;
+        }
+
+        return window.PPM_SUPABASE.submitPaymentProof({
+          token: accessToken,
+          screenshotUrl: uploadResult.secureUrl,
+          publicId: uploadResult.publicId,
+          amountCents: scanResult?.amountCents ?? null,
+          amountDetectedCents: scanResult?.amountCents ?? null,
+          amountSource: scanResult?.source || 'unknown',
+          ocrDetectedAmounts: scanResult?.rawAmounts || []
+        });
       }
 
       async function sendPaymentSupportNotification(imageUrl) {
@@ -2843,27 +2879,47 @@
         const originalButtonText = submitBtn.textContent;
 
         try {
+          submitBtn.textContent = t('Reading screenshot…');
+          setUploadStatus(t('Reading payment amount from screenshot…'), 'loading');
+          const scanResult = await scanPaymentAmount(file);
+
           submitBtn.textContent = t('Uploading…');
           setUploadStatus(t('Processing upload...'), 'loading');
-          const imageUrl = await uploadScreenshotToCloudinary(file);
-          savePendingPaymentNotification(imageUrl);
+          const uploadResult = await uploadScreenshotToCloudinary(file);
+
+          submitBtn.textContent = t('Saving receipt…');
+          setUploadStatus(t('Saving payment proof…'), 'loading');
+          const proofResult = await savePaymentProofToSupabase(uploadResult, scanResult);
+
+          if (!proofResult?.receipt_number) {
+            throw new Error('Could not save payment proof. Please try again.');
+          }
+
+          savePendingPaymentNotification(uploadResult.secureUrl, uploadResult.publicId, proofResult);
           setUploadStatus(t('Upload complete. Sending confirmation...'), 'loading');
 
           submitBtn.textContent = t('Sending confirmation…');
           setUploadStatus(t('Sending confirmation...'), 'loading');
 
           try {
-            await sendPaymentSupportNotification(imageUrl);
+            await sendPaymentSupportNotification(uploadResult.secureUrl);
             window.sessionStorage.removeItem('pendingPaymentUploadNotification');
           } catch (emailError) {
             logPaymentError('EmailJS notification failed after Cloudinary upload', emailError);
           }
 
+          window.sessionStorage.setItem('latestPaymentReceipt', JSON.stringify({
+            receiptNumber: proofResult.receipt_number,
+            proofToken: proofResult.access_token,
+            amountDisplay: proofResult.amount_display || '',
+            replay: Boolean(proofResult.replay)
+          }));
+
           setUploadStatus(t('Payment confirmation received successfully.'), 'success', { autoFade: true, fadeDelayMs: 2200 });
           submitBtn.textContent = t('Confirmation sent');
 
           window.setTimeout(() => {
-            window.location.href = buildThankYouUrl();
+            window.location.href = buildThankYouUrl(proofResult);
           }, 2800);
         } catch (err) {
           logPaymentError('Payment submission failed', err);

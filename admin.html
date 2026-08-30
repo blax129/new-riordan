@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Payment Admin | Property Management Group</title>
+  <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --admin-bg: #0f172a;
+      --admin-card: #111827;
+      --admin-border: rgba(148, 163, 184, 0.22);
+      --admin-text: #e2e8f0;
+      --admin-muted: #94a3b8;
+    }
+
+    body.admin-page {
+      margin: 0;
+      background: var(--admin-bg);
+      color: var(--admin-text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      padding:
+        max(16px, env(safe-area-inset-top))
+        max(16px, env(safe-area-inset-right))
+        max(24px, env(safe-area-inset-bottom))
+        max(16px, env(safe-area-inset-left));
+    }
+
+    .admin-shell {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .admin-header h1 {
+      margin: 0 0 6px;
+      font-size: 1.4rem;
+    }
+
+    .admin-header p {
+      margin: 0 0 20px;
+      color: var(--admin-muted);
+      line-height: 1.5;
+    }
+
+    .admin-panel {
+      background: var(--admin-card);
+      border: 1px solid var(--admin-border);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .admin-form {
+      display: grid;
+      gap: 12px;
+    }
+
+    .admin-form label {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .admin-form input {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--admin-border);
+      background: #0b1220;
+      color: var(--admin-text);
+    }
+
+    .admin-actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .admin-btn {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .admin-btn--primary { background: #2563eb; color: #fff; }
+    .admin-btn--confirm { background: #16a34a; color: #fff; }
+    .admin-btn--reject { background: #dc2626; color: #fff; }
+    .admin-btn--ghost { background: transparent; color: var(--admin-muted); border: 1px solid var(--admin-border); }
+    .admin-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+
+    .admin-toolbar {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .admin-queue {
+      display: grid;
+      gap: 14px;
+    }
+
+    .admin-card {
+      background: var(--admin-card);
+      border: 1px solid var(--admin-border);
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .admin-card.is-pending {
+      border-color: rgba(250, 204, 21, 0.45);
+    }
+
+    .admin-card__meta {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .admin-card__row {
+      display: grid;
+      grid-template-columns: minmax(110px, 130px) 1fr;
+      gap: 8px 12px;
+    }
+
+    .admin-card__row dt {
+      margin: 0;
+      color: var(--admin-muted);
+      font-weight: 600;
+    }
+
+    .admin-card__row dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .admin-status {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .admin-status--pending { background: #fef3c7; color: #92400e; }
+    .admin-status--paid { background: #dcfce7; color: #166534; }
+    .admin-status--rejected { background: #fee2e2; color: #991b1b; }
+
+    .admin-screenshot {
+      width: 100%;
+      max-height: min(70vh, 720px);
+      object-fit: contain;
+      background: #020617;
+      border-radius: 8px;
+      border: 1px solid var(--admin-border);
+      margin-bottom: 12px;
+    }
+
+    .admin-card__actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .admin-message {
+      padding: 12px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .admin-message--error {
+      background: rgba(220, 38, 38, 0.15);
+      border: 1px solid rgba(248, 113, 113, 0.35);
+      color: #fecaca;
+    }
+
+    .admin-message--success {
+      background: rgba(22, 163, 74, 0.15);
+      border: 1px solid rgba(74, 222, 128, 0.35);
+      color: #bbf7d0;
+    }
+
+    .admin-empty {
+      color: var(--admin-muted);
+      text-align: center;
+      padding: 24px 12px;
+    }
+
+    .admin-amount-edit {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .admin-amount-edit label {
+      font-size: 13px;
+      color: var(--admin-muted);
+    }
+  </style>
+</head>
+<body class="admin-page">
+  <div class="admin-shell">
+    <header class="admin-header">
+      <h1>Payment verification</h1>
+      <p>Review pending payment screenshots. Pending items appear first.</p>
+    </header>
+
+    <section class="admin-panel" id="loginPanel">
+      <form class="admin-form" id="loginForm">
+        <label for="adminPassword">Admin password</label>
+        <input id="adminPassword" name="password" type="password" autocomplete="current-password" required>
+        <div class="admin-actions">
+          <button type="submit" class="admin-btn admin-btn--primary" id="loginBtn">Sign in</button>
+        </div>
+      </form>
+      <p class="admin-message admin-message--error" id="loginError" hidden></p>
+    </section>
+
+    <section id="queuePanel" hidden>
+      <div class="admin-toolbar">
+        <strong id="queueCount">0 items</strong>
+        <button type="button" class="admin-btn admin-btn--ghost" id="refreshBtn" style="width:auto;padding:10px 14px;">Refresh</button>
+        <button type="button" class="admin-btn admin-btn--ghost" id="logoutBtn" style="width:auto;padding:10px 14px;">Sign out</button>
+      </div>
+      <p class="admin-message" id="queueMessage" hidden></p>
+      <div class="admin-queue" id="queueList"></div>
+      <p class="admin-empty" id="queueEmpty" hidden>No payment proofs yet.</p>
+    </section>
+  </div>
+
+  <script src="js/supabase-config.js"></script>
+  <script src="js/supabase-api.js"></script>
+  <script>
+    (function () {
+      const SESSION_KEY = 'ppmAdminPassword';
+      const loginPanel = document.getElementById('loginPanel');
+      const queuePanel = document.getElementById('queuePanel');
+      const loginForm = document.getElementById('loginForm');
+      const loginError = document.getElementById('loginError');
+      const adminPasswordInput = document.getElementById('adminPassword');
+      const queueList = document.getElementById('queueList');
+      const queueEmpty = document.getElementById('queueEmpty');
+      const queueCount = document.getElementById('queueCount');
+      const queueMessage = document.getElementById('queueMessage');
+      const refreshBtn = document.getElementById('refreshBtn');
+      const logoutBtn = document.getElementById('logoutBtn');
+
+      let ownerPassword = sessionStorage.getItem(SESSION_KEY) || '';
+
+      function showLoginError(message) {
+        loginError.textContent = message;
+        loginError.hidden = !message;
+      }
+
+      function showQueueMessage(message, type) {
+        if (!message) {
+          queueMessage.hidden = true;
+          queueMessage.textContent = '';
+          return;
+        }
+        queueMessage.textContent = message;
+        queueMessage.className = 'admin-message admin-message--' + (type || 'success');
+        queueMessage.hidden = false;
+      }
+
+      function receiptUrl(accessToken) {
+        const params = new URLSearchParams();
+        params.set('token', accessToken);
+        return `${window.location.origin}/receipt.html?${params.toString()}`;
+      }
+
+      function formatDate(value) {
+        if (!value) return '—';
+        try {
+          return new Intl.DateTimeFormat(undefined, {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          }).format(new Date(value));
+        } catch (error) {
+          return value;
+        }
+      }
+
+      function renderQueue(items) {
+        queueList.innerHTML = '';
+        const list = Array.isArray(items) ? items : [];
+
+        queueCount.textContent = `${list.length} item${list.length === 1 ? '' : 's'}`;
+        queueEmpty.hidden = list.length > 0;
+
+        list.forEach((item) => {
+          const card = document.createElement('article');
+          card.className = 'admin-card' + (item.status === 'pending' ? ' is-pending' : '');
+          card.dataset.proofId = item.proof_id;
+
+          const status = String(item.status || 'pending').toLowerCase();
+          const amountDisplay = item.amount_display || 'Not detected';
+
+          card.innerHTML = `
+            <dl class="admin-card__meta">
+              <div class="admin-card__row"><dt>Status</dt><dd><span class="admin-status admin-status--${status}">${status}</span></dd></div>
+              <div class="admin-card__row"><dt>Name</dt><dd>${item.applicant_name || '—'}</dd></div>
+              <div class="admin-card__row"><dt>Property</dt><dd>${item.property_address || '—'}</dd></div>
+              <div class="admin-card__row"><dt>Application ID</dt><dd>${item.application_id || '—'}</dd></div>
+              <div class="admin-card__row"><dt>Receipt #</dt><dd>${item.receipt_number || '—'}</dd></div>
+              <div class="admin-card__row"><dt>Amount</dt><dd>${amountDisplay}</dd></div>
+              <div class="admin-card__row"><dt>Submitted</dt><dd>${formatDate(item.submitted_at)}</dd></div>
+            </dl>
+            ${item.screenshot_url ? `<img class="admin-screenshot" src="${item.screenshot_url}" alt="Payment screenshot">` : ''}
+            <div class="admin-card__actions"></div>
+          `;
+
+          const actions = card.querySelector('.admin-card__actions');
+
+          if (item.access_token) {
+            const receiptLink = document.createElement('a');
+            receiptLink.className = 'admin-btn admin-btn--ghost';
+            receiptLink.href = receiptUrl(item.access_token);
+            receiptLink.target = '_blank';
+            receiptLink.rel = 'noopener noreferrer';
+            receiptLink.textContent = 'Open receipt';
+            actions.appendChild(receiptLink);
+          }
+
+          if (status === 'pending') {
+            const amountWrap = document.createElement('div');
+            amountWrap.className = 'admin-amount-edit';
+            amountWrap.innerHTML = `
+              <label for="amount-${item.proof_id}">Confirm amount (USD, optional override)</label>
+              <input id="amount-${item.proof_id}" type="number" min="0" step="0.01" inputmode="decimal" placeholder="e.g. 85.00" value="${item.amount_cents ? (item.amount_cents / 100).toFixed(2) : ''}">
+            `;
+            actions.appendChild(amountWrap);
+
+            const confirmBtn = document.createElement('button');
+            confirmBtn.type = 'button';
+            confirmBtn.className = 'admin-btn admin-btn--confirm';
+            confirmBtn.textContent = 'Confirm payment';
+            confirmBtn.addEventListener('click', () => handleConfirm(item.proof_id, card));
+
+            const rejectBtn = document.createElement('button');
+            rejectBtn.type = 'button';
+            rejectBtn.className = 'admin-btn admin-btn--reject';
+            rejectBtn.textContent = 'Reject';
+            rejectBtn.addEventListener('click', () => handleReject(item.proof_id, card));
+
+            actions.appendChild(confirmBtn);
+            actions.appendChild(rejectBtn);
+          }
+
+          queueList.appendChild(card);
+        });
+      }
+
+      async function loadQueue() {
+        if (!ownerPassword) return;
+
+        showQueueMessage('');
+        try {
+          const items = await window.PPM_SUPABASE.ownerListProofs(ownerPassword);
+          renderQueue(items);
+        } catch (error) {
+          if (/unauthorized/i.test(error.message || '')) {
+            sessionStorage.removeItem(SESSION_KEY);
+            ownerPassword = '';
+            queuePanel.hidden = true;
+            loginPanel.hidden = false;
+            showLoginError('Incorrect password or session expired.');
+            return;
+          }
+          showQueueMessage(error.message || 'Could not load queue.', 'error');
+        }
+      }
+
+      async function handleConfirm(proofId, card) {
+        const amountInput = card.querySelector(`#amount-${proofId}`);
+        let amountCents = null;
+        if (amountInput && amountInput.value.trim()) {
+          const dollars = Number.parseFloat(amountInput.value);
+          if (Number.isFinite(dollars) && dollars >= 0) {
+            amountCents = Math.round(dollars * 100);
+          }
+        }
+
+        const buttons = card.querySelectorAll('button');
+        buttons.forEach((btn) => { btn.disabled = true; });
+
+        try {
+          const result = await window.PPM_SUPABASE.ownerConfirmProof(ownerPassword, proofId, amountCents);
+          const receiptLink = result.access_token ? receiptUrl(result.access_token) : '';
+          const replayNote = result.replay ? ' (already confirmed)' : '';
+          showQueueMessage(
+            `Payment confirmed${replayNote}.${receiptLink ? ' Receipt: ' + receiptLink : ''} Applicant paid email will be added in the next step.`,
+            'success'
+          );
+          await loadQueue();
+        } catch (error) {
+          showQueueMessage(error.message || 'Confirm failed.', 'error');
+          buttons.forEach((btn) => { btn.disabled = false; });
+        }
+      }
+
+      async function handleReject(proofId, card) {
+        const buttons = card.querySelectorAll('button');
+        buttons.forEach((btn) => { btn.disabled = true; });
+
+        try {
+          await window.PPM_SUPABASE.ownerRejectProof(ownerPassword, proofId);
+          showQueueMessage('Payment proof rejected. Applicant may submit a new screenshot.', 'success');
+          await loadQueue();
+        } catch (error) {
+          showQueueMessage(error.message || 'Reject failed.', 'error');
+          buttons.forEach((btn) => { btn.disabled = false; });
+        }
+      }
+
+      function showApp() {
+        loginPanel.hidden = true;
+        queuePanel.hidden = false;
+        loadQueue();
+      }
+
+      loginForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        showLoginError('');
+
+        const password = adminPasswordInput.value;
+        if (!window.PPM_SUPABASE?.isConfigured?.()) {
+          showLoginError('Supabase is not configured.');
+          return;
+        }
+
+        try {
+          await window.PPM_SUPABASE.ownerListProofs(password);
+          ownerPassword = password;
+          sessionStorage.setItem(SESSION_KEY, password);
+          showApp();
+        } catch (error) {
+          showLoginError(/unauthorized/i.test(error.message || '') ? 'Incorrect password.' : (error.message || 'Sign in failed.'));
+        }
+      });
+
+      refreshBtn.addEventListener('click', loadQueue);
+      logoutBtn.addEventListener('click', () => {
+        sessionStorage.removeItem(SESSION_KEY);
+        ownerPassword = '';
+        queuePanel.hidden = true;
+        loginPanel.hidden = false;
+        adminPasswordInput.value = '';
+      });
+
+      if (ownerPassword && window.PPM_SUPABASE?.isConfigured?.()) {
+        showApp();
+      }
+    })();
+  </script>
+</body>
+</html>

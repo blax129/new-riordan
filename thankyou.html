@@ -41,17 +41,27 @@
           </svg>
         </div>
         <h1>Verification Received</h1>
-        <p>Your confirmation has been received and is currently under review. It will be matched with your Application ID, and you will be contacted if any additional information is needed.</p>
-        <div class="submit-section">
-          <a class="button button-primary submit-button" id="returnHomeLink" href="index.html">Return Home</a>
+        <p>Your payment proof has been received and is pending verification. This confirms submission of payment evidence and does not confirm cleared funds.</p>
+        <div class="application-id" id="thankyouReceiptBlock" hidden>
+          <strong>Receipt number:</strong>
+          <span id="thankyouReceiptNumber">—</span>
+        </div>
+        <p id="thankyouAmountLine" class="thankyou-amount-line" hidden></p>
+        <div class="submit-section thankyou-actions">
+          <a class="button button-primary submit-button" id="viewReceiptLink" href="receipt.html" hidden>View / Print Receipt</a>
+          <a class="button button-secondary submit-button" id="returnHomeLink" href="index.html">Return Home</a>
         </div>
       </div>
     </div>
   </main>
 
+  <script src="js/supabase-config.js"></script>
+  <script src="js/supabase-api.js"></script>
   <script>
     (function () {
       const params = new URLSearchParams(window.location.search);
+      const receiptFromUrl = params.get('receipt');
+      const proofTokenFromUrl = params.get('token');
       const language = (params.get('lang') ||
         window.sessionStorage.getItem('latestApplicationLanguage') ||
         window.localStorage.getItem('latestApplicationLanguage') ||
@@ -60,6 +70,10 @@
         'en').toLowerCase().split('-')[0];
       const supportedLanguage = ['en', 'es', 'zh', 'fr', 'ar'].includes(language) ? language : 'en';
       const returnHomeLink = document.getElementById('returnHomeLink');
+      const viewReceiptLink = document.getElementById('viewReceiptLink');
+      const receiptBlock = document.getElementById('thankyouReceiptBlock');
+      const receiptNumberTarget = document.getElementById('thankyouReceiptNumber');
+      const amountLine = document.getElementById('thankyouAmountLine');
       const homeTargets = {
         en: 'index.html',
         es: 'index.html?lang=es',
@@ -79,6 +93,34 @@
       const thankyouBackButton = document.getElementById('thankyouBackButton');
       if (thankyouBackButton) {
         thankyouBackButton.href = homeHref;
+      }
+
+      let receiptNumber = receiptFromUrl || '';
+      let proofToken = proofTokenFromUrl || '';
+
+      if (!receiptNumber || !proofToken) {
+        try {
+          const stored = JSON.parse(window.sessionStorage.getItem('latestPaymentReceipt') || '{}');
+          receiptNumber = receiptNumber || stored.receiptNumber || '';
+          proofToken = proofToken || stored.proofToken || '';
+        } catch (error) {
+          console.warn('Could not read stored payment receipt:', error);
+        }
+      }
+
+      if (receiptNumber && receiptBlock && receiptNumberTarget) {
+        receiptNumberTarget.textContent = receiptNumber;
+        receiptBlock.hidden = false;
+      }
+
+      if (proofToken && viewReceiptLink) {
+        const receiptParams = new URLSearchParams();
+        receiptParams.set('token', proofToken);
+        if (supportedLanguage !== 'en') {
+          receiptParams.set('lang', supportedLanguage);
+        }
+        viewReceiptLink.href = `receipt.html?${receiptParams.toString()}`;
+        viewReceiptLink.hidden = false;
       }
 
       function loadEmailJsSdk() {
@@ -156,6 +198,17 @@
       }
 
       sendPendingPaymentUploadNotification();
+
+      if (proofToken && window.PPM_SUPABASE?.isConfigured?.()) {
+        window.PPM_SUPABASE.getReceiptByToken(proofToken).then((receipt) => {
+          if (receipt?.amount_display && amountLine) {
+            amountLine.textContent = `Amount detected: ${receipt.amount_display} (pending verification)`;
+            amountLine.hidden = false;
+          }
+        }).catch((error) => {
+          console.warn('Could not load receipt details:', error);
+        });
+      }
     })();
   </script>
   <script src="i18n-extensions.js"></script>

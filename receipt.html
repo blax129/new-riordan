@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Payment Receipt | Property Management Group</title>
+  <link rel="icon" href="image/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.receipt-page {
+      background: #f4f6fb;
+      color: #0f172a;
+    }
+
+    .receipt-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    .receipt-toolbar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .receipt-sheet {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid #dbe3f0;
+      border-radius: 12px;
+      padding: 32px 28px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .receipt-watermark {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+      font-size: clamp(2rem, 8vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: rgba(148, 163, 184, 0.22);
+      transform: rotate(-24deg);
+      text-align: center;
+      line-height: 1.1;
+      padding: 16px;
+    }
+
+    .receipt-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+    }
+
+    .receipt-brand img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+    }
+
+    .receipt-brand h1 {
+      margin: 8px 0 0;
+      font-size: 1.25rem;
+    }
+
+    .receipt-meta {
+      text-align: right;
+      font-size: 0.92rem;
+      color: #475569;
+    }
+
+    .receipt-title {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+    }
+
+    .receipt-notice {
+      margin: 0 0 20px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .receipt-grid {
+      display: grid;
+      gap: 10px;
+    }
+
+    .receipt-row {
+      display: grid;
+      grid-template-columns: minmax(140px, 190px) 1fr;
+      gap: 10px 16px;
+      font-size: 0.98rem;
+      line-height: 1.45;
+    }
+
+    .receipt-row dt {
+      margin: 0;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .receipt-row dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .receipt-status {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .receipt-status--pending {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .receipt-status--paid {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .receipt-status--rejected {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .receipt-paid-banner {
+      display: none;
+      margin: 0 0 16px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #ecfdf5;
+      border: 1px solid #86efac;
+      color: #166534;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+
+    .receipt-sheet.is-paid .receipt-watermark,
+    .receipt-sheet.is-paid .receipt-notice {
+      display: none;
+    }
+
+    .receipt-sheet.is-paid .receipt-paid-banner {
+      display: block;
+    }
+
+    .receipt-error {
+      background: #fff;
+      border: 1px solid #fecaca;
+      color: #991b1b;
+      border-radius: 10px;
+      padding: 16px;
+    }
+
+    @media print {
+      body.receipt-page {
+        background: #fff;
+      }
+
+      .receipt-toolbar,
+      .site-header {
+        display: none !important;
+      }
+
+      .receipt-wrap {
+        padding: 0;
+        max-width: none;
+      }
+
+      .receipt-sheet {
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body class="receipt-page simple-flow-page">
+  <header class="site-header back-nav">
+    <div class="container header-inner">
+      <a href="index.html" class="back-button" id="receiptBackButton" aria-label="Back to home">
+        <span class="back-button-icon" aria-hidden="true">←</span>
+        <span>Back</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="receipt-wrap">
+    <div class="receipt-toolbar">
+      <button type="button" class="button button-primary" id="printReceiptBtn">Print / Save as PDF</button>
+    </div>
+
+    <div id="receiptError" class="receipt-error" hidden></div>
+
+    <article class="receipt-sheet" id="receiptSheet" hidden>
+      <div class="receipt-watermark" id="receiptWatermark">PENDING VERIFICATION</div>
+      <header class="receipt-header">
+        <div class="receipt-brand">
+          <img src="image/logo.png" alt="Property Management Group">
+          <h1>Property Management Group</h1>
+        </div>
+        <div class="receipt-meta">
+          <div><strong>Receipt</strong></div>
+          <div id="receiptNumberMeta">—</div>
+        </div>
+      </header>
+
+      <h2 class="receipt-title">Payment proof submitted</h2>
+      <p class="receipt-paid-banner" id="receiptPaidBanner">PAYMENT RECEIVED / PAID</p>
+      <p class="receipt-notice" id="receiptPendingNotice">
+        This document confirms submission of payment evidence and does not confirm cleared funds.
+      </p>
+
+      <dl class="receipt-grid">
+        <div class="receipt-row">
+          <dt>Applicant</dt>
+          <dd id="receiptApplicant">—</dd>
+        </div>
+        <div class="receipt-row">
+          <dt>Property</dt>
+          <dd id="receiptProperty">—</dd>
+        </div>
+        <div class="receipt-row">
+          <dt>Application ID</dt>
+          <dd id="receiptApplicationId">—</dd>
+        </div>
+        <div class="receipt-row">
+          <dt>Receipt number</dt>
+          <dd id="receiptNumber">—</dd>
+        </div>
+        <div class="receipt-row">
+          <dt>Amount</dt>
+          <dd id="receiptAmount">Pending verification</dd>
+        </div>
+        <div class="receipt-row">
+          <dt>Submitted</dt>
+          <dd id="receiptSubmittedAt">—</dd>
+        </div>
+        <div class="receipt-row">
+          <dt>Status</dt>
+          <dd><span class="receipt-status receipt-status--pending" id="receiptStatus">Pending</span></dd>
+        </div>
+      </dl>
+    </article>
+  </main>
+
+  <script src="js/supabase-config.js"></script>
+  <script src="js/supabase-api.js"></script>
+  <script>
+    (async function () {
+      const params = new URLSearchParams(window.location.search);
+      const token = params.get('token');
+      const errorBox = document.getElementById('receiptError');
+      const sheet = document.getElementById('receiptSheet');
+      const printBtn = document.getElementById('printReceiptBtn');
+
+      function showError(message) {
+        if (errorBox) {
+          errorBox.textContent = message;
+          errorBox.hidden = false;
+        }
+        if (sheet) {
+          sheet.hidden = true;
+        }
+      }
+
+      function formatDate(value) {
+        if (!value) return '—';
+        try {
+          return new Intl.DateTimeFormat(undefined, {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          }).format(new Date(value));
+        } catch (error) {
+          return value;
+        }
+      }
+
+      if (!token) {
+        showError('Receipt link is invalid or missing.');
+        return;
+      }
+
+      if (!window.PPM_SUPABASE?.isConfigured?.()) {
+        showError('Receipt service is not configured.');
+        return;
+      }
+
+      try {
+        const receipt = await window.PPM_SUPABASE.getReceiptByToken(token);
+        const status = String(receipt.status || 'pending').toLowerCase();
+
+        document.getElementById('receiptApplicant').textContent = receipt.applicant_name || '—';
+        document.getElementById('receiptProperty').textContent = receipt.property_address || '—';
+        document.getElementById('receiptApplicationId').textContent = receipt.application_id || '—';
+        document.getElementById('receiptNumber').textContent = receipt.receipt_number || '—';
+        document.getElementById('receiptNumberMeta').textContent = receipt.receipt_number || '—';
+        document.getElementById('receiptSubmittedAt').textContent = formatDate(receipt.submitted_at);
+        document.getElementById('receiptAmount').textContent =
+          receipt.amount_display || 'Pending verification';
+
+        const statusNode = document.getElementById('receiptStatus');
+        statusNode.textContent = status;
+        statusNode.className = 'receipt-status';
+
+        if (status === 'paid') {
+          sheet.classList.add('is-paid');
+          statusNode.classList.add('receipt-status--paid');
+          document.getElementById('receiptWatermark').hidden = true;
+        } else if (status === 'rejected') {
+          statusNode.classList.add('receipt-status--rejected');
+        } else {
+          statusNode.classList.add('receipt-status--pending');
+        }
+
+        sheet.hidden = false;
+      } catch (error) {
+        showError('Could not load this receipt. Please use the link from your confirmation email or page.');
+        console.warn(error);
+      }
+
+      if (printBtn) {
+        printBtn.addEventListener('click', () => window.print());
+      }
+    })();
+  </script>
+</body>
+</html>

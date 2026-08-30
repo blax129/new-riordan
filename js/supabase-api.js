@@ -84,11 +84,62 @@
     });
   }
 
+  async function submitPaymentProof(payload) {
+    return rpc("submit_payment_proof", {
+      p_token: String(payload.token || "").trim(),
+      p_screenshot_url: String(payload.screenshotUrl || "").trim(),
+      p_cloudinary_public_id: payload.publicId || null,
+      p_amount_cents: payload.amountCents ?? null,
+      p_amount_detected_cents: payload.amountDetectedCents ?? payload.amountCents ?? null,
+      p_amount_source: payload.amountSource || "unknown",
+      p_ocr_detected_amounts: payload.ocrDetectedAmounts || []
+    });
+  }
+
+  async function getReceiptByToken(token) {
+    return rpc("get_receipt_by_token", {
+      p_token: String(token || "").trim()
+    });
+  }
+
+  async function getPublicReceiptStatus(receiptNumber) {
+    return rpc("get_public_receipt_status", {
+      p_receipt_number: String(receiptNumber || "").trim()
+    });
+  }
+
+  async function ownerListProofs(password) {
+    return rpc("owner_list_proofs", {
+      p_password: String(password || "")
+    });
+  }
+
+  async function ownerConfirmProof(password, proofId, amountCents) {
+    return rpc("owner_confirm_proof", {
+      p_password: String(password || ""),
+      p_proof_id: proofId,
+      p_amount_cents: amountCents ?? null
+    });
+  }
+
+  async function ownerRejectProof(password, proofId) {
+    return rpc("owner_reject_proof", {
+      p_password: String(password || ""),
+      p_proof_id: proofId
+    });
+  }
+
   window.PPM_SUPABASE = {
     isConfigured,
     rpc,
     collectFormPayload,
     submitApplicationFromForm,
-    getApplicationByToken
+    getApplicationByToken,
+    submitPaymentProof,
+    getReceiptByToken,
+    getPublicReceiptStatus,
+    ownerListProofs,
+    ownerConfirmProof,
+    ownerRejectProof
   };
 })();
