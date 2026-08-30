@@ -373,6 +373,43 @@
       line-height: 1.6;
     }
 
+    .pp-app-summary {
+      margin: 0 0 20px;
+      padding: 14px 16px;
+      border-radius: 10px;
+      border: 1px solid rgba(37, 99, 235, 0.18);
+      background: rgba(255, 255, 255, 0.04);
+      display: grid;
+      gap: 8px;
+      max-width: 28rem;
+    }
+
+    .pp-app-summary__row {
+      display: grid;
+      grid-template-columns: minmax(7rem, 9rem) 1fr;
+      gap: 8px 12px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .pp-app-summary__row dt {
+      margin: 0;
+      color: var(--pp-muted);
+      font-weight: 600;
+    }
+
+    .pp-app-summary__row dd {
+      margin: 0;
+      color: var(--pp-text);
+      overflow-wrap: anywhere;
+    }
+
+    .pp-app-summary__row--muted dd,
+    .pp-app-summary__row--muted dt {
+      color: var(--pp-muted);
+      font-size: 13px;
+    }
+
     .pp-fee-badge {
       display: inline-flex;
       align-items: center;
@@ -1863,6 +1900,20 @@
   <main class="pp-main" id="main">
     <header class="pp-hero">
       <p class="pp-hero__sub">Your application is almost complete. Please submit the $85 refundable application fee using the secure payment method below.</p>
+      <dl class="pp-app-summary" id="paymentApplicationSummary" hidden>
+        <div class="pp-app-summary__row">
+          <dt>Application ID</dt>
+          <dd id="paymentSummaryApplicationId">—</dd>
+        </div>
+        <div class="pp-app-summary__row">
+          <dt>Applicant</dt>
+          <dd id="paymentSummaryApplicantName">—</dd>
+        </div>
+        <div class="pp-app-summary__row">
+          <dt>Property</dt>
+          <dd id="paymentSummaryProperty">—</dd>
+        </div>
+      </dl>
     </header>
 
     <div class="pp-methods">
@@ -2079,10 +2130,12 @@
 
   <script src="i18n-extensions.js"></script>
   <script src="i18n-apply-form.js"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/supabase-api.js"></script>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script>
-    (function () {
+    (async function () {
       const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/dibwotfd5/image/upload';
       const CLOUDINARY_PRESET = 'Katherine';
       const EMAILJS_PUBLIC_KEY = 'SSTlr7vq0twaIZBQB';
@@ -2099,6 +2152,7 @@
 
       const params = new URLSearchParams(window.location.search);
       const idFromUrl = params.get('applicationId');
+      const tokenFromUrl = params.get('token');
       const langFromUrl = params.get('lang');
       const supportedLanguages = ['en', 'es', 'zh', 'fr', 'ar'];
       const normalizeLanguage = (language) => {
@@ -2106,10 +2160,25 @@
         return supportedLanguages.includes(value) ? value : 'en';
       };
 
-      const applicationId = idFromUrl ||
+      let applicationId = idFromUrl ||
         window.sessionStorage.getItem('latestApplicationId') ||
         window.localStorage.getItem('latestApplicationId') ||
         '';
+
+      const accessToken = tokenFromUrl ||
+        window.sessionStorage.getItem('latestApplicationToken') ||
+        window.localStorage.getItem('latestApplicationToken') ||
+        '';
+
+      if (idFromUrl) {
+        window.sessionStorage.setItem('latestApplicationId', idFromUrl);
+        window.localStorage.setItem('latestApplicationId', idFromUrl);
+      }
+
+      if (tokenFromUrl) {
+        window.sessionStorage.setItem('latestApplicationToken', tokenFromUrl);
+        window.localStorage.setItem('latestApplicationToken', tokenFromUrl);
+      }
 
       const selectedLanguage = normalizeLanguage(
         langFromUrl ||
@@ -2120,17 +2189,81 @@
         'en'
       );
 
-      if (idFromUrl) {
-        window.sessionStorage.setItem('latestApplicationId', idFromUrl);
-        window.localStorage.setItem('latestApplicationId', idFromUrl);
-      }
-
       window.sessionStorage.setItem('latestApplicationLanguage', selectedLanguage);
       window.localStorage.setItem('latestApplicationLanguage', selectedLanguage);
+
+      let applicantName =
+        window.sessionStorage.getItem('latestApplicantName') ||
+        window.localStorage.getItem('latestApplicantName') ||
+        '';
+      let applicantEmail =
+        window.sessionStorage.getItem('latestApplicantEmail') ||
+        window.localStorage.getItem('latestApplicantEmail') ||
+        '';
+      let propertyAddress = '';
+
+      async function loadApplicationFromSupabase() {
+        if (!accessToken || !window.PPM_SUPABASE?.isConfigured?.()) {
+          return null;
+        }
+
+        try {
+          const app = await window.PPM_SUPABASE.getApplicationByToken(accessToken);
+          if (!app || !app.application_id) {
+            return null;
+          }
+
+          applicationId = app.application_id;
+          applicantName = app.applicant_name || applicantName;
+          applicantEmail = app.applicant_email || applicantEmail;
+          propertyAddress = app.property_address || '';
+
+          window.sessionStorage.setItem('latestApplicationId', applicationId);
+          window.localStorage.setItem('latestApplicationId', applicationId);
+          if (applicantName) {
+            window.sessionStorage.setItem('latestApplicantName', applicantName);
+            window.localStorage.setItem('latestApplicantName', applicantName);
+          }
+          if (applicantEmail) {
+            window.sessionStorage.setItem('latestApplicantEmail', applicantEmail);
+            window.localStorage.setItem('latestApplicantEmail', applicantEmail);
+          }
+
+          return app;
+        } catch (error) {
+          console.warn('[Payment] Could not load application from Supabase; using local fallback.', error);
+          return null;
+        }
+      }
+
+      function renderApplicationSummary(app) {
+        const summary = document.getElementById('paymentApplicationSummary');
+        if (!summary) {
+          return;
+        }
+
+        if (!app && !applicationId) {
+          summary.hidden = true;
+          return;
+        }
+
+        const setText = (id, value) => {
+          const node = document.getElementById(id);
+          if (node) {
+            node.textContent = value || '—';
+          }
+        };
+
+        setText('paymentSummaryApplicationId', applicationId);
+        setText('paymentSummaryApplicantName', applicantName);
+        setText('paymentSummaryProperty', propertyAddress || '—');
+        summary.hidden = false;
+      }
 
       const buildReceivedUrl = () => {
         const q = new URLSearchParams();
         if (applicationId) q.set('applicationId', applicationId);
+        if (accessToken) q.set('token', accessToken);
         if (selectedLanguage !== 'en') q.set('lang', selectedLanguage);
         const query = q.toString();
         return query ? `application-received.html?${query}` : 'application-received.html';
@@ -2143,12 +2276,6 @@
         return query ? `thankyou.html?${query}` : 'thankyou.html';
       };
 
-      const backUrl = buildReceivedUrl();
-      const headerBack = document.getElementById('paymentHeaderBack');
-      if (headerBack) {
-        headerBack.href = backUrl;
-      }
-
       const toast = document.getElementById('toast');
       let toastTimer = null;
 
@@ -2157,6 +2284,14 @@
           ? window.PPM_I18N.translateText(text, selectedLanguage)
           : text
       );
+
+      const loadedApplication = await loadApplicationFromSupabase();
+      renderApplicationSummary(loadedApplication);
+
+      const headerBack = document.getElementById('paymentHeaderBack');
+      if (headerBack) {
+        headerBack.href = buildReceivedUrl();
+      }
 
       function showToast(message) {
         if (!toast) return;
@@ -2177,15 +2312,6 @@
       const uploadStatus = document.getElementById('uploadStatus');
       const uploadStatusMessage = document.getElementById('uploadStatusMessage');
       let uploadStatusFadeTimer = null;
-
-      const applicantName =
-        window.sessionStorage.getItem('latestApplicantName') ||
-        window.localStorage.getItem('latestApplicantName') ||
-        '';
-      const applicantEmail =
-        window.sessionStorage.getItem('latestApplicantEmail') ||
-        window.localStorage.getItem('latestApplicantEmail') ||
-        '';
 
       let selectedFile = null;
       let previewObjectUrl = null;

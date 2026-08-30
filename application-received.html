@@ -119,6 +119,8 @@
 
   <script src="i18n-extensions.js"></script>
   <script src="i18n-apply-form.js"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/supabase-api.js"></script>
   <script src="script.js"></script>
   <script>
     (function () {
@@ -129,6 +131,7 @@
 
       const params = new URLSearchParams(window.location.search);
       const idFromUrl = params.get('applicationId');
+      const tokenFromUrl = params.get('token');
       const languageFromUrl = params.get('lang');
       const supportedLanguages = ['en', 'es', 'zh', 'fr', 'ar'];
       const normalizeLanguage = (language) => {
@@ -152,6 +155,15 @@
         window.sessionStorage.setItem('latestApplicationId', idFromUrl);
         window.localStorage.setItem('latestApplicationId', idFromUrl);
       }
+
+      if (tokenFromUrl) {
+        window.sessionStorage.setItem('latestApplicationToken', tokenFromUrl);
+        window.localStorage.setItem('latestApplicationToken', tokenFromUrl);
+      }
+
+      const storedToken = window.sessionStorage.getItem('latestApplicationToken') ||
+        window.localStorage.getItem('latestApplicationToken') ||
+        '';
 
       if (languageFromUrl) {
         window.sessionStorage.setItem('latestApplicationLanguage', selectedLanguage);
@@ -177,6 +189,9 @@
         const params = new URLSearchParams();
         if (applicationId) {
           params.set('applicationId', applicationId);
+        }
+        if (storedToken) {
+          params.set('token', storedToken);
         }
         if (selectedLanguage && selectedLanguage !== 'en') {
           params.set('lang', selectedLanguage);

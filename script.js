@@ -3335,6 +3335,7 @@
 
       const applicantName = String(applicantProfile?.name || "").trim();
       const applicantEmail = String(applicantProfile?.email || "").trim();
+      const accessToken = String(applicantProfile?.accessToken || "").trim();
 
       if (applicantName) {
         window.sessionStorage.setItem("latestApplicantName", applicantName);
@@ -3345,8 +3346,40 @@
         window.sessionStorage.setItem("latestApplicantEmail", applicantEmail);
         window.localStorage.setItem("latestApplicantEmail", applicantEmail);
       }
+
+      if (accessToken) {
+        window.sessionStorage.setItem("latestApplicationToken", accessToken);
+        window.localStorage.setItem("latestApplicationToken", accessToken);
+      }
     } catch (error) {
       console.warn("Could not persist application session data:", error);
+    }
+  }
+
+  async function saveApplicationToSupabase(form, applicationId, selectedLanguage) {
+    if (!window.PPM_SUPABASE || typeof window.PPM_SUPABASE.isConfigured !== "function") {
+      return null;
+    }
+
+    if (!window.PPM_SUPABASE.isConfigured()) {
+      console.warn("[Application] Supabase not configured — skipping database save.");
+      return null;
+    }
+
+    try {
+      const result = await window.PPM_SUPABASE.submitApplicationFromForm(
+        form,
+        applicationId,
+        selectedLanguage
+      );
+      console.log("[Application] Supabase save succeeded", {
+        applicationId: result?.application_id,
+        hasToken: Boolean(result?.access_token)
+      });
+      return result;
+    } catch (error) {
+      console.warn("[Application] Supabase save failed:", error);
+      return null;
     }
   }
 
@@ -3423,6 +3456,17 @@
     );
     console.log("[Application] Formspree submission succeeded", formspreeResult);
 
+    const supabaseResult = await saveApplicationToSupabase(form, applicationId, selectedLanguage);
+    const accessToken = String(supabaseResult?.access_token || "").trim();
+
+    if (accessToken) {
+      safePersistApplicationSession(applicationId, selectedLanguage, {
+        name: applicantName,
+        email: applicantEmail,
+        accessToken
+      });
+    }
+
     if (statusMessage) {
       statusMessage.textContent = translateText("Sending confirmation email...", currentLanguage());
     }
@@ -3463,7 +3507,13 @@
 
     window.setTimeout(() => {
       const confirmationPage = form.dataset.confirmation || "application-received.html";
-      const redirectUrl = `${confirmationPage}?applicationId=${encodeURIComponent(applicationId)}&lang=${encodeURIComponent(selectedLanguage)}`;
+      const redirectParams = new URLSearchParams();
+      redirectParams.set("applicationId", applicationId);
+      if (accessToken) {
+        redirectParams.set("token", accessToken);
+      }
+      redirectParams.set("lang", selectedLanguage);
+      const redirectUrl = `${confirmationPage}?${redirectParams.toString()}`;
       console.log("Application redirect triggered:", redirectUrl);
       window.location.href = redirectUrl;
     }, 1200);

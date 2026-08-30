@@ -1,0 +1,5 @@
+.env
+.env.*
+documents/
+**/service_role*
+**/*service-role*
