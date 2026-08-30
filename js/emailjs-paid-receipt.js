@@ -7,7 +7,7 @@
   const BRAND = {
     companyName: "Property Management Group",
     logoUrl: "https://property-management.group/image/logo.png",
-    contactEmail: "support@property-management.group",
+    contactEmail: "privatepropertyg@gmail.com",
     siteUrl: "https://property-management.group"
   };
 

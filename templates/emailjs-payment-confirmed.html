@@ -1,15 +1,15 @@
 <!--
 EmailJS template: Payment confirmed (applicant)
-Account: NEW separate EmailJS account (not owner screenshot account)
+Separate EmailJS account — not the owner screenshot account.
 
 Dashboard setup:
 - Template To: {{applicant_email}}
 - Subject: Payment confirmed – {{application_id}}
-- Paste the HTML below into the template body (Code view)
+- Paste everything BELOW this comment into the template body (Code view)
 
-Variables used:
+Dynamic variables (sent from admin on Confirm):
   applicant_email, applicant_name, application_id, receipt_number,
-  property_address, receipt_url, amount_display, company_name, logo_url, contact_email
+  property_address, receipt_url, amount_display
 -->
 <div style="margin:0;padding:0;background:#f4f6fb;font-family:Arial,Helvetica,sans-serif;color:#0f172a;">
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f4f6fb;padding:24px 12px;">
@@ -18,8 +18,8 @@ Variables used:
         <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:560px;background:#ffffff;border:1px solid #dbe3f0;border-radius:12px;overflow:hidden;">
           <tr>
             <td style="padding:24px 24px 12px;text-align:center;background:#0f172a;">
-              <img src="{{logo_url}}" alt="{{company_name}}" width="64" height="64" style="display:block;margin:0 auto 12px;border-radius:8px;">
-              <div style="color:#e2e8f0;font-size:18px;font-weight:700;">{{company_name}}</div>
+              <img src="https://property-management.group/image/logo.png" alt="Property Management Group" width="64" height="64" style="display:block;margin:0 auto 12px;border-radius:8px;">
+              <div style="color:#e2e8f0;font-size:18px;font-weight:700;">Property Management Group</div>
             </td>
           </tr>
           <tr>
@@ -56,8 +56,8 @@ Variables used:
           </tr>
           <tr>
             <td style="padding:16px 24px 24px;border-top:1px solid #e2e8f0;font-size:12px;line-height:1.5;color:#64748b;text-align:center;">
-              Questions? Contact {{contact_email}}<br>
-              {{company_name}} · {{contact_email}}
+              Questions? Contact <a href="mailto:privatepropertyg@gmail.com" style="color:#2563eb;">privatepropertyg@gmail.com</a><br>
+              Property Management Group · property-management.group
             </td>
           </tr>
         </table>
