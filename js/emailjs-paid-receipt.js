@@ -3,12 +3,11 @@
 
   const cfg = window.PPM_PAID_RECEIPT_EMAILJS || {};
   const EMAILJS_SDK_URL = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+  const DEFAULT_SITE_URL = "https://privatepmanagement.netlify.app";
 
   const BRAND = {
     companyName: "Property Management Group",
-    logoUrl: "https://property-management.group/image/logo.png",
-    contactEmail: "privatepropertyg@gmail.com",
-    siteUrl: "https://property-management.group"
+    contactEmail: "privatepropertyg@gmail.com"
   };
 
   let emailJsInitPromise = null;
@@ -17,10 +16,42 @@
     return Boolean(cfg.publicKey && cfg.serviceId && cfg.templateId);
   }
 
+  function getSiteUrl() {
+    const configured = String(cfg.siteUrl || "").trim();
+    if (configured) {
+      return configured.replace(/\/+$/, "");
+    }
+    if (typeof window !== "undefined" && window.location?.origin) {
+      return window.location.origin.replace(/\/+$/, "");
+    }
+    return DEFAULT_SITE_URL;
+  }
+
+  function getLogoUrl() {
+    return `${getSiteUrl()}/image/logo.png`;
+  }
+
   function buildReceiptUrl(accessToken) {
     const params = new URLSearchParams();
     params.set("token", String(accessToken || "").trim());
-    return `${BRAND.siteUrl}/receipt.html?${params.toString()}`;
+    return `${getSiteUrl()}/receipt.html?${params.toString()}`;
+  }
+
+  function formatAmountDisplay(confirmResult) {
+    const existing = String(confirmResult?.amount_display || "").trim();
+    if (existing) {
+      return existing;
+    }
+
+    const cents = confirmResult?.amount_cents;
+    if (cents !== null && cents !== undefined && Number.isFinite(Number(cents))) {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD"
+      }).format(Number(cents) / 100);
+    }
+
+    return "See receipt for details";
   }
 
   function loadEmailJsSdk() {
@@ -71,6 +102,7 @@
     }
 
     const receiptUrl = buildReceiptUrl(confirmResult.access_token);
+    const amountDisplay = formatAmountDisplay(confirmResult);
     const emailjs = await prepareEmailJs();
 
     const templateParams = {
@@ -81,9 +113,9 @@
       receipt_number: confirmResult.receipt_number || "",
       property_address: confirmResult.property_address || "",
       receipt_url: receiptUrl,
-      amount_display: confirmResult.amount_display || "",
+      amount_display: amountDisplay,
       company_name: BRAND.companyName,
-      logo_url: BRAND.logoUrl,
+      logo_url: getLogoUrl(),
       contact_email: BRAND.contactEmail,
       subject: `Payment confirmed – ${confirmResult.application_id || "Application"}`
     };
@@ -93,13 +125,16 @@
     return {
       skipped: false,
       receiptUrl,
+      amountDisplay,
       result
     };
   }
 
   window.PPM_PAID_RECEIPT_EMAIL = {
     isConfigured,
+    getSiteUrl,
     buildReceiptUrl,
+    formatAmountDisplay,
     sendPaidReceiptEmail
   };
 })();

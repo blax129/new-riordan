@@ -397,6 +397,11 @@
           }
         }
 
+        if (amountCents === null) {
+          showQueueMessage('Enter the confirmed payment amount (e.g. 85.00) before confirming.', 'error');
+          return;
+        }
+
         const buttons = card.querySelectorAll('button');
         buttons.forEach((btn) => { btn.disabled = true; });
 
