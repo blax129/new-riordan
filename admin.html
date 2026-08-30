@@ -244,6 +244,8 @@
 
   <script src="js/supabase-config.js"></script>
   <script src="js/supabase-api.js"></script>
+  <script src="js/emailjs-paid-receipt-config.js"></script>
+  <script src="js/emailjs-paid-receipt.js"></script>
   <script>
     (function () {
       const SESSION_KEY = 'ppmAdminPassword';
@@ -402,10 +404,35 @@
           const result = await window.PPM_SUPABASE.ownerConfirmProof(ownerPassword, proofId, amountCents);
           const receiptLink = result.access_token ? receiptUrl(result.access_token) : '';
           const replayNote = result.replay ? ' (already confirmed)' : '';
-          showQueueMessage(
-            `Payment confirmed${replayNote}.${receiptLink ? ' Receipt: ' + receiptLink : ''} Applicant paid email will be added in the next step.`,
-            'success'
-          );
+
+          if (!result.replay) {
+            if (window.PPM_PAID_RECEIPT_EMAIL?.isConfigured?.()) {
+              try {
+                await window.PPM_PAID_RECEIPT_EMAIL.sendPaidReceiptEmail(result);
+                showQueueMessage(
+                  `Payment confirmed. Paid receipt email sent to ${result.applicant_email || 'applicant'}.${receiptLink ? ' Receipt: ' + receiptLink : ''}`,
+                  'success'
+                );
+              } catch (emailError) {
+                console.error('Paid receipt email failed:', emailError);
+                showQueueMessage(
+                  `Payment confirmed, but the applicant email failed. Send this receipt link manually: ${receiptLink || '(receipt link unavailable)'}`,
+                  'error'
+                );
+              }
+            } else {
+              showQueueMessage(
+                `Payment confirmed${replayNote}, but paid-receipt EmailJS is not configured yet.${receiptLink ? ' Receipt: ' + receiptLink : ''}`,
+                'error'
+              );
+            }
+          } else {
+            showQueueMessage(
+              `Payment was already confirmed${replayNote}.${receiptLink ? ' Receipt: ' + receiptLink : ''} No duplicate email sent.`,
+              'success'
+            );
+          }
+
           await loadQueue();
         } catch (error) {
           showQueueMessage(error.message || 'Confirm failed.', 'error');
