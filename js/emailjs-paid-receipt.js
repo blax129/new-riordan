@@ -108,6 +108,8 @@
     const templateParams = {
       applicant_email: applicantEmail,
       to_email: applicantEmail,
+      reply_to: BRAND.contactEmail,
+      from_name: BRAND.companyName,
       applicant_name: confirmResult.applicant_name || "Applicant",
       application_id: confirmResult.application_id || "",
       receipt_number: confirmResult.receipt_number || "",
@@ -117,7 +119,7 @@
       company_name: BRAND.companyName,
       logo_url: getLogoUrl(),
       contact_email: BRAND.contactEmail,
-      subject: `Payment confirmed – ${confirmResult.application_id || "Application"}`
+      subject: `Your receipt – ${confirmResult.application_id || "Application"} | ${BRAND.companyName}`
     };
 
     const result = await emailjs.send(cfg.serviceId, cfg.templateId, templateParams);
