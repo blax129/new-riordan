@@ -213,6 +213,11 @@
       <button type="button" class="button button-primary" id="printReceiptBtn">Print / Save as PDF</button>
     </div>
 
+    <aside class="delivery-notice" id="receiptDeliveryNotice" role="note" aria-label="Receipt email delivery" hidden>
+      <p class="delivery-notice__title" id="receiptDeliveryTitle">About your receipt email</p>
+      <p id="receiptDeliveryBody">When your payment is verified, we email a link to this receipt. If it does not arrive within a few minutes, check your Spam or Promotions folder and mark the message as Not spam.</p>
+    </aside>
+
     <div id="receiptError" class="receipt-error" hidden></div>
 
     <article class="receipt-sheet" id="receiptSheet" hidden>
@@ -299,6 +304,16 @@
         }
       }
 
+      function showDeliveryNotice(title, body) {
+        const notice = document.getElementById('receiptDeliveryNotice');
+        const titleNode = document.getElementById('receiptDeliveryTitle');
+        const bodyNode = document.getElementById('receiptDeliveryBody');
+        if (!notice || !titleNode || !bodyNode) return;
+        titleNode.textContent = title;
+        bodyNode.textContent = body;
+        notice.hidden = false;
+      }
+
       if (!token) {
         showError('Receipt link is invalid or missing.');
         return;
@@ -330,10 +345,18 @@
           sheet.classList.add('is-paid');
           statusNode.classList.add('receipt-status--paid');
           document.getElementById('receiptWatermark').hidden = true;
+          showDeliveryNotice(
+            'Confirmation email sent',
+            'We emailed a link to this receipt. If you cannot find it, check your Spam or Promotions folder and mark it as Not spam. You can always return to this page from your browser.'
+          );
         } else if (status === 'rejected') {
           statusNode.classList.add('receipt-status--rejected');
         } else {
           statusNode.classList.add('receipt-status--pending');
+          showDeliveryNotice(
+            'About your receipt email',
+            'After verification, we will email a link to your updated receipt. If it does not arrive within a few minutes, check Spam or Promotions and mark the message as Not spam.'
+          );
         }
 
         sheet.hidden = false;

@@ -6634,6 +6634,52 @@ body.payment-confirmation-page .narrow {
   color: #f0a7a7;
 }
 
+.delivery-notice {
+  margin-top: 1.25rem;
+  padding: 1rem 1.125rem;
+  border-radius: 10px;
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  background: rgba(59, 130, 246, 0.08);
+  text-align: left;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.delivery-notice__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.delivery-notice p {
+  margin: 0 0 0.625rem;
+}
+
+.delivery-notice p:last-child {
+  margin-bottom: 0;
+}
+
+.simple-flow-page .delivery-notice {
+  color: rgba(247, 240, 230, 0.9);
+}
+
+.simple-flow-page .delivery-notice a {
+  color: #93c5fd;
+}
+
+.thankyou-actions {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.receipt-page .delivery-notice {
+  margin-bottom: 1rem;
+  color: #334155;
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
 .application-form .submit-button:disabled,
 .application-form .submit-button[aria-busy="true"],
 .payment-upload-form .submit-button:disabled,

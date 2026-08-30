@@ -514,6 +514,42 @@
       fr: "Vérification reçue",
       ar: "تم استلام التحقق"
     },
+    "Heads up about your receipt email": {
+      es: "Aviso sobre el correo de su recibo",
+      zh: "关于收据邮件的提示",
+      fr: "Note concernant l’e-mail de reçu",
+      ar: "تنبيه بخصوص رسالة الإيصال"
+    },
+    "After your payment is verified, we will email a link to your official receipt. Delivery usually takes a few minutes.": {
+      es: "Después de verificar su pago, le enviaremos por correo un enlace a su recibo oficial. La entrega suele tardar unos minutos.",
+      zh: "付款核实后，我们将通过电子邮件发送正式收据链接。通常几分钟内送达。",
+      fr: "Une fois votre paiement vérifié, nous vous enverrons par e-mail un lien vers votre reçu officiel. La livraison prend généralement quelques minutes.",
+      ar: "بعد التحقق من دفعتك، سنرسل رابط الإيصال الرسمي بالبريد الإلكتروني. عادةً يصل خلال دقائق."
+    },
+    "If you do not see it, check your Spam or Promotions folder and mark the message as Not spam so future updates reach your inbox.": {
+      es: "Si no lo ve, revise las carpetas de Spam o Promociones y marque el mensaje como No es spam para que futuras actualizaciones lleguen a su bandeja de entrada.",
+      zh: "若未收到，请检查垃圾邮件或推广文件夹，并将该邮件标记为“非垃圾邮件”，以便今后更新能送达收件箱。",
+      fr: "Si vous ne le voyez pas, vérifiez vos dossiers Spam ou Promotions et marquez le message comme Non spam afin que les prochaines mises à jour arrivent dans votre boîte de réception.",
+      ar: "إذا لم تجده، تحقق من مجلد البريد العشوائي أو العروض وحدّد الرسالة كـ \"ليس بريدًا عشوائيًا\" حتى تصل التحديثات المستقبلية إلى صندوق الوارد."
+    },
+    "You do not need to wait for email — use View / Print Receipt below anytime. You can also contact privatepropertyg@gmail.com if you need help.": {
+      es: "No necesita esperar el correo: use Ver / Imprimir recibo abajo en cualquier momento. También puede contactar a privatepropertyg@gmail.com si necesita ayuda.",
+      zh: "无需等待邮件——可随时使用下方的“查看/打印收据”。如需帮助，也可联系 privatepropertyg@gmail.com。",
+      fr: "Inutile d’attendre l’e-mail — utilisez Voir / Imprimer le reçu ci-dessous à tout moment. Vous pouvez aussi contacter privatepropertyg@gmail.com si vous avez besoin d’aide.",
+      ar: "لا حاجة لانتظار البريد — استخدم \"عرض / طباعة الإيصال\" أدناه في أي وقت. يمكنك أيضًا التواصل مع privatepropertyg@gmail.com إذا احتجت مساعدة."
+    },
+    "Your payment proof has been received and is pending verification. This confirms submission of payment evidence and does not confirm cleared funds.": {
+      es: "Su comprobante de pago fue recibido y está pendiente de verificación. Esto confirma el envío de evidencia de pago y no confirma fondos acreditados.",
+      zh: "您的付款凭证已收到，正在等待核实。这仅确认已提交付款证明，不代表资金已到账。",
+      fr: "Votre preuve de paiement a été reçue et est en attente de vérification. Ceci confirme l’envoi d’une preuve de paiement, pas l’encaissement des fonds.",
+      ar: "تم استلام إثبات الدفع وهو قيد التحقق. يؤكد هذا تقديم دليل الدفع ولا يؤكد وصول الأموال."
+    },
+    "View / Print Receipt": {
+      es: "Ver / Imprimir recibo",
+      zh: "查看 / 打印收据",
+      fr: "Voir / Imprimer le reçu",
+      ar: "عرض / طباعة الإيصال"
+    },
     "Return Home": {
       es: "Volver al inicio",
       zh: "返回首页",

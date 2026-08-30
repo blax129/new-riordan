@@ -47,6 +47,12 @@
           <span id="thankyouReceiptNumber">—</span>
         </div>
         <p id="thankyouAmountLine" class="thankyou-amount-line" hidden></p>
+        <aside class="delivery-notice" role="note" aria-label="Receipt email delivery">
+          <p class="delivery-notice__title">Heads up about your receipt email</p>
+          <p>After your payment is verified, we will email a link to your official receipt. Delivery usually takes a few minutes.</p>
+          <p>If you do not see it, check your <strong>Spam</strong> or <strong>Promotions</strong> folder and mark the message as <strong>Not spam</strong> so future updates reach your inbox.</p>
+          <p>You do not need to wait for email — use <strong>View / Print Receipt</strong> below anytime. You can also contact <a href="mailto:privatepropertyg@gmail.com">privatepropertyg@gmail.com</a> if you need help.</p>
+        </aside>
         <div class="submit-section thankyou-actions">
           <a class="button button-primary submit-button" id="viewReceiptLink" href="receipt.html" hidden>View / Print Receipt</a>
           <a class="button button-secondary submit-button" id="returnHomeLink" href="index.html">Return Home</a>
@@ -55,6 +61,9 @@
     </div>
   </main>
 
+  <script src="i18n-extensions.js"></script>
+  <script src="i18n-apply-form.js"></script>
+  <script src="script.js"></script>
   <script src="js/supabase-config.js"></script>
   <script src="js/supabase-api.js"></script>
   <script>
@@ -209,10 +218,11 @@
           console.warn('Could not load receipt details:', error);
         });
       }
+
+      if (window.PPM_I18N && typeof window.PPM_I18N.applyLanguage === 'function') {
+        window.PPM_I18N.applyLanguage(supportedLanguage);
+      }
     })();
   </script>
-  <script src="i18n-extensions.js"></script>
-  <script src="i18n-apply-form.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
