@@ -3,7 +3,7 @@
 
   const cfg = window.PPM_PAID_RECEIPT_EMAILJS || {};
   const EMAILJS_SDK_URL = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
-  const DEFAULT_SITE_URL = "https://privatepmanagement.netlify.app";
+  const DEFAULT_SITE_URL = "https://privatepromanagement.com";
 
   const BRAND = {
     companyName: "Property Management Group",

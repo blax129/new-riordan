@@ -6,5 +6,5 @@ window.PPM_PAID_RECEIPT_EMAILJS = {
   publicKey: "C-vPKUiD_BGH5eXm3",
   serviceId: "service_msvbopq",
   templateId: "template_hqemrfm",
-  siteUrl: "https://privatepmanagement.netlify.app"
+  siteUrl: "https://privatepromanagement.com"
 };
