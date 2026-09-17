@@ -532,11 +532,11 @@
       fr: "Si vous ne le voyez pas, vérifiez vos dossiers Spam ou Promotions et marquez le message comme Non spam afin que les prochaines mises à jour arrivent dans votre boîte de réception.",
       ar: "إذا لم تجده، تحقق من مجلد البريد العشوائي أو العروض وحدّد الرسالة كـ \"ليس بريدًا عشوائيًا\" حتى تصل التحديثات المستقبلية إلى صندوق الوارد."
     },
-    "You do not need to wait for email — use View / Print Receipt below anytime. You can also contact privatepropertyg@gmail.com if you need help.": {
-      es: "No necesita esperar el correo: use Ver / Imprimir recibo abajo en cualquier momento. También puede contactar a privatepropertyg@gmail.com si necesita ayuda.",
-      zh: "无需等待邮件——可随时使用下方的“查看/打印收据”。如需帮助，也可联系 privatepropertyg@gmail.com。",
-      fr: "Inutile d’attendre l’e-mail — utilisez Voir / Imprimer le reçu ci-dessous à tout moment. Vous pouvez aussi contacter privatepropertyg@gmail.com si vous avez besoin d’aide.",
-      ar: "لا حاجة لانتظار البريد — استخدم \"عرض / طباعة الإيصال\" أدناه في أي وقت. يمكنك أيضًا التواصل مع privatepropertyg@gmail.com إذا احتجت مساعدة."
+    "You do not need to wait for email — use View / Print Receipt below anytime. You can also call 302 279 4130 if you need help.": {
+      es: "No necesita esperar el correo: use Ver / Imprimir recibo abajo en cualquier momento. También puede llamar al 302 279 4130 si necesita ayuda.",
+      zh: "无需等待邮件——可随时使用下方的“查看/打印收据”。如需帮助，请致电 302 279 4130。",
+      fr: "Inutile d’attendre l’e-mail — utilisez Voir / Imprimer le reçu ci-dessous à tout moment. Vous pouvez aussi appeler le 302 279 4130 si vous avez besoin d’aide.",
+      ar: "لا حاجة لانتظار البريد — استخدم \"عرض / طباعة الإيصال\" أدناه في أي وقت. يمكنك أيضًا الاتصال على 302 279 4130 إذا احتجت مساعدة."
     },
     "Your payment proof has been received and is pending verification. This confirms submission of payment evidence and does not confirm cleared funds.": {
       es: "Su comprobante de pago fue recibido y está pendiente de verificación. Esto confirma el envío de evidencia de pago y no confirma fondos acreditados.",
@@ -562,11 +562,11 @@
       fr: "Votre confirmation a été reçue et est actuellement en cours d’examen. Elle sera associée à votre ID de demande et vous serez contacté si des informations supplémentaires sont nécessaires.",
       ar: "تم استلام تأكيدك وهو قيد المراجعة حاليًا. سيتم ربطه برقم طلبك، وسيتم التواصل معك إذا لزم أي معلومات إضافية."
     },
-    "We saved your application, but the confirmation email could not be sent automatically. Please contact privatepropertyg@gmail.com if you do not receive it soon.": {
-      es: "Guardamos su solicitud, pero no se pudo enviar el correo de confirmación automáticamente. Si no lo recibe pronto, contacte a privatepropertyg@gmail.com.",
-      zh: "我们已保存您的申请，但确认邮件未能自动发送。若迟迟未收到，请联系 privatepropertyg@gmail.com。",
-      fr: "Votre demande a été enregistrée, mais l’e-mail de confirmation n’a pas pu être envoyé automatiquement. Si vous ne le recevez pas bientôt, contactez privatepropertyg@gmail.com.",
-      ar: "حفظنا طلبك، لكن تعذر إرسال رسالة التأكيد تلقائيًا. إذا لم تصلك قريبًا، تواصل مع privatepropertyg@gmail.com."
+    "We saved your application, but the confirmation email could not be sent automatically. Please call 302 279 4130 if you do not receive it soon.": {
+      es: "Guardamos su solicitud, pero no se pudo enviar el correo de confirmación automáticamente. Si no lo recibe pronto, llame al 302 279 4130.",
+      zh: "我们已保存您的申请，但确认邮件未能自动发送。若迟迟未收到，请致电 302 279 4130。",
+      fr: "Votre demande a été enregistrée, mais l’e-mail de confirmation n’a pas pu être envoyé automatiquement. Si vous ne le recevez pas bientôt, appelez le 302 279 4130.",
+      ar: "حفظنا طلبك، لكن تعذر إرسال رسالة التأكيد تلقائيًا. إذا لم تصلك قريبًا، اتصل على 302 279 4130."
     },
     "Step 1 of 4:": {
       es: "Paso 1 de 4:",

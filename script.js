@@ -1858,7 +1858,7 @@
       "Sending...": "Enviando...",
       "Sending application for review...": "Enviando solicitud para revisión...",
       "Sending confirmation email...": "Enviando correo de confirmación...",
-      "Your application was saved, but the confirmation email could not be sent. Please contact privatepropertyg@gmail.com.": "Su solicitud fue guardada, pero no se pudo enviar el correo de confirmación. Comuníquese con privatepropertyg@gmail.com.",
+      "Your application was saved, but the confirmation email could not be sent. Please call 302 279 4130.": "Su solicitud fue guardada, pero no se pudo enviar el correo de confirmación. Llame al 302 279 4130.",
       "Application received. Opening confirmation...": "Solicitud recibida. Abriendo confirmación...",
       "Application received...": "Solicitud recibida..."
     },
@@ -3401,7 +3401,7 @@
   function formatApplicationSubmitError(error) {
     if (error?.stage === "email") {
       const base = translateText(
-        "Your application was saved, but the confirmation email could not be sent. Please contact privatepropertyg@gmail.com.",
+        "Your application was saved, but the confirmation email could not be sent. Please call 302 279 4130.",
         currentLanguage()
       );
       const detail = error?.message ? ` ${error.message}` : "";
